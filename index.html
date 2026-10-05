@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; connect-src 'none'; form-action 'none'; img-src 'self' data:; media-src 'self'; font-src 'self'; style-src 'self'; script-src 'self'">
+  <meta name="description" content="Thiệp cưới riêng tư, không theo dõi người truy cập.">
+  <title>Thiệp cưới</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__wash"></div>
+    <div class="hero__content">
+      <p class="eyebrow">TRÂN TRỌNG KÍNH MỜI</p>
+      <p class="guest" id="guestLine" hidden></p>
+      <h1><span id="brideName">Cô dâu</span><i>&amp;</i><span id="groomName">Chú rể</span></h1>
+      <p class="lead" id="invitationLine">Cùng chúng tôi lưu giữ một ngày thật đặc biệt.</p>
+      <a class="button button--light" href="#event">Xem lời mời</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h2 id="dateText">Ngày cưới</h2>
+      <p class="muted" id="timeText"></p>
+      <div class="countdown" id="countdown" hidden aria-label="Đếm ngược đến ngày cưới">
+        <div><strong id="days">0</strong><span>Ngày</span></div>
+        <div><strong id="hours">0</strong><span>Giờ</span></div>
+        <div><strong id="minutes">0</strong><span>Phút</span></div>
+        <div><strong id="seconds">0</strong><span>Giây</span></div>
+      </div>
+    </section>
+
+    <section class="section event" id="event">
+      <div class="card">
+        <p class="eyebrow">HÔN LỄ</p>
+        <h2 id="venueName">Địa điểm tổ chức</h2>
+        <p id="venueAddress" class="muted">Cập nhật địa chỉ trong assets/config.js</p>
+        <div class="actions">
+          <a class="button" id="mapButton" href="#" hidden rel="noopener noreferrer">Mở bản đồ</a>
+          <a class="button button--outline" id="calendarButton" href="#">Thêm vào lịch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" aria-labelledby="galleryTitle">
+      <p class="eyebrow">KHOẢNH KHẮC</p>
+      <h2 id="galleryTitle">Chuyện của chúng tôi</h2>
+      <div class="gallery__grid">
+        <img id="photo1" src="assets/photo-1.svg" alt="Ảnh cưới 1" loading="lazy">
+        <img id="photo2" src="assets/photo-2.svg" alt="Ảnh cưới 2" loading="lazy">
+        <img id="photo3" src="assets/photo-3.svg" alt="Ảnh cưới 3" loading="lazy">
+      </div>
+      <p class="hint">Thay ba file ảnh mẫu bằng ảnh của anh/chị, hoặc sửa đường dẫn trong <code>assets/config.js</code>.</p>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <div class="card card--soft">
+        <p class="eyebrow">XÁC NHẬN THAM DỰ</p>
+        <h2>Hẹn gặp bạn trong ngày vui</h2>
+        <p class="muted">Bản an toàn không gửi form hoặc thông tin khách tới bất kỳ máy chủ ẩn nào. Khi cấu hình số điện thoại/email, nút liên hệ sẽ chỉ mở ứng dụng của chính khách mời.</p>
+        <div class="actions">
+          <a class="button" id="phoneButton" href="#" hidden>Gọi xác nhận</a>
+          <a class="button button--outline" id="emailButton" href="#" hidden>Email xác nhận</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section privacy-note">
+      <p>Trang này không dùng cookie, analytics, tracker, API bên thứ ba hay lưu dữ liệu người truy cập.</p>
+      <a href="privacy.html">Xem cam kết riêng tư</a>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footerNames">Cô dâu &amp; Chú rể</p>
+    <small>Thiệp cưới cá nhân · bản clean-room dành cho GitHub Pages</small>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

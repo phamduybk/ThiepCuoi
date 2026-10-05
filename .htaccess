@@ -1,9 +1,0 @@
-# Apache (tùy chọn — chạy mặc định bằng PHP built-in server + router.php). Khớp luật chặn của router.php.
-Options -Indexes
-RewriteEngine On
-RewriteRule ^(database|cloudflared|application|system|vendor|php)(/|$) - [F,L,NC]
-RewriteRule (^|/)\. - [F,L]
-RewriteRule \.(db|db-wal|db-shm|sqlite3?|sql|log|ini|sh|bat|lock|env|bak|ya?ml|key)$ - [F,L,NC]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php?/$1 [L]
