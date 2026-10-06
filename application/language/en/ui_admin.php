@@ -108,6 +108,7 @@ return array(
 	'Cho khách xem trang' => 'Show guests the page',
 	'Có thay đổi khách chưa thấy — bấm "Cho khách xem" trên trang sửa' => 'You have changes guests haven\'t seen — click "Show guests" on the edit page',
 	'Trước bước này khách chỉ thấy trang "đang chuẩn bị"' => 'Until then guests only see the "coming soon" page',
+	'Khách đang xem bản đã đăng — sửa xong bấm "Cho khách xem" để cập nhật' => 'Guests see the published version — after editing, press "Show guests" to update',
 	'Thêm khách mời' => 'Add guests',
 	'Mỗi khách có thiệp riêng ghi tên họ (không bắt buộc)' => 'Each guest gets a personal card with their name (optional)',
 	'Gửi link cho khách' => 'Send the link to guests',
