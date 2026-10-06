@@ -2,6 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 // Bản dịch EN: 'chuỗi gốc tiếng Việt' => 'English' (xem helpers/i18n_helper.php).
 return array(
+	'Xem hướng dẫn có ảnh' => 'See the illustrated guide',
+	'Phiên bản {v}' => 'Version {v}',
+	'bản cài trên máy' => 'self-hosted',
+	'Tải bản mới nhất' => 'Get the latest version',
 	'Chọn tên miền riêng' => 'Choose your own domain',
 	'Đã có tên miền? Nhập mã kết nối' => 'Already have a domain? Enter the connection code',
 	'Kết nối' => 'Connect',

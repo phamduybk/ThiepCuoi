@@ -223,3 +223,7 @@ form[data-settings-form].is-dirty > .form-actions .btn-accent { animation: save-
 .domain-shop .ds-otp { display: grid; gap: 4px; flex: 1 1 260px; }
 .ds-otp-row { display: flex; gap: 8px; }
 .ds-otp-row input { width: 9.5em; font: 600 1.15rem ui-monospace, Menlo, monospace; letter-spacing: .2em; text-align: center; }
+
+/* Phiên bản cuối trang (06/10) */
+.app-ver { text-align: center; font: .78rem/1.6 system-ui, sans-serif; color: var(--muted, #8a8078); padding: 18px 16px calc(18px + env(safe-area-inset-bottom, 0px)); }
+.app-ver a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }

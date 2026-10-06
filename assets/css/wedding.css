@@ -598,3 +598,4 @@ html[data-theme] body.wd.is-draft .ic-reopen { bottom: calc(164px + env(safe-are
 .wd-credit a:hover, .wd-credit a:focus-visible { opacity: 1; color: var(--accent); }
 .wd-credit-sep { margin: 0 4px; }
 body.wd[data-theme="dienanh"] .wd-foot .wd-credit::before { content: none; }
+.wd-credit .wd-ver { font-variant-numeric: tabular-nums; opacity: .8; }   /* phiên bản (06/10) — khách/hỗ trợ biết trang đang chạy bản nào */
