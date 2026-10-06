@@ -1,0 +1,54 @@
+/* Mẫu PHONG BAO HỶ (khóa li-xi, thêm 07/10/2026 — đi cặp giao diện "maidao"). Bìa: phong bao đỏ son (BA P1-08: không hồng, không "lì xì"),
+   viền nhũ vàng, huy hiệu hoa mai chữ lồng, nắp gài. Chạm -> nắp bật lên (.05–.45s), thiệp kem rút lên khỏi bao kèm cành đào
+   (.35–1s), bao rơi xuống và mờ (1,05s) đúng lúc thiệp mở hiện. Chỉ transform/opacity. */
+.ic--li-xi {
+  --ic-out-delay: 1.08s;
+  --lx-red: #b3261e;
+  --lx-deep: #7e150f;
+}
+.ic--li-xi .ic-env-btn { width: min(280px, 70vw, calc((100vh - 170px) * .66)); aspect-ratio: 3 / 4.5; margin-top: 24%; }
+.lx, .lx > span, .lx-body > span, .lx-card > span { position: absolute; display: block; }
+.lx { inset: 0; }
+.lx-card { left: 7%; right: 7%; top: 4%; bottom: 10%; border-radius: 4px; background: var(--ic-grain), #fffaf2; box-shadow: inset 0 0 0 6px #fffaf2, inset 0 0 0 7px rgba(184, 54, 92, .35);
+  transition: transform .7s cubic-bezier(.3, 1.2, .5, 1) .35s; }
+.lx-card-mono { left: 0; right: 0; top: 12%; text-align: center; font: var(--name-style, normal) 400 1.8rem/1 var(--f-name, Georgia, serif); color: #9e2a1e; }
+.lx-card-mono i, .lx-medal i { font-style: normal; font-size: .55em; margin: 0 2px; }
+.lx-sprig { right: -18%; top: -14%; width: 74%; opacity: 0; transform: rotate(-12deg) scale(.6); transform-origin: 0 100%; transition: opacity .3s ease .6s, transform .6s cubic-bezier(.3, 1.4, .5, 1) .6s; }
+.lx-sprig svg, .lx-deco svg { width: 100%; height: auto; display: block; }
+.lx-body { inset: 0; border-radius: 6px; z-index: 2;
+  background: radial-gradient(circle at 50% 120%, rgba(255, 220, 160, .25), transparent 60%), linear-gradient(160deg, var(--lx-red), var(--lx-deep));
+  box-shadow: inset 0 0 0 6px transparent, inset 0 0 0 7.5px #e6c06a, inset 0 0 0 10px transparent, inset 0 0 0 11px rgba(230, 192, 106, .55), 0 40px 60px -30px rgba(60, 0, 20, .6);
+  transition: transform .55s cubic-bezier(.5, 0, .7, .4) .95s, opacity .3s ease 1.05s; }
+.lx-medal { left: 50%; top: 36%; width: 92px; height: 92px; margin-left: -46px; border-radius: 50%; display: grid; place-items: center;
+  background: radial-gradient(circle, #fbe7a6, #e6b84a 70%, #b8862a); box-shadow: 0 0 0 4px var(--lx-red), 0 0 0 5px #e6c06a, 0 8px 14px -6px rgba(0, 0, 0, .45);
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'><g><circle cy='-24' r='26'/><circle cx='22.8' cy='-7.4' r='26'/><circle cx='14.1' cy='19.4' r='26'/><circle cx='-14.1' cy='19.4' r='26'/><circle cx='-22.8' cy='-7.4' r='26'/></g></svg>") center / contain no-repeat;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'><g><circle cy='-24' r='26'/><circle cx='22.8' cy='-7.4' r='26'/><circle cx='14.1' cy='19.4' r='26'/><circle cx='-14.1' cy='19.4' r='26'/><circle cx='-22.8' cy='-7.4' r='26'/></g></svg>") center / contain no-repeat; }
+.lx-medal > span { display: flex; align-items: center; font: var(--name-style, normal) 400 1.35rem/1 var(--f-name, Georgia, serif); color: #6b2a10; }
+.lx-flap { left: 0; right: 0; top: 0; height: 30%; z-index: 3; transform-origin: 50% 0; border-radius: 6px 6px 50% 50% / 6px 6px 36% 36%;
+  background: linear-gradient(180deg, var(--lx-deep), var(--lx-red)); box-shadow: inset 0 -1.5px 0 #e6c06a, 0 6px 10px -6px rgba(0, 0, 0, .5); transition: transform .42s var(--ic-fold) .05s, opacity .1s linear .3s; }
+.ic--li-xi .ic-env-to { left: 10%; right: 10%; bottom: 8%; z-index: 4; justify-items: center; text-align: center; padding: 8px 10px; border-radius: 4px;
+  background: #fffaf2; box-shadow: 0 0 0 1.5px #e6c06a; transition: opacity .2s; }
+.ic--li-xi .ic-env-to small { color: #7a4a2a; } .ic--li-xi .ic-env-to b { color: #3b1c14; font-size: clamp(1.1rem, 4.8vw, 1.4rem); }
+.ic--li-xi:not(.is-opening) .ic-env-btn { animation: ic-float 6s ease-in-out 2; }
+/* Mở */
+.ic--li-xi.is-opening .lx-flap { transform: perspective(600px) rotateX(-170deg); opacity: 0; }
+.ic--li-xi.is-opening .lx-card { transform: translateY(-62%) rotate(-3deg); }
+.ic--li-xi.is-opening .lx-sprig { opacity: 1; transform: none; }
+.ic--li-xi.is-opening .lx-body { transform: translateY(40%); opacity: 0; }
+.ic--li-xi.is-opening .ic-env { animation-name: lx-out; }
+@keyframes lx-out { to { opacity: 0; transform: translateY(-40px) scale(1.04); } }
+/* Thiệp mở */
+.ic--li-xi .ic-card { background: var(--ic-grain), #fffaf2; box-shadow: inset 0 0 0 10px #fffaf2, inset 0 0 0 11px rgba(230, 192, 106, .9), 0 50px 90px -40px rgba(0, 0, 0, .5); }
+.ic--li-xi.is-open .ic-card { animation: lx-card-in .75s var(--ic-ease) both; }
+@keyframes lx-card-in { from { opacity: .2; transform: translateY(-50px) rotate(-3deg); } 25% { opacity: 1; } to { opacity: 1; transform: none; } }
+.ic--li-xi .ic-card > .lx-deco { inset: auto; right: -8px; top: -30px; width: 170px; z-index: 2 !important; }
+.ic--li-xi .ic-mono { border-color: #e6c06a; color: #9c2a4c; }
+@media (max-height: 500px) { .ic--li-xi .ic-env-btn { margin-top: 8%; } }
+.ic--li-xi .ic-scroll {
+  /* 07/10 (QA-NT-01/03): nền giấy của mẫu này cố định màu sáng -> chữ cố định màu tối (không lấy màu chữ sáng của giao diện tối),
+     màu nhấn dùng --ic-acc-light (accent đậm đủ ≥4,5:1 trên giấy sáng, invite-card.css). */
+  --ink: #2b2521; --muted: #4a413a; --ic-paper: #fffaf2; --ic-to-small: #4a413a; --ic-to-name: #2b2521;
+  --accent-ink: var(--ic-acc-light); --accent: var(--ic-acc-light); --ic-line: rgba(70, 50, 30, .3); --ic-on-accent: #fff;
+  color: #2b2521;
+}
+.ic--li-xi .ic-scroll .ic-link:not(#_) { color: var(--accent-ink); }   /* thắng luật màu link của giao diện (.wd a) */

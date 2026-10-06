@@ -19,6 +19,12 @@
   --ic-card-bg: color-mix(in srgb, var(--ic-paper) 95%, var(--accent-2, var(--accent)));
   --ic-card-deco: linear-gradient(transparent, transparent);
   --ic-to-small: var(--muted); --ic-to-name: var(--ink);
+  /* 07/10 (BA P0-03): phông TÊN KHÁCH riêng — giao diện/thiệp có phông tên nét mảnh (Ephesis, Nautigal, Moon Dance, Pinyon, Great
+     Vibes, Imperial Script, Mea Culpa…) đặt --f-guest (+ --f-guest-style) sang phông dễ đọc; mặc định = phông tên. */
+  /* Màu nhấn đậm đủ ≥4,5:1 trên GIẤY SÁNG cố định (thiệp mới nền giấy cố định dùng biến này thay --accent-ink; giao diện có
+     màu nhấn sáng tự đặt lại ở bảng màu bên dưới). */
+  --ic-acc-light: var(--accent-ink, var(--accent));
+  --ic-guest-font: var(--f-guest, var(--f-name, Georgia, serif)); --ic-guest-style: var(--f-guest-style, var(--name-style, normal));
   /* Kim loại ép nhũ (cố định, đẹp trên mọi nền) + một ngôn ngữ chuyển động cho mọi mẫu */
   --ic-gold-1: #8a6a2c; --ic-gold-2: #d9b866; --ic-gold-3: #fbefc4;
   --ic-foil: linear-gradient(105deg, var(--ic-gold-1) 0%, var(--ic-gold-2) 28%, var(--ic-gold-3) 46%, var(--ic-gold-2) 58%, #a8853d 78%, var(--ic-gold-1) 100%);
@@ -115,7 +121,7 @@ html.ic-lock, html.ic-lock body { overflow: hidden; }
   margin: 10px 0 14px; font: var(--name-style, normal) 400 clamp(2.3rem, 9vw, 3.3rem)/1.15 var(--f-name, Georgia, serif);
   color: var(--accent-ink, var(--accent)); overflow-wrap: anywhere; outline: 0; text-wrap: balance;
 }
-.ic-text { font-size: 1.03rem; line-height: 1.65; font-style: italic; color: color-mix(in srgb, var(--ink) 88%, transparent); max-width: 34ch; margin: 0 auto !important; text-wrap: pretty; }
+.ic-text { font-size: 1.03rem; line-height: 1.65; font-style: italic; color: var(--ink); max-width: 34ch; margin: 0 auto !important; text-wrap: pretty; }
 .ic-rule { display: flex; align-items: center; gap: 12px; margin: 22px auto 18px; width: min(220px, 70%); color: var(--accent); font-size: .8rem; }
 .ic-rule::before, .ic-rule::after { content: ""; flex: 1; border-top: 1px solid var(--ic-line); }
 .ic-label { font: 600 .875rem/1.4 var(--f-ui, system-ui, sans-serif); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
@@ -277,7 +283,7 @@ body.is-draft .ic-reopen { bottom: 164px; }
   .ic.ic .ic-env-to { gap: 3px; }
   /* M1-CARDS-03: nhãn vẫn ≥14px (bớt giãn chữ thay vì thu chữ). */
   .ic.ic .ic-env-to small { font-size: .875rem; letter-spacing: .1em; }
-  .ic.ic .ic-env-to b { font-size: 1rem; line-height: 1.15; }
+  .ic.ic .ic-env-to b { font-size: 1.25rem; line-height: 1.15; }
 }
 
 /* Tiếng Anh: "VIEW THE WEDDING PAGE" dài hơn "XEM TRANG CƯỚI" -> bớt giãn chữ để nút giữ 1 dòng trên thiệp hẹp (Song hỷ 3 tấm). */
@@ -318,3 +324,33 @@ html:is([lang="th"], [lang="lo"], [lang="zh"]) .ic :is(.ic-names, .ic-names *, .
   .ic-place { border-top: 1px dashed #999 !important; margin-top: 3mm !important; padding-top: 3mm !important; }
   .ic-fam { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 4mm !important; }
 }
+
+/* ══════════ 07/10 (BA P0-03): TÊN KHÁCH luôn đọc được trên MỌI mẫu thiệp (cũ, mới, VIP) ══════════
+   Bìa ("Thân gửi" + tên) và tên khách trong thiệp dùng --ic-guest-font; tên trên bìa ≥ 20px ở mọi cỡ màn (kể cả xoay ngang). */
+.ic .ic-env-to b { font-family: var(--ic-guest-font) !important; font-style: var(--ic-guest-style) !important; font-size: clamp(1.25rem, 5.6vw, 1.7rem) !important; }
+.ic .ic-card .ic-name { font-family: var(--ic-guest-font) !important; font-style: var(--ic-guest-style) !important; }
+/* Giao diện có phông tên nét mảnh: tên khách dùng phông tiêu đề (đứng hoặc nghiêng thật của phông đó). */
+[data-theme="vuonhoa"] { --f-guest: "Lora", Georgia, serif; --f-guest-style: italic; }
+[data-theme="demsao"] { --f-guest: "Cormorant Garamond", Georgia, serif; --f-guest-style: italic; }
+[data-theme="hongnhung"] { --f-guest: "Bona Nova", "EB Garamond", Georgia, serif; --f-guest-style: italic; }
+[data-theme="lucbao"] { --f-guest: "Trirong", "Lora", Georgia, serif; --f-guest-style: italic; }
+[data-theme="provence"] { --f-guest: "Crimson Pro", "EB Garamond", Georgia, serif; --f-guest-style: italic; }
+/* 07/10 (QA-NT-01): màu nhấn của giao diện tối/nhấn sáng -> bản đậm dùng trên giấy sáng cố định (thiệp mới nền giấy cố định). */
+[data-theme="demsao"] .ic { --ic-acc-light: #6f5420; }
+/* "&" giữa tên cô dâu chú rể là chữ (không trang trí) -> màu nhấn đậm đạt AA. */
+.ic .ic-couple i { color: var(--accent-ink, var(--accent)); }
+[data-theme="hoangkim"] .ic { --accent-ink: #6e5022; }
+[data-theme="provence"] .ic { --accent-ink: #4a5d94; }
+[data-theme="serenity"] .ic { --ic-acc-light: #356a56; }
+[data-theme="lavender"] .ic { --ic-acc-light: #93407a; }
+[data-theme="summer"] .ic { --ic-acc-light: #9c4430; }
+[data-theme="thiep"] .ic { --ic-acc-light: #a43a35; }
+[data-theme="gatsby"] .ic { --ic-acc-light: #7a5e26; }
+[data-theme="dienanh"] .ic { --ic-acc-light: #6e5528; }
+/* "Chỉ đường" trên thiệp: màu nhấn đậm (thắng màu link nhạt .wd a của giao diện pastel — lỗi có từ trước, sửa luôn cho mọi mẫu). */
+.ic .ic-link:not(#_) { color: var(--accent-ink, var(--accent)); }
+/* Nhãn "Thân gửi" + chữ phụ trên thiệp ở 4 giao diện pastel và Song hỷ: đậm hơn để đạt ≥4,5:1 (cả mẫu cũ). */
+:is([data-theme="serenity"], [data-theme="lavender"], [data-theme="summer"], [data-theme="thiep"]) .ic { --ic-to-small: color-mix(in srgb, var(--muted) 55%, var(--ink)); }
+[data-theme="summer"] .ic { --muted: #7a5a4a; }
+[data-theme="songhy"] .ic { --ic-to-small: #fde9bf; }
+[data-theme="lavender"] .ic { --ic-to-small: var(--ink); }

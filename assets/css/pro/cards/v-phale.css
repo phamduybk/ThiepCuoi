@@ -37,7 +37,7 @@
    ═══════════════════════════════════════════════════════════════════════════════════════════════ */
 .ic--v-phale.ic {
   --accent: #2f5d72; --accent-2: #9cc7d3; --ink: #1f2b33; --muted: #46545e; --paper: #fbfcfc; --page: #eef3f5;
-  --f-head: "Newsreader", Georgia, serif; --f-name: "Newsreader", Georgia, serif; --name-style: normal;
+  --f-head: "Newsreader", Georgia, serif; --f-guest: initial; --f-guest-style: initial; --f-name: "Newsreader", Georgia, serif; --name-style: normal;
   --f-body: "Plus Jakarta Sans", system-ui, sans-serif; --f-ui: "Plus Jakarta Sans", system-ui, sans-serif;
   --ic-paper: #fbfcfc; --ic-on-accent: #fff; --ic-line: rgba(62, 111, 134, .3); --ic-card-bg: rgba(255, 255, 255, .6);
   --ic-to-small: #3e5563; --ic-to-name: #1f2b33;

@@ -427,7 +427,7 @@ html.has-cover .wd-cover { overflow-y: auto; overscroll-behavior: contain; curso
 }
 
 /* Khối trang trí của giao diện VIP (views/public/pro/<khóa>.php, chỉ có trên thiep.site): ẩn mặc định, CSS VIP tự bật. */
-.pro-deco { display: none; }
+.pro-deco, .th-deco { display: none; }   /* .th-deco: trang trí của 10 giao diện thường thêm 07/10 (views/public/themes/<khóa>.php) */
 
 /* ── Nút đổi ngôn ngữ VI | EN (settings.site_lang = both) — máy tính: ngay trên nút nhạc; điện thoại: thanh trên cạnh nút nhạc; nổi trên cả thiệp mời (.ic z 75) ── */
 .lang-sw { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: calc(74px + env(safe-area-inset-bottom, 0px)); z-index: 80; display: inline-flex; border-radius: 999px; overflow: hidden;
@@ -526,7 +526,7 @@ html[data-theme] body.wd.is-draft .ic-reopen { bottom: calc(164px + env(safe-are
   body.wd { font-size: 11pt; line-height: 1.4; }
   body.wd .reveal, html.js-reveal .reveal { opacity: 1 !important; transform: none !important; }
   /* Chỉ có nghĩa trên màn hình */
-  body.wd :is(.wd-nav, .wd-cover, .fx, .music, .lang-sw, .ic-reopen, .flash, .lb, .marquee, .pro-deco, .hero-deco, .pm-deco, .orn, .rings, .photowall, .masthead,
+  body.wd :is(.wd-nav, .wd-cover, .fx, .music, .lang-sw, .ic-reopen, .flash, .lb, .marquee, .pro-deco, .th-deco, .hero-deco, .pm-deco, .orn, .rings, .photowall, .masthead,
     .hd-mark, .ev-map, .countdown, .btn, .btn-row, button, form, .form-thanks, .rsvp-done, .wish-more-row, .music-credit, .music-hint, .quote-bg, .quote::after,
     .cta, .more-albums, .gift-copy, .gift-dl, .gift-hint, .gift-off, .sec-head::before, .ev-card::before, .ev-card::after, .paper::before, .paper::after, .divider::before,
     .pd-wave, .st-sea, .st-sun, .st-dome, .st-bouga, .wd-g::after, .gallery-sec > .center) { display: none !important; }

@@ -39,7 +39,7 @@
    ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
 .ic--v-lucbao.ic {
   --accent: #14513f; --accent-2: #d4b06a; --ink: #1d2b24; --muted: #56645a; --page: #0f3b2e; --paper: #f8f2e4;
-  --f-head: "Trirong", "Lora", Georgia, serif; --f-name: "Trirong", "Lora", Georgia, serif; --f-body: "Trirong", "Lora", Georgia, serif;
+  --f-head: "Trirong", "Lora", Georgia, serif; --f-guest: initial; --f-guest-style: initial; --f-name: "Trirong", "Lora", Georgia, serif; --f-body: "Trirong", "Lora", Georgia, serif;
   --f-ui: "Trirong", "Lora", Georgia, serif; --name-style: italic;
   --ic-paper: #f8f2e4; --ic-on-accent: #f8f2e4; --ic-line: rgba(184, 146, 74, .55); --ic-card-bg: #f8f2e4; --ic-card-deco: linear-gradient(transparent, transparent);
   --ic-to-small: #d4b06a; --ic-to-name: #f6efe0;

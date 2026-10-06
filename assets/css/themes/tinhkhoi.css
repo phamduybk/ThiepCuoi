@@ -1,0 +1,311 @@
+/* Phông của giao diện "tinhkhoi" — Google Fonts, SIL Open Font License 1.1: Hahmlet, Gowun Dodum. Phông chung khác ở fonts/fonts.css. */
+@font-face { font-family: 'Hahmlet'; font-style: normal; font-weight: 300 500; font-display: swap;
+  src: url(../../fonts/Hahmlet-300-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Hahmlet'; font-style: normal; font-weight: 300 500; font-display: swap;
+  src: url(../../fonts/Hahmlet-300-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Hahmlet'; font-style: normal; font-weight: 300 500; font-display: swap;
+  src: url(../../fonts/Hahmlet-300-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Gowun Dodum'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../fonts/GowunDodum-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Gowun Dodum'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../fonts/GowunDodum-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Gowun Dodum'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../fonts/GowunDodum-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+   TINH KHÔI (giao diện thường, 07/10/2026) — tối giản Hàn–Việt kiểu thiệp mời online Hàn Quốc: trắng kem, be, nét mảnh,
+   nhiều khoảng trắng; chữ đứng TRƯỚC ảnh, ảnh lớn bo góc mềm; LỊCH THÁNG CƯỚI khoanh tim ngày cưới; đếm ngược số mảnh
+   cách nhau bằng dấu hai chấm; chân trang sáng. Phông Hahmlet (tên, tiêu đề, số) + Gowun Dodum (thân, nhãn).
+   ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
+[data-theme="tinhkhoi"] {
+  --accent: #7d5546; --accent-2: #d9c7b8; --soft: #f0ebe3; --ink: #34302c; --muted: #5e5852; --page: #faf8f4;
+  --nav-bg: #faf8f4; --nav-ink: #34302c; --paper: #ffffff; --line: #e8e1d7; --bg: #faf8f4;
+  --f-head: "Hahmlet", "Noto Serif Display", Georgia, serif; --f-name: "Hahmlet", "Noto Serif Display", Georgia, serif; --f-body: "Gowun Dodum", "Be Vietnam Pro", system-ui, sans-serif; --f-ui: "Gowun Dodum", "Be Vietnam Pro", system-ui, sans-serif;
+  --name-style: normal; --name-size: clamp(2.4rem, 9.4vw, 4.2rem); --t-name-w: 300; --t-h2-w: 300;
+  --t-amp: #c47f76; --t-role: #7d5546; --t-sh: 0 1px 2px rgba(52, 48, 44, .04); --t-rad: 18px; --t-btn-rad: 999px; --t-in-rad: 10px;
+  --t-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M20 31s-11-6.7-11-14c0-3.6 2.8-6 5.8-6 2.4 0 4.2 1.4 5.2 3.2 1-1.8 2.8-3.2 5.2-3.2 3 0 5.8 2.4 5.8 6 0 7.3-11 14-11 14z' fill='none' stroke='black' stroke-width='1.6'/></svg>");
+  --t-icon-c: #cf8d84;
+  --t-div: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 22'><path d='M40 11h100' stroke='black' stroke-width='.8'/></svg>");
+  --t-div-c: #cf8d84;
+  --t-foot-bg: #f0ebe3; --t-foot-ink: #34302c; --t-foot-mute: #6e6760; --t-foot-i: #b08a7a;
+}
+/* ── Nền chung của giao diện (biến --t-* khai báo ở khối :root phía trên; khối riêng phía dưới ghi đè) ── */
+[data-theme="tinhkhoi"] body.wd { font-size: 17px; background: var(--t-body-bg, var(--page)); }
+[data-theme="tinhkhoi"] .td-tinhkhoi { display: block; }
+[data-theme="tinhkhoi"] .td-tinhkhoi, [data-theme="tinhkhoi"] .td-tinhkhoi * { pointer-events: none; }
+[data-theme="tinhkhoi"] :is(.orn, .rings, .photowall) { display: none; }
+[data-theme="tinhkhoi"] .paper::before, [data-theme="tinhkhoi"] .paper::after { display: none; }
+[data-theme="tinhkhoi"] .paper { background: var(--paper); }
+[data-theme="tinhkhoi"] .wd a:not(.btn) { color: var(--accent); }
+[data-theme="tinhkhoi"] .wd h2 { font: var(--t-h2-w, 400) clamp(2.1rem, 6.4vw, 3.2rem)/1.15 var(--f-head); color: var(--t-h2, var(--ink)); }
+[data-theme="tinhkhoi"] .eyebrow { font: 600 .875rem/1.5 var(--f-ui); letter-spacing: .22em; text-transform: uppercase; color: var(--t-eyebrow, var(--accent)); }
+[data-theme="tinhkhoi"] .wd .btn { font: 600 1rem var(--f-ui); letter-spacing: .04em; border-radius: var(--t-btn-rad, 999px); min-height: 48px; padding: 0 26px; }
+[data-theme="tinhkhoi"] .wd .btn-accent { background: var(--accent); color: var(--t-on-accent, #fff); border: 0; box-shadow: 0 12px 22px -14px color-mix(in srgb, var(--accent) 80%, transparent); }
+[data-theme="tinhkhoi"] .wd .btn-accent:hover { background: var(--t-accent-hover, color-mix(in srgb, var(--accent) 84%, #000)); }
+[data-theme="tinhkhoi"] .wd .btn-ghost { background: transparent; color: var(--accent); border: 1.5px solid color-mix(in srgb, var(--accent) 50%, transparent); }
+[data-theme="tinhkhoi"] .wd .btn-ghost:hover { background: var(--soft); }
+[data-theme="tinhkhoi"] .wd :is(input:not([type=radio]):not([type=checkbox]), textarea) { background: var(--t-input, #fff); border: 1.5px solid var(--line); border-radius: var(--t-in-rad, 12px); font: 1.05rem var(--f-body); color: var(--ink); padding: 11px 14px; }
+[data-theme="tinhkhoi"] .wd :is(input, textarea):focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent); }
+[data-theme="tinhkhoi"] .wd label { font: 600 .95rem var(--f-ui); color: var(--ink); }
+[data-theme="tinhkhoi"] .wd label small { font: italic 400 .95rem var(--f-body); color: var(--muted); }
+[data-theme="tinhkhoi"] .divider { width: 180px; height: 22px; margin: 14px auto 0; background: var(--t-div-c, var(--accent)); border: 0;
+  -webkit-mask: var(--t-div) center / contain no-repeat; mask: var(--t-div) center / contain no-repeat; }
+[data-theme="tinhkhoi"] .divider::before, [data-theme="tinhkhoi"] .divider span { display: none; }
+[data-theme="tinhkhoi"] .sec-head { margin-bottom: 40px; }
+[data-theme="tinhkhoi"] .sec-head::before { content: ""; display: block; width: 48px; height: 30px; margin: 0 auto 10px; background: var(--t-icon-c, var(--accent));
+  -webkit-mask: var(--t-icon) center / contain no-repeat; mask: var(--t-icon) center / contain no-repeat; }
+[data-theme="tinhkhoi"] .sec-head .divider { display: none; }
+/* Thanh menu */
+[data-theme="tinhkhoi"] .wd-nav { background: color-mix(in srgb, var(--nav-bg) 95%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-bottom: 1px solid var(--t-nav-line, var(--line)); }
+[data-theme="tinhkhoi"] .wd-nav a { font: 600 .9375rem var(--f-ui); letter-spacing: .06em; color: var(--nav-ink); }
+[data-theme="tinhkhoi"] .wd .wd-nav a:not(.btn) { color: var(--nav-ink); }
+[data-theme="tinhkhoi"] .wd-mono { border: 1.5px solid var(--t-mono-line, var(--accent-2)); color: var(--t-mono, var(--accent)) !important; font: 400 1.3rem/1 var(--f-name); gap: 1px; }
+[data-theme="tinhkhoi"] .wd-mono i { color: var(--t-mono-i, var(--accent-2)); font: 400 .8rem var(--f-ui); }
+[data-theme="tinhkhoi"] .wd-burger { border-color: var(--t-nav-line, var(--line)); color: var(--nav-ink); }
+[data-theme="tinhkhoi"] .wd-nav.scrolled { box-shadow: 0 10px 24px -18px rgba(0, 0, 0, .45); }
+[data-theme="tinhkhoi"] .music-btn { background: var(--accent); color: var(--t-on-accent, #fff); box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px color-mix(in srgb, var(--accent) 35%, transparent), 0 8px 18px -6px rgba(0, 0, 0, .4); }
+/* Tên & ngày đầu trang (mặc định; khối riêng chỉnh bố cục) */
+[data-theme="tinhkhoi"] .names { font: var(--name-style) var(--t-name-w, 400) var(--name-size)/1.08 var(--f-name); color: var(--t-name, var(--ink)); flex-direction: column; align-items: center; gap: 0; margin: 4px 0 8px; }
+[data-theme="tinhkhoi"] .names .name { display: block; overflow-wrap: anywhere; text-wrap: balance; padding: 0 .08em; }
+[data-theme="tinhkhoi"] .names .amp { font: italic 400 .4em/1.4 var(--f-head); color: var(--t-amp, var(--accent)); }
+[data-theme="tinhkhoi"] .names.names--long { font-size: calc(var(--name-size) * .74); }
+[data-theme="tinhkhoi"] .names.names--xl { font-size: calc(var(--name-size) * .58); }
+[data-theme="tinhkhoi"] .save-card .date { font: 500 1.25rem/1.5 var(--f-head); color: var(--ink); letter-spacing: .02em; }
+[data-theme="tinhkhoi"] .lunar { font: italic 400 1.02rem/1.5 var(--f-body); color: var(--muted); }
+[data-theme="tinhkhoi"] .invitee { font: italic 1.1rem var(--f-body); color: var(--muted); }
+[data-theme="tinhkhoi"] .invitee b { font: var(--name-style) 400 2.3rem/1.2 var(--f-name); color: var(--accent); }
+[data-theme="tinhkhoi"].js-reveal .save-card.reveal { transform: translateY(16px); }
+[data-theme="tinhkhoi"].js-reveal .save-card.reveal.in { transform: none; }
+[data-theme="tinhkhoi"] .intro--noimg .intro-main { display: none; }
+/* Cặp đôi */
+[data-theme="tinhkhoi"] .watercolor { background: var(--t-sec2, var(--paper)); }
+[data-theme="tinhkhoi"] section.couple { padding: 84px 14px 80px; }
+[data-theme="tinhkhoi"] .couple-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 14px; max-width: 880px; }
+[data-theme="tinhkhoi"] .person { display: flex; flex-direction: column; align-items: center; text-align: center; grid-row: 1; }
+[data-theme="tinhkhoi"] .person-g { grid-column: 1; } [data-theme="tinhkhoi"] .person-b { grid-column: 2; }
+[data-theme="tinhkhoi"] .house { display: inline-block; order: 0; margin: 0 0 16px; padding: 4px 14px; border-radius: var(--t-btn-rad, 999px); background: var(--soft); color: var(--t-house, var(--accent));
+  font: 600 .875rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; }
+[data-theme="tinhkhoi"] .oval { order: 1; width: min(100%, 260px); margin: 0 0 4px; transform: none; }
+[data-theme="tinhkhoi"] .oval img { border-radius: inherit; }
+[data-theme="tinhkhoi"] .person .role { order: 2; margin: 20px 0 2px; font: 600 .875rem var(--f-ui); letter-spacing: .14em; color: var(--t-role, var(--muted)); }
+[data-theme="tinhkhoi"] .banner { order: 3; display: block; background: none; color: var(--ink); padding: 0; border-radius: 0; margin: 0 0 8px; font: 400 clamp(1.35rem, 5vw, 1.95rem)/1.2 var(--f-head); text-wrap: balance; }
+[data-theme="tinhkhoi"] .info { order: 4; font: 400 1rem/1.6 var(--f-body); color: var(--muted); max-width: 30ch; text-wrap: balance; }
+[data-theme="tinhkhoi"] .couple-amp { display: none; }
+/* Lễ thành hôn */
+[data-theme="tinhkhoi"] .event { padding: 84px 16px 90px; overflow: clip; isolation: isolate; }
+[data-theme="tinhkhoi"] .event-row { grid-template-columns: minmax(0, 1fr); gap: 34px; max-width: 1040px; }
+[data-theme="tinhkhoi"] .event-photo { width: min(74%, 330px); margin: 0 auto; aspect-ratio: 4 / 5; transform: none; border: 0; }
+[data-theme="tinhkhoi"] .event-photo img { border-radius: inherit; }
+[data-theme="tinhkhoi"].js-reveal .event-photo.reveal { transform: translateY(26px); }
+[data-theme="tinhkhoi"].js-reveal .event-photo.reveal.in, [data-theme="tinhkhoi"] .is-draft .event-photo.reveal { transform: none !important; }
+[data-theme="tinhkhoi"] .event-card { background: var(--paper); padding: 44px 22px 34px; text-align: center; }
+[data-theme="tinhkhoi"] .ev-intro { display: block; margin-bottom: 4px; }
+[data-theme="tinhkhoi"] .ev-k { font: 600 .875rem/1.5 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--t-role, var(--muted)); margin: 0 0 6px; text-wrap: balance; }
+[data-theme="tinhkhoi"] .ev-names { margin: 0; font: var(--name-style) 400 clamp(2rem, 8vw, 2.9rem)/1.15 var(--f-name); color: var(--accent); display: flex; flex-wrap: wrap; justify-content: center; gap: 0 .3em; }
+[data-theme="tinhkhoi"] .ev-names i { font: italic 400 .5em/2 var(--f-head); color: var(--t-amp, var(--accent)); }
+[data-theme="tinhkhoi"] .event-card .lead { font: italic 400 1.1rem/1.55 var(--f-body); color: var(--muted); max-width: 32ch; margin: 10px auto 0; }
+[data-theme="tinhkhoi"] .event-card:has(.dlock) > .date.big { display: none; }
+[data-theme="tinhkhoi"] .event-card .date.big { font: 500 1.4rem var(--f-head); color: var(--ink); }
+[data-theme="tinhkhoi"] .dlock { display: grid; justify-items: center; margin: 22px auto 0; }
+[data-theme="tinhkhoi"] .dl-row { display: grid !important; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 14px; width: min(100%, 360px); }
+[data-theme="tinhkhoi"] :is(.dl-m, .dl-y) { font: 600 .9375rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+[data-theme="tinhkhoi"] .dl-m { text-align: right; } [data-theme="tinhkhoi"] .dl-y { text-align: left; }
+[data-theme="tinhkhoi"] .dl-d { font: 500 3.2rem/1 var(--f-head); color: var(--accent); }
+[data-theme="tinhkhoi"] .dl-wd { order: 2; margin-top: 12px; font: 600 1rem var(--f-ui); letter-spacing: .06em; color: var(--muted); }
+[data-theme="tinhkhoi"] .dl-wd i { color: var(--accent); }
+[data-theme="tinhkhoi"] .dl-t { display: none; }
+[data-theme="tinhkhoi"] .event-card .lunar { margin-top: 6px; }
+[data-theme="tinhkhoi"] .wd .event-card .countdown { gap: 10px; margin: 26px 0; }
+[data-theme="tinhkhoi"] .wd .event-card .countdown div { width: 74px; min-width: 0; display: grid; place-content: center; padding: 12px 0; }
+[data-theme="tinhkhoi"] .wd .event-card .countdown b { font: 500 1.8rem/1 var(--f-head); color: var(--t-cd, var(--accent)); font-variant-numeric: lining-nums tabular-nums; }
+[data-theme="tinhkhoi"] .wd .event-card .countdown span { font: 600 .8125rem var(--f-ui); color: var(--muted); letter-spacing: .04em; margin-top: 4px; }
+/* Địa điểm */
+[data-theme="tinhkhoi"] .location { padding: 76px 16px 84px; }
+[data-theme="tinhkhoi"] .events { gap: 44px; max-width: 1100px; }
+[data-theme="tinhkhoi"] .ev-map { height: 220px; border-radius: var(--t-rad, 16px); box-shadow: 0 0 0 1px var(--line); background: var(--soft); }
+[data-theme="tinhkhoi"] .ev-map-load { font-family: var(--f-ui); background: repeating-linear-gradient(45deg, color-mix(in srgb, var(--accent) 6%, transparent) 0 2px, transparent 2px 14px), var(--soft); }
+[data-theme="tinhkhoi"] .ev-map-load b { color: var(--accent); }
+[data-theme="tinhkhoi"] .ev-map-load:hover b { background: var(--accent); color: var(--t-on-accent, #fff); }
+[data-theme="tinhkhoi"] .ev-card { position: relative; text-align: center; background: var(--paper); padding: 40px 22px 30px; border-radius: var(--t-rad, 16px); box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="tinhkhoi"] .ev-card::before, [data-theme="tinhkhoi"] .ev-card::after { display: none; }
+[data-theme="tinhkhoi"] .ev-card h3 { font: var(--name-style) 400 2.2rem/1.15 var(--f-name); color: var(--accent); margin: 4px 0 6px; }
+[data-theme="tinhkhoi"] .ev-place { font: 600 1rem/1.4 var(--f-ui); letter-spacing: .04em; color: var(--ink); margin-bottom: 6px; }
+[data-theme="tinhkhoi"] .ev-card :is(.ev-addr, .ev-time) { font: 400 1.03rem/1.55 var(--f-body); color: var(--muted); }
+/* Trích dẫn */
+[data-theme="tinhkhoi"] .quote { min-height: 380px; isolation: isolate; }
+[data-theme="tinhkhoi"] .quote blockquote { z-index: 3; }
+[data-theme="tinhkhoi"] .quote blockquote p { font: italic 400 clamp(1.5rem, 5vw, 2.2rem)/1.45 var(--f-head); }
+[data-theme="tinhkhoi"] .quote--noimg blockquote::before { color: var(--accent); }
+/* Album */
+[data-theme="tinhkhoi"] .gallery-sec { padding: 80px 14px; }
+[data-theme="tinhkhoi"] .wd-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 1180px; }
+[data-theme="tinhkhoi"] .wd-g { aspect-ratio: 4 / 5; border-radius: var(--t-rad, 16px); background: var(--soft); }
+[data-theme="tinhkhoi"] .wd-g img { border-radius: inherit; }
+[data-theme="tinhkhoi"] .wd-g::after { content: ""; border-radius: inherit; background: linear-gradient(transparent 50%, color-mix(in srgb, var(--accent) 40%, transparent)); }
+[data-theme="tinhkhoi"] .wd .album-card { border-radius: var(--t-rad, 16px); box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="tinhkhoi"] .wd .album-meta h3 { font: 400 1.4rem var(--f-head); color: var(--ink); }
+[data-theme="tinhkhoi"] .gallery-sec:has(> p.center .btn) .wd-g:nth-child(n + 13) { display: none; }
+@media (max-width: 760px) { [data-theme="tinhkhoi"] .gallery-sec:has(> p.center .btn) .wd-g:nth-child(n + 9) { display: none; } }
+/* Gửi ảnh */
+[data-theme="tinhkhoi"] .cta { position: relative; margin: 20px 16px 30px; padding: 58px 24px 50px; border-radius: var(--t-rad, 16px); text-align: center; background: var(--soft); box-shadow: var(--t-sh); }
+[data-theme="tinhkhoi"] .cta::before { content: ""; display: block; width: 52px; height: 32px; margin: 0 auto 14px; background: var(--t-icon-c, var(--accent)); -webkit-mask: var(--t-icon) center / contain no-repeat; mask: var(--t-icon) center / contain no-repeat; }
+[data-theme="tinhkhoi"] .wd .cta h2 { font: 400 clamp(1.8rem, 6vw, 2.5rem)/1.2 var(--f-head); }
+[data-theme="tinhkhoi"] .cta p { font: 400 1.08rem/1.6 var(--f-body); color: var(--ink); }
+/* Xác nhận, lời chúc, mừng cưới */
+[data-theme="tinhkhoi"] :is(.rsvp, .wishes, .gift) { padding: 72px 16px; overflow-x: clip; }
+[data-theme="tinhkhoi"] .rsvp { max-width: 660px; }
+[data-theme="tinhkhoi"] :is(.rsvp-card, .wish-form, .form-thanks, .rsvp-done) { background: var(--paper); border-radius: var(--t-rad, 16px); padding: 40px 22px 30px; box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="tinhkhoi"] .rsvp-card { gap: 16px; }
+[data-theme="tinhkhoi"] .rsvp-card .lead { font: italic 400 1.12rem/1.55 var(--f-body); color: var(--muted); margin: 0; }
+[data-theme="tinhkhoi"] :is(.rsvp-invitee b, .rsvp-done b) { font: var(--name-style) 400 2.2rem/1.2 var(--f-name); color: var(--accent); }
+[data-theme="tinhkhoi"] .rsvp-choice span { display: flex; align-items: center; justify-content: center; min-height: 54px; border-radius: var(--t-btn-rad, 999px); border: 1.5px solid var(--line); background: var(--t-input, #fff); font: 600 1rem/1.25 var(--f-ui); color: var(--ink); padding: 8px 12px; }
+[data-theme="tinhkhoi"] .rsvp-choice input:checked + span { background: var(--accent); border-color: var(--accent); color: var(--t-on-accent, #fff); }
+[data-theme="tinhkhoi"] :is(.rsvp-card, .wish-form) .btn { justify-self: center; min-width: 210px; }
+[data-theme="tinhkhoi"] .field-hint { font: italic .95rem var(--f-body); color: var(--muted); }
+[data-theme="tinhkhoi"] .wish-form { gap: 14px; margin-bottom: 30px; }
+[data-theme="tinhkhoi"] .wd .wish { border: 0; border-radius: var(--t-rad, 16px); background: var(--paper); padding: 22px 22px 18px; position: relative; box-shadow: 0 0 0 1px var(--line); }
+[data-theme="tinhkhoi"] .wd .wish p { font: 400 1.08rem/1.6 var(--f-body); color: var(--ink); }
+[data-theme="tinhkhoi"] .wd .wish cite { font: 600 .95rem var(--f-ui); color: var(--t-role, var(--accent)); }
+[data-theme="tinhkhoi"] .gift-card { border: 0; border-radius: var(--t-rad, 16px); background: var(--paper); box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="tinhkhoi"] .gift-side { color: var(--accent); }
+[data-theme="tinhkhoi"] .gift-qr { border-radius: 12px; border: 1.5px solid var(--line); }
+/* Chân trang */
+[data-theme="tinhkhoi"] .wd-foot { position: relative; padding: 90px 16px 70px; color: var(--t-foot-ink); overflow: clip; isolation: isolate; background: var(--t-foot-bg); }
+[data-theme="tinhkhoi"] .wd-foot .wd-mono.big { border-color: color-mix(in srgb, var(--t-foot-ink) 45%, transparent); color: var(--t-foot-ink) !important; font: 400 2rem/1 var(--f-name); }
+[data-theme="tinhkhoi"] .wd-foot .wd-mono i { color: var(--t-foot-i, var(--accent-2)); }
+[data-theme="tinhkhoi"] .wd-foot p { font: italic 400 1.2rem/1.5 var(--f-body); color: var(--t-foot-ink); }
+[data-theme="tinhkhoi"] .wd-foot .muted.small, [data-theme="tinhkhoi"] .wd-foot .music-credit { color: var(--t-foot-mute) !important; font-style: normal; font-family: var(--f-ui) !important; }
+/* Màn "Mở thiệp" */
+[data-theme="tinhkhoi"] .wd-cover-mono { border-color: var(--accent-2); color: var(--accent); font: var(--name-style) 400 1.5rem var(--f-name); }
+[data-theme="tinhkhoi"] .wd-cover-eyebrow { color: var(--t-role, var(--muted)); }
+[data-theme="tinhkhoi"] .wd-cover-names { font: var(--name-style) 400 clamp(2.6rem, 11vw, 4.2rem)/1.08 var(--f-name); color: var(--t-name, var(--ink)); }
+[data-theme="tinhkhoi"] .wd-cover-names i { font: italic 400 .42em/1.6 var(--f-head); color: var(--t-amp, var(--accent)); }
+[data-theme="tinhkhoi"] .wd-cover-date { color: var(--ink); font-family: var(--f-head); }
+[data-theme="tinhkhoi"] .wd-cover-btn { background: var(--accent); color: var(--t-on-accent, #fff); }
+/* Máy tính */
+@media (min-width: 761px) {
+  [data-theme="tinhkhoi"] section.couple, [data-theme="tinhkhoi"] .location, [data-theme="tinhkhoi"] .gallery-sec { padding: 110px 40px; }
+  [data-theme="tinhkhoi"] .couple-row { gap: 0 60px; }
+  [data-theme="tinhkhoi"] .oval { width: min(100%, 300px); }
+  [data-theme="tinhkhoi"] .event { padding: 110px 40px; }
+  [data-theme="tinhkhoi"] .event-row { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: center; gap: 64px; }
+  [data-theme="tinhkhoi"] .event-photo { width: 100%; max-width: 420px; }
+  [data-theme="tinhkhoi"] .event-card { padding: 54px 44px 40px; }
+  [data-theme="tinhkhoi"] .wd .event-card .countdown div { width: 84px; }
+  [data-theme="tinhkhoi"] .ev-map { height: 340px; }
+  [data-theme="tinhkhoi"] .ev-card { margin-left: -60px; padding: 46px 34px 34px; }
+  [data-theme="tinhkhoi"] .ev:nth-child(even) .ev-card { margin: 0 -60px 0 0; }
+  [data-theme="tinhkhoi"] .wd-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  [data-theme="tinhkhoi"] .cta { margin: 40px auto 50px; max-width: 760px; padding: 70px 50px 60px; }
+}
+@media (max-width: 760px) {
+  [data-theme="tinhkhoi"] .ev-card, [data-theme="tinhkhoi"] .ev:nth-child(even) .ev-card { margin: -10px 4px 0; }
+  [data-theme="tinhkhoi"] .wd-mono:not(.big) { font-size: 1.05rem; }
+}
+@media (max-width: 380px) {
+  [data-theme="tinhkhoi"] .couple-row { gap: 0 8px; }
+  [data-theme="tinhkhoi"] .wd .event-card .countdown div { width: 64px; }
+  [data-theme="tinhkhoi"] .wd .event-card .countdown b { font-size: 1.45rem; }
+  [data-theme="tinhkhoi"] .dl-row { gap: 8px; }
+}
+[data-theme="tinhkhoi"] .is-draft :is(.intro-main, .save-card) { animation-duration: .01s !important; animation-delay: 0s !important; }
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="tinhkhoi"] *, [data-theme="tinhkhoi"] *::before, [data-theme="tinhkhoi"] *::after { animation: none !important; transition: none !important; }
+}
+/* Thái/Lào/Trung: số ngày cưới dùng phông tiêu đề (phông tên dạng chữ viết tay khó đọc với chữ số). */
+html:is([lang="th"], [lang="lo"], [lang="zh"])[data-theme="tinhkhoi"] .wd .dl-d { font-family: var(--f-head); }
+/* ════════ Phần riêng của giao diện ════════ */
+/* ── Đầu trang: chữ trước, ảnh lớn bo mềm sau ── */
+[data-theme="tinhkhoi"] .wd-nav { border-bottom-color: transparent; }
+[data-theme="tinhkhoi"] .wd-mono { border-width: 1px; font: 300 1.05rem/1 var(--f-name); letter-spacing: .04em; }
+[data-theme="tinhkhoi"] .intro { position: relative; display: flex; flex-direction: column; align-items: center; padding: 104px 20px 64px; background: var(--page); }
+[data-theme="tinhkhoi"] .tk-hero { position: relative; order: -2; display: grid; justify-items: center; gap: 8px; margin-bottom: 10px; color: #cf8d84; }
+[data-theme="tinhkhoi"] .tk-line { width: 1px; height: 22px; background: linear-gradient(transparent, #e2b4ad); }
+[data-theme="tinhkhoi"] .tk-heart { width: 26px; height: 26px; animation: tk-beat 2.6s ease-in-out infinite; }
+@keyframes tk-beat { 0%, 70%, 100% { transform: scale(1); } 80% { transform: scale(1.15); } }
+[data-theme="tinhkhoi"] .save-card { order: -1; position: relative; background: none; padding: 0; margin: 0 auto 36px; width: min(560px, 100%); text-align: center; animation: tk-in 1.2s ease both; }
+[data-theme="tinhkhoi"] .save-card .eyebrow { letter-spacing: .3em; font: 400 .875rem var(--f-ui); color: var(--muted); }
+[data-theme="tinhkhoi"] .names { gap: 2px; margin: 18px 0 18px; letter-spacing: .02em; }
+[data-theme="tinhkhoi"] .names .amp { font: 300 .42em/1.4 var(--f-head); color: var(--t-amp); }
+[data-theme="tinhkhoi"] .save-card .date { font: 400 1.05rem var(--f-ui); letter-spacing: .14em; color: var(--ink); }
+[data-theme="tinhkhoi"] .save-card .lunar { font: 400 .95rem var(--f-ui); font-style: normal; }
+[data-theme="tinhkhoi"] .save-card .divider { margin-top: 18px; }
+[data-theme="tinhkhoi"] .intro-main { width: min(100%, 520px); margin: 0 auto; animation: tk-in 1.4s ease .25s both; }
+[data-theme="tinhkhoi"] .main-photo { aspect-ratio: 3 / 4; border-radius: 22px; border: 0; box-shadow: none; transform: none; }
+[data-theme="tinhkhoi"] .main-photo img { border-radius: 22px; }
+@keyframes tk-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+[data-theme="tinhkhoi"] .invitee b { font-weight: 300; }
+/* ── Mục: nhiều khoảng trắng, tiêu đề mảnh có số thứ tự nhỏ ── */
+[data-theme="tinhkhoi"] .sec-head::before { width: 26px; height: 26px; }
+[data-theme="tinhkhoi"] .wd h2 { font-size: clamp(1.7rem, 5.4vw, 2.4rem); letter-spacing: .02em; }
+[data-theme="tinhkhoi"] .watercolor { background: var(--paper); }
+[data-theme="tinhkhoi"] .oval { aspect-ratio: 4 / 5; border-radius: 18px; width: min(100%, 240px); }
+[data-theme="tinhkhoi"] .house { background: none; padding: 0; color: var(--muted); letter-spacing: .24em; font: 400 .875rem var(--f-ui); }
+[data-theme="tinhkhoi"] .banner { font: 300 clamp(1.3rem, 5vw, 1.8rem)/1.25 var(--f-head); }
+[data-theme="tinhkhoi"] .person .role { color: var(--accent); }
+/* ── Lễ thành hôn: lịch tháng cưới khoanh tim ── */
+[data-theme="tinhkhoi"] .event { background: var(--page); }
+[data-theme="tinhkhoi"] .event-photo { border-radius: 18px; }
+[data-theme="tinhkhoi"] .event-card { background: var(--paper); border-radius: 22px; box-shadow: 0 0 0 1px var(--line); }
+[data-theme="tinhkhoi"] .ev-names { font-weight: 300; color: var(--ink); }
+[data-theme="tinhkhoi"] .event-card:has(.cal) > .date.big { font: 400 1.1rem var(--f-ui); letter-spacing: .08em; margin-top: 10px; }
+[data-theme="tinhkhoi"] .dlock { display: none; }
+[data-theme="tinhkhoi"] .event-card:has(.dlock) > .date.big { display: block; }
+[data-theme="tinhkhoi"] .cal { display: block; width: min(100%, 340px); margin: 22px auto 6px; padding: 18px 0 6px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+[data-theme="tinhkhoi"] .cal-h { margin: 0 0 12px; font: 300 1.5rem var(--f-head); color: var(--ink); }
+[data-theme="tinhkhoi"] .cal-h i { font-style: normal; color: var(--accent-2); }
+[data-theme="tinhkhoi"] .cal-g { row-gap: 2px; font: 400 .95rem var(--f-ui); color: var(--ink); }
+[data-theme="tinhkhoi"] .cal-g b { font: 400 .8125rem var(--f-ui); color: var(--muted); }
+[data-theme="tinhkhoi"] .cal-g b:last-of-type, [data-theme="tinhkhoi"] .cal-g span:nth-child(7n + 7) { color: #a5584a; }
+[data-theme="tinhkhoi"] .cal-g span.on:nth-child(n) { color: #3d2a26; font-weight: 400; isolation: isolate; }
+[data-theme="tinhkhoi"] .cal-g .on::before { content: ""; position: absolute; inset: -2px; z-index: -1; background: #e9b8b0;
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M20 36S2 25 2 13C2 7 6.6 3 11.6 3c3.8 0 6.8 2.2 8.4 5.2C21.6 5.2 24.6 3 28.4 3 33.4 3 38 7 38 13c0 12-18 23-18 23z'/></svg>") center / contain no-repeat;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M20 36S2 25 2 13C2 7 6.6 3 11.6 3c3.8 0 6.8 2.2 8.4 5.2C21.6 5.2 24.6 3 28.4 3 33.4 3 38 7 38 13c0 12-18 23-18 23z'/></svg>") center / contain no-repeat; }
+[data-theme="tinhkhoi"] .wd .event-card .countdown { gap: 0; }
+[data-theme="tinhkhoi"] .wd .event-card .countdown div { width: auto; flex: 1; position: relative; background: none; }
+[data-theme="tinhkhoi"] .wd .event-card .countdown div + div::before { content: ":"; position: absolute; left: -3px; top: 10px; font: 300 1.6rem var(--f-head); color: var(--accent-2); }
+[data-theme="tinhkhoi"] .wd .event-card .countdown b { font: 300 2rem/1 var(--f-head); color: var(--ink); }
+/* ── Địa điểm: tối giản ── */
+[data-theme="tinhkhoi"] .ev-card { box-shadow: 0 0 0 1px var(--line); }
+[data-theme="tinhkhoi"] .ev-card h3 { font: 300 1.9rem/1.2 var(--f-head); color: var(--ink); }
+[data-theme="tinhkhoi"] .ev-place { font-weight: 400; color: var(--accent); }
+[data-theme="tinhkhoi"] .quote::after { background: rgba(40, 34, 30, .45); }
+[data-theme="tinhkhoi"] .quote.quote--noimg { background: var(--soft); }
+[data-theme="tinhkhoi"] .quote blockquote p { font: 300 clamp(1.3rem, 4.4vw, 1.9rem)/1.6 var(--f-head); font-style: normal; }
+[data-theme="tinhkhoi"] .wd-gallery { gap: 6px; }
+[data-theme="tinhkhoi"] .wd-g { border-radius: 12px; aspect-ratio: 1; }
+[data-theme="tinhkhoi"] .cta { background: var(--soft); box-shadow: none; }
+[data-theme="tinhkhoi"] .wd .btn-accent { box-shadow: none; }
+[data-theme="tinhkhoi"] .wd .wish { box-shadow: none; background: var(--soft); }
+[data-theme="tinhkhoi"] .rsvp-card, [data-theme="tinhkhoi"] .wish-form { box-shadow: 0 0 0 1px var(--line); }
+[data-theme="tinhkhoi"] .tk-foot { display: grid; justify-items: center; color: #b08a7a; margin-bottom: 18px; }
+[data-theme="tinhkhoi"] .tk-sprig { width: 120px; }
+[data-theme="tinhkhoi"] .wd-foot .wd-mono.big { font: 300 1.6rem var(--f-name); }
+[data-theme="tinhkhoi"] .wd-foot p { font-style: normal; }
+[data-theme="tinhkhoi"] .wd-cover { background: var(--page); }
+[data-theme="tinhkhoi"] .wd-cover-names { font-weight: 300; }
+[data-theme="tinhkhoi"] .ic { --ic-paper: #ffffff; --ic-env-front: #f3eee7; --ic-env-flap: #ece5db; --ic-env-in: #d9c7b8; --ic-wax: #b08a7a; --ic-wax-ink: #fffaf6;
+  --ic-card-bg: #ffffff; --ic-line: rgba(125, 85, 70, .3); }
+@media (min-width: 761px) {
+  [data-theme="tinhkhoi"] { --name-size: clamp(2.8rem, 4.2vw, 4.2rem); }
+  [data-theme="tinhkhoi"] .intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 7vw; align-items: center; min-height: 100svh; padding: 110px 9vw 80px; }
+  [data-theme="tinhkhoi"] .tk-hero { grid-column: 1; grid-row: 1; align-self: start; margin-top: 30px; }
+  [data-theme="tinhkhoi"] .save-card { grid-column: 1; grid-row: 1; margin: 0; }
+  [data-theme="tinhkhoi"] .intro-main { grid-column: 2; grid-row: 1; width: min(100%, 440px); justify-self: start; }
+  [data-theme="tinhkhoi"] .intro--noimg { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* 07/10 (QA-NT-07/11/12, BA P1-06): không giả đậm/nghiêng Gowun Dodum; "&" đứng riêng giữa hai tên; một màu ấm hồng đào; ảnh lộ sớm hơn ở màn đầu. */
+[data-theme="tinhkhoi"] body.wd { font-synthesis: none; }
+[data-theme="tinhkhoi"] :is(.lunar, .lead, .field-hint, .wd label small, .rsvp-card .lead) { font-style: normal; }
+[data-theme="tinhkhoi"] .ev-names { flex-direction: column; align-items: center; gap: 0; }
+[data-theme="tinhkhoi"] .ev-names i { line-height: 1.5; }
+[data-theme="tinhkhoi"] .save-card .date { display: inline-block; padding: 6px 16px; border-radius: 999px; background: #f6e3df; }
+[data-theme="tinhkhoi"] .wd .wish:nth-child(3n + 2) { background: #f8ebe8; }
+[data-theme="tinhkhoi"] .ic { --muted: #5a544e; --ic-to-small: #5a544e; --ic-line: rgba(125, 85, 70, .4); --ic-env-in: #e9b8b0; --ic-wax: #c47f76; }
+@media (max-width: 760px) { [data-theme="tinhkhoi"] .intro { padding-top: 84px; } [data-theme="tinhkhoi"] .names { margin: 10px 0 12px; } [data-theme="tinhkhoi"] .save-card { margin-bottom: 26px; } }

@@ -34,7 +34,7 @@
    ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
 .ic--v-santorini.ic {
   --accent: #1f4e9c; --accent-2: #2f8fa3; --ink: #182a47; --muted: #4a5870; --page: #f6f4ee; --paper: #fff;
-  --f-head: "Philosopher", "Prata", Georgia, serif; --f-name: "Philosopher", "Prata", Georgia, serif;
+  --f-head: "Philosopher", "Prata", Georgia, serif; --f-guest: initial; --f-guest-style: initial; --f-name: "Philosopher", "Prata", Georgia, serif;
   --f-body: "Faustina", "Lora", Georgia, serif; --f-ui: "Philosopher", "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
   --ic-paper: #fff; --ic-on-accent: #fff; --ic-line: rgba(31, 78, 156, .3); --ic-card-bg: #fffefa; --ic-card-deco: linear-gradient(transparent, transparent);
   --ic-to-small: #2b6a80; --ic-to-name: #1f4e9c;

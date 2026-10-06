@@ -21,7 +21,7 @@ html .ic.ic--v-gatsby {
   --accent: #d4b46a; --accent-2: #b08d4a; --ink: #f1e8d4; --muted: #c2b69c; --page: #0b0a08; --paper: #16140f;
   --ic-paper: #16140f; --ic-line: rgba(212, 180, 106, .5); --ic-on-accent: #17120a;
   --ic-to-small: #c2b69c; --ic-to-name: #f3dfa2;
-  --f-name: "Playfair Display SC", "Playfair Display", Georgia, serif; --f-head: "Playfair Display SC", "Playfair Display", Georgia, serif;
+  --f-guest: initial; --f-guest-style: initial; --f-name: "Playfair Display SC", "Playfair Display", Georgia, serif; --f-head: "Playfair Display SC", "Playfair Display", Georgia, serif;
   --f-body: "Josefin Sans", "Be Vietnam Pro", system-ui, sans-serif; --f-ui: "Josefin Sans", "Be Vietnam Pro", system-ui, sans-serif;
   --name-style: normal;
   --vg-w: min(340px, 82vw, calc((100vh - 150px) / 1.25));   /* điện thoại xoay ngang: bìa vừa chiều cao (R1-CARDS-01) */ --vg-r: calc(var(--vg-w) * .56);

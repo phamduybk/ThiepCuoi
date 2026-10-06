@@ -92,7 +92,7 @@
 .ed-status b { font-size: 14px; }
 .ed-bar[data-unpublished="1"] .ed-status b { color: #ffd479; }
 .ed-hint { font-size: 12px; opacity: .7; }
-/* 10 giao diện: hàng riêng dưới cùng thanh công cụ; hẹp quá thì cuộn ngang (không xuống dòng). */
+/* 20 giao diện thường (+10 VIP): hàng riêng dưới cùng thanh công cụ; hẹp quá thì cuộn ngang (không xuống dòng). */
 .ed-themes { position: relative; order: 5; flex: 1 1 100%; display: flex; justify-content: center; gap: 4px; margin: 0; padding: 8px 2px 0;
   border-top: 1px solid rgba(255,255,255,.12); overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; overscroll-behavior-x: contain; }
 .ed-themes::-webkit-scrollbar { display: none; }
@@ -116,6 +116,19 @@
 .tl-demsao { background: radial-gradient(circle at 1px 1px, #fff 0 .6px, transparent 1px) 0 0 / 7px 9px, radial-gradient(circle at 70% 25%, #2d3d80, #0d1530 70%); color: #e9c97f; }
 .tl-demsao svg { width: 20px; height: 20px; }
 .tl-datnung { background: radial-gradient(circle at 72% 30%, #d9a05b 0 26%, transparent 27%), linear-gradient(160deg, #f6ede2 20%, #e7c3ad 55%, #a94f32); color: #fff; }
+/* 10 giao diện thường thêm 07/10 (biểu tượng: symbol tlg-<khóa> trong _editor.php), đứng đầu thanh + nhãn "Mới". */
+.ed-theme { position: relative; }
+.ed-new { position: absolute; top: -3px; right: 0; z-index: 1; padding: 1px 5px; border-radius: 999px; background: #f0d58e; color: #2a2520; font: 700 9px/1.3 system-ui, sans-serif; font-style: normal; letter-spacing: .02em; pointer-events: none; }
+.tl-sen { background: radial-gradient(circle at 50% 80%, #8fb8a5 0 28%, transparent 29%), linear-gradient(160deg, #fdf0f2, #f1b6c6 60%, #c45f80); color: #a83f62; }
+.tl-maidao { background: radial-gradient(circle at 28% 30%, #fbe3a3 0 18%, transparent 19%), linear-gradient(150deg, #fffaf1 25%, #f2b8c6 62%, #b8365c); color: #b8365c; }
+.tl-hoian { background: linear-gradient(180deg, #172f3a 0 46%, #e9c46a 46% 100%); color: #e1543a; }
+.tl-gomlam { background: radial-gradient(circle, #fffefa 0 52%, #9fb4d6 53% 60%, #f7f4ec 61%); color: #23457f; box-shadow: inset 0 0 0 1.5px #23457f; }
+.tl-dongque { background: linear-gradient(180deg, #f6f1de 0 40%, #a6c35a 40% 62%, #d9b24a 62% 80%, #46701f 80%); color: #6b4a2c; }
+.tl-hoasua { background: linear-gradient(135deg, #f3ebd8, #e6dcc4); color: #2c5743; }
+.tl-bienxanh { background: linear-gradient(180deg, #f6d8b8 0 34%, #3aa3a6 34% 70%, #0e676d 70%); color: #fff; }
+.tl-hue { background: radial-gradient(circle at 50% 120%, #c6a7cf 0 40%, transparent 41%), linear-gradient(160deg, #f6f1f6, #c6a7cf 55%, #5d2f6b); color: #5d2f6b; }
+.tl-tinhkhoi { background: #faf8f4; color: #7d5546; box-shadow: inset 0 0 0 1.5px #d9c7b8; }
+.tl-dongho { background: radial-gradient(circle at 70% 25%, #e2b23a 0 18%, transparent 19%), linear-gradient(160deg, #f2e6cc 30%, #ead9b4); color: #a8322a; box-shadow: inset 0 0 0 2.5px #1f1a17; }
 /* 10 giao diện VIP: logo = ảnh xem trước thu nhỏ; bản cài máy có ổ khóa (bấm -> hộp giới thiệu, không đổi giao diện).
    20 nút: căn giữa "an toàn" (thừa chỗ thì giữa, thiếu chỗ thì cuộn được từ đầu). */
 .ed-themes { justify-content: flex-start; }

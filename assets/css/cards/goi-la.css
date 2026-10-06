@@ -1,0 +1,51 @@
+/* Mẫu BÁNH PHU THÊ (khóa goi-la, lạt đỏ như bánh phu thê — BA P1-10; thêm 07/10/2026 — đi cặp giao diện "dongque"). Bìa: gói vuông bọc 4 vạt lá chuối gấp vào giữa, buộc chữ
+   thập bằng lạt tre, thắt nút; nhãn giấy "Thân gửi". Chạm -> lạt tuột ra (.05–.35s), vạt trên lật lên (.3s), vạt dưới (.45s),
+   vạt trái (.6s), vạt phải (.75s) -> tờ giấy dó chữ lồng lộ ra, gói tan (1,15s). */
+.ic--goi-la {
+  --ic-out-delay: 1.16s;
+  --gl2-a: #5f9a3a; --gl2-b: #3f7a28; --gl2-c: #2f5d1e; --gl2-tie: #c0392b;
+  --gl2-vein: repeating-linear-gradient(var(--gl2-ang, 90deg), rgba(255, 255, 255, .14) 0 1px, transparent 1px 7px);
+}
+.ic--goi-la .ic-env-btn { width: min(320px, 82vw, calc(100vh - 160px)); aspect-ratio: 1; perspective: 1000px; }
+.gl2, .gl2 > span { position: absolute; display: block; }
+.gl2 { inset: 0; transform-style: preserve-3d; }
+.gl2-paper { inset: 2%; border-radius: 3px; display: grid; place-items: center; background: var(--ic-grain), #f8f1dc; box-shadow: 0 30px 50px -24px rgba(0, 0, 0, .5); }
+.gl2-paper > span { font: var(--name-style, normal) 400 2.2rem/1 var(--f-name, Georgia, serif); color: var(--accent-ink, var(--accent)); }
+.gl2-paper i { font-style: normal; font-size: .55em; margin: 0 3px; }
+.gl2-leaf { inset: 0; transform-style: preserve-3d; -webkit-backface-visibility: hidden; backface-visibility: hidden; transition: transform .5s var(--ic-fold), opacity .2s linear; }
+.gl2-t { clip-path: polygon(0 0, 100% 0, 50% 54%); transform-origin: 50% 0; background: var(--gl2-vein), linear-gradient(180deg, var(--gl2-a), var(--gl2-b)); transition-delay: .3s, .62s; z-index: 4; }
+.gl2-b { clip-path: polygon(0 100%, 100% 100%, 50% 46%); transform-origin: 50% 100%; background: var(--gl2-vein), linear-gradient(0deg, var(--gl2-a), var(--gl2-b)); transition-delay: .45s, .75s; z-index: 1; }
+.gl2-l { --gl2-ang: 0deg; clip-path: polygon(0 0, 0 100%, 54% 50%); transform-origin: 0 50%; background: var(--gl2-vein), linear-gradient(90deg, var(--gl2-b), var(--gl2-c)); transition-delay: .6s, .9s; z-index: 2; }
+.gl2-r { --gl2-ang: 0deg; clip-path: polygon(100% 0, 100% 100%, 46% 50%); transform-origin: 100% 50%; background: var(--gl2-vein), linear-gradient(270deg, var(--gl2-b), var(--gl2-c)); transition-delay: .75s, 1.02s; z-index: 3; }
+.gl2-tie { background: repeating-linear-gradient(var(--gl2-ta, 90deg), var(--gl2-tie) 0 6px, #8e2219 6px 7px); z-index: 5; transition: transform .35s ease .05s, opacity .2s ease .25s; }
+.gl2-tie-h { left: -2%; right: -2%; top: 47%; height: 6%; }
+.gl2-tie-v { --gl2-ta: 0deg; top: -2%; bottom: -2%; left: 47%; width: 6%; }
+.gl2-knot { left: 50%; top: 50%; width: 15%; height: 15%; translate: -50% -50%; border-radius: 40%; z-index: 6; background: radial-gradient(circle at 40% 35%, #e05a48, #8e2219); box-shadow: 0 3px 6px rgba(0, 0, 0, .35); transition: transform .35s ease, opacity .2s ease .15s; }
+.ic--goi-la .ic-env-to { right: -4%; bottom: -6%; width: 52%; z-index: 7; justify-items: center; text-align: center; padding: 8px 10px 9px; border-radius: 3px; transform: rotate(-4deg);
+  background: var(--ic-grain), #fbf6e4; box-shadow: 0 0 0 1px rgba(120, 90, 40, .35), 0 10px 18px -10px rgba(0, 0, 0, .45); }
+.ic--goi-la .ic-env-to b { font-size: clamp(1rem, 4.4vw, 1.3rem); }
+.ic--goi-la:not(.is-opening) .ic-env-btn { animation: ic-float 6s ease-in-out 2; }
+/* Mở */
+.ic--goi-la.is-opening .gl2-tie-h { transform: scaleX(0); opacity: 0; }
+.ic--goi-la.is-opening .gl2-tie-v { transform: scaleY(0); opacity: 0; }
+.ic--goi-la.is-opening .gl2-knot { transform: scale(0); opacity: 0; }
+.ic--goi-la.is-opening .gl2-t { transform: rotateX(170deg); opacity: 0; }
+.ic--goi-la.is-opening .gl2-b { transform: rotateX(-170deg); opacity: 0; }
+.ic--goi-la.is-opening .gl2-l { transform: rotateY(-170deg); opacity: 0; }
+.ic--goi-la.is-opening .gl2-r { transform: rotateY(170deg); opacity: 0; }
+.ic--goi-la.is-opening .ic-env { animation-name: gl2-out; }
+@keyframes gl2-out { to { opacity: 0; transform: scale(1.06); } }
+/* Thiệp mở: giấy dó, mép lá xanh trái phải, bông lúa trên đỉnh */
+.ic--goi-la .ic-card { background: var(--ic-grain), #f8f1dc; box-shadow: -10px 0 0 -2px var(--gl2-b), 10px 0 0 -2px var(--gl2-b), 0 50px 90px -40px rgba(0, 0, 0, .5); }
+.ic--goi-la.is-open .ic-card { animation: gl2-card-in .75s var(--ic-ease) both; }
+@keyframes gl2-card-in { from { opacity: .3; transform: scale(.94); } 25% { opacity: 1; } to { opacity: 1; transform: none; } }
+.ic--goi-la .gl2-ear { width: 150px; margin: -18px auto 4px; }
+.ic--goi-la .gl2-ear svg { width: 100%; height: auto; display: block; }
+.ic--goi-la .ic-scroll {
+  /* 07/10 (QA-NT-01/03): nền giấy của mẫu này cố định màu sáng -> chữ cố định màu tối (không lấy màu chữ sáng của giao diện tối),
+     màu nhấn dùng --ic-acc-light (accent đậm đủ ≥4,5:1 trên giấy sáng, invite-card.css). */
+  --ink: #2b2521; --muted: #4a413a; --ic-paper: #f8f1dc; --ic-to-small: #4a413a; --ic-to-name: #2b2521;
+  --accent-ink: var(--ic-acc-light); --accent: var(--ic-acc-light); --ic-line: rgba(70, 50, 30, .3); --ic-on-accent: #fff;
+  color: #2b2521;
+}
+.ic--goi-la .ic-scroll .ic-link:not(#_) { color: var(--accent-ink); }   /* thắng luật màu link của giao diện (.wd a) */

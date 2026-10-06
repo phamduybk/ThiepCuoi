@@ -5,7 +5,7 @@ return array(
 	'Giao diện này chưa dùng được trên máy này — hãy chọn một giao diện khác.' => 'This theme isn’t available on this computer — please choose another.',
 	'Giao diện "{name}" chưa dùng được trên máy này.' => 'The "{name}" theme isn’t available on this computer.',
 	'Mẫu thiệp này chưa dùng được trên máy này.' => 'This invitation design isn’t available on this computer.',
-	'10 kiểu mở thiệp có hiệu ứng 3D, tự lấy màu theo giao diện trang.' => '10 invitation designs with 3D opening effects, coloured to match your theme.',
+	'20 kiểu mở thiệp có hiệu ứng 3D, tự lấy màu theo giao diện trang.' => '20 invitation designs with 3D opening effects, coloured to match your theme.',
 	'mở khi kết nối tên miền riêng' => 'unlocks when you connect your own domain',
 	'giao diện VIP' => 'VIP theme',
 	'{name} — mẫu thiệp VIP' => '{name} — VIP invitation design',

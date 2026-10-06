@@ -1,0 +1,47 @@
+/* Mẫu THƯ TRONG CHAI (chai-thu, thêm 07/10/2026 — đi cặp giao diện "bienxanh"). Bìa: bãi cát + sóng vỗ, chai thủy tinh nằm
+   nghiêng, cuộn thư buộc dây trong chai. Chạm -> nút bần bật bay (.05–.4s), cuộn thư trượt ra khỏi cổ chai (.3–.85s), chai lăn
+   đi, cuộn thư dựng lên và trải dài (.8–1.2s) rồi tan thành thiệp (1,22s). */
+.ic--chai-thu { --ic-out-delay: 1.22s; --ct-glass: rgba(150, 214, 206, .42); }
+.ic--chai-thu .ic-env-btn { width: min(340px, 86vw, calc((100vh - 150px) * 1.1)); aspect-ratio: 1 / .92; }
+.ct, .ct > span, .ct-bottle > span { position: absolute; display: block; }
+.ct { inset: 0; border-radius: 18px; overflow: hidden; background: linear-gradient(180deg, #8fd0c9 0 34%, #2a9c9e 34% 46%, #64c0bb 46% 52%, #efe4cf 52%); box-shadow: 0 30px 50px -26px rgba(0, 0, 0, .5); }
+.ct-sea { left: 0; right: 0; top: 34%; height: 20%; }
+.ct-sea i { position: absolute; left: 0; width: calc(100% + 120px); height: 12px; background: rgba(255, 255, 255, .6);
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='12' viewBox='0 0 60 12' preserveAspectRatio='none'><path d='M0 6C10 0 20 0 30 6S50 12 60 6V12H0z'/></svg>") 0 0 / 60px 12px repeat-x;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='12' viewBox='0 0 60 12' preserveAspectRatio='none'><path d='M0 6C10 0 20 0 30 6S50 12 60 6V12H0z'/></svg>") 0 0 / 60px 12px repeat-x; animation: ct-drift 6s linear infinite; }
+.ct-sea i:first-child { top: 30%; } .ct-sea i + i { top: 72%; opacity: .7; animation-duration: 9s; animation-direction: reverse; }
+@keyframes ct-drift { to { transform: translateX(-60px); } }
+.ct-sand { left: 0; right: 0; bottom: 0; height: 48%; background: radial-gradient(circle, rgba(160, 130, 80, .25) 0 1px, transparent 1.5px) 0 0 / 9px 9px; }
+.ct-bottle { left: 14%; top: 50%; width: 66%; height: 22%; transform: rotate(-14deg); transition: transform .7s cubic-bezier(.5, 0, .7, .4) .8s, opacity .3s ease .95s; }
+.ct-glass { left: 0; top: 0; width: 76%; height: 100%; border-radius: 40% 26% 26% 40% / 50%; background: var(--ct-glass); box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .55), inset 0 -6px 10px rgba(14, 103, 109, .3), 0 12px 14px -10px rgba(0, 0, 0, .4); }
+.ct-neck { left: 74%; top: 30%; width: 18%; height: 40%; border-radius: 3px 8px 8px 3px; background: var(--ct-glass); box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .55); }
+.ct-cork { left: 90%; top: 28%; width: 11%; height: 44%; border-radius: 3px; background: linear-gradient(90deg, #b9875a, #8e6238); transition: transform .4s cubic-bezier(.2, .9, .3, 1.2) .05s, opacity .2s ease .35s; }
+.ct-roll { left: 12%; top: 26%; width: 60%; height: 48%; border-radius: 30px; background: linear-gradient(180deg, #fffaf0, #efe2c4); box-shadow: inset 0 0 0 1px rgba(150, 120, 70, .4);
+  transition: transform .55s cubic-bezier(.4, 0, .3, 1) .3s, opacity .15s linear .8s; }
+.ct-roll::after { content: ""; position: absolute; left: 46%; top: -4px; bottom: -4px; width: 5px; background: #c0533c; border-radius: 2px; }
+.ct-shine { left: 8%; top: 14%; width: 50%; height: 14%; border-radius: 99px; background: rgba(255, 255, 255, .6); }
+.ct-scroll { left: 50%; top: 18%; width: 46%; height: 6%; margin-left: -23%; border-radius: 30px; background: linear-gradient(180deg, #fffaf0, #efe2c4); opacity: 0; transform-origin: 50% 0;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .45); transition: opacity .1s linear .8s, transform .45s var(--ic-ease) .82s; }
+.ic--chai-thu .ic-env-to { left: 8%; right: 8%; bottom: 7%; justify-items: center; text-align: center; transition: opacity .2s; }
+.ic--chai-thu .ic-env-to small { color: #6b5536; } .ic--chai-thu .ic-env-to b { color: #10313b; }
+/* Mở */
+.ic--chai-thu.is-opening .ct-cork { transform: translate(120%, -260%) rotate(120deg); opacity: 0; }
+.ic--chai-thu.is-opening .ct-roll { transform: translateX(110%); opacity: 0; }
+.ic--chai-thu.is-opening .ct-bottle { transform: translate(-80%, 30%) rotate(-40deg); opacity: 0; }
+.ic--chai-thu.is-opening .ct-scroll { opacity: 1; transform: scaleY(11) scaleX(1.5); }
+.ic--chai-thu.is-opening .ic-env { animation-name: ct-out; }
+@keyframes ct-out { to { opacity: 0; transform: translateY(-16px) scale(1.04); } }
+/* Thiệp mở: tờ giấy cuộn, hai mép cuộn tròn trên/dưới */
+.ic--chai-thu .ic-card { margin: 26px 0; background: var(--ic-grain), linear-gradient(180deg, #fffaf0, #f8efda); border-radius: 2px; }
+.ic--chai-thu .ct-edge { position: absolute; left: -12px; right: -12px; height: 26px; border-radius: 14px; background: linear-gradient(180deg, #f3e6c8, #fffaf0 45%, #e3d2a8); box-shadow: 0 6px 10px -6px rgba(0, 0, 0, .35); }
+.ic--chai-thu .ct-edge-t { top: -14px; } .ic--chai-thu .ct-edge-b { bottom: -14px; }
+.ic--chai-thu.is-open .ic-card { animation: ct-card-in .8s var(--ic-ease) both; transform-origin: 50% 0; }
+@keyframes ct-card-in { from { opacity: .3; transform: scaleY(.3); } 25% { opacity: 1; } to { opacity: 1; transform: none; } }
+.ic--chai-thu .ic-scroll {
+  /* 07/10 (QA-NT-01/03): nền giấy của mẫu này cố định màu sáng -> chữ cố định màu tối (không lấy màu chữ sáng của giao diện tối),
+     màu nhấn dùng --ic-acc-light (accent đậm đủ ≥4,5:1 trên giấy sáng, invite-card.css). */
+  --ink: #2b2521; --muted: #4a413a; --ic-paper: #fffaf0; --ic-to-small: #4a413a; --ic-to-name: #2b2521;
+  --accent-ink: var(--ic-acc-light); --accent: var(--ic-acc-light); --ic-line: rgba(70, 50, 30, .3); --ic-on-accent: #fff;
+  color: #2b2521;
+}
+.ic--chai-thu .ic-scroll .ic-link:not(#_) { color: var(--accent-ink); }   /* thắng luật màu link của giao diện (.wd a) */

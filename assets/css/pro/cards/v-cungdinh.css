@@ -41,7 +41,7 @@ html .ic.ic--v-cungdinh {
   --accent: #1e3f86; --accent-2: #c9961a; --ink: #172a5c; --muted: #5c4a1f; --page: #0c1d45; --paper: #fbf1d0;
   --ic-paper: #fbf1d0; --ic-line: rgba(201, 150, 26, .6); --ic-on-accent: #fff3d0;
   --ic-to-small: #6b5212; --ic-to-name: #1e3f86;
-  --f-name: "Yeseva One", "Prata", Georgia, serif; --f-head: "Yeseva One", "Prata", Georgia, serif;
+  --f-guest: initial; --f-guest-style: initial; --f-name: "Yeseva One", "Prata", Georgia, serif; --f-head: "Yeseva One", "Prata", Georgia, serif;
   --f-body: "Alegreya", "Lora", Georgia, serif; --f-ui: "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
   --vc-w: min(336px, 80vw, calc((100vh - 150px) / 1.25));   /* xoay ngang: vừa chiều cao (R1-CARDS-01) */ --vc-h: calc(var(--vc-w) * 1.42);
   --ic-out-delay: 1.95s;

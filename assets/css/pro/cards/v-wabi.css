@@ -30,7 +30,7 @@
 html .ic.ic--v-wabi {
   --wb-ink: #1c1a17; --wb-son: #b23a2b; --wb-son-d: #8f2a1e; --wb-sakura: #e9c9c3; --wb-gold: #c9a24f; --wb-paper: #f8f5ee; --wb-muted: #5f5850;
   --accent: #b23a2b; --accent-2: #e9c9c3; --ink: #1c1a17; --muted: #5f5850; --page: #ece6da; --paper: #f8f5ee;
-  --f-head: "Gowun Batang", "Noto Serif Display", Georgia, serif; --f-name: "Gowun Batang", Georgia, serif;
+  --f-head: "Gowun Batang", "Noto Serif Display", Georgia, serif; --f-guest: initial; --f-guest-style: initial; --f-name: "Gowun Batang", Georgia, serif;
   --f-body: "Gowun Batang", Georgia, serif; --f-ui: "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
   --ic-paper: #f8f5ee; --ic-on-accent: #fffaf3; --ic-line: rgba(28, 26, 23, .22); --ic-card-bg: #f8f5ee;
   --ic-to-small: #5f5850; --ic-to-name: #1c1a17; --ic-out-delay: 1.62s;

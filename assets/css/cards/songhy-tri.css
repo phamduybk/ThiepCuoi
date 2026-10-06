@@ -124,3 +124,6 @@
   @keyframes sh-fold-r { from { transform: rotateY(-110deg); } to { transform: none; } }
   .ic--songhy-tri .ic-card { transform-style: preserve-3d; }
 }
+
+/* Tên khách: giữ Prata (07/10, biến --ic-guest-font). */
+.ic--songhy-tri { --f-guest: "Prata", Georgia, serif; --f-guest-style: normal; }

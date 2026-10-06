@@ -1,0 +1,45 @@
+/* Mẫu LỊCH BÓC (lich-boc, thêm 07/10/2026 — đi cặp giao diện "hoasua"). Bìa: cuốn lịch bóc treo tường — gáy đỏ gạch có lò xo,
+   tờ trên cùng in "Thân gửi + tên khách"; dưới là 3 tờ ngày trước ngày cưới và tờ NGÀY CƯỚI (số đỏ to, tháng · năm, thứ).
+   Chạm -> tờ trên cùng bóc lật lên bay (.05s), rồi 3 tờ ngày lần lượt bóc nhanh dần (.4 / .65 / .85s), dừng ở tờ ngày cưới,
+   tờ ngày cưới tiến lại gần rồi tan thành thiệp (1,3s). */
+.ic--lich-boc { --ic-out-delay: 1.32s; --lb-red: #a3432a; }
+.ic--lich-boc .ic-env-btn { width: min(280px, 72vw, calc((100vh - 150px) * .8)); aspect-ratio: 4 / 5; perspective: 1100px; }
+.lbc, .lbc > span { position: absolute; display: block; }
+.lbc { inset: 0; transform-style: preserve-3d; transition: transform .5s var(--ic-ease) 1s; }
+.lbc-back { inset: 3% -3% -3% 3%; background: #2a2620; border-radius: 4px; box-shadow: 0 30px 50px -24px rgba(0, 0, 0, .55); }
+.lbc > .lbc-page { display: grid; }
+.lbc-page { left: 0; right: 0; top: 9%; bottom: 0; border-radius: 0 0 3px 3px; background: var(--ic-grain), #fffef8; display: grid; place-content: center; justify-items: center; gap: 4px;
+  transform-origin: 50% 0; box-shadow: 0 1px 0 #e6dfcc, 0 2px 0 #fbf8ef, 0 3px 0 #e0d8c2; transition: transform .38s cubic-bezier(.5, 0, .75, .3), opacity .2s linear; }
+.lbc-page b { font: 700 4.4rem/1 var(--f-head, Georgia, serif); color: #2a2620; }
+.lbc-day b { font-size: 5.6rem; color: var(--lb-red); }
+.lbc-day small { font: 600 .9rem/1.3 var(--f-ui, system-ui, sans-serif); letter-spacing: .08em; color: #2a2620; text-transform: uppercase; }
+.lbc-p3 b, .lbc-p2 b, .lbc-p1 b { color: #3d382e; }
+.lbc-p1 { transition-delay: .85s, 1.05s; } .lbc-p2 { transition-delay: .65s, .85s; } .lbc-p3 { transition-delay: .4s, .62s; }
+.lbc-top { transition-delay: .05s, .3s; }
+.lbc-bind { left: -2%; right: -2%; top: 0; height: 11%; border-radius: 3px; background: var(--lb-red); z-index: 9;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .2), 0 4px 8px -4px rgba(0, 0, 0, .5); }
+.lbc-bind::before { content: ""; position: absolute; left: 10%; right: 10%; top: -30%; height: 60%; background: radial-gradient(circle at 50% 70%, #d8d2c4 0 3.5px, #6a645a 4px, transparent 4.5px) 0 0 / 20px 100% repeat-x; }
+.lbc > .lbc-day { z-index: 1; } .lbc > .lbc-p1 { z-index: 2; } .lbc > .lbc-p2 { z-index: 3; } .lbc > .lbc-p3 { z-index: 4; } .lbc > .lbc-top { z-index: 5; }
+.ic--lich-boc .ic-env-to { left: 8%; right: 8%; top: 40%; z-index: 6; transform: translateZ(4px); justify-items: center; text-align: center; transition: opacity .15s; }
+.ic--lich-boc .ic-env-to b { font-size: clamp(1.2rem, 5vw, 1.6rem); }
+.ic--lich-boc .lbc-top::after { content: ""; position: absolute; left: 20%; right: 20%; top: 24%; height: 2px; background: var(--lb-red); opacity: .6; }
+/* Mở: bóc từng tờ */
+.ic--lich-boc.is-opening .lbc-top, .ic--lich-boc.is-opening .lbc-p { transform: rotateX(-115deg) translateY(-20%); opacity: 0; }
+.ic--lich-boc.is-opening .lbc { transform: translateZ(80px); }
+.ic--lich-boc.is-opening .ic-env { animation-name: lbc-out; }
+@keyframes lbc-out { to { opacity: 0; transform: scale(1.1); } }
+/* Thiệp mở: gáy lịch đỏ trên đỉnh, giấy lịch trắng ngà */
+.ic--lich-boc .ic-card { padding-top: 70px; border-radius: 0 0 4px 4px; background: var(--ic-grain), #fffef8; }
+.ic--lich-boc .ic-card > .lbc-head { position: absolute; left: -8px; right: -8px; top: 0; height: 30px; border-radius: 3px; background: var(--lb-red); box-shadow: 0 4px 8px -4px rgba(0, 0, 0, .45); }
+.ic--lich-boc .lbc-head::before { content: ""; position: absolute; left: 10%; right: 10%; top: -9px; height: 18px; background: radial-gradient(circle at 50% 70%, #d8d2c4 0 3.5px, #6a645a 4px, transparent 4.5px) 0 0 / 22px 100% repeat-x; }
+.ic--lich-boc.is-open .ic-card { animation: lbc-card-in .7s var(--ic-ease) both; }
+@keyframes lbc-card-in { from { opacity: .3; transform: scale(1.06); } 25% { opacity: 1; } to { opacity: 1; transform: none; } }
+.ic--lich-boc .ic-dmy b:first-child { color: var(--lb-red); font-size: 1.25em; }
+.ic--lich-boc .ic-scroll {
+  /* 07/10 (QA-NT-01/03): nền giấy của mẫu này cố định màu sáng -> chữ cố định màu tối (không lấy màu chữ sáng của giao diện tối),
+     màu nhấn dùng --ic-acc-light (accent đậm đủ ≥4,5:1 trên giấy sáng, invite-card.css). */
+  --ink: #2b2521; --muted: #4a413a; --ic-paper: #fffef8; --ic-to-small: #4a413a; --ic-to-name: #2b2521;
+  --accent-ink: var(--ic-acc-light); --accent: var(--ic-acc-light); --ic-line: rgba(70, 50, 30, .3); --ic-on-accent: #fff;
+  color: #2b2521;
+}
+.ic--lich-boc .ic-scroll .ic-link:not(#_) { color: var(--accent-ink); }   /* thắng luật màu link của giao diện (.wd a) */

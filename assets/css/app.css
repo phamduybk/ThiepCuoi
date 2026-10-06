@@ -386,6 +386,16 @@ details > summary { cursor: pointer; }
 .tl-vuonhoa { background: linear-gradient(135deg, #f5f2e8, #a8b58a 60%, #5c6b3a); }
 .tl-demsao { background: radial-gradient(circle at 68% 30%, #f3dfaa 0 14%, transparent 15%), radial-gradient(circle at 70% 25%, #2d3d80, #0d1530 70%); }
 .tl-datnung { background: radial-gradient(circle at 72% 30%, #d9a05b 0 26%, transparent 27%), linear-gradient(160deg, #f6ede2 20%, #e7c3ad 55%, #a94f32); }
+.tl-sen { background: radial-gradient(circle at 50% 82%, #8fb8a5 0 26%, transparent 27%), linear-gradient(160deg, #fdf0f2, #f1b6c6 60%, #c45f80); }
+.tl-maidao { background: radial-gradient(circle at 30% 30%, #e3a21a 0 16%, transparent 17%), linear-gradient(150deg, #fffaf1 25%, #f2b8c6 62%, #b8365c); }
+.tl-hoian { background: radial-gradient(circle at 50% 44%, #e1543a 0 18%, transparent 19%), linear-gradient(180deg, #172f3a 0 46%, #e9c46a 46% 100%); }
+.tl-gomlam { background: radial-gradient(circle, #fffefa 0 40%, #23457f 41% 46%, #fffefa 47% 54%, #9fb4d6 55% 62%, #f7f4ec 63%); box-shadow: inset 0 0 0 1.5px #23457f; }
+.tl-dongque { background: linear-gradient(180deg, #f6f1de 0 40%, #a6c35a 40% 62%, #d9b24a 62% 80%, #46701f 80%); }
+.tl-hoasua { background: linear-gradient(90deg, #2c5743 0 22%, #f3ebd8 22% 78%, #2c5743 78%); box-shadow: inset 0 0 0 1.5px #2c5743; }
+.tl-bienxanh { background: radial-gradient(circle at 70% 26%, #f08a6c 0 12%, transparent 13%), linear-gradient(180deg, #f6d8b8 0 40%, #3aa3a6 40% 70%, #0e676d 70%); }
+.tl-hue { background: radial-gradient(circle at 50% 120%, #c6a7cf 0 40%, transparent 41%), linear-gradient(160deg, #f6f1f6, #c6a7cf 55%, #5d2f6b); }
+.tl-tinhkhoi { background: radial-gradient(circle at 50% 50%, #d9c7b8 0 14%, transparent 15%), #faf8f4; box-shadow: inset 0 0 0 1.5px #d9c7b8; }
+.tl-dongho { background: radial-gradient(circle at 70% 25%, #e2b23a 0 18%, transparent 19%), radial-gradient(circle at 35% 65%, #a8322a 0 20%, transparent 21%), #f2e6cc; box-shadow: inset 0 0 0 2.5px #1f1a17; }
 .music-list { display: grid; gap: 6px; }
 .music-item { display: grid; grid-template-columns: 1fr minmax(180px, 260px) auto; gap: 10px; align-items: center; border-top: 1px solid var(--line); padding-top: 6px; }
 .music-item audio { width: 100%; height: 34px; }

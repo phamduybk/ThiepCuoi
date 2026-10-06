@@ -50,7 +50,7 @@ html .ic.ic--v-provence {
   --pv-sage: #a3b18a; --pv-sage-ink: #56653f; --pv-red: #c75b4a; --pv-cream: #f7f0e2; --pv-paper: #fffdf8;
   --accent: #5a6fa8; --accent-2: #d9a441; --ink: #24304f; --muted: #5b6176; --page: #f1eadc; --paper: #fffdf8;
   --f-head: "Crimson Pro", "EB Garamond", Georgia, serif; --f-body: "Crimson Pro", "EB Garamond", Georgia, serif;
-  --f-name: "Mea Culpa", "Great Vibes", cursive; --f-ui: "Hanken Grotesk", "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
+  --f-guest: "Crimson Pro", "EB Garamond", Georgia, serif; --f-guest-style: italic; --f-name: "Mea Culpa", "Great Vibes", cursive; --f-ui: "Hanken Grotesk", "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
   --ic-paper: #fffdf8; --ic-on-accent: #fff; --ic-line: rgba(90, 111, 168, .4); --ic-card-bg: #fffdf8;
   --ic-to-small: #8a5c0e; --ic-to-name: #24304f; --ic-out-delay: 1.75s;
   --pv-fibre: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='.012 .09' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .55  0 0 0 0 .47  0 0 0 0 .32  0 0 0 .1 -.02'/></filter><rect width='300' height='300' filter='url(%23f)'/></svg>");

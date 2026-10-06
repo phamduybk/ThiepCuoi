@@ -41,7 +41,7 @@
 /* ── Bảng màu + phông riêng của thiệp (không phụ thuộc giao diện đang dùng) ── */
 html .ic--v-ngoctrai.ic {
   --accent: #4f5661; --accent-2: #c5cad1; --ink: #2c2e33; --muted: #585c64; --page: #f4f2ee; --paper: #fdfcfa;
-  --f-head: "Noto Serif Display", Georgia, serif; --f-name: "Noto Serif Display", Georgia, serif;
+  --f-head: "Noto Serif Display", Georgia, serif; --f-guest: initial; --f-guest-style: initial; --f-name: "Noto Serif Display", Georgia, serif;
   --f-body: "Manrope", system-ui, sans-serif; --f-ui: "Manrope", system-ui, sans-serif; --name-style: normal;
   --ic-paper: #fdfcfa; --ic-on-accent: #fff; --ic-line: rgba(125, 131, 140, .42); --ic-card-bg: #fdfcfa;
   --ic-to-small: #5c626b; --ic-to-name: #2c2e33;

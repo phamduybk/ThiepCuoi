@@ -1,0 +1,68 @@
+/* Mẫu — NÓN BÀI THƠ (non-la). Bìa: tấm thiệp giấy nằm dưới chiếc nón lá nhìn xiên từ trên (vòng nan đồng tâm, nan dọc,
+   quai lụa màu nhấn; soi lên thấy mờ cầu sáu nhịp và câu thơ). Chạm -> nón xoay nhẹ (0–.45s) rồi nhấc lên, phóng to và bay
+   khỏi khung (.45–1.25s), bóng nón tan; thiệp bên dưới sáng dần rồi tiến về phía người xem thành thiệp mở (1.5s).
+   Thiệp mở: khung chỉ, nón nghiêng nhỏ trên đỉnh, cầu + câu thơ dọc ở cuối. Màu theo giao diện (--accent, --ic-*). */
+.ic--non-la { --ic-out-delay: 1.3s; }
+
+/* ── Bìa ── */
+.ic--non-la .ic-env-btn { width: min(340px, 84vw, calc((100vh - 150px) * 4 / 5)); aspect-ratio: 4 / 5; }
+.nl, .nl > span { position: absolute; display: block; }
+.nl { inset: 0; }
+.nl .nl-card {
+  inset: 0; border-radius: 4px; display: grid; place-content: start center; justify-items: center; gap: 8px; padding-top: 24%;
+  background: var(--ic-grain), linear-gradient(170deg, rgba(255, 255, 255, .35), rgba(0, 0, 0, .03)), var(--ic-card-bg);
+  box-shadow: inset 0 0 0 9px var(--ic-card-bg), inset 0 0 0 10px var(--ic-line), 0 44px 70px -34px rgba(0, 0, 0, .55), 0 10px 22px -12px rgba(0, 0, 0, .22);
+  transition: transform .9s var(--ic-ease) .6s;
+}
+.nl-card-mono { font: var(--name-style, normal) 400 2.6rem/1.1 var(--f-name, Georgia, serif); color: var(--accent-ink, var(--accent)); }
+.nl-card-mono i { font-style: normal; font-size: .5em; color: var(--muted); margin: 0 4px; }
+.nl-card-greet { font: 600 .8125rem/1.3 var(--f-ui, system-ui, sans-serif); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+.nl .nl-shadow {
+  left: 10%; top: 13%; width: 80%; aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(40, 25, 10, .38), rgba(40, 25, 10, .16) 70%, transparent);
+  transform: translate(4%, 6%) scale(1.04); transition: transform .8s var(--ic-ease) .4s, opacity .7s ease .4s;
+}
+.nl .nl-hat { left: 6%; top: 3%; width: 88%; aspect-ratio: 1; color: var(--accent); filter: drop-shadow(0 6px 8px rgba(60, 40, 10, .25)); }
+.nl-hat svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.nl-poem { opacity: .13; }
+.nl-strap { fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; }
+.nl-strap-b { stroke: color-mix(in srgb, var(--accent) 70%, #000); stroke-width: 5; opacity: .6; }
+.nl-strap-hi { fill: none; stroke: #fff; stroke-opacity: .35; stroke-width: 1.4; stroke-linecap: round; }
+.ic--non-la .ic-env-to { left: 8%; right: 8%; bottom: 7%; justify-items: center; text-align: center; }
+.ic--non-la .ic-env-to b { font-size: clamp(1.35rem, 5.8vw, 1.75rem); }
+
+/* Mở: nón xoay -> nhấc lên bay đi; bóng tan; thiệp sáng lên rồi tiến tới */
+.ic--non-la.is-opening .nl-hat { animation: nl-lift 1.25s cubic-bezier(.45, .05, .35, 1) both; }
+@keyframes nl-lift {
+  0% { transform: none; opacity: 1; }
+  34% { transform: rotate(24deg) scale(1.03); opacity: 1; }
+  100% { transform: translate(18%, -125%) rotate(70deg) scale(1.35); opacity: 0; }
+}
+.ic--non-la.is-opening .nl-shadow { transform: translate(14%, -30%) scale(.55); opacity: 0; }
+.ic--non-la.is-opening .nl-card { transform: scale(1.05); }
+.ic--non-la.is-opening .ic-env { animation-name: nl-env-out; }
+@keyframes nl-env-out { to { opacity: 0; transform: scale(1.1); } }
+
+/* ── Thiệp mở ── */
+.ic--non-la .ic-card { width: min(470px, 100%); padding: 84px 38px 40px; border-radius: 6px; background: var(--ic-grain), var(--ic-card-bg); overflow: visible; }
+.ic--non-la.is-open .ic-card { animation: nl-card-in .8s var(--ic-ease) both; }
+@keyframes nl-card-in { from { opacity: 0; transform: scale(.93); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
+.ic--non-la .ic-card > .nl-frame { position: absolute; inset: 10px; z-index: 0; pointer-events: none; border: 1px solid var(--ic-line); border-radius: 3px; }
+.ic--non-la .ic-card > .nl-top { position: absolute; left: 50%; top: -30px; width: 116px; margin-left: -58px; z-index: 2; color: var(--accent); filter: drop-shadow(0 8px 8px rgba(60, 40, 10, .2)); }
+.nl-top svg, .nl-end svg { display: block; width: 100%; height: auto; }
+.ic--non-la.is-open .nl-top { animation: nl-top-in 1s var(--ic-ease) .15s both; }
+@keyframes nl-top-in { from { opacity: 0; transform: translateY(-50px) rotate(-14deg); } to { opacity: 1; transform: none; } }
+.ic--non-la .ic-mono { margin-top: 0; }
+.ic--non-la .ic-card > .nl-end { position: relative; margin: 28px -14px -12px; color: var(--accent-2, var(--accent)); opacity: .75; }
+@media (max-width: 420px) {
+  .ic--non-la .ic-card { padding: 78px 24px 32px; }
+  .ic--non-la .ic-card > .nl-top { width: 100px; margin-left: -50px; top: -26px; }
+}
+@media (max-height: 500px) {
+  .nl .nl-card { padding-top: 16%; gap: 4px; }
+  .nl-card-mono { font-size: 1.8rem; }
+  .nl-card-greet { font-size: .6875rem; }
+}
+
+/* 07/10 (QA-NT-03): nhãn bìa nằm trên tấm thiệp --ic-card-bg -> chữ theo --ink/--muted. */
+.ic--non-la .ic-env-to small { color: color-mix(in srgb, var(--muted) 60%, var(--ink)); } .ic--non-la .ic-env-to b { color: var(--ink); }

@@ -1,0 +1,359 @@
+/* Phông của giao diện "sen" — Google Fonts, SIL Open Font License 1.1: Ephesis (tên), Petrona (tiêu đề). Lora + Be Vietnam Pro ở fonts/fonts.css. */
+@font-face { font-family: 'Ephesis'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../fonts/Ephesis-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Ephesis'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../fonts/Ephesis-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Ephesis'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../fonts/Ephesis-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Petrona'; font-style: normal; font-weight: 400 500; font-display: swap;
+  src: url(../../fonts/Petrona-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Petrona'; font-style: normal; font-weight: 400 500; font-display: swap;
+  src: url(../../fonts/Petrona-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Petrona'; font-style: normal; font-weight: 400 500; font-display: swap;
+  src: url(../../fonts/Petrona-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Petrona'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/Petrona-400i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Petrona'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/Petrona-400i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Petrona'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/Petrona-400i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+   SEN HỒNG (giao diện thường, 07/10/2026) — đầm sen mùa hạ: nền kem ngà, hồng sen, lá sen xanh ngọc, nhụy vàng.
+   Ảnh chính là CÁNH SEN GIỮA của một bông sen (2 cánh hồng hai bên), mọc lên từ đầm có lá sen, nụ sen và gợn nước lan;
+   đếm ngược = 4 lá sen tròn; ngày cưới nằm trong bông sen; thẻ địa điểm vòm cánh sen; chân trang xanh lá sen đậm.
+   Phông Ephesis (tên) + Petrona (tiêu đề) + Lora (thân) + Be Vietnam Pro (nhãn, nút). Mọi selector trong [data-theme="sen"].
+   ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
+[data-theme="sen"] {
+  --accent: #a83f62; --accent-2: #ecbfcc; --soft: #f7e9ec; --ink: #3a272c; --muted: #6c565b; --page: #fcf8f2;
+  --nav-bg: #fcf8f2; --nav-ink: #3a272c; --paper: #fffdf9; --line: #ecdcd8; --bg: #fcf8f2;
+  --f-head: "Petrona", "Lora", Georgia, serif; --f-name: "Ephesis", "Dancing Script", cursive; --f-body: "Lora", Georgia, serif;
+  --f-ui: "Be Vietnam Pro", system-ui, sans-serif;
+  --name-style: normal; --name-size: clamp(3.7rem, 15vw, 6.6rem);
+  --sn-leaf: #3c6b59; --sn-leaf-2: #8fb8a5; --sn-deep: #24443a; --sn-gold: #c79a4b; --sn-pink: #e48aa6;
+  --sn-petal: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 125' preserveAspectRatio='none'><path d='M50 0C66 18 92 46 96 78c4 28-16 47-46 47S0 106 4 78C8 46 34 18 50 0z'/></svg>");
+  --sn-lotus: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 34'><path d='M30 2c6 8 8 18 0 30-8-12-6-22 0-30zM30 32c-10-2-18-10-20-20 10 2 17 10 20 20zM30 32c10-2 18-10 20-20-10 2-17 10-20 20zM29 33C16 33 6 28 2 20c10 0 20 5 27 13zM31 33c13 0 23-5 27-13-10 0-20 5-27 13z'/></svg>");
+  --sn-div: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 22'><path d='M0 18h64M116 18h64' stroke='black' stroke-width='1'/><circle cx='60' cy='18' r='1.6'/><circle cx='120' cy='18' r='1.6'/><path d='M90 2c4 5 5 11 0 18-5-7-4-13 0-18zM90 20c-6-1-11-6-12-12 6 1 10 6 12 12zM90 20c6-1 11-6 12-12-6 1-10 6-12 12zM89 21c-8 0-14-3-16-8 6 0 12 3 16 8zM91 21c8 0 14-3 16-8-6 0-12 3-16 8z'/></svg>");
+  --sn-sh: 0 1px 2px rgba(58, 39, 44, .06), 0 22px 40px -26px rgba(120, 50, 76, .4);
+}
+[data-theme="sen"] body.wd { font-size: 17px; background: var(--page); }
+[data-theme="sen"] .td-sen { display: block; }
+[data-theme="sen"] .td-sen, [data-theme="sen"] .td-sen * { pointer-events: none; }
+[data-theme="sen"] :is(.orn, .rings, .photowall) { display: none; }
+[data-theme="sen"] .paper::before, [data-theme="sen"] .paper::after { display: none; }
+[data-theme="sen"] .paper { background: var(--paper); }
+[data-theme="sen"] .wd a:not(.btn) { color: var(--accent); }
+
+/* ── Chữ, nút, ô nhập ── */
+[data-theme="sen"] .wd h2 { font: 400 clamp(2.1rem, 6.4vw, 3.2rem)/1.15 var(--f-head); color: var(--ink); letter-spacing: -.005em; }
+[data-theme="sen"] .eyebrow { font: 600 .875rem/1.5 var(--f-ui); letter-spacing: .24em; text-transform: uppercase; color: var(--accent); }
+[data-theme="sen"] .wd .btn { font: 600 1rem var(--f-ui); letter-spacing: .04em; border-radius: 999px; min-height: 48px; padding: 0 26px; }
+[data-theme="sen"] .wd .btn-accent { background: var(--accent); color: #fff; border: 0; box-shadow: 0 12px 22px -14px rgba(168, 63, 98, .9); }
+[data-theme="sen"] .wd .btn-accent:hover { background: #8e3352; }
+[data-theme="sen"] .wd .btn-ghost { background: transparent; color: var(--accent); border: 1.5px solid color-mix(in srgb, var(--accent) 50%, transparent); }
+[data-theme="sen"] .wd .btn-ghost:hover { background: var(--soft); }
+[data-theme="sen"] .wd :is(input:not([type=radio]):not([type=checkbox]), textarea) { background: #fff; border: 1.5px solid var(--line); border-radius: 14px; font: 1.05rem var(--f-body); color: var(--ink); padding: 11px 14px; }
+[data-theme="sen"] .wd :is(input, textarea):focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(168, 63, 98, .15); }
+[data-theme="sen"] .wd label { font: 600 .95rem var(--f-ui); color: var(--ink); }
+[data-theme="sen"] .wd label small { font: italic 400 .95rem var(--f-body); color: var(--muted); }
+/* Vạch chia = hai nét mảnh + bông sen nhỏ */
+[data-theme="sen"] .divider { width: 180px; height: 22px; margin: 14px auto 0; background: var(--accent); border: 0;
+  -webkit-mask: var(--sn-div) center / contain no-repeat; mask: var(--sn-div) center / contain no-repeat; }
+[data-theme="sen"] .divider::before, [data-theme="sen"] .divider span { display: none; }
+[data-theme="sen"] .sec-head { margin-bottom: 40px; }
+[data-theme="sen"] .sec-head::before { content: ""; display: block; width: 48px; height: 28px; margin: 0 auto 10px; background: var(--sn-leaf);
+  -webkit-mask: var(--sn-lotus) center / contain no-repeat; mask: var(--sn-lotus) center / contain no-repeat; }
+[data-theme="sen"] .sec-head .divider { display: none; }
+
+/* ── Thanh menu ── */
+[data-theme="sen"] .wd-nav { background: color-mix(in srgb, var(--page) 94%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+[data-theme="sen"] .wd-nav a { font: 600 .9375rem var(--f-ui); letter-spacing: .06em; color: var(--ink); }
+[data-theme="sen"] .wd-mono { border: 1.5px solid var(--accent-2); color: var(--accent) !important; font: 400 1.5rem/1 var(--f-name); gap: 1px;
+  box-shadow: 0 0 0 3px var(--page), 0 0 0 4px rgba(60, 107, 89, .35); }
+[data-theme="sen"] .wd-mono i { color: var(--sn-leaf); font: 400 .8rem var(--f-ui); }
+[data-theme="sen"] .wd-burger { border-color: var(--line); color: var(--ink); }
+[data-theme="sen"] .wd-nav.scrolled { box-shadow: 0 10px 24px -18px rgba(58, 39, 44, .45); }
+[data-theme="sen"] .music-btn { background: var(--accent); box-shadow: 0 0 0 3px var(--page), 0 0 0 4px rgba(168, 63, 98, .3), 0 8px 18px -6px rgba(58, 39, 44, .45); }
+
+/* ════════ ĐẦU TRANG — ảnh là cánh sen giữa, mọc lên từ đầm sen ════════ */
+[data-theme="sen"] .intro { --sn-pw: min(62vw, 300px); position: relative; display: flex; flex-direction: column; align-items: center; padding: 96px 16px 56px; overflow: clip; isolation: isolate;
+  background: linear-gradient(180deg, #fdf0f2 0%, var(--page) 46%, var(--page) 100%); }
+[data-theme="sen"] .sn-hero { position: absolute; inset: 0; z-index: 0; }
+[data-theme="sen"] .sn-glow { position: absolute; left: 50%; top: 40px; width: min(120vw, 760px); aspect-ratio: 1; translate: -50% 0; border-radius: 50%;
+  background: radial-gradient(circle, rgba(236, 191, 204, .55) 0%, rgba(236, 191, 204, .18) 42%, transparent 66%); }
+/* Đầm: dải nước xanh ngọc nhạt ngay dưới chân bông sen, gợn tròn lan dần */
+[data-theme="sen"] .sn-pond { position: absolute; left: 0; right: 0; top: calc(96px + var(--sn-pw) * 1.25 - 40px); height: 110px;
+  background: radial-gradient(60% 50% at 50% 40%, rgba(143, 184, 165, .42), rgba(143, 184, 165, .12) 60%, transparent 72%); }
+[data-theme="sen"] .sn-ring { position: absolute; left: 50%; top: 40%; width: 46%; aspect-ratio: 3.4; translate: -50% -50%; border-radius: 50%;
+  border: 1.5px solid rgba(60, 107, 89, .35); animation: sn-ripple 6s ease-out infinite; }
+[data-theme="sen"] .sn-r2 { animation-delay: 2s; } [data-theme="sen"] .sn-r3 { animation-delay: 4s; }
+@keyframes sn-ripple { from { transform: scale(.55); opacity: 0; } 15% { opacity: 1; } to { transform: scale(2.1); opacity: 0; } }
+[data-theme="sen"] .sn-pad { position: absolute; fill: #6d9c87; stroke: #a9cbbb; }
+[data-theme="sen"] .sn-pad path:first-child { fill: inherit; stroke: none; }
+[data-theme="sen"] .sn-pond .sn-pad { width: 132px; height: 132px; top: -16px; transform: scaleY(.34); transform-origin: 50% 50%; opacity: .85; }
+[data-theme="sen"] .sn-pad-l { left: -40px; rotate: 12deg; }
+[data-theme="sen"] .sn-pad-r { right: -30px; width: 112px !important; height: 112px !important; top: -6px !important; rotate: -24deg; fill: #82ad99 !important; }
+[data-theme="sen"] .sn-pad-s { left: 13%; width: 64px !important; height: 64px !important; top: 26px !important; rotate: 60deg; fill: #8fb8a5 !important; opacity: .75 !important; }
+[data-theme="sen"] .sn-bud { position: absolute; right: 7%; top: -96px; width: 24px; height: 120px; transform-origin: 50% 100%; animation: sn-sway 6s ease-in-out infinite alternate; }
+@keyframes sn-sway { from { rotate: -3deg; } to { rotate: 4deg; } }
+[data-theme="sen"] .sn-hero > .sn-flower { display: none; }
+/* Bông sen: 2 cánh hồng hai bên (giả lập bằng ::before/::after của khối ảnh) + ảnh = cánh giữa */
+[data-theme="sen"] .intro-main { width: var(--sn-pw); margin: 0 auto; position: relative; z-index: 2; isolation: isolate; animation: sn-rise 1.5s cubic-bezier(.2, .7, .2, 1) both; }
+[data-theme="sen"] .intro-main::before, [data-theme="sen"] .intro-main::after { content: ""; position: absolute; bottom: 0; left: 28%; width: 44%; height: 64%; z-index: -1;
+  background: linear-gradient(180deg, #d6708f 0%, #eda7bb 45%, #fbe3ea 100%); transform-origin: 50% 100%;
+  -webkit-mask: var(--sn-petal) center / 100% 100% no-repeat; mask: var(--sn-petal) center / 100% 100% no-repeat;
+  animation: sn-open 1.6s cubic-bezier(.2, .7, .2, 1) .25s both; }
+[data-theme="sen"] .intro-main::before { --sn-r: -46deg; transform: rotate(var(--sn-r)); }
+[data-theme="sen"] .intro-main::after { --sn-r: 46deg; transform: rotate(var(--sn-r)); }
+@keyframes sn-open { from { transform: rotate(0deg) scale(.8); opacity: 0; } to { transform: rotate(var(--sn-r)) scale(1); opacity: 1; } }
+@keyframes sn-rise { from { opacity: 0; transform: translateY(34px); } to { opacity: 1; transform: none; } }
+[data-theme="sen"] .main-photo { aspect-ratio: 4 / 5; border: 0; box-shadow: none; transform: none; background: var(--soft);
+  -webkit-mask: var(--sn-petal) center / 100% 100% no-repeat; mask: var(--sn-petal) center / 100% 100% no-repeat; }
+[data-theme="sen"] .main-photo::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 2;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 125' preserveAspectRatio='none'><path d='M50 0C66 18 92 46 96 78c4 28-16 47-46 47S0 106 4 78C8 46 34 18 50 0z' fill='none' stroke='white' stroke-width='5' stroke-opacity='.92'/></svg>") center / 100% 100% no-repeat; }
+/* Nhụy vàng dưới chân cánh giữa */
+[data-theme="sen"] .pm-deco { display: block; z-index: 3; }
+[data-theme="sen"] .hd-sun { display: block; position: absolute; left: 50%; bottom: -10px; width: 46px; height: 20px; translate: -50% 0; border-radius: 50%;
+  background: radial-gradient(circle at 30% 50%, #e7b35a 0 4px, transparent 4.5px), radial-gradient(circle at 50% 40%, #e7b35a 0 5px, transparent 5.5px), radial-gradient(circle at 70% 50%, #e7b35a 0 4px, transparent 4.5px); }
+[data-theme="sen"] .save-card { position: relative; z-index: 3; background: none; padding: 0; margin: 58px auto 0; width: min(640px, 100%); text-align: center; animation: sn-rise 1.3s ease .45s both; }
+[data-theme="sen"] .save-card .eyebrow { margin: 0 0 4px; }
+[data-theme="sen"] .names { font: 400 var(--name-size)/1.04 var(--f-name); color: var(--ink); flex-direction: column; align-items: center; gap: 0; margin: 4px 0 6px; }
+[data-theme="sen"] .names .name { display: block; overflow-wrap: anywhere; text-wrap: balance; padding: 0 .1em; }
+[data-theme="sen"] .names .amp { font: italic 400 .36em/1.3 var(--f-head); color: var(--sn-gold); }
+[data-theme="sen"] .names.names--long { font-size: calc(var(--name-size) * .74); }
+[data-theme="sen"] .names.names--xl { font-size: calc(var(--name-size) * .58); }
+[data-theme="sen"] .save-card .date { font: 500 1.3rem/1.5 var(--f-head); color: var(--ink); letter-spacing: .02em; margin-top: 4px; }
+[data-theme="sen"] .lunar { font: italic 400 1.02rem/1.5 var(--f-body); color: var(--muted); }
+[data-theme="sen"] .save-card .divider { margin-top: 18px; }
+[data-theme="sen"] .invitee { font: italic 1.1rem var(--f-body); color: var(--muted); }
+[data-theme="sen"] .invitee b { font: 400 2.6rem/1.15 var(--f-name); color: var(--accent); }
+[data-theme="sen"].js-reveal .save-card.reveal { transform: translateY(16px); }
+[data-theme="sen"].js-reveal .save-card.reveal.in { transform: none; }
+[data-theme="sen"] .intro--noimg .intro-main { display: none; }
+[data-theme="sen"] .intro--noimg .sn-pond { top: 60px; }
+[data-theme="sen"] .intro--noimg .save-card { margin-top: 150px; }
+
+/* ════════ CẶP ĐÔI — hai lá sen tròn ôm ảnh ════════ */
+[data-theme="sen"] .watercolor { background: var(--paper); }
+[data-theme="sen"] section.couple { padding: 84px 14px 80px; }
+[data-theme="sen"] .couple-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 14px; max-width: 880px; }
+[data-theme="sen"] .person { display: flex; flex-direction: column; align-items: center; text-align: center; grid-row: 1; }
+[data-theme="sen"] .person-g { grid-column: 1; } [data-theme="sen"] .person-b { grid-column: 2; }
+[data-theme="sen"] .house { display: inline-block; order: 0; margin: 0 0 16px; padding: 4px 14px; border-radius: 999px; background: var(--soft); color: var(--accent);
+  font: 600 .875rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; }
+[data-theme="sen"] .oval { order: 1; width: min(100%, 260px); aspect-ratio: 1; border-radius: 50%; margin: 0 0 4px; border: 6px solid var(--paper);
+  box-shadow: 0 0 0 1.5px var(--sn-leaf-2), 0 0 0 9px var(--paper), 0 0 0 10px rgba(236, 191, 204, .9), var(--sn-sh); }
+[data-theme="sen"] .oval img { border-radius: 50%; }
+[data-theme="sen"] .person .role { order: 2; margin: 22px 0 2px; font: 600 .875rem var(--f-ui); letter-spacing: .16em; color: var(--sn-leaf); }
+[data-theme="sen"] .banner { order: 3; display: block; background: none; color: var(--ink); padding: 0; border-radius: 0; margin: 0 0 8px;
+  font: 400 clamp(1.4rem, 5.2vw, 2rem)/1.2 var(--f-head); text-wrap: balance; }
+[data-theme="sen"] .info { order: 4; font: 400 1rem/1.6 var(--f-body); color: var(--muted); max-width: 30ch; text-wrap: balance; }
+[data-theme="sen"] .couple-amp { display: none; }
+
+/* ════════ LỄ THÀNH HÔN — nền hồng phấn, bông sen chìm, ngày nằm trong bông sen, đếm ngược 4 lá sen ════════ */
+[data-theme="sen"] .event { background: linear-gradient(180deg, var(--soft), #fbf1ee 70%, var(--page)); padding: 84px 16px 90px; overflow: clip; isolation: isolate; }
+[data-theme="sen"] .sn-wm { position: absolute; left: 50%; top: 40px; width: min(150vw, 900px); translate: -50% 0; z-index: -1; opacity: .13; }
+[data-theme="sen"] .sn-wm svg { width: 100%; height: auto; display: block; }
+[data-theme="sen"] .event-row { grid-template-columns: minmax(0, 1fr); gap: 34px; max-width: 1040px; }
+[data-theme="sen"] .event-photo { width: min(74%, 330px); margin: 0 auto; aspect-ratio: 4 / 5; border: 8px solid var(--paper); transform: none;
+  border-radius: 999px 999px 26px 26px / 60% 60% 26px 26px; box-shadow: var(--sn-sh); }
+[data-theme="sen"] .event-photo img { border-radius: inherit; }
+[data-theme="sen"].js-reveal .event-photo.reveal { transform: translateY(26px); }
+[data-theme="sen"].js-reveal .event-photo.reveal.in, [data-theme="sen"] .is-draft .event-photo.reveal { transform: none !important; }
+[data-theme="sen"] .event-card { background: var(--paper); border-radius: 28px; padding: 44px 22px 34px; text-align: center; box-shadow: var(--sn-sh); }
+[data-theme="sen"] .ev-intro { display: block; margin-bottom: 4px; }
+[data-theme="sen"] .ev-k { font: 600 .875rem/1.5 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--sn-leaf); margin: 0 0 6px; text-wrap: balance; }
+[data-theme="sen"] .ev-names { margin: 0; font: 400 clamp(2.3rem, 9vw, 3.2rem)/1.15 var(--f-name); color: var(--accent); display: flex; flex-wrap: wrap; justify-content: center; gap: 0 .3em; }
+[data-theme="sen"] .ev-names i { font: italic 400 .5em/2 var(--f-head); color: var(--sn-gold); }
+[data-theme="sen"] .event-card .lead { font: italic 400 1.1rem/1.55 var(--f-body); color: var(--muted); max-width: 32ch; margin: 10px auto 0; }
+[data-theme="sen"] .event-card:has(.dlock) > .date.big { display: none; }
+[data-theme="sen"] .event-card .date.big { font: 500 1.4rem var(--f-head); color: var(--ink); }
+[data-theme="sen"] .dlock { display: grid; justify-items: center; margin: 22px auto 0; }
+[data-theme="sen"] .dl-row { display: grid !important; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: end; gap: 14px; width: min(100%, 360px); }
+[data-theme="sen"] :is(.dl-m, .dl-y) { font: 600 .9375rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); padding-bottom: 14px; border-bottom: 1px solid var(--accent-2); }
+[data-theme="sen"] .dl-m { text-align: right; } [data-theme="sen"] .dl-y { text-align: left; }
+/* Ngày cưới trong bông sen */
+[data-theme="sen"] .dl-d { position: relative; display: grid; place-items: end center; width: 118px; height: 92px; padding-bottom: 8px; font: 500 3rem/1 var(--f-head); color: var(--accent); isolation: isolate; }
+[data-theme="sen"] .dl-d::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, #f3c2d0, #fdeef2);
+  -webkit-mask: var(--sn-lotus) center bottom / 100% auto no-repeat; mask: var(--sn-lotus) center bottom / 100% auto no-repeat; }
+[data-theme="sen"] .dl-wd { order: 2; margin-top: 14px; font: 600 1rem var(--f-ui); letter-spacing: .06em; color: var(--muted); }
+[data-theme="sen"] .dl-wd i { color: var(--accent); }
+[data-theme="sen"] .dl-t { display: none; }
+[data-theme="sen"] .event-card .lunar { margin-top: 6px; }
+[data-theme="sen"] .wd .event-card .countdown { gap: 10px; margin: 26px 0 26px; }
+[data-theme="sen"] .wd .event-card .countdown div { width: 72px; min-width: 0; aspect-ratio: 1; display: grid; place-content: center; padding: 0; border-radius: 50%; position: relative;
+  background: radial-gradient(circle at 50% 50%, #fff 0 52%, transparent 53%), conic-gradient(from 200deg, #dbe9e1, #c4dccf, #dbe9e1);
+  box-shadow: inset 0 0 0 1.5px rgba(60, 107, 89, .45); }
+[data-theme="sen"] .wd .event-card .countdown b { font: 500 1.75rem/1 var(--f-head); color: var(--sn-leaf); font-variant-numeric: lining-nums tabular-nums; }
+[data-theme="sen"] .wd .event-card .countdown span { font: 600 .8125rem var(--f-ui); color: var(--muted); letter-spacing: .04em; margin-top: 2px; }
+
+/* ════════ ĐỊA ĐIỂM — thẻ vòm cánh sen, bản đồ bo tròn ════════ */
+[data-theme="sen"] .location { padding: 76px 16px 84px; }
+[data-theme="sen"] .events { gap: 44px; max-width: 1100px; }
+[data-theme="sen"] .ev-map { height: 220px; border-radius: 24px; border: 6px solid var(--paper); box-shadow: 0 0 0 1px var(--line); background: var(--soft); }
+[data-theme="sen"] .ev-map-load { background: radial-gradient(circle at 25% 30%, rgba(236, 191, 204, .5), transparent 45%), radial-gradient(circle at 80% 80%, rgba(143, 184, 165, .35), transparent 45%), #fbf3f1; font-family: var(--f-ui); }
+[data-theme="sen"] .ev-map-load b { color: var(--accent); }
+[data-theme="sen"] .ev-map-load:hover b { background: var(--accent); color: #fff; }
+[data-theme="sen"] .ev-card { position: relative; text-align: center; background: var(--paper); padding: 54px 22px 30px; border-radius: 999px 999px 26px 26px / 150px 150px 26px 26px;
+  box-shadow: 0 0 0 1px var(--line), var(--sn-sh); }
+[data-theme="sen"] .ev-card::before { display: block !important; content: ""; position: absolute; left: 50%; top: 18px; width: 44px; height: 26px; inset: 18px auto auto 50%; translate: -50% 0;
+  transform: none; box-shadow: none; z-index: 0; background: var(--sn-pink); -webkit-mask: var(--sn-lotus) center / contain no-repeat; mask: var(--sn-lotus) center / contain no-repeat; }
+[data-theme="sen"] .ev-card::after { display: none; }
+[data-theme="sen"] .ev-card h3 { font: 400 2.5rem/1.15 var(--f-name); color: var(--accent); margin: 8px 0 6px; }
+[data-theme="sen"] .ev-place { font: 600 1rem/1.4 var(--f-ui); letter-spacing: .06em; color: var(--ink); margin-bottom: 6px; }
+[data-theme="sen"] .ev-card :is(.ev-addr, .ev-time) { font: 400 1.03rem/1.55 var(--f-body); color: var(--muted); }
+[data-theme="sen"] .ev-map iframe { filter: saturate(.85); }
+
+/* ════════ TRÍCH DẪN — mặt đầm, gợn nước ════════ */
+[data-theme="sen"] .quote { min-height: 380px; isolation: isolate; }
+[data-theme="sen"] .quote::after { background: linear-gradient(180deg, rgba(36, 68, 58, .35), rgba(36, 68, 58, .7)); }
+[data-theme="sen"] .quote blockquote { z-index: 3; }
+[data-theme="sen"] .quote blockquote p { font: italic 400 clamp(1.5rem, 5vw, 2.2rem)/1.45 var(--f-head); }
+[data-theme="sen"] .quote blockquote::after { content: ""; display: block; width: 52px; height: 30px; margin: 22px auto 0; background: #f6c3d1;
+  -webkit-mask: var(--sn-lotus) center / contain no-repeat; mask: var(--sn-lotus) center / contain no-repeat; }
+[data-theme="sen"] .sn-ripples { position: absolute; inset: 0; z-index: 2; overflow: hidden; }
+[data-theme="sen"] .sn-ripples i { position: absolute; left: 50%; top: 50%; width: 340px; aspect-ratio: 2.6; translate: -50% -50%; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, .3); animation: sn-ripple 7s ease-out infinite; }
+[data-theme="sen"] .sn-ripples i:nth-child(2) { animation-delay: 2.3s; } [data-theme="sen"] .sn-ripples i:nth-child(3) { animation-delay: 4.6s; }
+[data-theme="sen"] .quote.quote--noimg { background: radial-gradient(70% 60% at 50% 50%, #e3efe8, #cfe2d8 70%, #bcd6c9); color: var(--sn-deep); }
+[data-theme="sen"] .quote--noimg .sn-ripples i { border-color: rgba(60, 107, 89, .28); }
+[data-theme="sen"] .quote--noimg blockquote::before { display: none; }
+[data-theme="sen"] .quote--noimg blockquote::after { background: var(--accent); }
+
+/* ════════ ALBUM — ô bo tròn, xen kẽ ô vòm cánh sen ════════ */
+[data-theme="sen"] .gallery-sec { padding: 80px 14px; }
+[data-theme="sen"] .wd-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 1180px; }
+[data-theme="sen"] .wd-g { aspect-ratio: 4 / 5; border-radius: 20px; background: var(--soft); }
+[data-theme="sen"] .wd-g:nth-child(3n + 1) { border-radius: 999px 999px 20px 20px / 46% 46% 20px 20px; }
+[data-theme="sen"] .wd-g img { border-radius: inherit; }
+[data-theme="sen"] .wd-g::after { content: ""; border-radius: inherit; background: linear-gradient(transparent 50%, rgba(168, 63, 98, .35)); }
+[data-theme="sen"] .wd .album-card { border-radius: 22px; box-shadow: 0 0 0 1px var(--line), var(--sn-sh); }
+[data-theme="sen"] .wd .album-meta h3 { font: 400 1.4rem var(--f-head); color: var(--ink); }
+
+/* Album trang chủ: đã có nút "Xem tất cả" -> chỉ bày 12 ảnh (điện thoại 8) cho trang gọn. */
+[data-theme="sen"] .gallery-sec:has(> p.center .btn) .wd-g:nth-child(n + 13) { display: none; }
+@media (max-width: 760px) { [data-theme="sen"] .gallery-sec:has(> p.center .btn) .wd-g:nth-child(n + 9) { display: none; } }
+
+/* ════════ GỬI ẢNH ════════ */
+[data-theme="sen"] .cta { position: relative; margin: 20px 16px 30px; padding: 58px 24px 50px; border-radius: 30px; text-align: center;
+  background: radial-gradient(circle at 15% 15%, rgba(255, 255, 255, .7), transparent 40%), linear-gradient(160deg, #fbe4ea, #f3d0da); box-shadow: var(--sn-sh); }
+[data-theme="sen"] .cta::before { content: ""; display: block; width: 56px; height: 32px; margin: 0 auto 14px; background: var(--accent); -webkit-mask: var(--sn-lotus) center / contain no-repeat; mask: var(--sn-lotus) center / contain no-repeat; }
+[data-theme="sen"] .wd .cta h2 { font: 400 clamp(1.8rem, 6vw, 2.5rem)/1.2 var(--f-head); }
+[data-theme="sen"] .cta p { font: 400 1.08rem/1.6 var(--f-body); color: var(--ink); }
+
+/* ════════ XÁC NHẬN, LỜI CHÚC, MỪNG CƯỚI ════════ */
+[data-theme="sen"] :is(.rsvp, .wishes, .gift) { padding: 72px 16px; overflow-x: clip; }
+[data-theme="sen"] .rsvp { max-width: 660px; }
+[data-theme="sen"] :is(.rsvp-card, .wish-form, .form-thanks, .rsvp-done) { background: var(--paper); border-radius: 26px; padding: 40px 22px 30px; box-shadow: 0 0 0 1px var(--line), var(--sn-sh); }
+[data-theme="sen"] .rsvp-card { gap: 16px; }
+[data-theme="sen"] .rsvp-card .lead { font: italic 400 1.12rem/1.55 var(--f-body); color: var(--muted); margin: 0; }
+[data-theme="sen"] :is(.rsvp-invitee b, .rsvp-done b) { font: 400 2.5rem/1.2 var(--f-name); color: var(--accent); }
+[data-theme="sen"] .rsvp-choice span { display: flex; align-items: center; justify-content: center; min-height: 54px; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; font: 600 1rem/1.25 var(--f-ui); color: var(--ink); padding: 8px 12px; }
+[data-theme="sen"] .rsvp-choice input:checked + span { background: var(--accent); border-color: var(--accent); color: #fff; }
+[data-theme="sen"] :is(.rsvp-card, .wish-form) .btn { justify-self: center; min-width: 210px; }
+[data-theme="sen"] .field-hint { font: italic .95rem var(--f-body); color: var(--muted); }
+[data-theme="sen"] .wish-form { gap: 14px; margin-bottom: 30px; }
+[data-theme="sen"] .wd .wish { border: 0; border-radius: 22px; background: var(--paper); padding: 22px 22px 18px 58px; position: relative; box-shadow: 0 0 0 1px var(--line); }
+[data-theme="sen"] .wd .wish::before { content: ""; position: absolute; left: 18px; top: 22px; width: 28px; height: 16px; background: var(--sn-pink); -webkit-mask: var(--sn-lotus) center / contain no-repeat; mask: var(--sn-lotus) center / contain no-repeat; }
+[data-theme="sen"] .wd .wish:nth-child(3n + 2) { background: #fbf1f3; }
+[data-theme="sen"] .wd .wish p { font: 400 1.08rem/1.6 var(--f-body); color: var(--ink); }
+[data-theme="sen"] .wd .wish cite { font: 600 .95rem var(--f-ui); color: var(--sn-leaf); }
+[data-theme="sen"] .gift-card { border: 0; border-radius: 24px; background: var(--paper); box-shadow: 0 0 0 1px var(--line), var(--sn-sh); }
+[data-theme="sen"] .gift-side { color: var(--accent); }
+[data-theme="sen"] .gift-qr { border-radius: 16px; border: 1.5px solid var(--line); }
+
+/* ════════ CHÂN TRANG — xanh lá sen đậm, lá sen tròn ════════ */
+[data-theme="sen"] .wd-foot { position: relative; padding: 90px 16px 70px; color: #f6ece4; overflow: clip; isolation: isolate;
+  background: radial-gradient(80% 60% at 50% 0%, #2f5649, var(--sn-deep) 70%); }
+[data-theme="sen"] .sn-foot { position: absolute; inset: 0; z-index: -1; }
+[data-theme="sen"] .sn-foot .sn-pad { width: 220px; height: 220px; fill: #2c5245; stroke: #3e6a5a; opacity: .9; }
+[data-theme="sen"] .sn-pad-f1 { left: -80px; bottom: -70px; rotate: 30deg; }
+[data-theme="sen"] .sn-pad-f2 { right: -70px; top: -60px; rotate: -140deg; width: 180px !important; height: 180px !important; }
+[data-theme="sen"] .wd-foot .wd-mono.big { border-color: rgba(246, 195, 209, .6); color: #f6c3d1 !important; font: 400 2.2rem/1 var(--f-name); box-shadow: 0 0 0 5px var(--sn-deep), 0 0 0 6px rgba(246, 195, 209, .3); }
+[data-theme="sen"] .wd-foot .wd-mono i { color: #e7b35a; }
+[data-theme="sen"] .wd-foot p { font: italic 400 1.2rem/1.5 var(--f-body); color: #f6ece4; }
+[data-theme="sen"] .wd-foot .muted.small, [data-theme="sen"] .wd-foot .music-credit { color: #cfe0d6 !important; font-style: normal; font-family: var(--f-ui) !important; }
+
+/* ════════ MÀN "MỞ THIỆP" ════════ */
+[data-theme="sen"] .wd-cover { background: radial-gradient(90% 60% at 50% 18%, #fbe1e8, var(--page) 62%), var(--page); }
+[data-theme="sen"] .wd-cover::after { content: ""; position: absolute; left: 50%; bottom: -60px; width: min(140vw, 760px); height: 200px; translate: -50% 0; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(143, 184, 165, .45), transparent); pointer-events: none; }
+[data-theme="sen"] .wd-cover-mono { border-color: var(--accent-2); color: var(--accent); font: 400 1.7rem var(--f-name); }
+[data-theme="sen"] .wd-cover-eyebrow { color: var(--sn-leaf); }
+[data-theme="sen"] .wd-cover-names { font: 400 clamp(3rem, 13vw, 4.6rem)/1.05 var(--f-name); color: var(--ink); }
+[data-theme="sen"] .wd-cover-names i { font: italic 400 .4em/1.6 var(--f-head); color: var(--sn-gold); }
+[data-theme="sen"] .wd-cover-date { color: var(--ink); font-family: var(--f-head); }
+[data-theme="sen"] .wd-cover-btn { background: var(--accent); }
+
+/* ════════ THIỆP MỜI RIÊNG (bảng màu dùng chung cho mọi mẫu thiệp) ════════ */
+[data-theme="sen"] .ic { --ic-paper: #fffdf9; --ic-env-front: #f8e3e8; --ic-env-flap: #f3d6dd; --ic-env-in: #8fb8a5; --ic-wax: #a83f62; --ic-wax-ink: #fff4f6;
+  --ic-card-bg: #fffbf8; --ic-line: rgba(168, 63, 98, .38);
+  --ic-liner: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='46' height='30'><path d='M23 4c3 4 4 9 0 15-4-6-3-11 0-15zM23 19c-5-1-9-5-10-10 5 1 8 5 10 10zM23 19c5-1 9-5 10-10-5 1-8 5-10 10z' fill='%23ffffff' fill-opacity='.45'/></svg>") 0 0 / 46px 30px; }
+
+/* ════════ MÁY TÍNH ════════ */
+@media (min-width: 761px) {
+  /* Máy tính: bông sen + đầm bên trái, chữ bên phải (cả hai trong 1 màn hình) */
+  [data-theme="sen"] { --name-size: clamp(3.6rem, 6.2vw, 6rem); }
+  [data-theme="sen"] .intro { --sn-pw: min(23vw, 330px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 4vw; align-items: start;
+    min-height: 100svh; padding: 118px 5vw 90px; }
+  [data-theme="sen"] .intro-main { grid-column: 1; grid-row: 1; justify-self: end; margin: 0 4vw 0 0; }
+  [data-theme="sen"] .save-card { grid-column: 2; grid-row: 1; align-self: center; justify-self: start; margin: 0; width: min(560px, 100%); padding-bottom: 20px; }
+  [data-theme="sen"] .sn-pond { top: calc(118px + var(--sn-pw) * 1.25 - 52px); left: calc(50% - 6vw - var(--sn-pw) * 1.8); right: auto; width: calc(var(--sn-pw) * 2.6); height: 150px; }
+  [data-theme="sen"] .sn-pond .sn-pad { width: 200px; height: 200px; top: -40px; }
+  [data-theme="sen"] .sn-pad-l { left: -16%; }
+  [data-theme="sen"] .sn-pad-r { right: 6%; width: 150px !important; height: 150px !important; top: -20px !important; }
+  [data-theme="sen"] .sn-pad-s { left: 10%; top: 40px !important; }
+  [data-theme="sen"] .sn-bud { right: 20%; top: -150px; width: 32px; height: 170px; }
+  [data-theme="sen"] .sn-glow { left: 25%; top: 20px; width: min(60vw, 820px); }
+  /* Bông sen lớn chìm ở góc phải dưới */
+  [data-theme="sen"] .sn-hero > .sn-flower { display: block; position: absolute; width: 28vw; max-width: 440px; opacity: .14; right: -4vw; bottom: -10px; rotate: 6deg; }
+  [data-theme="sen"] .intro--noimg { grid-template-columns: minmax(0, 1fr); }
+  [data-theme="sen"] .intro--noimg .save-card { grid-column: 1; justify-self: center; }
+  [data-theme="sen"] .intro--noimg .sn-pond { left: 0; right: 0; width: auto; top: 60px; }
+  [data-theme="sen"] section.couple, [data-theme="sen"] .location, [data-theme="sen"] .gallery-sec { padding: 110px 40px; }
+  [data-theme="sen"] .couple-row { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 0 30px; }
+  [data-theme="sen"] .person-b { grid-column: 3; }
+  [data-theme="sen"] .couple-amp { display: block; grid-column: 2; grid-row: 1; align-self: center; margin-top: -60px; font: 400 4.4rem/1 var(--f-name); color: var(--accent-2); }
+  [data-theme="sen"] .oval { width: min(100%, 300px); }
+  [data-theme="sen"] .event { padding: 110px 40px; }
+  [data-theme="sen"] .event-row { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: center; gap: 64px; }
+  [data-theme="sen"] .event-photo { width: 100%; max-width: 420px; }
+  [data-theme="sen"] .event-card { padding: 54px 44px 40px; }
+  [data-theme="sen"] .wd .event-card .countdown div { width: 84px; }
+  [data-theme="sen"] .ev-map { height: 340px; }
+  [data-theme="sen"] .ev-card { margin-left: -60px; padding: 60px 34px 34px; }
+  [data-theme="sen"] .ev:nth-child(even) .ev-card { margin: 0 -60px 0 0; }
+  [data-theme="sen"] .wd-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  [data-theme="sen"] .cta { margin: 40px auto 50px; max-width: 760px; padding: 70px 50px 60px; }
+}
+@media (max-width: 760px) {
+  [data-theme="sen"] .ev-card, [data-theme="sen"] .ev:nth-child(even) .ev-card { margin: -10px 4px 0; }
+  [data-theme="sen"] .wd-mono:not(.big) { font-size: 1.25rem; }
+}
+@media (max-width: 380px) {
+  [data-theme="sen"] .couple-row { gap: 0 8px; }
+  [data-theme="sen"] .wd .event-card .countdown div { width: 64px; }
+  [data-theme="sen"] .wd .event-card .countdown b { font-size: 1.5rem; }
+  [data-theme="sen"] .dl-row { gap: 8px; }
+}
+[data-theme="sen"] .is-draft :is(.intro-main, .save-card) { animation-duration: .01s !important; animation-delay: 0s !important; }
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="sen"] *, [data-theme="sen"] *::before, [data-theme="sen"] *::after { animation: none !important; transition: none !important; }
+}
+html:is([lang="th"], [lang="lo"], [lang="zh"])[data-theme="sen"] .wd .dl-d { font-family: var(--f-head); }
+[data-theme="sen"] .wd .wd-nav a:not(.btn) { color: var(--nav-ink); }
+/* 07/10 (BA P0-03, QA-NT-08, BA P1-04): tên khách/tiêu đề sự kiện dùng Petrona nghiêng (Ephesis chỉ cho tên cặp đôi lớn);
+   đỉnh cánh sen tròn hơn để không cắt đầu ảnh dọc; nút sửa ảnh của chủ nhà nằm trong vùng hiện. */
+[data-theme="sen"] { --f-guest: "Petrona", "Lora", Georgia, serif; --f-guest-style: italic;
+  --sn-petal: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 125' preserveAspectRatio='none'><path d='M50 1C70 4 92 30 96 66c4 32-16 58-46 58S0 98 4 66C8 30 30 4 50 1z'/></svg>"); }
+[data-theme="sen"] .main-photo::after { background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 125' preserveAspectRatio='none'><path d='M50 1C70 4 92 30 96 66c4 32-16 58-46 58S0 98 4 66C8 30 30 4 50 1z' fill='none' stroke='white' stroke-width='5' stroke-opacity='.92'/></svg>") center / 100% 100% no-repeat; }
+[data-theme="sen"] :is(.ev-card h3, .rsvp-invitee b, .rsvp-done b, .invitee b) { font-family: var(--f-head); font-style: italic; font-weight: 500; font-size: 1.9rem; }
+[data-theme="sen"] .main-photo .ed-img-tools { right: 50%; bottom: 18%; transform: translateX(50%); flex-direction: column; align-items: center; }

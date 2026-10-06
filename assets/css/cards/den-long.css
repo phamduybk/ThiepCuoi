@@ -1,0 +1,47 @@
+/* Mẫu ĐÈN LỒNG (den-long, thêm 07/10/2026 — đi cặp giao diện "hoian"). Bìa: đèn lồng lụa xếp gọn (nếp gấp) treo trên dây.
+   Chạm -> thân lụa bung dài ra (.05–.65s, scaleY), đèn sáng dần và quầng sáng ấm lan rộng (.5–1.2s), đèn phóng lớn rồi tan
+   vào ánh sáng (1,2s) -> thiệp hiện từ ánh đèn. Màu lụa = đỏ đèn lồng pha màu nhấn giao diện. */
+.ic--den-long {
+  --ic-out-delay: 1.24s;
+  --dl-c: color-mix(in srgb, var(--accent) 22%, #c8402c);
+}
+.ic--den-long .ic-env-btn { width: min(300px, 76vw, calc((100vh - 150px) * .72)); aspect-ratio: 3 / 4.2; }
+.dl, .dl > span, .dl-lamp > span { position: absolute; display: block; }
+.dl { inset: 0; }
+.dl-string { left: 50%; top: 0; width: 1.5px; height: 16%; background: #3a2a1c; }
+.dl-lamp { left: 50%; top: 14%; width: 62%; height: 62%; margin-left: -31%; transform-origin: 50% 0; animation: dl-sway 3.4s ease-in-out infinite alternate; }
+@keyframes dl-sway { from { rotate: -3deg; } to { rotate: 3deg; } }
+.dl-cap { left: 26%; right: 26%; height: 7%; border-radius: 3px; background: linear-gradient(180deg, #7a5230, #4a2f18); z-index: 2; }
+.dl-cap-t { top: 0; }
+.dl-cap-b { top: 46%; transition: transform .6s cubic-bezier(.3, 1.2, .5, 1) .05s; }
+.dl-silk { left: 0; right: 0; top: 6%; height: 41%; border-radius: 48% / 30%; transform-origin: 50% 0; display: grid; place-items: center;
+  background: radial-gradient(60% 55% at 50% 45%, rgba(255, 220, 160, .35), transparent 70%),
+    repeating-linear-gradient(180deg, rgba(0, 0, 0, .18) 0 2px, transparent 2px 9px), linear-gradient(90deg, rgba(0, 0, 0, .25), transparent 30% 70%, rgba(0, 0, 0, .25)), var(--dl-c);
+  transition: transform .6s cubic-bezier(.3, 1.2, .5, 1) .05s, filter .6s ease .45s; }
+.dl-silk b { font: var(--name-style, normal) 400 1.5rem/1 var(--f-name, Georgia, serif); color: #ffe7b0; opacity: .9; transform: scaleY(1); transition: transform .6s cubic-bezier(.3, 1.2, .5, 1) .05s; }
+.dl-tassel { left: 50%; top: 53%; width: 14px; height: 20%; margin-left: -7px; background: repeating-linear-gradient(90deg, #e8b04a 0 2px, transparent 2px 4px);
+  -webkit-mask: linear-gradient(#000 70%, transparent); mask: linear-gradient(#000 70%, transparent); transition: transform .6s cubic-bezier(.3, 1.2, .5, 1) .05s; }
+.dl-light { left: 50%; top: 32%; width: 240%; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; opacity: 0; transform: scale(.3);
+  background: radial-gradient(circle, rgba(255, 226, 160, .95) 0%, rgba(255, 190, 110, .5) 30%, rgba(255, 170, 90, 0) 62%); transition: opacity .7s ease .5s, transform .9s var(--ic-ease) .5s; }
+.ic--den-long .ic-env-to { left: 6%; right: 6%; bottom: 0; justify-items: center; text-align: center; padding: 9px 12px; border-radius: 4px; background: var(--ic-paper); box-shadow: 0 0 0 1px var(--ic-line), 0 10px 20px -14px rgba(0, 0, 0, .4); }
+/* Mở: lụa bung dài (thân cao gấp đôi), sáng lên, rồi đèn phóng to tan vào ánh sáng */
+.ic--den-long.is-opening .dl-lamp { animation: none; }
+.ic--den-long.is-opening .dl-silk { transform: scaleY(2.05); filter: brightness(1.35) saturate(1.1); }
+.ic--den-long.is-opening .dl-silk b { transform: scaleY(.49); }
+.ic--den-long.is-opening .dl-cap-b { transform: translateY(610%); }
+.ic--den-long.is-opening .dl-tassel { transform: translateY(205%); }
+.ic--den-long.is-opening .dl-light { opacity: 1; transform: scale(1); }
+.ic--den-long.is-opening .ic-env { animation-name: dl-out; }
+@keyframes dl-out { to { opacity: 0; transform: scale(1.25); filter: brightness(1.4); } }
+/* Thiệp mở: nền ấm, viền chỉ, 2 đèn nhỏ treo góc */
+.ic--den-long .ic-card { background: radial-gradient(90% 50% at 50% 0%, rgba(255, 214, 140, .35), transparent 70%), var(--ic-grain), var(--ic-card-bg); box-shadow: inset 0 0 0 8px var(--ic-card-bg), inset 0 0 0 9px var(--ic-line), 0 50px 90px -40px rgba(0, 0, 0, .5), 0 0 80px rgba(255, 190, 110, .35); }
+.ic--den-long.is-open .ic-card { animation: dl-card-in .8s var(--ic-ease) both; }
+@keyframes dl-card-in { from { opacity: .25; transform: scale(.9); filter: brightness(1.4); } 25% { opacity: 1; } to { opacity: 1; transform: none; filter: none; } }
+.dl-mini { position: absolute; top: -8px; width: 30px; height: 40px; border-radius: 48% / 40%; background: radial-gradient(circle at 50% 45%, #ffcf8a, var(--dl-c) 70%); box-shadow: 0 0 22px rgba(255, 170, 90, .7);
+  animation: dl-sway 3s ease-in-out infinite alternate; transform-origin: 50% -30px; }
+.dl-mini::before { content: ""; position: absolute; left: 50%; top: -30px; width: 1px; height: 30px; background: #3a2a1c; }
+.dl-mini-l { left: 22px; } .dl-mini-r { right: 22px; animation-delay: -1.4s; }
+@media (max-height: 500px) { .ic--den-long .ic-env-to { padding: 4px 10px; } }
+
+/* 07/10 (QA-NT-03): nhãn bìa nằm trên thẻ giấy --ic-paper -> chữ theo --ink/--muted (cùng độ sáng tối với giấy). */
+.ic--den-long .ic-env-to small { color: color-mix(in srgb, var(--muted) 60%, var(--ink)); } .ic--den-long .ic-env-to b { color: var(--ink); }

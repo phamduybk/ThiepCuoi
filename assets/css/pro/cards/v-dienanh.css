@@ -33,7 +33,7 @@
 /* ── Bảng màu + phông riêng (không phụ thuộc giao diện đang dùng) ── */
 html .ic--v-dienanh.ic {
   --accent: #c8a96a; --accent-2: #8f7a4f; --ink: #efe9df; --muted: #aaa398; --page: #0b0b0a; --paper: #131210;
-  --f-head: "Oswald", "Be Vietnam Pro", system-ui, sans-serif; --f-name: "Oswald", "Be Vietnam Pro", system-ui, sans-serif;
+  --f-head: "Oswald", "Be Vietnam Pro", system-ui, sans-serif; --f-guest: initial; --f-guest-style: initial; --f-name: "Oswald", "Be Vietnam Pro", system-ui, sans-serif;
   --f-body: "Spectral", "EB Garamond", Georgia, serif; --f-ui: "Oswald", "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
   --ic-paper: #131210; --ic-on-accent: #0b0b0a; --ic-line: rgba(200, 169, 106, .42); --ic-card-bg: #131210;
   --ic-to-small: #c8a96a; --ic-to-name: #f6f1e7;

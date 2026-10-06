@@ -49,7 +49,7 @@
   background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .25) 0 4px, transparent 4px 9px), color-mix(in srgb, var(--accent-2, var(--accent)) 45%, rgba(255, 255, 255, .55));
   clip-path: polygon(0 8%, 4% 0, 8% 10%, 12% 0, 88% 0, 92% 10%, 96% 0, 100% 8%, 100% 92%, 96% 100%, 92% 90%, 88% 100%, 12% 100%, 8% 90%, 4% 100%, 0 92%); opacity: .9;
 }
-.ic--watercolor .ic-env-to { left: 10%; right: 10%; bottom: 6%; justify-items: center; text-align: center; transform: translateZ(4px); --ic-to-small: var(--muted); --ic-to-name: var(--ink); }
+.ic--watercolor .ic-env-to { left: 10%; right: 10%; bottom: 6%; justify-items: center; text-align: center; transform: translateZ(4px); --ic-to-small: var(--ink); --ic-to-name: var(--ink); }   /* QA-NT-07: "Thân gửi" trên vệt màu nước (Tinh khôi 3,14:1) -> mực */
 .ic--watercolor.is-opening .wc > .wc-pola { transform: translateZ(160px) translate(36%, -38%) rotate(14deg); opacity: 0; }
 .ic--watercolor.is-opening .wc-card { transform: rotate(0) translateZ(30px) scale(1.03); }
 .ic--watercolor.is-opening .ic-env { animation-name: wc-env-out; }

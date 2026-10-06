@@ -1,0 +1,46 @@
+/* Mẫu BAO GIẤY CAN (bao-can, thêm 07/10/2026 — đi cặp giao diện "tinhkhoi"). Bìa: tấm thiệp trắng nằm trong bao giấy can mờ
+   (vellum), nhãn dán tròn hình tim có chữ lồng giữ miệng bao; tên khách in trên bao. Chạm -> nhãn bóc ra xoay bay (.05–.4s),
+   bao can trượt xuống (.3–.9s), thiệp bên dưới từ mờ thành rõ rồi tiến lên thành thiệp mở (.98s). Tối giản, nét mảnh. */
+.ic--bao-can { --ic-out-delay: .98s; }
+.ic--bao-can .ic-env-btn { width: min(300px, 76vw, calc((100vh - 150px) * .72)); aspect-ratio: 5 / 7; }
+.bc, .bc > span { position: absolute; display: block; }
+.bc { inset: 0; }
+.bc > .bc-card { display: grid; }
+.bc-card { inset: 0; border-radius: 6px; background: radial-gradient(70% 40% at 50% 100%, #f8e3de, transparent 70%), var(--ic-grain), #fff; display: grid; place-content: center; justify-items: center; gap: 10px; box-shadow: 0 34px 60px -30px rgba(0, 0, 0, .45), 0 0 0 1px rgba(0, 0, 0, .04); }
+.bc-names { font: var(--name-style, normal) 400 1.6rem/1.3 var(--f-name, Georgia, serif); color: #2b2521; display: grid; justify-items: center; }
+.bc-names i { font-style: normal; font-size: .7em; color: var(--accent); }
+.bc-day { font: 400 .9rem var(--f-ui, system-ui, sans-serif); letter-spacing: .2em; color: var(--muted); }
+.bc-sleeve { left: -3%; right: -3%; top: 14%; bottom: -3%; border-radius: 4px; background: linear-gradient(170deg, rgba(255, 246, 243, .62), rgba(250, 240, 236, .55));
+  -webkit-backdrop-filter: blur(1.2px); backdrop-filter: blur(1.2px); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9), 0 0 0 1px rgba(0, 0, 0, .06);
+  transition: transform .6s cubic-bezier(.5, 0, .3, 1) .3s, opacity .3s ease .7s; }
+.bc-sleeve::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 14%; border-bottom: 1px dashed rgba(0, 0, 0, .12); }
+.bc-sticker { left: 50%; top: 14%; width: 70px; height: 70px; margin: -35px 0 0 -35px; z-index: 3; display: grid; place-items: center; background: #b5615a;
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M20 37S1 26 1 13.5C1 7 6 2.5 11.6 2.5c3.8 0 6.8 2.2 8.4 5.2 1.6-3 4.6-5.2 8.4-5.2C34 2.5 39 7 39 13.5 39 26 20 37 20 37z'/></svg>") center / contain no-repeat;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M20 37S1 26 1 13.5C1 7 6 2.5 11.6 2.5c3.8 0 6.8 2.2 8.4 5.2 1.6-3 4.6-5.2 8.4-5.2C34 2.5 39 7 39 13.5 39 26 20 37 20 37z'/></svg>") center / contain no-repeat;
+  transition: transform .4s cubic-bezier(.4, 0, .6, 1) .05s, opacity .2s ease .3s; }
+.bc-sticker > span, .bc-stk > span { display: flex; align-items: center; margin-top: -4px; font: var(--name-style, normal) 400 1.05rem/1 var(--f-name, Georgia, serif); color: #fff; }
+.bc-sticker i, .bc-stk i { font-style: normal; font-size: .6em; margin: 0 1px; }
+.ic--bao-can .ic-env-to { left: 10%; right: 10%; bottom: 12%; z-index: 2; justify-items: center; text-align: center; transition: transform .6s cubic-bezier(.5, 0, .3, 1) .3s, opacity .2s; }
+.ic--bao-can:not(.is-opening) .ic-env-btn { animation: ic-float 6s ease-in-out 2; }
+/* Mở */
+.ic--bao-can.is-opening .bc-sticker { transform: translate(60px, -50px) rotate(40deg) scale(.6); opacity: 0; }
+.ic--bao-can.is-opening .bc-sleeve { transform: translateY(105%); opacity: 0; }
+.ic--bao-can.is-opening .ic-env { animation-name: bc-out; }
+@keyframes bc-out { to { opacity: 0; transform: translateY(-14px) scale(1.03); } }
+/* Thiệp mở: trắng tinh, nhãn tim đã bóc dán lệch góc trên */
+.ic--bao-can .ic-card { background: var(--ic-grain), #fff; border-radius: 6px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .05), 0 40px 80px -40px rgba(0, 0, 0, .4); }
+.ic--bao-can.is-open .ic-card { animation: bc-card-in .7s var(--ic-ease) both; }
+@keyframes bc-card-in { from { opacity: .4; transform: translateY(16px); filter: blur(3px); } 25% { opacity: 1; } to { opacity: 1; transform: none; filter: none; } }
+.ic--bao-can .ic-card > .bc-stk { position: absolute; right: 18px; top: 14px; width: 54px; height: 54px; display: grid; place-items: center; transform: rotate(10deg); background: var(--accent-ink, var(--accent)); opacity: .9;
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M20 37S1 26 1 13.5C1 7 6 2.5 11.6 2.5c3.8 0 6.8 2.2 8.4 5.2 1.6-3 4.6-5.2 8.4-5.2C34 2.5 39 7 39 13.5 39 26 20 37 20 37z'/></svg>") center / contain no-repeat;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M20 37S1 26 1 13.5C1 7 6 2.5 11.6 2.5c3.8 0 6.8 2.2 8.4 5.2 1.6-3 4.6-5.2 8.4-5.2C34 2.5 39 7 39 13.5 39 26 20 37 20 37z'/></svg>") center / contain no-repeat; }
+.ic--bao-can .bc-stk > span { font-size: .8rem; }
+.ic--bao-can .ic-mono { border-width: 1px; }
+.ic--bao-can .ic-scroll {
+  /* 07/10 (QA-NT-01/03): nền giấy của mẫu này cố định màu sáng -> chữ cố định màu tối (không lấy màu chữ sáng của giao diện tối),
+     màu nhấn dùng --ic-acc-light (accent đậm đủ ≥4,5:1 trên giấy sáng, invite-card.css). */
+  --ink: #2b2521; --muted: #4a413a; --ic-paper: #ffffff; --ic-to-small: #4a413a; --ic-to-name: #2b2521;
+  --accent-ink: var(--ic-acc-light); --accent: var(--ic-acc-light); --ic-line: rgba(70, 50, 30, .3); --ic-on-accent: #fff;
+  color: #2b2521;
+}
+.ic--bao-can .ic-scroll .ic-link:not(#_) { color: var(--accent-ink); }   /* thắng luật màu link của giao diện (.wd a) */

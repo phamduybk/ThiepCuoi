@@ -12,6 +12,7 @@ return array(
 	'Chạm vào chữ hoặc ảnh có viền nét đứt' => 'Tap any text or photo with a dashed outline',
 	'Chạm vào chữ hoặc ảnh có viền nét đứt để sửa — tự lưu' => 'Tap any text or photo with a dashed outline to edit — saves automatically',
 	'Chọn giao diện' => 'Choose a theme',
+	'Mới' => 'New',
 	'Chọn giao diện, nhạc & hiệu ứng' => 'Choose a theme, music & effect',
 	'Chọn hiệu ứng rơi' => 'Choose a falling effect',
 	'Có thay đổi khách chưa thấy' => 'Guests haven\'t seen your latest changes',

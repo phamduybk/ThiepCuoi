@@ -1,0 +1,301 @@
+/* Phông của giao diện "gomlam" — Google Fonts, SIL Open Font License 1.1: Cormorant Upright. Phông chung khác ở fonts/fonts.css. */
+@font-face { font-family: 'Cormorant Upright'; font-style: normal; font-weight: 500; font-display: swap;
+  src: url(../../fonts/CormorantUpright-500-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Upright'; font-style: normal; font-weight: 500; font-display: swap;
+  src: url(../../fonts/CormorantUpright-500-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Cormorant Upright'; font-style: normal; font-weight: 500; font-display: swap;
+  src: url(../../fonts/CormorantUpright-500-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Cormorant Upright'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(../../fonts/CormorantUpright-600-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Upright'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(../../fonts/CormorantUpright-600-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Cormorant Upright'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(../../fonts/CormorantUpright-600-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+   MEN LAM (giao diện thường, 07/10/2026) — gốm men lam Bát Tràng: nền men ngà, nét lam coban vẽ tay. Ảnh chính nằm trong
+   lòng một ĐĨA SỨ có vành hoa cúc dây, dưới chân là dải sóng nước men lam; máy tính có hai bình gốm hai bên. Ảnh cô dâu chú rể
+   là hai đĩa nhỏ; đếm ngược = 4 viên gạch men; ngày cưới trong lòng đĩa; trích dẫn nền lam đậm. Phông Cormorant Upright + EB Garamond.
+   ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
+[data-theme="gomlam"] {
+  --accent: #23457f; --accent-2: #9fb4d6; --soft: #e8edf5; --ink: #1b2a44; --muted: #55617a; --page: #f7f4ec;
+  --nav-bg: #f7f4ec; --nav-ink: #1b2a44; --paper: #fffefa; --line: #d9dfea; --bg: #f7f4ec;
+  --f-head: "Cormorant Upright", "Cormorant Garamond", Georgia, serif; --f-name: "Cormorant Upright", "Cormorant Garamond", Georgia, serif;
+  --f-body: "EB Garamond", Georgia, serif; --f-ui: "Josefin Sans", system-ui, sans-serif;
+  --name-style: normal; --name-size: clamp(3rem, 12.5vw, 5.6rem); --t-name-w: 600; --t-h2-w: 600;
+  --gl-blue: #23457f; --gl-deep: #1b2a44; --gl-clay: #a8774e;
+  --t-name: #23457f; --t-amp: #a8774e; --t-role: #55617a; --t-sh: 0 1px 2px rgba(27, 42, 68, .06), 0 22px 40px -26px rgba(27, 42, 68, .4); --t-rad: 6px; --t-btn-rad: 999px;
+  --gl-rim: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><circle cx='100' cy='100' r='98' fill='none' stroke='%2323457f' stroke-width='2.4'/><circle cx='100' cy='100' r='94.5' fill='none' stroke='%2323457f' stroke-width='.8'/><circle cx='100' cy='100' r='81' fill='none' stroke='%2323457f' stroke-width='.8'/><circle cx='100' cy='100' r='78.5' fill='none' stroke='%2323457f' stroke-width='2'/><g transform='rotate(0 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(9 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(18 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(27 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(36 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(45 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(54 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(63 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(72 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(81 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(90 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(99 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(108 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(117 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(126 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(135 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(144 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(153 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(162 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(171 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(180 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(189 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(198 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(207 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(216 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(225 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(234 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(243 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(252 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(261 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(270 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(279 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(288 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(297 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(306 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(315 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(324 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(333 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g><g transform='rotate(342 100 100)'><path d='M100 17.6c-3.4-2.6-3.8-6.4 0-10.2 3.8 3.8 3.4 7.6 0 10.2z' fill='%2323457f'/><circle cx='100' cy='12.4' r='1.1' fill='white'/></g><g transform='rotate(351 100 100)'><path d='M95.6 13.6q4.4-4 8.8 0M97.4 16.6q2.6-2.2 5.2 0' fill='none' stroke='%2323457f' stroke-width='.9'/></g></svg>");
+  --gl-wave: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='24'><g fill='none' stroke='%2323457f' stroke-width='1.3'><path d='M0 24a24 24 0 0 1 48 0'/><path d='M6 24a18 18 0 0 1 36 0'/><path d='M12 24a12 12 0 0 1 24 0'/><path d='M18 24a6 6 0 0 1 12 0'/><path d='M-24 24a24 24 0 0 1 48 0M24 24a24 24 0 0 1 48 0' transform='translate(0 -12)'/></g></svg>");
+  --t-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-16 -16 32 32'><circle r='15' fill='none' stroke='black' stroke-width='2'/><circle r='11' fill='none' stroke='black' stroke-width='1' stroke-dasharray='2 2'/><path d='M0-7c3 3 3 5 0 7-3-2-3-4 0-7zM-7 0c3-3 5-3 7 0-2 3-4 3-7 0zM7 0c-3-3-5-3-7 0 2 3 4 3 7 0zM0 7c3-3 3-5 0-7-3 2-3 4 0 7z'/></svg>");
+  --t-div: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 22'><path d='M0 6h180M0 16h180' stroke='black' stroke-width='1'/><g><path d='M10 11q5-6 10 0t10 0 10 0 10 0 10 0 10 0M110 11q5-6 10 0t10 0 10 0 10 0 10 0 10 0' fill='none' stroke='black' stroke-width='1.2'/><circle cx='90' cy='11' r='5'/></g></svg>");
+  --t-foot-bg: radial-gradient(90% 70% at 50% 0%, #26406b, #1b2a44 70%); --t-foot-ink: #f7f4ec; --t-foot-mute: #c9d4e8; --t-foot-i: #9fb4d6;
+}
+/* ── Nền chung của giao diện (biến --t-* khai báo ở khối :root phía trên; khối riêng phía dưới ghi đè) ── */
+[data-theme="gomlam"] body.wd { font-size: 17px; background: var(--t-body-bg, var(--page)); }
+[data-theme="gomlam"] .td-gomlam { display: block; }
+[data-theme="gomlam"] .td-gomlam, [data-theme="gomlam"] .td-gomlam * { pointer-events: none; }
+[data-theme="gomlam"] :is(.orn, .rings, .photowall) { display: none; }
+[data-theme="gomlam"] .paper::before, [data-theme="gomlam"] .paper::after { display: none; }
+[data-theme="gomlam"] .paper { background: var(--paper); }
+[data-theme="gomlam"] .wd a:not(.btn) { color: var(--accent); }
+[data-theme="gomlam"] .wd h2 { font: var(--t-h2-w, 400) clamp(2.1rem, 6.4vw, 3.2rem)/1.15 var(--f-head); color: var(--t-h2, var(--ink)); }
+[data-theme="gomlam"] .eyebrow { font: 600 .875rem/1.5 var(--f-ui); letter-spacing: .22em; text-transform: uppercase; color: var(--t-eyebrow, var(--accent)); }
+[data-theme="gomlam"] .wd .btn { font: 600 1rem var(--f-ui); letter-spacing: .04em; border-radius: var(--t-btn-rad, 999px); min-height: 48px; padding: 0 26px; }
+[data-theme="gomlam"] .wd .btn-accent { background: var(--accent); color: var(--t-on-accent, #fff); border: 0; box-shadow: 0 12px 22px -14px color-mix(in srgb, var(--accent) 80%, transparent); }
+[data-theme="gomlam"] .wd .btn-accent:hover { background: var(--t-accent-hover, color-mix(in srgb, var(--accent) 84%, #000)); }
+[data-theme="gomlam"] .wd .btn-ghost { background: transparent; color: var(--accent); border: 1.5px solid color-mix(in srgb, var(--accent) 50%, transparent); }
+[data-theme="gomlam"] .wd .btn-ghost:hover { background: var(--soft); }
+[data-theme="gomlam"] .wd :is(input:not([type=radio]):not([type=checkbox]), textarea) { background: var(--t-input, #fff); border: 1.5px solid var(--line); border-radius: var(--t-in-rad, 12px); font: 1.05rem var(--f-body); color: var(--ink); padding: 11px 14px; }
+[data-theme="gomlam"] .wd :is(input, textarea):focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent); }
+[data-theme="gomlam"] .wd label { font: 600 .95rem var(--f-ui); color: var(--ink); }
+[data-theme="gomlam"] .wd label small { font: italic 400 .95rem var(--f-body); color: var(--muted); }
+[data-theme="gomlam"] .divider { width: 180px; height: 22px; margin: 14px auto 0; background: var(--t-div-c, var(--accent)); border: 0;
+  -webkit-mask: var(--t-div) center / contain no-repeat; mask: var(--t-div) center / contain no-repeat; }
+[data-theme="gomlam"] .divider::before, [data-theme="gomlam"] .divider span { display: none; }
+[data-theme="gomlam"] .sec-head { margin-bottom: 40px; }
+[data-theme="gomlam"] .sec-head::before { content: ""; display: block; width: 48px; height: 30px; margin: 0 auto 10px; background: var(--t-icon-c, var(--accent));
+  -webkit-mask: var(--t-icon) center / contain no-repeat; mask: var(--t-icon) center / contain no-repeat; }
+[data-theme="gomlam"] .sec-head .divider { display: none; }
+/* Thanh menu */
+[data-theme="gomlam"] .wd-nav { background: color-mix(in srgb, var(--nav-bg) 95%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-bottom: 1px solid var(--t-nav-line, var(--line)); }
+[data-theme="gomlam"] .wd-nav a { font: 600 .9375rem var(--f-ui); letter-spacing: .06em; color: var(--nav-ink); }
+[data-theme="gomlam"] .wd .wd-nav a:not(.btn) { color: var(--nav-ink); }
+[data-theme="gomlam"] .wd-mono { border: 1.5px solid var(--t-mono-line, var(--accent-2)); color: var(--t-mono, var(--accent)) !important; font: 400 1.3rem/1 var(--f-name); gap: 1px; }
+[data-theme="gomlam"] .wd-mono i { color: var(--t-mono-i, var(--accent-2)); font: 400 .8rem var(--f-ui); }
+[data-theme="gomlam"] .wd-burger { border-color: var(--t-nav-line, var(--line)); color: var(--nav-ink); }
+[data-theme="gomlam"] .wd-nav.scrolled { box-shadow: 0 10px 24px -18px rgba(0, 0, 0, .45); }
+[data-theme="gomlam"] .music-btn { background: var(--accent); color: var(--t-on-accent, #fff); box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px color-mix(in srgb, var(--accent) 35%, transparent), 0 8px 18px -6px rgba(0, 0, 0, .4); }
+/* Tên & ngày đầu trang (mặc định; khối riêng chỉnh bố cục) */
+[data-theme="gomlam"] .names { font: var(--name-style) var(--t-name-w, 400) var(--name-size)/1.08 var(--f-name); color: var(--t-name, var(--ink)); flex-direction: column; align-items: center; gap: 0; margin: 4px 0 8px; }
+[data-theme="gomlam"] .names .name { display: block; overflow-wrap: anywhere; text-wrap: balance; padding: 0 .08em; }
+[data-theme="gomlam"] .names .amp { font: italic 400 .4em/1.4 var(--f-head); color: var(--t-amp, var(--accent)); }
+[data-theme="gomlam"] .names.names--long { font-size: calc(var(--name-size) * .74); }
+[data-theme="gomlam"] .names.names--xl { font-size: calc(var(--name-size) * .58); }
+[data-theme="gomlam"] .save-card .date { font: 500 1.25rem/1.5 var(--f-head); color: var(--ink); letter-spacing: .02em; }
+[data-theme="gomlam"] .lunar { font: italic 400 1.02rem/1.5 var(--f-body); color: var(--muted); }
+[data-theme="gomlam"] .invitee { font: italic 1.1rem var(--f-body); color: var(--muted); }
+[data-theme="gomlam"] .invitee b { font: var(--name-style) 400 2.3rem/1.2 var(--f-name); color: var(--accent); }
+[data-theme="gomlam"].js-reveal .save-card.reveal { transform: translateY(16px); }
+[data-theme="gomlam"].js-reveal .save-card.reveal.in { transform: none; }
+[data-theme="gomlam"] .intro--noimg .intro-main { display: none; }
+/* Cặp đôi */
+[data-theme="gomlam"] .watercolor { background: var(--t-sec2, var(--paper)); }
+[data-theme="gomlam"] section.couple { padding: 84px 14px 80px; }
+[data-theme="gomlam"] .couple-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 14px; max-width: 880px; }
+[data-theme="gomlam"] .person { display: flex; flex-direction: column; align-items: center; text-align: center; grid-row: 1; }
+[data-theme="gomlam"] .person-g { grid-column: 1; } [data-theme="gomlam"] .person-b { grid-column: 2; }
+[data-theme="gomlam"] .house { display: inline-block; order: 0; margin: 0 0 16px; padding: 4px 14px; border-radius: var(--t-btn-rad, 999px); background: var(--soft); color: var(--t-house, var(--accent));
+  font: 600 .875rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; }
+[data-theme="gomlam"] .oval { order: 1; width: min(100%, 260px); margin: 0 0 4px; transform: none; }
+[data-theme="gomlam"] .oval img { border-radius: inherit; }
+[data-theme="gomlam"] .person .role { order: 2; margin: 20px 0 2px; font: 600 .875rem var(--f-ui); letter-spacing: .14em; color: var(--t-role, var(--muted)); }
+[data-theme="gomlam"] .banner { order: 3; display: block; background: none; color: var(--ink); padding: 0; border-radius: 0; margin: 0 0 8px; font: 400 clamp(1.35rem, 5vw, 1.95rem)/1.2 var(--f-head); text-wrap: balance; }
+[data-theme="gomlam"] .info { order: 4; font: 400 1rem/1.6 var(--f-body); color: var(--muted); max-width: 30ch; text-wrap: balance; }
+[data-theme="gomlam"] .couple-amp { display: none; }
+/* Lễ thành hôn */
+[data-theme="gomlam"] .event { padding: 84px 16px 90px; overflow: clip; isolation: isolate; }
+[data-theme="gomlam"] .event-row { grid-template-columns: minmax(0, 1fr); gap: 34px; max-width: 1040px; }
+[data-theme="gomlam"] .event-photo { width: min(74%, 330px); margin: 0 auto; aspect-ratio: 4 / 5; transform: none; border: 0; }
+[data-theme="gomlam"] .event-photo img { border-radius: inherit; }
+[data-theme="gomlam"].js-reveal .event-photo.reveal { transform: translateY(26px); }
+[data-theme="gomlam"].js-reveal .event-photo.reveal.in, [data-theme="gomlam"] .is-draft .event-photo.reveal { transform: none !important; }
+[data-theme="gomlam"] .event-card { background: var(--paper); padding: 44px 22px 34px; text-align: center; }
+[data-theme="gomlam"] .ev-intro { display: block; margin-bottom: 4px; }
+[data-theme="gomlam"] .ev-k { font: 600 .875rem/1.5 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--t-role, var(--muted)); margin: 0 0 6px; text-wrap: balance; }
+[data-theme="gomlam"] .ev-names { margin: 0; font: var(--name-style) 400 clamp(2rem, 8vw, 2.9rem)/1.15 var(--f-name); color: var(--accent); display: flex; flex-wrap: wrap; justify-content: center; gap: 0 .3em; }
+[data-theme="gomlam"] .ev-names i { font: italic 400 .5em/2 var(--f-head); color: var(--t-amp, var(--accent)); }
+[data-theme="gomlam"] .event-card .lead { font: italic 400 1.1rem/1.55 var(--f-body); color: var(--muted); max-width: 32ch; margin: 10px auto 0; }
+[data-theme="gomlam"] .event-card:has(.dlock) > .date.big { display: none; }
+[data-theme="gomlam"] .event-card .date.big { font: 500 1.4rem var(--f-head); color: var(--ink); }
+[data-theme="gomlam"] .dlock { display: grid; justify-items: center; margin: 22px auto 0; }
+[data-theme="gomlam"] .dl-row { display: grid !important; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 14px; width: min(100%, 360px); }
+[data-theme="gomlam"] :is(.dl-m, .dl-y) { font: 600 .9375rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+[data-theme="gomlam"] .dl-m { text-align: right; } [data-theme="gomlam"] .dl-y { text-align: left; }
+[data-theme="gomlam"] .dl-d { font: 500 3.2rem/1 var(--f-head); color: var(--accent); }
+[data-theme="gomlam"] .dl-wd { order: 2; margin-top: 12px; font: 600 1rem var(--f-ui); letter-spacing: .06em; color: var(--muted); }
+[data-theme="gomlam"] .dl-wd i { color: var(--accent); }
+[data-theme="gomlam"] .dl-t { display: none; }
+[data-theme="gomlam"] .event-card .lunar { margin-top: 6px; }
+[data-theme="gomlam"] .wd .event-card .countdown { gap: 10px; margin: 26px 0; }
+[data-theme="gomlam"] .wd .event-card .countdown div { width: 74px; min-width: 0; display: grid; place-content: center; padding: 12px 0; }
+[data-theme="gomlam"] .wd .event-card .countdown b { font: 500 1.8rem/1 var(--f-head); color: var(--t-cd, var(--accent)); font-variant-numeric: lining-nums tabular-nums; }
+[data-theme="gomlam"] .wd .event-card .countdown span { font: 600 .8125rem var(--f-ui); color: var(--muted); letter-spacing: .04em; margin-top: 4px; }
+/* Địa điểm */
+[data-theme="gomlam"] .location { padding: 76px 16px 84px; }
+[data-theme="gomlam"] .events { gap: 44px; max-width: 1100px; }
+[data-theme="gomlam"] .ev-map { height: 220px; border-radius: var(--t-rad, 16px); box-shadow: 0 0 0 1px var(--line); background: var(--soft); }
+[data-theme="gomlam"] .ev-map-load { font-family: var(--f-ui); background: repeating-linear-gradient(45deg, color-mix(in srgb, var(--accent) 6%, transparent) 0 2px, transparent 2px 14px), var(--soft); }
+[data-theme="gomlam"] .ev-map-load b { color: var(--accent); }
+[data-theme="gomlam"] .ev-map-load:hover b { background: var(--accent); color: var(--t-on-accent, #fff); }
+[data-theme="gomlam"] .ev-card { position: relative; text-align: center; background: var(--paper); padding: 40px 22px 30px; border-radius: var(--t-rad, 16px); box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="gomlam"] .ev-card::before, [data-theme="gomlam"] .ev-card::after { display: none; }
+[data-theme="gomlam"] .ev-card h3 { font: var(--name-style) 400 2.2rem/1.15 var(--f-name); color: var(--accent); margin: 4px 0 6px; }
+[data-theme="gomlam"] .ev-place { font: 600 1rem/1.4 var(--f-ui); letter-spacing: .04em; color: var(--ink); margin-bottom: 6px; }
+[data-theme="gomlam"] .ev-card :is(.ev-addr, .ev-time) { font: 400 1.03rem/1.55 var(--f-body); color: var(--muted); }
+/* Trích dẫn */
+[data-theme="gomlam"] .quote { min-height: 380px; isolation: isolate; }
+[data-theme="gomlam"] .quote blockquote { z-index: 3; }
+[data-theme="gomlam"] .quote blockquote p { font: italic 400 clamp(1.5rem, 5vw, 2.2rem)/1.45 var(--f-head); }
+[data-theme="gomlam"] .quote--noimg blockquote::before { color: var(--accent); }
+/* Album */
+[data-theme="gomlam"] .gallery-sec { padding: 80px 14px; }
+[data-theme="gomlam"] .wd-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 1180px; }
+[data-theme="gomlam"] .wd-g { aspect-ratio: 4 / 5; border-radius: var(--t-rad, 16px); background: var(--soft); }
+[data-theme="gomlam"] .wd-g img { border-radius: inherit; }
+[data-theme="gomlam"] .wd-g::after { content: ""; border-radius: inherit; background: linear-gradient(transparent 50%, color-mix(in srgb, var(--accent) 40%, transparent)); }
+[data-theme="gomlam"] .wd .album-card { border-radius: var(--t-rad, 16px); box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="gomlam"] .wd .album-meta h3 { font: 400 1.4rem var(--f-head); color: var(--ink); }
+[data-theme="gomlam"] .gallery-sec:has(> p.center .btn) .wd-g:nth-child(n + 13) { display: none; }
+@media (max-width: 760px) { [data-theme="gomlam"] .gallery-sec:has(> p.center .btn) .wd-g:nth-child(n + 9) { display: none; } }
+/* Gửi ảnh */
+[data-theme="gomlam"] .cta { position: relative; margin: 20px 16px 30px; padding: 58px 24px 50px; border-radius: var(--t-rad, 16px); text-align: center; background: var(--soft); box-shadow: var(--t-sh); }
+[data-theme="gomlam"] .cta::before { content: ""; display: block; width: 52px; height: 32px; margin: 0 auto 14px; background: var(--t-icon-c, var(--accent)); -webkit-mask: var(--t-icon) center / contain no-repeat; mask: var(--t-icon) center / contain no-repeat; }
+[data-theme="gomlam"] .wd .cta h2 { font: 400 clamp(1.8rem, 6vw, 2.5rem)/1.2 var(--f-head); }
+[data-theme="gomlam"] .cta p { font: 400 1.08rem/1.6 var(--f-body); color: var(--ink); }
+/* Xác nhận, lời chúc, mừng cưới */
+[data-theme="gomlam"] :is(.rsvp, .wishes, .gift) { padding: 72px 16px; overflow-x: clip; }
+[data-theme="gomlam"] .rsvp { max-width: 660px; }
+[data-theme="gomlam"] :is(.rsvp-card, .wish-form, .form-thanks, .rsvp-done) { background: var(--paper); border-radius: var(--t-rad, 16px); padding: 40px 22px 30px; box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="gomlam"] .rsvp-card { gap: 16px; }
+[data-theme="gomlam"] .rsvp-card .lead { font: italic 400 1.12rem/1.55 var(--f-body); color: var(--muted); margin: 0; }
+[data-theme="gomlam"] :is(.rsvp-invitee b, .rsvp-done b) { font: var(--name-style) 400 2.2rem/1.2 var(--f-name); color: var(--accent); }
+[data-theme="gomlam"] .rsvp-choice span { display: flex; align-items: center; justify-content: center; min-height: 54px; border-radius: var(--t-btn-rad, 999px); border: 1.5px solid var(--line); background: var(--t-input, #fff); font: 600 1rem/1.25 var(--f-ui); color: var(--ink); padding: 8px 12px; }
+[data-theme="gomlam"] .rsvp-choice input:checked + span { background: var(--accent); border-color: var(--accent); color: var(--t-on-accent, #fff); }
+[data-theme="gomlam"] :is(.rsvp-card, .wish-form) .btn { justify-self: center; min-width: 210px; }
+[data-theme="gomlam"] .field-hint { font: italic .95rem var(--f-body); color: var(--muted); }
+[data-theme="gomlam"] .wish-form { gap: 14px; margin-bottom: 30px; }
+[data-theme="gomlam"] .wd .wish { border: 0; border-radius: var(--t-rad, 16px); background: var(--paper); padding: 22px 22px 18px; position: relative; box-shadow: 0 0 0 1px var(--line); }
+[data-theme="gomlam"] .wd .wish p { font: 400 1.08rem/1.6 var(--f-body); color: var(--ink); }
+[data-theme="gomlam"] .wd .wish cite { font: 600 .95rem var(--f-ui); color: var(--t-role, var(--accent)); }
+[data-theme="gomlam"] .gift-card { border: 0; border-radius: var(--t-rad, 16px); background: var(--paper); box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="gomlam"] .gift-side { color: var(--accent); }
+[data-theme="gomlam"] .gift-qr { border-radius: 12px; border: 1.5px solid var(--line); }
+/* Chân trang */
+[data-theme="gomlam"] .wd-foot { position: relative; padding: 90px 16px 70px; color: var(--t-foot-ink); overflow: clip; isolation: isolate; background: var(--t-foot-bg); }
+[data-theme="gomlam"] .wd-foot .wd-mono.big { border-color: color-mix(in srgb, var(--t-foot-ink) 45%, transparent); color: var(--t-foot-ink) !important; font: 400 2rem/1 var(--f-name); }
+[data-theme="gomlam"] .wd-foot .wd-mono i { color: var(--t-foot-i, var(--accent-2)); }
+[data-theme="gomlam"] .wd-foot p { font: italic 400 1.2rem/1.5 var(--f-body); color: var(--t-foot-ink); }
+[data-theme="gomlam"] .wd-foot .muted.small, [data-theme="gomlam"] .wd-foot .music-credit { color: var(--t-foot-mute) !important; font-style: normal; font-family: var(--f-ui) !important; }
+/* Màn "Mở thiệp" */
+[data-theme="gomlam"] .wd-cover-mono { border-color: var(--accent-2); color: var(--accent); font: var(--name-style) 400 1.5rem var(--f-name); }
+[data-theme="gomlam"] .wd-cover-eyebrow { color: var(--t-role, var(--muted)); }
+[data-theme="gomlam"] .wd-cover-names { font: var(--name-style) 400 clamp(2.6rem, 11vw, 4.2rem)/1.08 var(--f-name); color: var(--t-name, var(--ink)); }
+[data-theme="gomlam"] .wd-cover-names i { font: italic 400 .42em/1.6 var(--f-head); color: var(--t-amp, var(--accent)); }
+[data-theme="gomlam"] .wd-cover-date { color: var(--ink); font-family: var(--f-head); }
+[data-theme="gomlam"] .wd-cover-btn { background: var(--accent); color: var(--t-on-accent, #fff); }
+/* Máy tính */
+@media (min-width: 761px) {
+  [data-theme="gomlam"] section.couple, [data-theme="gomlam"] .location, [data-theme="gomlam"] .gallery-sec { padding: 110px 40px; }
+  [data-theme="gomlam"] .couple-row { gap: 0 60px; }
+  [data-theme="gomlam"] .oval { width: min(100%, 300px); }
+  [data-theme="gomlam"] .event { padding: 110px 40px; }
+  [data-theme="gomlam"] .event-row { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: center; gap: 64px; }
+  [data-theme="gomlam"] .event-photo { width: 100%; max-width: 420px; }
+  [data-theme="gomlam"] .event-card { padding: 54px 44px 40px; }
+  [data-theme="gomlam"] .wd .event-card .countdown div { width: 84px; }
+  [data-theme="gomlam"] .ev-map { height: 340px; }
+  [data-theme="gomlam"] .ev-card { margin-left: -60px; padding: 46px 34px 34px; }
+  [data-theme="gomlam"] .ev:nth-child(even) .ev-card { margin: 0 -60px 0 0; }
+  [data-theme="gomlam"] .wd-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  [data-theme="gomlam"] .cta { margin: 40px auto 50px; max-width: 760px; padding: 70px 50px 60px; }
+}
+@media (max-width: 760px) {
+  [data-theme="gomlam"] .ev-card, [data-theme="gomlam"] .ev:nth-child(even) .ev-card { margin: -10px 4px 0; }
+  [data-theme="gomlam"] .wd-mono:not(.big) { font-size: 1.05rem; }
+}
+@media (max-width: 380px) {
+  [data-theme="gomlam"] .couple-row { gap: 0 8px; }
+  [data-theme="gomlam"] .wd .event-card .countdown div { width: 64px; }
+  [data-theme="gomlam"] .wd .event-card .countdown b { font-size: 1.45rem; }
+  [data-theme="gomlam"] .dl-row { gap: 8px; }
+}
+[data-theme="gomlam"] .is-draft :is(.intro-main, .save-card) { animation-duration: .01s !important; animation-delay: 0s !important; }
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="gomlam"] *, [data-theme="gomlam"] *::before, [data-theme="gomlam"] *::after { animation: none !important; transition: none !important; }
+}
+/* Thái/Lào/Trung: số ngày cưới dùng phông tiêu đề (phông tên dạng chữ viết tay khó đọc với chữ số). */
+html:is([lang="th"], [lang="lo"], [lang="zh"])[data-theme="gomlam"] .wd .dl-d { font-family: var(--f-head); }
+/* ════════ Phần riêng của giao diện ════════ */
+/* ── Đầu trang: ảnh trong lòng đĩa sứ, dải sóng nước men lam ── */
+[data-theme="gomlam"] .intro { --gl-pw: min(78vw, 340px); position: relative; display: flex; flex-direction: column; align-items: center; padding: 100px 16px 90px; overflow: clip; isolation: isolate;
+  background: radial-gradient(60% 40% at 50% 34%, #ffffff, transparent 70%), var(--page); }
+[data-theme="gomlam"] .gl-hero { position: absolute; inset: 0; z-index: 0; }
+[data-theme="gomlam"] .gl-waves { position: absolute; left: 0; right: 0; bottom: 0; height: 72px; opacity: .55; background: var(--gl-wave) 0 0 / 48px 24px; }
+[data-theme="gomlam"] .gl-vase { display: none; }
+[data-theme="gomlam"] .intro-main { width: var(--gl-pw); aspect-ratio: 1; margin: 0 auto; position: relative; z-index: 2; border-radius: 50%; padding: 14%;
+  background: radial-gradient(circle, #fdfcf6 60%, #f1efe6 72%, #fdfcf6 88%); box-shadow: 0 30px 44px -26px rgba(27, 42, 68, .55), inset 0 -6px 14px rgba(27, 42, 68, .08);
+  animation: gl-spin 1.6s cubic-bezier(.2, .7, .2, 1) both; }
+[data-theme="gomlam"] .intro-main::before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--gl-rim) center / 100% 100% no-repeat; z-index: 3; pointer-events: none; }
+@keyframes gl-spin { from { opacity: 0; transform: rotate(-40deg) scale(.86); } to { opacity: 1; transform: none; } }
+[data-theme="gomlam"] .main-photo { aspect-ratio: 1; border-radius: 50%; border: 0; box-shadow: 0 0 0 3px #fdfcf6, 0 0 0 4.5px var(--gl-blue); transform: none; }
+[data-theme="gomlam"] .main-photo img { border-radius: 50%; }
+[data-theme="gomlam"] .save-card { position: relative; z-index: 3; background: none; padding: 0; margin: 40px auto 0; width: min(640px, 100%); text-align: center; animation: gl-up 1.2s ease .4s both; }
+@keyframes gl-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+[data-theme="gomlam"] .names { line-height: 1; letter-spacing: .01em; }
+[data-theme="gomlam"] .save-card .date { font: 600 1.35rem var(--f-head); color: var(--ink); }
+[data-theme="gomlam"] .save-card .eyebrow { color: #7a5232; }
+[data-theme="gomlam"] .divider { --t-div-c: var(--gl-blue); }
+[data-theme="gomlam"] .intro--noimg .save-card { margin-top: 30px; }
+/* ── Cặp đôi: hai đĩa nhỏ ── */
+[data-theme="gomlam"] .watercolor { background: var(--paper); }
+[data-theme="gomlam"] .oval { aspect-ratio: 1; border-radius: 50%; padding: 12%; background: #fdfcf6; position: relative; box-shadow: var(--t-sh); width: min(100%, 230px); }
+[data-theme="gomlam"] .oval::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--gl-rim) center / 100% 100% no-repeat; pointer-events: none; z-index: 3; }
+[data-theme="gomlam"] .oval img { border-radius: 50%; }
+[data-theme="gomlam"] .house { background: none; color: var(--gl-blue); border: 1px solid var(--accent-2); }
+[data-theme="gomlam"] .banner { font: 600 clamp(1.4rem, 5.2vw, 2rem)/1.15 var(--f-head); color: var(--gl-blue); }
+/* ── Lễ thành hôn: viên gạch men đếm ngược, ngày trong lòng đĩa ── */
+[data-theme="gomlam"] .event { background: var(--page); }
+[data-theme="gomlam"] .gl-band { position: absolute; left: 0; right: 0; top: 0; height: 18px; background: var(--gl-blue);
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='18'><path d='M0 2h36M0 16h36' stroke='black' stroke-width='1.6'/><path d='M4 9q4.5-6 9 0t9 0 9 0' fill='none' stroke='black' stroke-width='1.4'/></svg>") 0 0 / 36px 18px; mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='18'><path d='M0 2h36M0 16h36' stroke='black' stroke-width='1.6'/><path d='M4 9q4.5-6 9 0t9 0 9 0' fill='none' stroke='black' stroke-width='1.4'/></svg>") 0 0 / 36px 18px; }
+[data-theme="gomlam"] .event-photo { border-radius: 999px 999px 8px 8px; border: 8px solid #fdfcf6; box-shadow: 0 0 0 1.5px var(--gl-blue), var(--t-sh); }
+[data-theme="gomlam"] .event-card { box-shadow: inset 0 0 0 1.5px var(--gl-blue), inset 0 0 0 6px var(--paper), inset 0 0 0 7px var(--accent-2), var(--t-sh); }
+[data-theme="gomlam"] .ev-names { font-weight: 600; }
+[data-theme="gomlam"] .dl-d { width: 104px; height: 104px; border-radius: 50%; display: grid; place-items: center; padding: 0; position: relative; color: var(--gl-blue); font: 600 2.6rem/1 var(--f-head);
+  background: radial-gradient(circle, #fdfcf6 56%, transparent 57%), var(--gl-rim) center / 100% 100% no-repeat; }
+[data-theme="gomlam"] .wd .event-card .countdown div { aspect-ratio: 1; padding: 0; background: #fdfcf6; border-radius: 4px; position: relative;
+  box-shadow: inset 0 0 0 1.5px var(--gl-blue), inset 0 0 0 4px #fdfcf6, inset 0 0 0 5px var(--accent-2); }
+[data-theme="gomlam"] .wd .event-card .countdown div::before { content: ""; position: absolute; inset: 0; background:
+  radial-gradient(circle at 0 0, var(--gl-blue) 0 7px, transparent 7.5px), radial-gradient(circle at 100% 0, var(--gl-blue) 0 7px, transparent 7.5px),
+  radial-gradient(circle at 0 100%, var(--gl-blue) 0 7px, transparent 7.5px), radial-gradient(circle at 100% 100%, var(--gl-blue) 0 7px, transparent 7.5px); opacity: .85; }
+[data-theme="gomlam"] .wd .event-card .countdown b { font-weight: 600; font-size: 2rem; position: relative; }
+[data-theme="gomlam"] .wd .event-card .countdown span { position: relative; }
+/* ── Địa điểm ── */
+[data-theme="gomlam"] .ev-card { box-shadow: inset 0 0 0 1.5px var(--gl-blue), inset 0 0 0 6px var(--paper), inset 0 0 0 7px var(--accent-2), var(--t-sh); }
+[data-theme="gomlam"] .ev-card h3 { font-weight: 600; }
+[data-theme="gomlam"] .ev-map { border: 6px solid #fdfcf6; box-shadow: 0 0 0 1.5px var(--gl-blue); }
+/* ── Trích dẫn: nền lam, sóng trắng ── */
+[data-theme="gomlam"] .quote::after { background: linear-gradient(180deg, rgba(27, 42, 68, .5), rgba(27, 42, 68, .78)); }
+[data-theme="gomlam"] .quote.quote--noimg { background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='24'><g fill='none' stroke='%23ffffff' stroke-opacity='.18' stroke-width='1.3'><path d='M0 24a24 24 0 0 1 48 0'/><path d='M6 24a18 18 0 0 1 36 0'/><path d='M12 24a12 12 0 0 1 24 0'/></g></svg>") 0 0 / 48px 24px, var(--gl-blue); color: #f7f4ec; }
+[data-theme="gomlam"] .quote--noimg blockquote::before { color: #c9d4e8; }
+[data-theme="gomlam"] .quote blockquote p { font: 500 clamp(1.6rem, 5.2vw, 2.4rem)/1.4 var(--f-head); }
+[data-theme="gomlam"] .wd-g { border-radius: 18px; aspect-ratio: 4 / 5; box-shadow: 0 0 0 4px #fdfcf6, 0 0 0 5.5px var(--gl-blue); }
+[data-theme="gomlam"] .wd-gallery { gap: 18px; }
+[data-theme="gomlam"] .cta { background: #fdfcf6; box-shadow: inset 0 0 0 1.5px var(--gl-blue), inset 0 0 0 6px #fdfcf6, inset 0 0 0 7px var(--accent-2); }
+[data-theme="gomlam"] .wd .wish { border-left: 3px double var(--gl-blue); }
+[data-theme="gomlam"] .gl-waves-f { top: 0; bottom: auto; height: 48px; opacity: .3; filter: invert(1); }
+[data-theme="gomlam"] .wd-foot { padding-top: 110px; }
+[data-theme="gomlam"] .ic { --ic-paper: #fffefa; --ic-env-front: #eef1f7; --ic-env-flap: #e3e9f3; --ic-env-in: #23457f; --ic-wax: #23457f; --ic-wax-ink: #f7f4ec;
+  --ic-card-bg: #fffefa; --ic-line: rgba(35, 69, 127, .38);
+  --ic-liner: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='24'><g fill='none' stroke='%23ffffff' stroke-opacity='.35' stroke-width='1.3'><path d='M0 24a24 24 0 0 1 48 0'/><path d='M8 24a16 16 0 0 1 32 0'/></g></svg>") 0 0 / 48px 24px; }
+@media (min-width: 761px) {
+  [data-theme="gomlam"] { --name-size: clamp(3.4rem, 5.4vw, 5.4rem); }
+  [data-theme="gomlam"] .intro { --gl-pw: min(30vw, 440px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 5vw; align-items: center; min-height: 100svh; padding: 110px 8vw 110px; }
+  [data-theme="gomlam"] .intro-main { grid-column: 1; grid-row: 1; justify-self: end; }
+  [data-theme="gomlam"] .save-card { grid-column: 2; grid-row: 1; justify-self: start; margin: 0; }
+  [data-theme="gomlam"] .gl-vase { display: block; position: absolute; bottom: 70px; width: 7.5vw; max-width: 120px; height: auto; filter: drop-shadow(0 16px 14px rgba(27, 42, 68, .2)); }
+  [data-theme="gomlam"] .gl-vase-l { left: 2.5vw; } [data-theme="gomlam"] .gl-vase-r { right: 2.5vw; width: 6vw; }
+  [data-theme="gomlam"] .intro--noimg { grid-template-columns: minmax(0, 1fr); }
+  [data-theme="gomlam"] .intro--noimg .save-card { grid-column: 1; justify-self: center; }
+}
+
+/* 07/10 (BA P1-03b): một điểm son "hỷ" — ngày cưới đỏ son giữa lòng đĩa, chấm son trên vạch chia. */
+[data-theme="gomlam"] .dl-d { color: #a8322a; }
+[data-theme="gomlam"] .save-card .divider { background: linear-gradient(90deg, var(--gl-blue) 0 44%, #a8322a 44% 56%, var(--gl-blue) 56%); }
+/* 07/10 (QA-NT-08): nút sửa ảnh của chủ nhà nằm giữa lòng đĩa, không bị vành đĩa cắt. */
+[data-theme="gomlam"] .main-photo .ed-img-tools { right: 50%; bottom: 16%; transform: translateX(50%); flex-direction: column; align-items: center; }

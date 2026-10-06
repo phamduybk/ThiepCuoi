@@ -47,7 +47,7 @@
 .ic--v-hongnhung.ic {
   --accent: #7a1f2b; --accent-2: #b98f4e; --ink: #3a0f16; --muted: #6e4a52; --paper: #fffaf6; --page: #2a060d;
   --f-head: "Bona Nova", "EB Garamond", Georgia, serif; --f-body: "Bona Nova", "EB Garamond", Georgia, serif;
-  --f-ui: "Bona Nova", "EB Garamond", Georgia, serif; --f-name: "Imperial Script", "Great Vibes", cursive; --name-style: normal;
+  --f-ui: "Bona Nova", "EB Garamond", Georgia, serif; --f-guest: "Bona Nova", "EB Garamond", Georgia, serif; --f-guest-style: italic; --f-name: "Imperial Script", "Great Vibes", cursive; --name-style: normal;
   --ic-paper: #fffaf6; --ic-on-accent: #fff7f2; --ic-line: rgba(185, 143, 78, .55); --ic-card-bg: #fffaf6;
   --ic-to-small: #e6c98f; --ic-to-name: #fff3ec;
   --ic-out-delay: 2s;

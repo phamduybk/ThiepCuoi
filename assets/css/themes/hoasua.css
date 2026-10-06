@@ -1,0 +1,311 @@
+/* Phông của giao diện "hoasua" — Google Fonts, SIL Open Font License 1.1: Literata. Phông chung khác ở fonts/fonts.css. */
+@font-face { font-family: 'Literata'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../fonts/Literata-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Literata'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../fonts/Literata-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Literata'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../fonts/Literata-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Literata'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/Literata-400i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Literata'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/Literata-400i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Literata'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/Literata-400i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+   HOA SỮA (giao diện thường, 07/10/2026) — phố cổ Hà Nội mùa thu: tường vôi vàng kem loang cũ, ảnh chính trong ô cửa sổ có
+   hai cánh cửa chớp xanh mở ra, ban công sắt uốn, cành hoa sữa chùm trắng rủ xuống, xe đạp chở hoa. Ngày cưới là tờ LỊCH BÓC
+   (số đỏ gạch), đếm ngược như số đồng hồ cũ; chân trang xanh cửa chớp. Phông Literata (tên nghiêng, tiêu đề, thân) + Montserrat. 07/10 (BA P0-01): bỏ Ballet — tên phải đọc được.
+   ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
+[data-theme="hoasua"] {
+  --accent: #2c5743; --accent-2: #d4a03a; --soft: #ebe1c9; --ink: #2a2620; --muted: #625a4b; --page: #f3ebd8;
+  --nav-bg: #f3ebd8; --nav-ink: #2a2620; --paper: #fbf6ea; --line: #ded2b6; --bg: #f3ebd8;
+  --f-head: "Literata", Georgia, serif; --f-name: "Literata", Georgia, serif; --f-body: "Literata", Georgia, serif; --f-ui: "Montserrat", system-ui, sans-serif;
+  --name-style: italic; --name-size: clamp(2.6rem, 10.5vw, 4.6rem);
+  --hs-green: #2c5743; --hs-brick: #a3432a; --hs-gold: #d4a03a;
+  --t-amp: #a3432a; --t-role: #7b5a24; --t-sh: 0 1px 2px rgba(42, 38, 32, .08), 0 22px 40px -26px rgba(60, 45, 20, .45); --t-rad: 3px; --t-btn-rad: 3px; --t-in-rad: 3px;
+  --t-body-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='p'><feTurbulence type='fractalNoise' baseFrequency='.012 .02' numOctaves='4' seed='11' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .42  0 0 0 0 .25  0 0 0 .16 -.05'/></filter><rect width='300' height='300' filter='url(%23p)'/></svg>"), #f3ebd8;
+  --t-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-16 -12 32 24'><g><circle r='3'/><circle cx='6' cy='-2' r='3'/><circle cx='-6' cy='-2' r='3'/><circle cx='3' cy='-7' r='3'/><circle cx='-3' cy='-7' r='3'/><circle cx='9' cy='4' r='2.6'/><circle cx='-9' cy='4' r='2.6'/><circle cx='3' cy='5' r='2.6'/><circle cx='-3' cy='5' r='2.6'/></g></svg>");
+  --t-icon-c: #2c5743;
+  --t-div: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 22'><path d='M0 11h70M110 11h70' stroke='black' stroke-width='1'/><path d='M74 11h32' stroke='black' stroke-width='1' stroke-dasharray='2 3'/><g transform='translate(90 11)'><circle r='2.4'/><circle cx='5' cy='-2' r='2.4'/><circle cx='-5' cy='-2' r='2.4'/><circle cx='0' cy='-5' r='2.4'/></g></svg>");
+  --t-div-c: #a3432a;
+  --t-foot-bg: linear-gradient(180deg, #2c5743, #213f31); --t-foot-ink: #f3ebd8; --t-foot-mute: #d6cdb5; --t-foot-i: #d4a03a;
+}
+/* ── Nền chung của giao diện (biến --t-* khai báo ở khối :root phía trên; khối riêng phía dưới ghi đè) ── */
+[data-theme="hoasua"] body.wd { font-size: 17px; background: var(--t-body-bg, var(--page)); }
+[data-theme="hoasua"] .td-hoasua { display: block; }
+[data-theme="hoasua"] .td-hoasua, [data-theme="hoasua"] .td-hoasua * { pointer-events: none; }
+[data-theme="hoasua"] :is(.orn, .rings, .photowall) { display: none; }
+[data-theme="hoasua"] .paper::before, [data-theme="hoasua"] .paper::after { display: none; }
+[data-theme="hoasua"] .paper { background: var(--paper); }
+[data-theme="hoasua"] .wd a:not(.btn) { color: var(--accent); }
+[data-theme="hoasua"] .wd h2 { font: var(--t-h2-w, 400) clamp(2.1rem, 6.4vw, 3.2rem)/1.15 var(--f-head); color: var(--t-h2, var(--ink)); }
+[data-theme="hoasua"] .eyebrow { font: 600 .875rem/1.5 var(--f-ui); letter-spacing: .22em; text-transform: uppercase; color: var(--t-eyebrow, var(--accent)); }
+[data-theme="hoasua"] .wd .btn { font: 600 1rem var(--f-ui); letter-spacing: .04em; border-radius: var(--t-btn-rad, 999px); min-height: 48px; padding: 0 26px; }
+[data-theme="hoasua"] .wd .btn-accent { background: var(--accent); color: var(--t-on-accent, #fff); border: 0; box-shadow: 0 12px 22px -14px color-mix(in srgb, var(--accent) 80%, transparent); }
+[data-theme="hoasua"] .wd .btn-accent:hover { background: var(--t-accent-hover, color-mix(in srgb, var(--accent) 84%, #000)); }
+[data-theme="hoasua"] .wd .btn-ghost { background: transparent; color: var(--accent); border: 1.5px solid color-mix(in srgb, var(--accent) 50%, transparent); }
+[data-theme="hoasua"] .wd .btn-ghost:hover { background: var(--soft); }
+[data-theme="hoasua"] .wd :is(input:not([type=radio]):not([type=checkbox]), textarea) { background: var(--t-input, #fff); border: 1.5px solid var(--line); border-radius: var(--t-in-rad, 12px); font: 1.05rem var(--f-body); color: var(--ink); padding: 11px 14px; }
+[data-theme="hoasua"] .wd :is(input, textarea):focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent); }
+[data-theme="hoasua"] .wd label { font: 600 .95rem var(--f-ui); color: var(--ink); }
+[data-theme="hoasua"] .wd label small { font: italic 400 .95rem var(--f-body); color: var(--muted); }
+[data-theme="hoasua"] .divider { width: 180px; height: 22px; margin: 14px auto 0; background: var(--t-div-c, var(--accent)); border: 0;
+  -webkit-mask: var(--t-div) center / contain no-repeat; mask: var(--t-div) center / contain no-repeat; }
+[data-theme="hoasua"] .divider::before, [data-theme="hoasua"] .divider span { display: none; }
+[data-theme="hoasua"] .sec-head { margin-bottom: 40px; }
+[data-theme="hoasua"] .sec-head::before { content: ""; display: block; width: 48px; height: 30px; margin: 0 auto 10px; background: var(--t-icon-c, var(--accent));
+  -webkit-mask: var(--t-icon) center / contain no-repeat; mask: var(--t-icon) center / contain no-repeat; }
+[data-theme="hoasua"] .sec-head .divider { display: none; }
+/* Thanh menu */
+[data-theme="hoasua"] .wd-nav { background: color-mix(in srgb, var(--nav-bg) 95%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-bottom: 1px solid var(--t-nav-line, var(--line)); }
+[data-theme="hoasua"] .wd-nav a { font: 600 .9375rem var(--f-ui); letter-spacing: .06em; color: var(--nav-ink); }
+[data-theme="hoasua"] .wd .wd-nav a:not(.btn) { color: var(--nav-ink); }
+[data-theme="hoasua"] .wd-mono { border: 1.5px solid var(--t-mono-line, var(--accent-2)); color: var(--t-mono, var(--accent)) !important; font: 400 1.3rem/1 var(--f-name); gap: 1px; }
+[data-theme="hoasua"] .wd-mono i { color: var(--t-mono-i, var(--accent-2)); font: 400 .8rem var(--f-ui); }
+[data-theme="hoasua"] .wd-burger { border-color: var(--t-nav-line, var(--line)); color: var(--nav-ink); }
+[data-theme="hoasua"] .wd-nav.scrolled { box-shadow: 0 10px 24px -18px rgba(0, 0, 0, .45); }
+[data-theme="hoasua"] .music-btn { background: var(--accent); color: var(--t-on-accent, #fff); box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px color-mix(in srgb, var(--accent) 35%, transparent), 0 8px 18px -6px rgba(0, 0, 0, .4); }
+/* Tên & ngày đầu trang (mặc định; khối riêng chỉnh bố cục) */
+[data-theme="hoasua"] .names { font: var(--name-style) var(--t-name-w, 400) var(--name-size)/1.08 var(--f-name); color: var(--t-name, var(--ink)); flex-direction: column; align-items: center; gap: 0; margin: 4px 0 8px; }
+[data-theme="hoasua"] .names .name { display: block; overflow-wrap: anywhere; text-wrap: balance; padding: 0 .08em; }
+[data-theme="hoasua"] .names .amp { font: italic 400 .4em/1.4 var(--f-head); color: var(--t-amp, var(--accent)); }
+[data-theme="hoasua"] .names.names--long { font-size: calc(var(--name-size) * .74); }
+[data-theme="hoasua"] .names.names--xl { font-size: calc(var(--name-size) * .58); }
+[data-theme="hoasua"] .save-card .date { font: 500 1.25rem/1.5 var(--f-head); color: var(--ink); letter-spacing: .02em; }
+[data-theme="hoasua"] .lunar { font: italic 400 1.02rem/1.5 var(--f-body); color: var(--muted); }
+[data-theme="hoasua"] .invitee { font: italic 1.1rem var(--f-body); color: var(--muted); }
+[data-theme="hoasua"] .invitee b { font: var(--name-style) 400 2.3rem/1.2 var(--f-name); color: var(--accent); }
+[data-theme="hoasua"].js-reveal .save-card.reveal { transform: translateY(16px); }
+[data-theme="hoasua"].js-reveal .save-card.reveal.in { transform: none; }
+[data-theme="hoasua"] .intro--noimg .intro-main { display: none; }
+/* Cặp đôi */
+[data-theme="hoasua"] .watercolor { background: var(--t-sec2, var(--paper)); }
+[data-theme="hoasua"] section.couple { padding: 84px 14px 80px; }
+[data-theme="hoasua"] .couple-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 14px; max-width: 880px; }
+[data-theme="hoasua"] .person { display: flex; flex-direction: column; align-items: center; text-align: center; grid-row: 1; }
+[data-theme="hoasua"] .person-g { grid-column: 1; } [data-theme="hoasua"] .person-b { grid-column: 2; }
+[data-theme="hoasua"] .house { display: inline-block; order: 0; margin: 0 0 16px; padding: 4px 14px; border-radius: var(--t-btn-rad, 999px); background: var(--soft); color: var(--t-house, var(--accent));
+  font: 600 .875rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; }
+[data-theme="hoasua"] .oval { order: 1; width: min(100%, 260px); margin: 0 0 4px; transform: none; }
+[data-theme="hoasua"] .oval img { border-radius: inherit; }
+[data-theme="hoasua"] .person .role { order: 2; margin: 20px 0 2px; font: 600 .875rem var(--f-ui); letter-spacing: .14em; color: var(--t-role, var(--muted)); }
+[data-theme="hoasua"] .banner { order: 3; display: block; background: none; color: var(--ink); padding: 0; border-radius: 0; margin: 0 0 8px; font: 400 clamp(1.35rem, 5vw, 1.95rem)/1.2 var(--f-head); text-wrap: balance; }
+[data-theme="hoasua"] .info { order: 4; font: 400 1rem/1.6 var(--f-body); color: var(--muted); max-width: 30ch; text-wrap: balance; }
+[data-theme="hoasua"] .couple-amp { display: none; }
+/* Lễ thành hôn */
+[data-theme="hoasua"] .event { padding: 84px 16px 90px; overflow: clip; isolation: isolate; }
+[data-theme="hoasua"] .event-row { grid-template-columns: minmax(0, 1fr); gap: 34px; max-width: 1040px; }
+[data-theme="hoasua"] .event-photo { width: min(74%, 330px); margin: 0 auto; aspect-ratio: 4 / 5; transform: none; border: 0; }
+[data-theme="hoasua"] .event-photo img { border-radius: inherit; }
+[data-theme="hoasua"].js-reveal .event-photo.reveal { transform: translateY(26px); }
+[data-theme="hoasua"].js-reveal .event-photo.reveal.in, [data-theme="hoasua"] .is-draft .event-photo.reveal { transform: none !important; }
+[data-theme="hoasua"] .event-card { background: var(--paper); padding: 44px 22px 34px; text-align: center; }
+[data-theme="hoasua"] .ev-intro { display: block; margin-bottom: 4px; }
+[data-theme="hoasua"] .ev-k { font: 600 .875rem/1.5 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--t-role, var(--muted)); margin: 0 0 6px; text-wrap: balance; }
+[data-theme="hoasua"] .ev-names { margin: 0; font: var(--name-style) 400 clamp(2rem, 8vw, 2.9rem)/1.15 var(--f-name); color: var(--accent); display: flex; flex-wrap: wrap; justify-content: center; gap: 0 .3em; }
+[data-theme="hoasua"] .ev-names i { font: italic 400 .5em/2 var(--f-head); color: var(--t-amp, var(--accent)); }
+[data-theme="hoasua"] .event-card .lead { font: italic 400 1.1rem/1.55 var(--f-body); color: var(--muted); max-width: 32ch; margin: 10px auto 0; }
+[data-theme="hoasua"] .event-card:has(.dlock) > .date.big { display: none; }
+[data-theme="hoasua"] .event-card .date.big { font: 500 1.4rem var(--f-head); color: var(--ink); }
+[data-theme="hoasua"] .dlock { display: grid; justify-items: center; margin: 22px auto 0; }
+[data-theme="hoasua"] .dl-row { display: grid !important; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 14px; width: min(100%, 360px); }
+[data-theme="hoasua"] :is(.dl-m, .dl-y) { font: 600 .9375rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+[data-theme="hoasua"] .dl-m { text-align: right; } [data-theme="hoasua"] .dl-y { text-align: left; }
+[data-theme="hoasua"] .dl-d { font: 500 3.2rem/1 var(--f-head); color: var(--accent); }
+[data-theme="hoasua"] .dl-wd { order: 2; margin-top: 12px; font: 600 1rem var(--f-ui); letter-spacing: .06em; color: var(--muted); }
+[data-theme="hoasua"] .dl-wd i { color: var(--accent); }
+[data-theme="hoasua"] .dl-t { display: none; }
+[data-theme="hoasua"] .event-card .lunar { margin-top: 6px; }
+[data-theme="hoasua"] .wd .event-card .countdown { gap: 10px; margin: 26px 0; }
+[data-theme="hoasua"] .wd .event-card .countdown div { width: 74px; min-width: 0; display: grid; place-content: center; padding: 12px 0; }
+[data-theme="hoasua"] .wd .event-card .countdown b { font: 500 1.8rem/1 var(--f-head); color: var(--t-cd, var(--accent)); font-variant-numeric: lining-nums tabular-nums; }
+[data-theme="hoasua"] .wd .event-card .countdown span { font: 600 .8125rem var(--f-ui); color: var(--muted); letter-spacing: .04em; margin-top: 4px; }
+/* Địa điểm */
+[data-theme="hoasua"] .location { padding: 76px 16px 84px; }
+[data-theme="hoasua"] .events { gap: 44px; max-width: 1100px; }
+[data-theme="hoasua"] .ev-map { height: 220px; border-radius: var(--t-rad, 16px); box-shadow: 0 0 0 1px var(--line); background: var(--soft); }
+[data-theme="hoasua"] .ev-map-load { font-family: var(--f-ui); background: repeating-linear-gradient(45deg, color-mix(in srgb, var(--accent) 6%, transparent) 0 2px, transparent 2px 14px), var(--soft); }
+[data-theme="hoasua"] .ev-map-load b { color: var(--accent); }
+[data-theme="hoasua"] .ev-map-load:hover b { background: var(--accent); color: var(--t-on-accent, #fff); }
+[data-theme="hoasua"] .ev-card { position: relative; text-align: center; background: var(--paper); padding: 40px 22px 30px; border-radius: var(--t-rad, 16px); box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="hoasua"] .ev-card::before, [data-theme="hoasua"] .ev-card::after { display: none; }
+[data-theme="hoasua"] .ev-card h3 { font: var(--name-style) 400 2.2rem/1.15 var(--f-name); color: var(--accent); margin: 4px 0 6px; }
+[data-theme="hoasua"] .ev-place { font: 600 1rem/1.4 var(--f-ui); letter-spacing: .04em; color: var(--ink); margin-bottom: 6px; }
+[data-theme="hoasua"] .ev-card :is(.ev-addr, .ev-time) { font: 400 1.03rem/1.55 var(--f-body); color: var(--muted); }
+/* Trích dẫn */
+[data-theme="hoasua"] .quote { min-height: 380px; isolation: isolate; }
+[data-theme="hoasua"] .quote blockquote { z-index: 3; }
+[data-theme="hoasua"] .quote blockquote p { font: italic 400 clamp(1.5rem, 5vw, 2.2rem)/1.45 var(--f-head); }
+[data-theme="hoasua"] .quote--noimg blockquote::before { color: var(--accent); }
+/* Album */
+[data-theme="hoasua"] .gallery-sec { padding: 80px 14px; }
+[data-theme="hoasua"] .wd-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 1180px; }
+[data-theme="hoasua"] .wd-g { aspect-ratio: 4 / 5; border-radius: var(--t-rad, 16px); background: var(--soft); }
+[data-theme="hoasua"] .wd-g img { border-radius: inherit; }
+[data-theme="hoasua"] .wd-g::after { content: ""; border-radius: inherit; background: linear-gradient(transparent 50%, color-mix(in srgb, var(--accent) 40%, transparent)); }
+[data-theme="hoasua"] .wd .album-card { border-radius: var(--t-rad, 16px); box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="hoasua"] .wd .album-meta h3 { font: 400 1.4rem var(--f-head); color: var(--ink); }
+[data-theme="hoasua"] .gallery-sec:has(> p.center .btn) .wd-g:nth-child(n + 13) { display: none; }
+@media (max-width: 760px) { [data-theme="hoasua"] .gallery-sec:has(> p.center .btn) .wd-g:nth-child(n + 9) { display: none; } }
+/* Gửi ảnh */
+[data-theme="hoasua"] .cta { position: relative; margin: 20px 16px 30px; padding: 58px 24px 50px; border-radius: var(--t-rad, 16px); text-align: center; background: var(--soft); box-shadow: var(--t-sh); }
+[data-theme="hoasua"] .cta::before { content: ""; display: block; width: 52px; height: 32px; margin: 0 auto 14px; background: var(--t-icon-c, var(--accent)); -webkit-mask: var(--t-icon) center / contain no-repeat; mask: var(--t-icon) center / contain no-repeat; }
+[data-theme="hoasua"] .wd .cta h2 { font: 400 clamp(1.8rem, 6vw, 2.5rem)/1.2 var(--f-head); }
+[data-theme="hoasua"] .cta p { font: 400 1.08rem/1.6 var(--f-body); color: var(--ink); }
+/* Xác nhận, lời chúc, mừng cưới */
+[data-theme="hoasua"] :is(.rsvp, .wishes, .gift) { padding: 72px 16px; overflow-x: clip; }
+[data-theme="hoasua"] .rsvp { max-width: 660px; }
+[data-theme="hoasua"] :is(.rsvp-card, .wish-form, .form-thanks, .rsvp-done) { background: var(--paper); border-radius: var(--t-rad, 16px); padding: 40px 22px 30px; box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="hoasua"] .rsvp-card { gap: 16px; }
+[data-theme="hoasua"] .rsvp-card .lead { font: italic 400 1.12rem/1.55 var(--f-body); color: var(--muted); margin: 0; }
+[data-theme="hoasua"] :is(.rsvp-invitee b, .rsvp-done b) { font: var(--name-style) 400 2.2rem/1.2 var(--f-name); color: var(--accent); }
+[data-theme="hoasua"] .rsvp-choice span { display: flex; align-items: center; justify-content: center; min-height: 54px; border-radius: var(--t-btn-rad, 999px); border: 1.5px solid var(--line); background: var(--t-input, #fff); font: 600 1rem/1.25 var(--f-ui); color: var(--ink); padding: 8px 12px; }
+[data-theme="hoasua"] .rsvp-choice input:checked + span { background: var(--accent); border-color: var(--accent); color: var(--t-on-accent, #fff); }
+[data-theme="hoasua"] :is(.rsvp-card, .wish-form) .btn { justify-self: center; min-width: 210px; }
+[data-theme="hoasua"] .field-hint { font: italic .95rem var(--f-body); color: var(--muted); }
+[data-theme="hoasua"] .wish-form { gap: 14px; margin-bottom: 30px; }
+[data-theme="hoasua"] .wd .wish { border: 0; border-radius: var(--t-rad, 16px); background: var(--paper); padding: 22px 22px 18px; position: relative; box-shadow: 0 0 0 1px var(--line); }
+[data-theme="hoasua"] .wd .wish p { font: 400 1.08rem/1.6 var(--f-body); color: var(--ink); }
+[data-theme="hoasua"] .wd .wish cite { font: 600 .95rem var(--f-ui); color: var(--t-role, var(--accent)); }
+[data-theme="hoasua"] .gift-card { border: 0; border-radius: var(--t-rad, 16px); background: var(--paper); box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="hoasua"] .gift-side { color: var(--accent); }
+[data-theme="hoasua"] .gift-qr { border-radius: 12px; border: 1.5px solid var(--line); }
+/* Chân trang */
+[data-theme="hoasua"] .wd-foot { position: relative; padding: 90px 16px 70px; color: var(--t-foot-ink); overflow: clip; isolation: isolate; background: var(--t-foot-bg); }
+[data-theme="hoasua"] .wd-foot .wd-mono.big { border-color: color-mix(in srgb, var(--t-foot-ink) 45%, transparent); color: var(--t-foot-ink) !important; font: 400 2rem/1 var(--f-name); }
+[data-theme="hoasua"] .wd-foot .wd-mono i { color: var(--t-foot-i, var(--accent-2)); }
+[data-theme="hoasua"] .wd-foot p { font: italic 400 1.2rem/1.5 var(--f-body); color: var(--t-foot-ink); }
+[data-theme="hoasua"] .wd-foot .muted.small, [data-theme="hoasua"] .wd-foot .music-credit { color: var(--t-foot-mute) !important; font-style: normal; font-family: var(--f-ui) !important; }
+/* Màn "Mở thiệp" */
+[data-theme="hoasua"] .wd-cover-mono { border-color: var(--accent-2); color: var(--accent); font: var(--name-style) 400 1.5rem var(--f-name); }
+[data-theme="hoasua"] .wd-cover-eyebrow { color: var(--t-role, var(--muted)); }
+[data-theme="hoasua"] .wd-cover-names { font: var(--name-style) 400 clamp(2.6rem, 11vw, 4.2rem)/1.08 var(--f-name); color: var(--t-name, var(--ink)); }
+[data-theme="hoasua"] .wd-cover-names i { font: italic 400 .42em/1.6 var(--f-head); color: var(--t-amp, var(--accent)); }
+[data-theme="hoasua"] .wd-cover-date { color: var(--ink); font-family: var(--f-head); }
+[data-theme="hoasua"] .wd-cover-btn { background: var(--accent); color: var(--t-on-accent, #fff); }
+/* Máy tính */
+@media (min-width: 761px) {
+  [data-theme="hoasua"] section.couple, [data-theme="hoasua"] .location, [data-theme="hoasua"] .gallery-sec { padding: 110px 40px; }
+  [data-theme="hoasua"] .couple-row { gap: 0 60px; }
+  [data-theme="hoasua"] .oval { width: min(100%, 300px); }
+  [data-theme="hoasua"] .event { padding: 110px 40px; }
+  [data-theme="hoasua"] .event-row { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: center; gap: 64px; }
+  [data-theme="hoasua"] .event-photo { width: 100%; max-width: 420px; }
+  [data-theme="hoasua"] .event-card { padding: 54px 44px 40px; }
+  [data-theme="hoasua"] .wd .event-card .countdown div { width: 84px; }
+  [data-theme="hoasua"] .ev-map { height: 340px; }
+  [data-theme="hoasua"] .ev-card { margin-left: -60px; padding: 46px 34px 34px; }
+  [data-theme="hoasua"] .ev:nth-child(even) .ev-card { margin: 0 -60px 0 0; }
+  [data-theme="hoasua"] .wd-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  [data-theme="hoasua"] .cta { margin: 40px auto 50px; max-width: 760px; padding: 70px 50px 60px; }
+}
+@media (max-width: 760px) {
+  [data-theme="hoasua"] .ev-card, [data-theme="hoasua"] .ev:nth-child(even) .ev-card { margin: -10px 4px 0; }
+  [data-theme="hoasua"] .wd-mono:not(.big) { font-size: 1.05rem; }
+}
+@media (max-width: 380px) {
+  [data-theme="hoasua"] .couple-row { gap: 0 8px; }
+  [data-theme="hoasua"] .wd .event-card .countdown div { width: 64px; }
+  [data-theme="hoasua"] .wd .event-card .countdown b { font-size: 1.45rem; }
+  [data-theme="hoasua"] .dl-row { gap: 8px; }
+}
+[data-theme="hoasua"] .is-draft :is(.intro-main, .save-card) { animation-duration: .01s !important; animation-delay: 0s !important; }
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="hoasua"] *, [data-theme="hoasua"] *::before, [data-theme="hoasua"] *::after { animation: none !important; transition: none !important; }
+}
+/* Thái/Lào/Trung: số ngày cưới dùng phông tiêu đề (phông tên dạng chữ viết tay khó đọc với chữ số). */
+html:is([lang="th"], [lang="lo"], [lang="zh"])[data-theme="hoasua"] .wd .dl-d { font-family: var(--f-head); }
+/* ════════ Phần riêng của giao diện ════════ */
+/* ── Đầu trang: ô cửa sổ phố cổ, cửa chớp xanh mở, ban công sắt, cành hoa sữa ── */
+[data-theme="hoasua"] .intro { --hs-pw: min(56vw, 270px); position: relative; display: flex; flex-direction: column; align-items: center; padding: 108px 16px 60px; overflow: clip; isolation: isolate;
+  background: radial-gradient(70% 45% at 50% 30%, rgba(255, 244, 210, .8), transparent 70%), var(--t-body-bg); }
+[data-theme="hoasua"] .hs-hero { position: absolute; inset: 0; z-index: 3; }
+[data-theme="hoasua"] .hs-light { position: absolute; left: 50%; top: 60px; width: 120vw; height: 520px; translate: -50% 0; background: radial-gradient(closest-side, rgba(255, 236, 180, .55), transparent); z-index: -1; }
+[data-theme="hoasua"] .hs-balcony { position: absolute; left: 50%; top: calc(108px + var(--hs-pw) * 1.3 - 30px); width: calc(var(--hs-pw) + 60px); height: 52px; translate: -50% 0; color: #253a2f; }
+[data-theme="hoasua"] .hs-balcony svg { width: 100%; height: 100%; display: block; }
+[data-theme="hoasua"] .hs-branch-h { position: absolute; left: -12vw; top: 70px; width: 78vw; max-width: 460px; transform-origin: 0 0; animation: hs-sway 7s ease-in-out infinite alternate; }
+[data-theme="hoasua"] .hs-branch svg { width: 100%; height: auto; display: block; overflow: visible; }
+@keyframes hs-sway { from { rotate: -1.5deg; } to { rotate: 1.5deg; } }
+[data-theme="hoasua"] .hs-bikewrap { position: absolute; right: 4%; top: calc(108px + var(--hs-pw) * 1.3 + 46px); width: 92px; color: #3b3328; opacity: .8; }
+[data-theme="hoasua"] .hs-bike { width: 100%; height: auto; display: block; }
+/* Ô cửa: khung gỗ kem + 2 cánh chớp xanh mở hai bên */
+[data-theme="hoasua"] .intro-main { width: var(--hs-pw); margin: 0 auto; position: relative; z-index: 2; padding: 10px; background: #efe5cc;
+  box-shadow: inset 0 0 0 2px #c9b98f, 0 18px 30px -20px rgba(0, 0, 0, .5); animation: hs-in 1.2s ease both; }
+[data-theme="hoasua"] .intro-main::before, [data-theme="hoasua"] .intro-main::after { content: ""; position: absolute; top: 0; bottom: 0; width: 44%; z-index: -1;
+  background: repeating-linear-gradient(180deg, #2f5f48 0 7px, #244a38 7px 9px), #2c5743; box-shadow: inset 0 0 0 4px #2c5743, inset 0 0 0 5px rgba(0, 0, 0, .25), 0 10px 16px -10px rgba(0, 0, 0, .5);
+  transform-origin: var(--o) 50%; animation: hs-shut 1.5s cubic-bezier(.3, .8, .3, 1) .3s both; }
+[data-theme="hoasua"] .intro-main::before { right: 100%; --o: 100%; transform: perspective(500px) rotateY(-24deg); }
+[data-theme="hoasua"] .intro-main::after { left: 100%; --o: 0%; transform: perspective(500px) rotateY(24deg); }
+@keyframes hs-shut { from { transform: perspective(500px) rotateY(var(--hs-f, 0deg)); } }
+[data-theme="hoasua"] .intro-main::before { --hs-f: 85deg; } [data-theme="hoasua"] .intro-main::after { --hs-f: -85deg; }
+@keyframes hs-in { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+[data-theme="hoasua"] .main-photo { aspect-ratio: 4 / 5.2; border: 0; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1); transform: none; }
+[data-theme="hoasua"] .save-card { position: relative; z-index: 4; background: none; padding: 0; margin: 62px auto 0; width: min(640px, 100%); text-align: center; animation: hs-in 1.2s ease .4s both; }
+[data-theme="hoasua"] .names { line-height: 1.12; }
+[data-theme="hoasua"] .names .amp { font: italic 400 .4em/1.6 var(--f-head); color: var(--hs-brick); }
+[data-theme="hoasua"] .save-card .date { font: 600 1.1rem var(--f-ui); letter-spacing: .08em; color: var(--hs-green); }
+[data-theme="hoasua"] .intro--noimg .hs-balcony, [data-theme="hoasua"] .intro--noimg .hs-bikewrap { display: none; }
+[data-theme="hoasua"] .intro--noimg .save-card { margin-top: 160px; }
+/* ── Cặp đôi: ảnh trong khung cửa sổ nhỏ, mái hiên ── */
+[data-theme="hoasua"] .watercolor { background: transparent; }
+[data-theme="hoasua"] .oval { aspect-ratio: 3 / 4; border-radius: 2px; border: 8px solid #efe5cc; box-shadow: 0 0 0 2px var(--hs-green), 0 0 0 6px #efe5cc, 0 0 0 7px #c9b98f, var(--t-sh); }
+[data-theme="hoasua"] .house { background: var(--hs-green); color: #f3ebd8; border-radius: 2px; }
+[data-theme="hoasua"] .banner { font: 500 clamp(1.3rem, 5vw, 1.8rem)/1.25 var(--f-head); }
+/* ── Lễ thành hôn: tờ lịch bóc ── */
+[data-theme="hoasua"] .hs-branch-ev { position: absolute; right: -14vw; top: 0; width: 64vw; max-width: 420px; transform: scaleX(-1); opacity: .85; z-index: -1; }
+[data-theme="hoasua"] .event-photo { border: 10px solid #fffdf6; box-shadow: var(--t-sh); transform: rotate(-1.5deg); }
+[data-theme="hoasua"].js-reveal .event-photo.reveal.in, [data-theme="hoasua"] .is-draft .event-photo.reveal { transform: rotate(-1.5deg) !important; }
+[data-theme="hoasua"] .event-card { box-shadow: 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="hoasua"] .dlock { position: relative; width: min(230px, 80%); margin: 26px auto 4px; padding: 30px 14px 16px; background: #fffef9; border-radius: 2px;
+  box-shadow: 0 1px 0 #e9e1cc, 0 2px 0 #f6f1e3, 0 3px 0 #e2d9c2, 0 4px 0 #f3eddc, 0 14px 22px -14px rgba(0, 0, 0, .45); }
+[data-theme="hoasua"] .dlock::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 16px; background: var(--hs-brick);
+  -webkit-mask: radial-gradient(circle at 50% 50%, transparent 3px, #000 3.5px) 0 0 / 22px 16px; mask: radial-gradient(circle at 50% 50%, transparent 3px, #000 3.5px) 0 0 / 22px 16px; }
+[data-theme="hoasua"] .dl-row { display: grid !important; grid-template-columns: 1fr 1fr; grid-template-areas: "m y" "d d"; gap: 0 8px; width: 100%; }
+[data-theme="hoasua"] .dl-m { grid-area: m; text-align: left; color: var(--hs-green); font-size: .8125rem; }
+[data-theme="hoasua"] .dl-y { grid-area: y; text-align: right; color: var(--hs-green); font-size: .8125rem; }
+[data-theme="hoasua"] .dl-d { grid-area: d; text-align: center; font: 700 5rem/1 var(--f-head); color: var(--hs-brick); margin: 6px 0 2px; }
+[data-theme="hoasua"] .dl-wd { margin-top: 2px; color: var(--ink); font-weight: 700; }
+[data-theme="hoasua"] .wd .event-card .countdown { gap: 6px; }
+[data-theme="hoasua"] .wd .event-card .countdown div { background: #2a2620; border-radius: 3px; box-shadow: inset 0 -20px 0 rgba(255, 255, 255, .04), 0 6px 12px -8px rgba(0, 0, 0, .6); }
+[data-theme="hoasua"] .wd .event-card .countdown b { color: #f6e7c1; font: 600 1.7rem/1 var(--f-head); }
+[data-theme="hoasua"] .wd .event-card .countdown span { color: #d9cfb4; }
+/* ── Địa điểm: bảng tên phố men xanh ── */
+[data-theme="hoasua"] .ev-card { background: var(--paper); box-shadow: inset 0 0 0 1px var(--line), var(--t-sh); padding-top: 64px; }
+[data-theme="hoasua"] .ev-card::before { display: block !important; content: ""; position: absolute; left: 50%; top: 18px; width: 120px; height: 26px; translate: -50% 0; transform: none; inset: 18px auto auto 50%;
+  border-radius: 3px; background: radial-gradient(circle, #f3ebd8 0 3px, #1d3d2e 3.5px 4.5px, transparent 5px) 6px 50% / 18px 100% repeat-x, var(--hs-green); box-shadow: 0 2px 0 rgba(0, 0, 0, .15); z-index: 0; }
+[data-theme="hoasua"] .ev-card h3 { font: italic 400 2rem/1.25 var(--f-name); color: var(--hs-brick); }
+/* ── Trích dẫn ── */
+[data-theme="hoasua"] .quote::after { background: linear-gradient(180deg, rgba(33, 63, 49, .45), rgba(33, 63, 49, .75)); }
+[data-theme="hoasua"] .quote.quote--noimg { background: var(--t-body-bg); color: var(--ink); }
+[data-theme="hoasua"] .hs-branch-q { position: absolute; left: -8vw; top: -10px; width: 60vw; max-width: 420px; z-index: 2; opacity: .9; }
+[data-theme="hoasua"] .quote blockquote p { font-style: italic; }
+[data-theme="hoasua"] .wd-g { border: 6px solid #fffdf6; box-shadow: 0 0 0 1px var(--line); }
+[data-theme="hoasua"] .wd-g:nth-child(odd) { transform: rotate(-1deg); } [data-theme="hoasua"] .wd-g:nth-child(even) { transform: rotate(1deg); }
+[data-theme="hoasua"] .cta { background: var(--paper); box-shadow: inset 0 0 0 1px var(--line), var(--t-sh); }
+[data-theme="hoasua"] .wd .wish { background: #fffef9; box-shadow: 0 0 0 1px var(--line), 3px 3px 0 #e6dcc4; }
+/* ── Chân trang ── */
+[data-theme="hoasua"] .hs-foot { position: absolute; inset: 0; z-index: -1; }
+[data-theme="hoasua"] .hs-branch-f { position: absolute; left: -10vw; top: -16px; width: 70vw; max-width: 420px; opacity: .55; }
+[data-theme="hoasua"] .hs-bike-f { position: absolute; right: 6%; bottom: 24px; top: auto; width: 84px; color: #a9c2b4; opacity: .7; }
+[data-theme="hoasua"] .wd-cover { background: radial-gradient(70% 50% at 50% 30%, #fff4d2, transparent 70%), var(--t-body-bg); }
+[data-theme="hoasua"] .ic { --ic-paper: #fbf6ea; --ic-env-front: #ece2c8; --ic-env-flap: #e4d8ba; --ic-env-in: #2c5743; --ic-wax: #a3432a; --ic-wax-ink: #fbefe3;
+  --ic-card-bg: #fffcf2; --ic-line: rgba(44, 87, 67, .38);
+  --ic-liner: repeating-linear-gradient(180deg, rgba(255, 255, 255, .18) 0 6px, transparent 6px 9px); }
+@media (min-width: 761px) {
+  [data-theme="hoasua"] { --name-size: clamp(3.2rem, 5.4vw, 5.2rem); }
+  [data-theme="hoasua"] .intro { --hs-pw: min(22vw, 300px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 6vw; align-items: center; min-height: 100svh; padding: 120px 6vw 100px; }
+  [data-theme="hoasua"] .intro-main { grid-column: 1; grid-row: 1; justify-self: end; margin-right: 8vw; }
+  [data-theme="hoasua"] .save-card { grid-column: 2; grid-row: 1; justify-self: start; margin: 0; }
+  [data-theme="hoasua"] .hs-balcony { left: calc(50% - 3vw - 8vw - var(--hs-pw) / 2); top: calc(50% + var(--hs-pw) * .65 - 30px); }
+  [data-theme="hoasua"] .hs-branch-h { left: 4vw; top: 80px; width: 34vw; max-width: 560px; }
+  [data-theme="hoasua"] .hs-bikewrap { right: 6%; top: auto; bottom: 40px; width: 130px; }
+  [data-theme="hoasua"] .intro--noimg { grid-template-columns: minmax(0, 1fr); }
+  [data-theme="hoasua"] .intro--noimg .save-card { grid-column: 1; justify-self: center; }
+}
+@media (max-width: 760px) { [data-theme="hoasua"] .hs-hero .hs-bikewrap { display: none; } }

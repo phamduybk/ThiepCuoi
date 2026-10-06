@@ -100,10 +100,10 @@ return array(
 	'Mẫu thiệp — Đang dùng:'      => 'Card design — In use:',
 	'Đổi mẫu'                     => 'Change',
 	'Mẫu thiệp'                   => 'Card design',
-	'{n} kiểu mở thiệp có hiệu ứng 3D. 10 mẫu thường tự lấy màu theo giao diện trang; mẫu VIP có màu và phông riêng.'
-		=> '{n} card designs with 3D opening effects. The 10 standard designs follow your Theme colors; VIP designs have their own colors and fonts.',
-	'{n} kiểu mở thiệp có hiệu ứng 3D. 10 mẫu thường tự lấy màu theo giao diện trang; 10 mẫu đi cùng giao diện riêng có màu và phông riêng.'
-		=> '{n} card designs with 3D opening effects. The 10 standard designs follow your Theme colors; the 10 designs paired with special Themes have their own colors and fonts.',
+	'{n} kiểu mở thiệp có hiệu ứng 3D. 20 mẫu thường tự lấy màu theo giao diện trang; mẫu VIP có màu và phông riêng.'
+		=> '{n} card designs with 3D opening effects. The 20 standard designs follow your Theme colors; VIP designs have their own colors and fonts.',
+	'{n} kiểu mở thiệp có hiệu ứng 3D. 20 mẫu thường tự lấy màu theo giao diện trang; 10 mẫu đi cùng giao diện riêng có màu và phông riêng.'
+		=> '{n} card designs with 3D opening effects. The 20 standard designs follow your Theme colors; the 10 designs paired with special Themes have their own colors and fonts.',
 	'Đang dùng:'                  => 'In use:',
 	'10 thiệp đi cùng 10 giao diện VIP' => '10 cards paired with 10 VIP Themes',
 	'10 thiệp đi cùng 10 giao diện riêng' => '10 cards paired with 10 special Themes',
