@@ -104,6 +104,8 @@ return array(
 	'Ủng hộ' => 'Support',
 	'Đăng xuất' => 'Log out',
 	'Ngôn ngữ' => 'Language',
+	'Đã hiện lời chúc cho khách ✓' => 'Wish is now visible to guests ✓',
+	'Đã ẩn lời chúc ✓' => 'Wish hidden ✓',
 	// ── Album, ảnh, duyệt, lời chúc, đăng nhập, cài đặt lần đầu ──
 	'Công khai' => 'Public',
 	'Có mật khẩu' => 'Password',
