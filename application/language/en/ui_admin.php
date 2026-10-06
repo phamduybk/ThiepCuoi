@@ -2,6 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 // Bản dịch EN: 'chuỗi gốc tiếng Việt' => 'English' (xem helpers/i18n_helper.php).
 return array(
+	'Chọn tên miền riêng' => 'Choose your own domain',
+	'Đã có tên miền? Nhập mã ghép nối' => 'Already have a domain? Enter the pairing code',
+	'Ghép nối' => 'Pair',
+	'Lấy mã ở thiep.site/ten-mien (mục Tên miền của bạn → Lấy mã ghép nối).' => 'Get the code at thiep.site/ten-mien (Your domain names → Get pairing code).',
+	'Link cũ {own} vẫn dùng được.' => 'The old link {own} still works.',
+	'Mã ghép nối gồm 6 chữ số.' => 'The pairing code has 6 digits.',
+	'Đã ghép tên miền {host} — trang cưới mở bằng link mới ngay (link cũ vẫn dùng được).' => 'Paired {host} — your wedding site now opens at the new link (the old one still works).',
 	// ── Tổng quan (dashboard) ──
 	'Tổng quan' => 'Dashboard',
 	'Sửa trang cưới' => 'Edit wedding page',

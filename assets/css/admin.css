@@ -217,3 +217,9 @@ form[data-settings-form].is-dirty > .form-actions .btn-accent { animation: save-
 .lang-opt input { margin: 0; }
 .lang-opt span b { font-weight: 600; white-space: nowrap; }
 .lang-opt small { margin-left: auto; font-size: .75rem; white-space: nowrap; }
+
+/* ── Bán tên miền: nút "Tự chọn tên miền" + ô mã ghép nối (06/10, views/admin/_domain_shop.php) ── */
+.domain-shop { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 10px 0; padding: 12px 14px; border: 1px dashed var(--line, #e5ddd5); border-radius: 12px; }
+.domain-shop .ds-otp { display: grid; gap: 4px; flex: 1 1 260px; }
+.ds-otp-row { display: flex; gap: 8px; }
+.ds-otp-row input { width: 9.5em; font: 600 1.15rem ui-monospace, Menlo, monospace; letter-spacing: .2em; text-align: center; }
