@@ -2,6 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 // Bản dịch EN: 'chuỗi gốc tiếng Việt' => 'English' (xem helpers/i18n_helper.php).
 return array(
+	'Giao diện này chưa dùng được trên máy này — hãy chọn một giao diện khác.' => 'This theme isn’t available on this computer — please choose another.',
+	'Giao diện "{name}" chưa dùng được trên máy này.' => 'The "{name}" theme isn’t available on this computer.',
+	'Mẫu thiệp này chưa dùng được trên máy này.' => 'This invitation design isn’t available on this computer.',
+	'10 kiểu mở thiệp có hiệu ứng 3D, tự lấy màu theo giao diện trang.' => '10 invitation designs with 3D opening effects, coloured to match your theme.',
+	'mở khi kết nối tên miền riêng' => 'unlocks when you connect your own domain',
+	'giao diện VIP' => 'VIP theme',
+	'{name} — mẫu thiệp VIP' => '{name} — VIP invitation design',
+	'VIP đã kích hoạt — 10 giao diện + 10 thiệp VIP' => 'VIP active — 10 VIP themes + 10 VIP invitations',
+	'VIP đã kích hoạt — dùng được 10 giao diện + 10 thiệp VIP.' => 'VIP active — 10 VIP themes and 10 VIP invitation designs unlocked.',
+	'VIP đã kích hoạt: mở 10 giao diện + 10 thiệp VIP ✦' => 'VIP activated: 10 VIP themes + 10 VIP invitations unlocked ✦',
 	'Xem hướng dẫn có ảnh' => 'See the illustrated guide',
 	'Phiên bản {v}' => 'Version {v}',
 	'bản cài trên máy' => 'self-hosted',

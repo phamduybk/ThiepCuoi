@@ -1,0 +1,253 @@
+/* Thiệp VIP "v-gatsby" — HỘP THIỆP ĐEN ÉP KIM ART DECO, QUẠT NAN BUNG MỞ (đi cùng giao diện VIP gatsby).
+   Bìa: nắp hộp sơn mài đen ép kim (khung bậc thang, hào quang, hình thoi, chữ lồng) đặt trên khay nhung có tia nắng.
+   Chạm -> nắp lật lên theo bản lề trên (3D) -> quạt 11 nan vàng/đen bung xoè từ khay rồi nổi lên -> thiệp đen viền vàng
+   trồi ra: đầu thiệp hào quang + ảnh khung bát giác, góc kim loại bậc thang, chữ nhũ vàng.
+   Màu + phông RIÊNG của thiệp (không phụ thuộc giao diện) -> đẹp nhất với gatsby nhưng ổn với mọi giao diện.
+   Phông OFL tự host: Playfair Display SC (nhúng dưới đây), Playfair Display + Josefin Sans (fonts/fonts.css). */
+@font-face { font-family: 'Playfair Display SC'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/PlayfairDisplaySC-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display SC'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/PlayfairDisplaySC-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Playfair Display SC'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/PlayfairDisplaySC-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+html .ic.ic--v-gatsby {
+  --vg-gold: #d4b46a; --vg-gold-hi: #f3dfa2; --vg-gold-lo: #8a6a2f; --vg-black: #0d0c0a; --vg-lac: #16140f;
+  --vg-foil: linear-gradient(100deg, #8a6a2f 0%, #b08d4a 18%, #d4b46a 32%, #f3dfa2 44%, #fff4cf 50%, #f3dfa2 56%, #d4b46a 68%, #b08d4a 84%, #8a6a2f 100%);
+  --vg-chev: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='16'><path d='M0 15l14-13 14 13' fill='none' stroke='%23d4b46a' stroke-opacity='.07' stroke-width='1'/></svg>");
+  --accent: #d4b46a; --accent-2: #b08d4a; --ink: #f1e8d4; --muted: #c2b69c; --page: #0b0a08; --paper: #16140f;
+  --ic-paper: #16140f; --ic-line: rgba(212, 180, 106, .5); --ic-on-accent: #17120a;
+  --ic-to-small: #c2b69c; --ic-to-name: #f3dfa2;
+  --f-name: "Playfair Display SC", "Playfair Display", Georgia, serif; --f-head: "Playfair Display SC", "Playfair Display", Georgia, serif;
+  --f-body: "Josefin Sans", "Be Vietnam Pro", system-ui, sans-serif; --f-ui: "Josefin Sans", "Be Vietnam Pro", system-ui, sans-serif;
+  --name-style: normal;
+  --vg-w: min(340px, 82vw, calc((100vh - 150px) / 1.25));   /* điện thoại xoay ngang: bìa vừa chiều cao (R1-CARDS-01) */ --vg-r: calc(var(--vg-w) * .56);
+  --ic-out-delay: 1.62s;
+  color: var(--ink);
+}
+html .ic.ic--v-gatsby .ic-backdrop {
+  background:
+    radial-gradient(55% 40% at 50% 42%, rgba(212, 180, 106, .16), transparent 70%),
+    var(--vg-chev) 0 0 / 28px 16px,
+    rgba(11, 10, 8, .95);
+}
+html .ic--v-gatsby .ic-preview { background: #3a3018; color: #f3e2b0; }
+html .ic--v-gatsby .ic-env-hint { border-radius: 0; background: #16140f; color: #f3dfa2; box-shadow: 0 0 0 1px rgba(212, 180, 106, .6), 0 10px 22px -10px #000;
+  letter-spacing: .14em; text-transform: uppercase; font-weight: 400; font-size: .9375rem; padding: 2px 22px 0; }
+
+/* ══ BÌA: hộp đen ══ */
+/* Phối cảnh xa hơn khung chung để nắp lật không phóng to sát mắt người xem. */
+.ic--v-gatsby .ic-stage { transform: perspective(2600px) rotateX(calc(var(--ty) * -7deg)) rotateY(calc(var(--tx) * 9deg)); }
+.ic--v-gatsby .ic-env-btn {
+  width: var(--vg-w); aspect-ratio: 4 / 5; transform-style: preserve-3d;
+  box-shadow: 0 1px 0 #3a3020, 0 7px 0 #0a0907, 0 8px 0 rgba(212, 180, 106, .45), 0 46px 70px -26px #000, 0 18px 30px -18px rgba(0, 0, 0, .8);
+  animation: vg-float 6s ease-in-out infinite;
+}
+/* Khay nhung + tia nắng + quạt (lộ ra khi nắp lật) */
+.ic--v-gatsby .vg-base {
+  position: absolute; inset: 0; transform-style: flat;   /* phẳng: lớp 3D trong khay làm Chrome che mất nửa nắp lật */
+  background: radial-gradient(80% 70% at 50% 75%, #24201a, #0b0a08 75%);
+  box-shadow: inset 0 0 0 6px #1d1a14, inset 0 0 0 7px rgba(212, 180, 106, .55), inset 0 0 30px 10px rgba(0, 0, 0, .8);
+}
+.ic--v-gatsby .vg-rays {
+  position: absolute; inset: 14px;
+  background: repeating-conic-gradient(from -90deg at 50% 78%, rgba(212, 180, 106, .22) 0 .8deg, transparent .8deg 7.5deg);
+  -webkit-mask: radial-gradient(circle at 50% 78%, transparent 0 12%, #000 13% 70%, transparent 90%);
+  mask: radial-gradient(circle at 50% 78%, transparent 0 12%, #000 13% 70%, transparent 90%);
+  opacity: 0; transition: opacity .8s ease .55s;
+}
+.ic--v-gatsby .vg-fan {
+  position: absolute; left: 50%; top: 78%; width: 0; height: 0; transform-style: preserve-3d;
+  transform: translateZ(2px) scale(.62); transition: transform .9s cubic-bezier(.2, .75, .2, 1) .5s;
+}
+.ic--v-gatsby .vg-fan i {
+  position: absolute; left: calc(var(--vg-r) * -.14); bottom: 0; width: calc(var(--vg-r) * .28); height: var(--vg-r);
+  transform-origin: 50% 100%; transform: rotate(calc(var(--i) * 1.2deg));
+  clip-path: polygon(45% 100%, 55% 100%, 100% 1.5%, 50% 0, 0 1.5%);
+  background:
+    linear-gradient(90deg, transparent 47%, #b08d4a 47% 53%, transparent 53%),
+    repeating-linear-gradient(180deg, transparent 0 7px, rgba(23, 18, 10, .35) 7px 8px) 0 6% / 100% 52% no-repeat,
+    var(--vg-foil) 0 0 / 300% 60% no-repeat;
+  box-shadow: inset 1px 0 0 rgba(255, 244, 207, .5);
+  transition: transform .95s cubic-bezier(.2, .8, .2, 1.04) .62s;
+}
+.ic--v-gatsby .vg-fan i:nth-child(even) {
+  background:
+    linear-gradient(90deg, transparent 47%, #b08d4a 47% 53%, transparent 53%),
+    linear-gradient(90deg, #d4b46a 0 2px, transparent 2px calc(100% - 2px), #d4b46a calc(100% - 2px)) 0 0 / 100% 60% no-repeat,
+    linear-gradient(180deg, #d4b46a 0 2px, transparent 2px) 0 0 / 100% 60% no-repeat,
+    repeating-linear-gradient(180deg, transparent 0 11px, rgba(212, 180, 106, .5) 11px 12px) 0 8% / 100% 46% no-repeat,
+    linear-gradient(180deg, #221d14, #0d0c0a) 0 0 / 100% 60% no-repeat;
+}
+.ic--v-gatsby .vg-fan i:nth-child(1) { background-position: 0 0, 0 6%, 10% 0; }
+.ic--v-gatsby .vg-fan i:nth-child(11) { background-position: 0 0, 0 6%, 90% 0; }
+.ic--v-gatsby .vg-pin {
+  position: absolute; left: -9px; top: -9px; width: 18px; height: 18px; border-radius: 50%; transform: translateZ(1px);
+  background: radial-gradient(circle at 35% 30%, #fff4cf, #d4b46a 45%, #6e5222); box-shadow: 0 2px 4px rgba(0, 0, 0, .6);
+}
+/* Nắp hộp: mặt ép kim + mặt trong lót lụa vàng; bản lề ở cạnh trên */
+.ic--v-gatsby .vg-lid {
+  position: absolute; inset: 0; transform-origin: 50% 0; transform-style: preserve-3d; transform: translateZ(3px);
+  transition: transform .95s cubic-bezier(.55, .05, .25, 1);
+}
+.ic--v-gatsby .vg-lid-face, .ic--v-gatsby .vg-lid-back { position: absolute; inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.ic--v-gatsby .vg-lid-face {
+  background:
+    var(--vg-chev) 0 0 / 28px 16px,
+    radial-gradient(90% 60% at 30% 10%, rgba(255, 244, 207, .07), transparent 60%),
+    linear-gradient(160deg, #201c15 0%, #0e0d0a 55%, #17140f 100%);
+  box-shadow: inset 0 0 0 1px rgba(212, 180, 106, .35), inset 0 1px 0 rgba(255, 244, 207, .15);
+}
+.ic--v-gatsby .vg-lid-back {
+  transform: rotateX(180deg); visibility: hidden;
+  background:
+    repeating-conic-gradient(from -90deg at 50% 100%, rgba(90, 66, 24, .28) 0 1deg, transparent 1deg 9deg),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, .08) 0 2px, transparent 2px 9px), linear-gradient(180deg, #b08d4a, #e9d39a 50%, #8a6a2f);
+  box-shadow: inset 0 0 0 8px #14110c;
+}
+.ic--v-gatsby .vg-lid-art { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ic--v-gatsby .vg-mono {
+  position: absolute; left: 0; right: 0; top: 34.4%; transform: translateY(-50%); display: flex; justify-content: center; align-items: baseline; gap: 2px;
+  font: 400 calc(var(--vg-w) * .085)/1 var(--f-name);
+  background: var(--vg-foil); background-size: 240% 100%; background-position: calc(50% + var(--tx) * 40%) 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.ic--v-gatsby .vg-mono i { font-style: normal; font-size: .55em; }
+.ic--v-gatsby .ic-env-to { left: 10%; right: 10%; top: 64%; bottom: auto; text-align: center; transform: translateZ(5px); gap: 8px; }
+.ic--v-gatsby .ic-env-to small { letter-spacing: .26em; font: 400 .875rem/1 var(--f-ui); }
+.ic--v-gatsby .ic-env-to b { font-family: var(--f-name); font-size: clamp(1.3rem, 5.6vw, 1.65rem); line-height: 1.15;
+  background: var(--vg-foil); background-size: 240% 100%; background-position: calc(50% + var(--tx) * 40%) 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .08em; }
+
+/* ── Mở: nắp lật -> tia sáng -> quạt bung + nổi lên ── */
+.ic--v-gatsby.is-opening .ic-env-btn { animation: vg-settle 1.9s cubic-bezier(.3, .6, .3, 1) both; }
+.ic--v-gatsby.is-opening .vg-lid { transform: translateZ(3px) rotateX(150deg); }
+/* WebKit (Safari iPhone) bỏ qua backface-visibility trong .vg-lid preserve-3d (mặt .ic-sheen có mix-blend-mode) -> mặt lót vàng
+   (đứng sau trong DOM) vẽ đè lên mặt nắp đen. Không dựa vào backface: đổi mặt bằng visibility đúng lúc nắp qua 90° (~.5 s). */
+.ic--v-gatsby.is-opening .vg-lid-face { visibility: hidden; transition: visibility 0s linear .5s; }
+.ic--v-gatsby.is-opening .vg-lid-back { visibility: visible; transition: visibility 0s linear .5s; }
+.ic--v-gatsby.is-opening .vg-rays { opacity: 1; }
+.ic--v-gatsby.is-opening .vg-fan { transform: translateZ(10px) translateY(-6%) scale(1.04); }
+.ic--v-gatsby.is-opening .vg-fan i { transform: rotate(calc(var(--i) * 15deg)); }
+.ic--v-gatsby.is-opening .vg-fan::after {
+  content: ""; position: absolute; left: calc(var(--vg-r) * -1.1); bottom: 0; width: calc(var(--vg-r) * 2.2); height: calc(var(--vg-r) * 1.1);
+  background: radial-gradient(ellipse at 50% 100%, rgba(255, 240, 200, .55), transparent 62%); mix-blend-mode: screen;
+  animation: vg-glow 1s ease-out 1.15s both;
+}
+@keyframes vg-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@keyframes vg-settle { 0% { transform: none; } 40% { transform: translateY(30px) rotateX(10deg); } 100% { transform: translateY(46px) rotateX(14deg) scale(.96); } }
+@keyframes vg-glow { 0% { opacity: 0; } 35% { opacity: 1; } 100% { opacity: 0; } }
+
+/* ══ THIỆP: đen sơn mài, viền vàng kép, góc bậc thang ══ */
+html .ic.ic--v-gatsby.is-open .ic-card { display: flex; flex-direction: column; animation: vg-card-in 1.1s cubic-bezier(.2, .7, .2, 1) both; }
+.ic--v-gatsby .ic-card {
+  padding: 30px 38px 30px; border-radius: 0; transform-origin: 50% 0;
+  background: var(--vg-chev) 0 0 / 28px 16px, radial-gradient(90% 40% at 50% 0, rgba(212, 180, 106, .13), transparent 70%), linear-gradient(180deg, #1c1912, #100f0c);
+  box-shadow: 0 0 0 1px rgba(212, 180, 106, .7), 0 60px 100px -40px #000, 0 20px 40px -20px rgba(0, 0, 0, .8);
+}
+.ic--v-gatsby .ic-card::before, .ic--v-gatsby .ic-card::after { content: ""; position: absolute; pointer-events: none; z-index: 0; }
+.ic--v-gatsby .ic-card::before { inset: 8px; border: 1px solid rgba(212, 180, 106, .55); }
+.ic--v-gatsby .ic-card::after { inset: 13px; border: 1px solid rgba(212, 180, 106, .2); }
+.ic--v-gatsby .vg-deco i {
+  position: absolute; width: 58px; height: 58px; --c: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><g fill='none' stroke='%23d4b46a' stroke-width='1.3'><path d='M4 58V4h54'/><path d='M10 58V22h6v-6h6v-6h36'/><path d='M16 58V28h6v-6h6v-6h30' stroke-opacity='.45'/><path d='M10 10l12 12'/></g><path d='M26 21l5 5-5 5-5-5z' fill='%23d4b46a'/></svg>");
+  background: var(--c) center / contain no-repeat;
+}
+.ic--v-gatsby .vg-deco i:nth-child(1) { left: 4px; top: 4px; }
+.ic--v-gatsby .vg-deco i:nth-child(2) { right: 4px; top: 4px; transform: scaleX(-1); }
+.ic--v-gatsby .vg-deco i:nth-child(3) { left: 4px; bottom: 4px; transform: scaleY(-1); }
+.ic--v-gatsby .vg-deco i:nth-child(4) { right: 4px; bottom: 4px; transform: scale(-1); }
+
+.ic--v-gatsby .ic-p1 { order: 1; } .ic--v-gatsby .ic-p2 { order: 2; } .ic--v-gatsby .ic-p3 { order: 3; }
+.ic--v-gatsby .ic-mono { display: none; }
+.ic--v-gatsby .vg-head { order: 0; position: relative; height: 240px; margin: 0 auto 16px; width: 300px; max-width: 100%; }
+.ic--v-gatsby .vg-sun { position: absolute; left: 50%; top: 10px; width: 300px; height: 160px; margin-left: -150px; transform-origin: 50% 94%; }
+.ic--v-gatsby .vg-oct {
+  position: absolute; left: 50%; top: 92px; width: 136px; height: 136px; margin-left: -68px; padding: 3px;
+  --o: polygon(29% 0, 71% 0, 100% 29%, 100% 71%, 71% 100%, 29% 100%, 0 71%, 0 29%);
+  clip-path: var(--o); background: var(--vg-foil); background-size: 200% 100%;
+}
+.ic--v-gatsby .vg-oct img { display: block; width: 100%; height: 100%; object-fit: cover; clip-path: var(--o); }
+.ic--v-gatsby .vg-oct::after { content: ""; position: absolute; inset: 9px; clip-path: var(--o); box-shadow: inset 0 0 0 1px rgba(243, 223, 162, .7); }
+.ic--v-gatsby .vg-oct--mono { display: grid; place-items: center; }
+.ic--v-gatsby .vg-oct--mono b { display: grid; place-items: center; width: 100%; height: 100%; clip-path: var(--o); background: #14120d; color: var(--vg-gold);
+  font: 400 2.2rem/1 var(--f-name); }
+.ic--v-gatsby .vg-oct--mono b i { font-style: normal; font-size: .5em; display: inline; }
+.ic--v-gatsby .vg-foot { order: 4; width: 170px; margin: 26px auto 4px; }
+.ic--v-gatsby .vg-foot svg { display: block; width: 100%; }
+
+.ic--v-gatsby .ic-greet { font: 400 .9375rem/1.4 var(--f-ui); letter-spacing: .3em; color: var(--muted); }
+.ic--v-gatsby .ic-card .ic-name {
+  margin: 12px 0 16px; font: 400 clamp(2.3rem, 9.4vw, 3.3rem)/1.1 var(--f-name); letter-spacing: .01em;
+  background: var(--vg-foil); background-size: 220% 100%; background-position: calc(50% + var(--tx) * 40%) 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent; padding: .06em 0;
+}
+.ic--v-gatsby .ic-text { font: italic 400 1.0625rem/1.7 "Playfair Display", Georgia, serif; color: #e6dcc6; }
+.ic--v-gatsby .ic-rule { width: min(240px, 76%); margin: 26px auto 20px; color: var(--vg-gold); gap: 10px; }
+.ic--v-gatsby .ic-rule::before, .ic--v-gatsby .ic-rule::after { border-top: 0; height: 7px;
+  background: linear-gradient(var(--vg-gold), var(--vg-gold)) 0 0 / 100% 1px no-repeat, linear-gradient(rgba(212, 180, 106, .45), rgba(212, 180, 106, .45)) 0 6px / 100% 1px no-repeat; }
+.ic--v-gatsby .ic-rule span { font-size: 0; width: 11px; height: 11px; border: 1px solid var(--vg-gold); transform: rotate(45deg); box-shadow: inset 0 0 0 2px #17140f, inset 0 0 0 6px var(--vg-gold); }
+.ic--v-gatsby .ic-label { font: 400 .9375rem/1.4 var(--f-ui); letter-spacing: .3em; color: var(--muted); }
+.ic--v-gatsby .ic-couple { font: 400 clamp(1.7rem, 7vw, 2.25rem)/1.2 var(--f-name); color: var(--ink); gap: 0 12px; }
+.ic--v-gatsby .ic-couple i { color: var(--vg-gold); font-family: "Playfair Display", Georgia, serif; font-style: italic; }
+.ic--v-gatsby .ic-wd { font: 400 1.0625rem/1.4 var(--f-ui); letter-spacing: .06em; color: var(--vg-gold); }
+.ic--v-gatsby .ic-dmy { font: 400 2.5rem/1 var(--f-head); color: var(--vg-gold-hi); gap: 16px; margin: 10px 0 8px !important; }
+.ic--v-gatsby .ic-dmy i { width: 7px; height: 7px; background: var(--vg-gold); transform: rotate(45deg); }
+.ic--v-gatsby .ic-lunar { font: italic 400 1rem/1.5 "Playfair Display", Georgia, serif; color: var(--muted); }
+.ic--v-gatsby .ic-place, .ic--v-gatsby .ic-rsvp { border-top: 0; position: relative; }
+.ic--v-gatsby .ic-place::before, .ic--v-gatsby .ic-rsvp::before {
+  content: ""; position: absolute; left: 12%; right: 12%; top: 0; height: 9px; margin-top: -4px;
+  background: linear-gradient(90deg, transparent, rgba(212, 180, 106, .6) 30% 70%, transparent) 0 4px / 100% 1px no-repeat,
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 9'><rect width='30' height='9' fill='%23181510'/><path d='M15 0.5l4 4-4 4-4-4zM5 4.5h4M21 4.5h4' fill='none' stroke='%23d4b46a'/></svg>") center / 30px 9px no-repeat;
+}
+.ic--v-gatsby .ic-place { padding-top: 22px; margin-top: 22px; }
+.ic--v-gatsby .ic-place-title { font: 400 1.0625rem/1.4 var(--f-ui); color: var(--vg-gold); }
+.ic--v-gatsby .ic-place-name { font: 400 1.3rem/1.3 var(--f-head); color: var(--ink); }
+.ic--v-gatsby .ic-place-addr { font-size: 1rem; color: var(--muted); }
+.ic--v-gatsby .ic-link { color: var(--vg-gold); font-weight: 400; letter-spacing: .08em; }
+.ic--v-gatsby .ic-rsvp { margin-top: 24px; padding-top: 24px; }
+.ic--v-gatsby .ic-q { font: italic 400 1.15rem/1.5 "Playfair Display", Georgia, serif; color: var(--ink); }
+.ic--v-gatsby .ic-btn, .ic--v-gatsby .ic-enter { border-radius: 0; font: 400 .9375rem/1.2 var(--f-ui); letter-spacing: .16em; text-transform: uppercase; padding-top: 3px; }
+.ic--v-gatsby .ic-btn-yes { background: var(--vg-foil); background-size: 200% 100%; background-position: calc(50% + var(--tx) * 40%) 0; color: #17120a; border: 0;
+  box-shadow: inset 0 0 0 1px rgba(255, 244, 207, .5), 0 8px 20px -10px rgba(212, 180, 106, .6); }
+.ic--v-gatsby .ic-btn-yes:hover:not(:disabled) { background: var(--vg-gold-hi); }
+.ic--v-gatsby .ic-btn-no { color: var(--ink); border: 1px solid rgba(212, 180, 106, .55); }
+.ic--v-gatsby .ic-btn-no:hover:not(:disabled) { border-color: var(--vg-gold); }
+.ic--v-gatsby .ic-enter { border: 1px solid rgba(212, 180, 106, .6); color: var(--vg-gold-hi); align-self: center; }
+.ic--v-gatsby .ic-enter:hover { border-color: var(--vg-gold); }
+.ic--v-gatsby .ic-p3 { display: flex; flex-direction: column; }
+.ic--v-gatsby .ic-p3 .ic-rsvp { align-self: stretch; }
+html .ic.ic--v-gatsby .ic-card .ic-form .ic-msg textarea, html .ic.ic--v-gatsby .ic-card .ic-form .ic-stepper input { margin: 0; background: #0b0a08; color: var(--ink); border-color: rgba(212, 180, 106, .45); border-radius: 0; }
+.ic--v-gatsby .ic-stepper button { color: var(--vg-gold-hi); border-color: rgba(212, 180, 106, .5); border-radius: 0; }
+.ic--v-gatsby .ic-done-title { font-family: var(--f-name); color: var(--vg-gold-hi); }
+.ic--v-gatsby .ic-err, .ic--v-gatsby .ic-count-hint.is-warn { color: #ff9b8a; }
+
+/* Nhịp xuất hiện: thiệp trồi lên khỏi hộp, hào quang bung, từng phần hiện dần */
+.ic--v-gatsby.is-open .vg-sun { animation: vg-sun 1.2s cubic-bezier(.2, .8, .2, 1) .25s both; }
+.ic--v-gatsby.is-open .vg-oct { animation: vg-fade-up .8s ease .45s both; }
+.ic--v-gatsby.is-open .ic-p1 { animation: vg-fade-up .8s ease .6s both; }
+.ic--v-gatsby.is-open .ic-p2 { animation: vg-fade-up .8s ease .75s both; }
+.ic--v-gatsby.is-open .ic-p3, .ic--v-gatsby.is-open .vg-foot { animation: vg-fade-up .8s ease .9s both; }
+@keyframes vg-card-in { from { opacity: 0; transform: perspective(1200px) translateY(70px) rotateX(-16deg) scale(.94); } to { opacity: 1; transform: none; } }
+@keyframes vg-sun { from { opacity: 0; transform: scale(.3) rotate(-25deg); } to { opacity: 1; transform: none; } }
+@keyframes vg-fade-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 420px) {
+  .ic--v-gatsby .ic-card { padding: 26px 24px 26px; }
+  .ic--v-gatsby .ic-dmy { font-size: 2.15rem; gap: 12px; }
+}
+@media (max-width: 340px) {
+  .ic--v-gatsby .ic-card { padding: 22px 16px 22px; }
+  .ic--v-gatsby .vg-deco i { width: 40px; height: 40px; }
+  .ic--v-gatsby .ic-greet, .ic--v-gatsby .ic-label { letter-spacing: .16em; }
+  .ic--v-gatsby .ic-env-to small { letter-spacing: .12em; }
+}
+
+/* Điện thoại xoay ngang / màn thấp (R1-CARDS-01): bìa nhỏ theo chiều cao -> chữ nhãn nhỏ theo để không tràn khung. */
+@media (max-height: 500px) {
+  .ic--v-gatsby .ic-env-to { top: 62%; gap: 5px; }
+  .ic--v-gatsby .ic-env-to small { font-size: .875rem; letter-spacing: .1em; }
+  .ic--v-gatsby .ic-env-to b { font-size: 1rem; }
+}

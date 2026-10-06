@@ -1,0 +1,537 @@
+/* Phông của giao diện VIP "dienanh" — Google Fonts, SIL Open Font License 1.1: Oswald, Spectral */
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 300 500; font-display: swap;
+  src: url(../../fonts/pro/Oswald-300-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 300 500; font-display: swap;
+  src: url(../../fonts/pro/Oswald-300-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 300 500; font-display: swap;
+  src: url(../../fonts/pro/Oswald-300-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Spectral'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url(../../fonts/pro/Spectral-300i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Spectral'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url(../../fonts/pro/Spectral-300i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Spectral'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url(../../fonts/pro/Spectral-300i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Spectral'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/pro/Spectral-400i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Spectral'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/pro/Spectral-400i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Spectral'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/pro/Spectral-400i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Spectral'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url(../../fonts/pro/Spectral-300-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Spectral'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url(../../fonts/pro/Spectral-300-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Spectral'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url(../../fonts/pro/Spectral-300-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════
+   VIP · ĐIỆN ẢNH (dienanh) — trang cưới như một bộ phim.
+   Nền đen than, trắng phim, vàng hổ phách. Ảnh toàn màn + dải letterbox mở ra, hạt phim, vignette; tên như credit
+   mở đầu phim (Oswald hoa giãn rộng), lời dẫn như phụ đề (Spectral nghiêng, đổ bóng). Mỗi mục là một "cảnh": bảng
+   clapperboard + số cảnh + timecode. Album = dải phim có lỗ răng cưa; địa điểm = lịch quay (call sheet); đếm ngược =
+   leader phim; xác nhận = vé xem phim; chân trang = credits.
+   Chỉ animate transform/opacity. Mọi selector nằm trong [data-theme="dienanh"].
+   ═══════════════════════════════════════════════════════════════════════════════════════════════ */
+[data-theme="dienanh"] {
+  --accent: #c8a96a; --accent-2: #8f7a4f; --amber: #c8a96a; --amber-hi: #e3c98f;
+  --soft: #161513; --ink: #efe9df; --muted: #a8a196; --page: #0b0b0a; --paper: #131210; --line: #2c2a26; --bg: #0b0b0a;
+  --nav-bg: #0b0b0a; --nav-ink: #efe9df;
+  --f-head: "Oswald", "Be Vietnam Pro", system-ui, sans-serif; --f-name: "Oswald", "Be Vietnam Pro", system-ui, sans-serif;
+  --f-body: "Spectral", "EB Garamond", Georgia, serif; --f-ui: "Oswald", "Be Vietnam Pro", system-ui, sans-serif;
+  --name-style: normal; --name-size: clamp(2.05rem, 9.6vw, 6.4rem);
+  --on-accent: #0b0b0a;
+  --bar: 11svh;
+  --ease: cubic-bezier(.22, .61, .36, 1);
+  --sprocket: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='14'><rect x='5' y='3' width='12' height='8' rx='2' fill='%23e9e2d4' fill-opacity='.82'/></svg>");
+  --clap: repeating-linear-gradient(-58deg, #efe9df 0 11px, #0b0b0a 11px 22px);
+  color-scheme: dark;
+}
+[data-theme="dienanh"] body.wd { background: var(--page); color: var(--ink); font: 300 17px/1.65 var(--f-body); counter-reset: da-sc da-wish; }
+[data-theme="dienanh"] .wd a:not(.btn) { color: var(--amber); }
+[data-theme="dienanh"] ::selection { background: var(--amber); color: #0b0b0a; }
+
+/* ── Hạt phim toàn trang (khe page) ── */
+[data-theme="dienanh"] .pd-dienanh { display: block; pointer-events: none; }
+[data-theme="dienanh"] .pd-grain { position: fixed; inset: 0; z-index: 4; overflow: hidden; opacity: .085; }
+[data-theme="dienanh"] .pd-grain i { position: absolute; inset: -60px; display: block;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.1 -.2'/></filter><rect width='100%25' height='100%25' filter='url(%23g)'/></svg>") 0 0 / 240px 240px;
+  animation: dienanh-grain .9s steps(1) infinite; }
+@keyframes dienanh-grain {
+  0% { transform: translate(0, 0); } 17% { transform: translate(-22px, 14px); } 33% { transform: translate(18px, -26px); }
+  50% { transform: translate(-30px, -8px); } 67% { transform: translate(12px, 28px); } 83% { transform: translate(26px, 6px); } }
+
+/* ── Ẩn trang trí của 10 giao diện thường ── */
+[data-theme="dienanh"] :is(.photowall, .orn, .rings, .constel, .starchart, .cal, .ev-intro, .house, .crest, .masthead, .hd-mark, .hero-deco, .pm-deco) { display: none; }
+[data-theme="dienanh"] .paper::before, [data-theme="dienanh"] .paper::after { display: none; }
+[data-theme="dienanh"] .paper { background: var(--paper); padding: 40px 32px; }
+[data-theme="dienanh"] .watercolor { background: var(--page); }
+[data-theme="dienanh"] .photo { border: 0; box-shadow: none; }
+[data-theme="dienanh"] .slot { background: #161513; }
+[data-theme="dienanh"] .slot-ph { background: repeating-linear-gradient(-45deg, #191816 0 10px, #141311 10px 20px); color: var(--amber); }
+[data-theme="dienanh"] .slot img { filter: saturate(.86) contrast(1.06); }
+[data-theme="dienanh"] .wd h2 { font: 300 clamp(2.1rem, 8vw, 4rem)/1.12 var(--f-head); text-transform: uppercase; letter-spacing: .1em; color: var(--ink); }
+[data-theme="dienanh"] .wd :is(h2, h3) { text-wrap: balance; }
+
+/* ── Nút ── */
+[data-theme="dienanh"] .wd .btn { font: 500 1rem/1 var(--f-ui); text-transform: uppercase; letter-spacing: .16em; border-radius: 0; min-height: 50px; padding: 0 26px;
+  transition: background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease); }
+[data-theme="dienanh"] .wd .btn-accent { background: var(--amber); color: var(--on-accent); border: 1px solid var(--amber); }
+[data-theme="dienanh"] .wd .btn-accent:hover { background: var(--amber-hi); border-color: var(--amber-hi); }
+[data-theme="dienanh"] .wd .btn-accent::before { content: ""; width: 0; height: 0; border-style: solid; border-width: 5px 0 5px 8px; border-color: transparent transparent transparent currentColor; margin-right: 4px; }
+[data-theme="dienanh"] .wd .btn-ghost { background: transparent; color: var(--ink); border: 1px solid rgba(239, 233, 223, .38); }
+[data-theme="dienanh"] .wd .btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
+[data-theme="dienanh"] .wd .btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+/* ── Thanh menu: trong suốt trên dải letterbox, đặc đen khi cuộn ── */
+[data-theme="dienanh"] { scroll-padding-top: 76px; }
+[data-theme="dienanh"] .wd-nav { background: transparent; font: 500 .875rem var(--f-ui); text-transform: uppercase; letter-spacing: .22em; padding-top: 12px; padding-bottom: 12px; }
+[data-theme="dienanh"] .wd-nav.scrolled, [data-theme="dienanh"] .wd-nav.open { background: rgba(11, 11, 10, .97); box-shadow: 0 1px 0 rgba(200, 169, 106, .28); }
+[data-theme="dienanh"] .wd-nav a:hover { color: var(--amber); }
+[data-theme="dienanh"] .wd-mono { border: 1px solid rgba(239, 233, 223, .7); border-radius: 0; width: 52px; height: 40px; font: 500 1.05rem var(--f-name); letter-spacing: .04em; gap: 3px; position: relative; }
+[data-theme="dienanh"] .wd-mono i { font-size: 14px; color: var(--amber); font-style: normal; }
+[data-theme="dienanh"] .wd-mono::before { content: ""; position: absolute; left: -1px; right: -1px; top: -7px; height: 6px; background: var(--clap); background-size: 22px 6px; border: 1px solid rgba(239, 233, 223, .7); border-bottom: 0; }
+[data-theme="dienanh"] .wd-burger { border-radius: 0; border-color: rgba(239, 233, 223, .5); }
+
+/* ── Nút nhạc: đĩa hổ phách, vòng răng cưa ── */
+[data-theme="dienanh"] .music-btn { background: var(--amber); color: #0b0b0a; font-size: 19px; box-shadow: 0 0 0 3px #0b0b0a, 0 0 0 4px rgba(200, 169, 106, .55), 0 8px 22px rgba(0, 0, 0, .55); }
+[data-theme="dienanh"] .music-hint { background: var(--ink); color: #0b0b0a; border-radius: 0; font-family: var(--f-ui); letter-spacing: .06em; }
+
+/* ════════ HERO — cảnh mở đầu ════════ */
+[data-theme="dienanh"] .intro { min-height: 100svh; padding: 0; display: grid; place-items: end center; background: #000; overflow: hidden; isolation: isolate; }
+[data-theme="dienanh"] .intro::before, [data-theme="dienanh"] .intro::after { content: ""; position: absolute; left: 0; right: 0; height: 50%; z-index: 3; background: #000; pointer-events: none;
+  transform: scaleY(.22); animation: dienanh-bar 1.9s cubic-bezier(.7, 0, .2, 1) both .35s; }
+[data-theme="dienanh"] .intro::before { top: 0; transform-origin: 50% 0; }
+[data-theme="dienanh"] .intro::after { bottom: 0; transform-origin: 50% 100%; }
+@keyframes dienanh-bar { from { transform: scaleY(1); } to { transform: scaleY(.22); } }
+[data-theme="dienanh"] .intro-main { position: absolute; inset: 0; width: auto; margin: 0; z-index: 1; }
+[data-theme="dienanh"] .main-photo { position: absolute; inset: 0; aspect-ratio: auto; transform: none; animation: dienanh-push 9s cubic-bezier(.2, .5, .3, 1) both .2s; }
+@keyframes dienanh-push { from { transform: scale(1.12); } to { transform: scale(1); } }
+[data-theme="dienanh"] .intro-main::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background: radial-gradient(ellipse 85% 70% at 50% 45%, transparent 45%, rgba(0, 0, 0, .55) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, .25) 0%, transparent 26%, transparent 46%, rgba(0, 0, 0, .78) 82%, rgba(0, 0, 0, .9) 100%); }
+/* Khung ngắm, REC, timecode chạy (khe hero) */
+[data-theme="dienanh"] .pd-hero { position: absolute; inset: calc(var(--bar) + 14px) 16px calc(var(--bar) + 14px); z-index: 3;
+  font: 500 14px/1 var(--f-ui); letter-spacing: .14em; color: rgba(239, 233, 223, .9); animation: dienanh-fade 1s ease both 1.9s; }
+[data-theme="dienanh"] .da-vf { position: absolute; width: 22px; height: 22px; border: 0 solid rgba(239, 233, 223, .75); }
+[data-theme="dienanh"] .da-vf-1 { top: 0; left: 0; border-width: 1.5px 0 0 1.5px; }
+[data-theme="dienanh"] .da-vf-2 { top: 0; right: 0; border-width: 1.5px 1.5px 0 0; }
+[data-theme="dienanh"] .da-vf-3 { bottom: 0; left: 0; border-width: 0 0 1.5px 1.5px; }
+[data-theme="dienanh"] .da-vf-4 { bottom: 0; right: 0; border-width: 0 1.5px 1.5px 0; }
+[data-theme="dienanh"] .da-rec { position: absolute; top: 14px; left: 34px; display: flex; align-items: center; gap: 8px; }
+[data-theme="dienanh"] .da-rec em { width: 9px; height: 9px; border-radius: 50%; background: #e0443a; box-shadow: 0 0 10px rgba(224, 68, 58, .8); animation: dienanh-blink 1.2s steps(1) infinite; }
+@keyframes dienanh-blink { 50% { opacity: .15; } }
+[data-theme="dienanh"] .da-tc { position: absolute; top: 14px; right: 34px; display: flex; font-variant-numeric: tabular-nums; letter-spacing: .08em; }
+[data-theme="dienanh"] .da-roll { display: inline-block; height: 1em; overflow: hidden; }
+[data-theme="dienanh"] .da-roll > span { display: flex; flex-direction: column; }
+[data-theme="dienanh"] .da-roll b { display: block; height: 1em; font-weight: 500; }
+[data-theme="dienanh"] .da-roll-s > span { animation: dienanh-roll60 60s steps(60) infinite; }
+[data-theme="dienanh"] .da-roll-f > span { animation: dienanh-roll24 1s steps(24) infinite; }
+@keyframes dienanh-roll60 { to { transform: translateY(-60em); } }
+@keyframes dienanh-roll24 { to { transform: translateY(-24em); } }
+[data-theme="dienanh"] .da-meta { position: absolute; left: 34px; bottom: 14px; display: none; align-items: center; gap: 10px; color: rgba(239, 233, 223, .7); }
+[data-theme="dienanh"] .da-meta i { width: 4px; height: 4px; background: var(--amber); transform: rotate(45deg); }
+@keyframes dienanh-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* Credit mở đầu */
+[data-theme="dienanh"] .save-card, [data-theme="dienanh"] .save-card.paper { position: relative; z-index: 4; width: 100%; max-width: 1100px; margin: 0; background: none;
+  padding: 0 20px calc(var(--bar) * .5 - 14px); text-align: center; color: var(--ink); }
+[data-theme="dienanh"] .save-card .divider { display: none; }
+[data-theme="dienanh"] .save-card .eyebrow { font: 500 .875rem/1.4 var(--f-ui); letter-spacing: .38em; text-indent: .38em; text-transform: uppercase; color: var(--amber);
+  text-shadow: 0 1px 2px #000, 0 0 3px #000, 0 0 12px rgba(0, 0, 0, .9); /* chữ nhỏ trên ảnh sáng (váy cưới) ở 1440: quầng tối giữ tương phản */
+  margin: 0 0 14px; animation: dienanh-credit 1.4s var(--ease) both 1.5s; }
+[data-theme="dienanh"] .names { font: 300 var(--name-size)/1.16 var(--f-name); text-transform: uppercase; letter-spacing: .14em; color: #f6f1e7;
+  flex-direction: row; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 0 .32em; margin: 0 0 4px; text-shadow: 0 2px 24px rgba(0, 0, 0, .55); }
+[data-theme="dienanh"] .names .name { white-space: nowrap; animation: dienanh-credit 1.6s var(--ease) both 1.75s; }
+[data-theme="dienanh"] .names .name:last-of-type { animation-delay: 1.95s; }
+[data-theme="dienanh"] .names .amp { font: italic 400 .62em/1 var(--f-body); text-transform: none; letter-spacing: 0; color: var(--amber); animation: dienanh-fade 1.4s ease both 1.85s; }
+[data-theme="dienanh"] .names::after { content: "một câu chuyện tình"; content: "một câu chuyện tình" / ""; flex-basis: 100%; display: flex; align-items: center; justify-content: center; gap: 14px;
+  margin-top: 10px; font: italic 300 1.05rem/1.4 var(--f-body); letter-spacing: .06em; text-transform: none; color: rgba(239, 233, 223, .82);
+  animation: dienanh-fade 1.4s ease both 2.3s; }
+@keyframes dienanh-credit { from { opacity: 0; transform: translateY(10px); letter-spacing: inherit; } to { opacity: 1; transform: none; } }
+[data-theme="dienanh"] .save-card .date { font: 500 1rem/1.4 var(--f-ui); letter-spacing: .3em; text-indent: .3em; text-transform: uppercase; color: var(--ink);
+  margin: 18px 0 0; animation: dienanh-fade 1.2s ease both 2.45s; }
+[data-theme="dienanh"] .save-card .lunar { font: italic 300 1rem/1.5 var(--f-body); color: #fffbe8; margin: 8px 0 0; text-shadow: 0 1px 2px #000, 0 0 10px rgba(0, 0, 0, .9);
+  animation: dienanh-fade 1.2s ease both 2.6s; }
+[data-theme="dienanh"] .save-card .lunar::before, [data-theme="dienanh"] .save-card .lunar::after { content: "—"; content: "—" / ""; margin: 0 .5em; color: var(--amber); }
+[data-theme="dienanh"] .invitee { font: italic 300 1.05rem var(--f-body); color: #f6f1e7; margin-bottom: 18px; animation: dienanh-fade 1.2s ease both 1.4s; }
+[data-theme="dienanh"] .invitee b { font: 500 1.35rem/1.3 var(--f-ui); text-transform: uppercase; letter-spacing: .16em; color: var(--amber); margin-top: 4px; }
+/* Tên dài: xếp dọc, chữ nhỏ lại */
+[data-theme="dienanh"] .names.names--long, [data-theme="dienanh"] .names.names--xl { flex-direction: column; align-items: center; gap: 0; letter-spacing: .08em; }
+[data-theme="dienanh"] .names.names--long { font-size: calc(var(--name-size) * .84); }
+[data-theme="dienanh"] .names.names--xl { font-size: calc(var(--name-size) * .72); }
+[data-theme="dienanh"] :is(.names--long, .names--xl) .name { white-space: normal; text-wrap: balance; }
+[data-theme="dienanh"] :is(.names--long, .names--xl) .amp { display: block; line-height: 1.5; margin: .05em 0; }
+/* Không ảnh đầu trang: màn đen + luồng sáng máy chiếu */
+[data-theme="dienanh"] .intro.intro--noimg { place-items: center; background: radial-gradient(ellipse 60% 48% at 50% 50%, #2a251c 0%, #0f0e0c 60%, #000 100%); }
+[data-theme="dienanh"] .intro--noimg .save-card { padding-bottom: 0; }
+[data-theme="dienanh"] .intro--noimg .pd-hero .da-meta { display: flex; }
+
+/* ── Dải phim chạy chữ ngay dưới hero ── */
+[data-theme="dienanh"] .marquee { display: block; position: relative; z-index: 2; overflow: hidden; padding: 20px 0; background: var(--sprocket) 0 3px / 22px 14px repeat-x, var(--sprocket) 0 calc(100% - 3px) / 22px 14px repeat-x, #1a1815; }
+[data-theme="dienanh"] .mq-track { display: flex; width: max-content; animation: dienanh-mq 60s linear infinite; }
+[data-theme="dienanh"] .mq-track span { font: 500 1rem/1.4 var(--f-ui); letter-spacing: .3em; text-transform: uppercase; color: var(--amber); white-space: nowrap; padding: 6px 0; }
+[data-theme="dienanh"] .mq-track span::after { content: ""; display: inline-block; width: 7px; height: 7px; margin: 0 2.2em; vertical-align: middle; border: 1px solid var(--amber); transform: rotate(45deg); }
+@keyframes dienanh-mq { to { transform: translateX(-50%); } }
+
+/* ════════ CẢNH — tiêu đề mục kiểu clapperboard ════════ */
+[data-theme="dienanh"] :is(section.couple, .event, .location, .gallery-sec) { padding: 120px 20px; }
+[data-theme="dienanh"] .sec-head { counter-increment: da-sc; display: flex; flex-direction: column; align-items: center; margin: 0 auto 60px; max-width: 760px; }
+[data-theme="dienanh"] .sec-head::before { content: ""; order: -3; width: 148px; height: 18px; margin-bottom: 0; background: var(--clap); border: 1px solid var(--ink);
+  transform-origin: 2px 100%; transform: rotate(0deg); }
+[data-theme="dienanh"] .sec-head .divider { order: -2; display: flex; width: 148px; height: auto; margin: 0 0 22px; padding: 7px 10px; border: 1px solid var(--ink); border-top: 0;
+  background: none; -webkit-mask: none; mask: none; justify-content: space-between; align-items: center; gap: 10px; }
+[data-theme="dienanh"] .sec-head .divider span { display: none; }
+[data-theme="dienanh"] .sec-head .divider::before { content: "CẢNH " counter(da-sc, decimal-leading-zero); position: static; border: 0; -webkit-mask: none; mask: none;
+  font: 500 .875rem/1 var(--f-ui); letter-spacing: .16em; color: var(--ink); white-space: nowrap; }
+[data-theme="dienanh"] .sec-head .divider::after { content: "TK 1"; font: 500 .875rem/1 var(--f-ui); letter-spacing: .1em; color: var(--amber); white-space: nowrap; }
+[data-theme="dienanh"] .sec-head::after { content: "00:04:12:08"; order: 3; margin-top: 16px; font: 500 .875rem/1 var(--f-ui); letter-spacing: .24em; color: var(--muted); font-variant-numeric: tabular-nums; }
+[data-theme="dienanh"] #couple .sec-head::after { content: "00:04:12:08"; }
+[data-theme="dienanh"] #event .sec-head::after { content: "00:12:20:00"; }
+[data-theme="dienanh"] #location .sec-head::after { content: "00:27:45:16"; }
+[data-theme="dienanh"] #gallery .sec-head::after { content: "00:41:03:12"; }
+[data-theme="dienanh"] #rsvp .sec-head::after { content: "01:02:18:04"; }
+[data-theme="dienanh"] #loi-chuc .sec-head::after { content: "01:15:52:20"; }
+[data-theme="dienanh"] #mung-cuoi .sec-head::after { content: "01:28:09:00"; }
+/* Clap! — bảng gõ khép lại khi cảnh hiện ra */
+[data-theme="dienanh"].js-reveal .sec-head.reveal { opacity: 0; transform: none; transition: opacity .5s var(--ease); }
+[data-theme="dienanh"].js-reveal .sec-head.reveal::before { transform: rotate(-16deg); transition: transform .32s cubic-bezier(.6, 0, .9, .6) .35s; }
+[data-theme="dienanh"].js-reveal .sec-head.reveal.in { opacity: 1; }
+[data-theme="dienanh"].js-reveal .sec-head.reveal.in::before { transform: rotate(0deg); }
+
+/* Hiện dần: ảnh "dolly-in" (thu nhỏ về khung), khối chữ cắt cảnh nhanh */
+[data-theme="dienanh"].js-reveal .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s var(--ease), transform .9s var(--ease); }
+[data-theme="dienanh"].js-reveal :is(.event-photo, .wd-g, .person).reveal { transform: scale(1.04); }
+[data-theme="dienanh"].js-reveal .reveal.in { opacity: 1; transform: none; }
+[data-theme="dienanh"].js-reveal .event-photo.reveal.in { transform: none; }
+[data-theme="dienanh"] .is-draft .reveal, [data-theme="dienanh"] .is-draft .event-photo.reveal { opacity: 1 !important; transform: none !important; }
+[data-theme="dienanh"] .is-draft .sec-head.reveal::before { transform: none !important; }
+
+/* ════════ CẢNH 01 — Cô dâu & Chú rể: "giới thiệu nhân vật" ════════ */
+[data-theme="dienanh"] .couple-row { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 0 clamp(20px, 4vw, 56px); max-width: 1040px; align-items: start; }
+[data-theme="dienanh"] .person { display: flex; flex-direction: column; text-align: left; position: relative; }
+[data-theme="dienanh"] .person-b { margin-top: 140px; }
+[data-theme="dienanh"] .person .role { order: -1; display: flex; align-items: center; gap: 12px; font: 500 .875rem/1 var(--f-ui); letter-spacing: .3em; color: var(--amber); margin: 0 0 14px; }
+[data-theme="dienanh"] .person .role::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(200, 169, 106, .6), transparent); }
+[data-theme="dienanh"] .oval { width: 100%; aspect-ratio: 4 / 5; border-radius: 0; margin: 0; border: 0; box-shadow: none; position: relative; }
+[data-theme="dienanh"] .oval::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, .82)); }
+[data-theme="dienanh"] .banner { position: relative; z-index: 2; display: block; margin: -3.1em 0 0; padding: 0 18px 18px; background: none; border-radius: 0; color: #f6f1e7;
+  font: 300 clamp(1.6rem, 3vw, 2.2rem)/1.2 var(--f-head); text-transform: uppercase; letter-spacing: .08em; min-height: 3.1em; display: flex; align-items: flex-end; text-shadow: 0 2px 14px rgba(0, 0, 0, .6); }
+[data-theme="dienanh"] .person .info { margin: 16px 0 0; padding-left: 18px; max-width: 380px; border-left: 1px solid var(--amber); font: italic 300 1.05rem/1.6 var(--f-body); color: var(--muted); }
+[data-theme="dienanh"] .couple-amp { display: block; align-self: center; margin-top: 60px; font: italic 400 clamp(3rem, 7vw, 5.6rem)/1 var(--f-body); color: var(--amber); }
+
+/* ════════ CẢNH 02 — Lễ thành hôn ════════ */
+[data-theme="dienanh"] .event { background: linear-gradient(180deg, var(--page), #100f0d 40%, var(--page)); }
+[data-theme="dienanh"] .event-row { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(28px, 5vw, 72px); max-width: 1180px; align-items: center; }
+[data-theme="dienanh"] .event-photo, [data-theme="dienanh"] .js-reveal .event-photo.reveal.in { aspect-ratio: 4 / 5; transform: none; position: relative; }
+[data-theme="dienanh"] .event-photo::after { content: "▶  00:12:20:00"; content: "▶  00:12:20:00" / ""; position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 14px; pointer-events: none;
+  font: 500 .875rem/1 var(--f-ui); letter-spacing: .2em; color: rgba(239, 233, 223, .85); background: linear-gradient(transparent, rgba(0, 0, 0, .7)); }
+[data-theme="dienanh"] .event-card, [data-theme="dienanh"] .event-card.paper { background: none; padding: 0; text-align: center; display: flex; flex-direction: column; align-items: center; }
+[data-theme="dienanh"] .event-card .lead { font: italic 400 1.2rem/1.6 var(--f-body); color: #f6f1e7; margin: 0 0 26px; text-shadow: 0 1px 2px #000; max-width: 30ch; }
+[data-theme="dienanh"] .event-card .lead::before, [data-theme="dienanh"] .event-card .lead::after { content: "“"; content: "“" / ""; color: var(--amber); }
+[data-theme="dienanh"] .event-card .lead::after { content: "”"; content: "”" / ""; }
+[data-theme="dienanh"] .event-card:has(.dlock) > .date.big { display: none; }
+[data-theme="dienanh"] .event-card .date.big { font: 300 1.6rem/1.3 var(--f-head); letter-spacing: .1em; text-transform: uppercase; }
+/* Ngày cưới = bảng slate */
+[data-theme="dienanh"] .dlock { display: grid; width: min(100%, 360px); border: 1px solid var(--ink); background: #0f0e0c; position: relative; margin-top: 18px; }
+[data-theme="dienanh"] .dlock::before { content: ""; position: absolute; left: -1px; right: -1px; bottom: 100%; height: 18px; background: var(--clap); border: 1px solid var(--ink); border-bottom: 0; }
+[data-theme="dienanh"] .dlock .dl-wd { padding: 12px 10px; border-bottom: 1px solid var(--ink); font: 500 1rem/1 var(--f-ui); text-transform: uppercase; letter-spacing: .26em; color: var(--ink); }
+[data-theme="dienanh"] .dlock .dl-wd i { font-style: normal; color: var(--amber); }
+[data-theme="dienanh"] .dlock .dl-row { display: grid; grid-template-columns: 1fr 1.25fr 1fr; align-items: stretch; }
+[data-theme="dienanh"] .dlock .dl-row > * { display: grid; place-items: center; padding: 14px 4px; font: 500 1rem/1 var(--f-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+[data-theme="dienanh"] .dlock .dl-d { border-left: 1px solid var(--ink); border-right: 1px solid var(--ink); font: 300 3.4rem/1 var(--f-head) !important; color: var(--amber) !important; letter-spacing: .02em !important; }
+[data-theme="dienanh"] .dlock .dl-t { display: none; }
+[data-theme="dienanh"] .event-card .lunar { font: italic 300 1.05rem/1.5 var(--f-body); color: var(--muted); margin-top: 14px; }
+/* Đếm ngược = leader phim */
+[data-theme="dienanh"] .wd .countdown { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; width: min(100%, 380px); margin: 34px 0 30px; }
+[data-theme="dienanh"] .wd .countdown div { position: relative; aspect-ratio: 4 / 5; min-width: 0; padding: 0; border-radius: 0; display: grid; place-items: center; overflow: hidden;
+  background: linear-gradient(90deg, transparent calc(50% - .5px), rgba(239, 233, 223, .16) calc(50% - .5px) calc(50% + .5px), transparent calc(50% + .5px)),
+    linear-gradient(0deg, transparent calc(42% - .5px), rgba(239, 233, 223, .16) calc(42% - .5px) calc(42% + .5px), transparent calc(42% + .5px)), #141311;
+  border: 1px solid #34312b; }
+[data-theme="dienanh"] .wd .countdown div::before { content: ""; position: absolute; left: 50%; top: 42%; width: 78%; aspect-ratio: 1; border-radius: 50%; transform: translate(-50%, -50%);
+  border: 1px solid rgba(239, 233, 223, .3); box-shadow: inset 0 0 0 5px #141311, inset 0 0 0 6px rgba(239, 233, 223, .14); }
+[data-theme="dienanh"] .wd .countdown div:last-child::after { content: ""; position: absolute; left: 50%; top: 42%; width: 78%; aspect-ratio: 1; border-radius: 50%;
+  background: conic-gradient(from 0deg, rgba(200, 169, 106, .38), rgba(200, 169, 106, 0) 30%); transform: translate(-50%, -50%); animation: dienanh-sweep 1s linear infinite; }
+@keyframes dienanh-sweep { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+[data-theme="dienanh"] .wd .countdown b { position: relative; z-index: 1; margin-top: -16%; font: 300 clamp(1.8rem, 8vw, 2.5rem)/1 var(--f-head); color: var(--ink); font-variant-numeric: tabular-nums; }
+[data-theme="dienanh"] .wd .countdown span { position: absolute; left: 0; right: 0; bottom: 8px; z-index: 1; text-align: center; font: 500 .875rem/1 var(--f-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+[data-theme="dienanh"] .event-card .center-row { gap: 10px; }
+[data-theme="dienanh"] .event--noimg .event-row { grid-template-columns: minmax(0, 1fr); max-width: 640px; }
+
+/* ════════ CẢNH 03 — Địa điểm: lịch quay (call sheet) ════════ */
+[data-theme="dienanh"] .location { counter-reset: da-ev; background: var(--page); }
+[data-theme="dienanh"] .location .events { position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 0; max-width: 1080px;
+  border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+[data-theme="dienanh"] .location .events::before { content: "LỊCH QUAY  ·  CALL SHEET"; grid-column: 1 / -1; display: flex; justify-content: space-between; padding: 12px 2px;
+  font: 500 .875rem/1 var(--f-ui); letter-spacing: .28em; color: var(--amber); border-bottom: 1px solid var(--ink); }
+[data-theme="dienanh"] .location :is(.ev, .ev:nth-child(even), .ev.ev--nomap) { display: flex; flex-direction: column; counter-increment: da-ev; align-items: stretch; max-width: none; margin: 0; padding: 0 0 30px;
+  grid-template-columns: none; }
+[data-theme="dienanh"] .location .ev + .ev { border-top: 1px solid var(--line); }
+@media (min-width: 761px) { [data-theme="dienanh"] .location .ev + .ev { border-top: 0; border-left: 1px solid var(--line); } [data-theme="dienanh"] .location .ev { padding: 0 28px 34px; } [data-theme="dienanh"] .location .ev:first-of-type { padding-left: 0; } [data-theme="dienanh"] .location .ev:last-of-type { padding-right: 0; } }
+[data-theme="dienanh"] .location :is(.ev, .ev:nth-child(even)) .ev-map { order: 2; height: 200px; border-radius: 0; background: #121110; border: 1px solid var(--line); }
+[data-theme="dienanh"] .location :is(.ev, .ev:nth-child(even), .ev.ev--nomap) .ev-card { margin: 0; padding: 28px 0 24px; background: none; text-align: left; display: grid; grid-template-columns: 74px minmax(0, 1fr); column-gap: 14px; align-items: start; }
+[data-theme="dienanh"] .location .ev-card::before { display: block; position: static; inset: auto; transform: none; background: none; box-shadow: none; z-index: auto; content: counter(da-ev, decimal-leading-zero); grid-row: 1 / span 6; font: 300 3.4rem/.9 var(--f-head); color: var(--amber); }
+[data-theme="dienanh"] .location .ev-card > * { grid-column: 2; }
+[data-theme="dienanh"] .ev-card h3 { font: 500 1.5rem/1.2 var(--f-head); color: var(--ink); text-transform: uppercase; letter-spacing: .1em; margin: 2px 0 16px; }
+[data-theme="dienanh"] .ev-card :is(.ev-place, .ev-addr, .ev-time) { font: 300 1.05rem/1.5 var(--f-body); color: var(--ink); margin: 0 0 12px; text-transform: none; letter-spacing: 0; }
+[data-theme="dienanh"] .ev-card :is(.ev-place, .ev-addr, .ev-time)::before { display: block; font: 500 .875rem/1.3 var(--f-ui); letter-spacing: .22em; color: var(--muted); text-transform: uppercase; margin-bottom: 2px; font-style: normal; }
+[data-theme="dienanh"] .ev-card .ev-place::before { content: "Bối cảnh"; }
+[data-theme="dienanh"] .ev-card .ev-addr::before { content: "Địa chỉ"; }
+[data-theme="dienanh"] .ev-card .ev-time::before { content: "Giờ bấm máy"; }
+[data-theme="dienanh"] .ev-card .ev-place { font-weight: 400; font-style: italic; }
+[data-theme="dienanh"] body:not(.is-draft) .ev-card :is(.ev-place, .ev-addr, .ev-time):empty { display: none; }
+[data-theme="dienanh"] .location .ev-card .btn { margin: 8px 8px 0 0; justify-self: start; }
+[data-theme="dienanh"] .location .ev-card .btn ~ .btn { grid-column: 2; }
+[data-theme="dienanh"] .ev-map-load { color: var(--ink); background: radial-gradient(circle at 50% 40%, rgba(200, 169, 106, .1), transparent 60%), repeating-linear-gradient(0deg, transparent 0 23px, rgba(239, 233, 223, .05) 23px 24px), repeating-linear-gradient(90deg, transparent 0 23px, rgba(239, 233, 223, .05) 23px 24px), #121110; }
+[data-theme="dienanh"] .ev-map-pin { font-size: 0; width: 34px; height: 34px; border: 1.5px solid var(--amber); border-radius: 50%; position: relative; }
+[data-theme="dienanh"] .ev-map-pin::before { content: ""; position: absolute; inset: 11px; border-radius: 50%; background: var(--amber); }
+[data-theme="dienanh"] .ev-map-load b { background: transparent; color: var(--ink); border: 1px solid rgba(239, 233, 223, .4); border-radius: 0; box-shadow: none; font: 500 1rem var(--f-ui); text-transform: uppercase; letter-spacing: .16em; }
+[data-theme="dienanh"] .ev-map-load:hover b, [data-theme="dienanh"] .ev-map-load:focus-visible b { background: var(--amber); color: #0b0b0a; border-color: var(--amber); }
+[data-theme="dienanh"] .ev-map-load small { color: var(--muted); }
+[data-theme="dienanh"] .ev-map iframe { filter: grayscale(1) invert(.9) contrast(.9) brightness(.85); }
+
+/* ════════ Trích dẫn = phụ đề trên khung hình ════════ */
+[data-theme="dienanh"] .quote { min-height: 78svh; place-items: end center; background: #000; }
+[data-theme="dienanh"] .quote::after { z-index: 1; background: linear-gradient(180deg, #000 0 10%, transparent 10% 90%, #000 90%), radial-gradient(ellipse 90% 70% at 50% 45%, transparent 50%, rgba(0, 0, 0, .5)),
+  linear-gradient(transparent 50%, rgba(0, 0, 0, .55) 88%); }
+[data-theme="dienanh"] .quote-bg img { filter: saturate(.8) contrast(1.08); }
+[data-theme="dienanh"] .quote blockquote { max-width: 780px; padding: 0 22px calc(10% + 6vh); z-index: 2; }
+[data-theme="dienanh"] .quote blockquote p { font: italic 400 clamp(1.25rem, 3.4vw, 2rem)/1.5 var(--f-body); color: #fff6d8; text-shadow: 0 1px 2px #000, 0 0 3px #000, 0 2px 16px rgba(0, 0, 0, .8); }
+[data-theme="dienanh"] .quote.quote--noimg { min-height: 0; place-items: center; background: #000; color: var(--ink); }
+[data-theme="dienanh"] .quote.quote--noimg::after { display: block; background: radial-gradient(ellipse 50% 60% at 50% 50%, rgba(200, 169, 106, .1), transparent 70%); }
+[data-theme="dienanh"] .quote--noimg blockquote { padding: 110px 22px; }
+[data-theme="dienanh"] .quote--noimg blockquote::before { content: "PHỤ ĐỀ"; content: "PHỤ ĐỀ" / ""; font: 500 .875rem/1 var(--f-ui); letter-spacing: .4em; color: var(--amber); margin-bottom: 26px; }
+
+/* ════════ CẢNH 04 — Album: dải phim ════════ */
+[data-theme="dienanh"] .gallery-sec { padding-left: 0; padding-right: 0; }
+[data-theme="dienanh"] .gallery-sec > :not(.wd-gallery) { padding-left: 20px; padding-right: 20px; }
+[data-theme="dienanh"] .wd-gallery { counter-reset: da-fr; display: grid; grid-auto-flow: column; grid-auto-columns: min(66vw, 300px); grid-template-columns: none; gap: 0;
+  max-width: none; margin: 0 0 36px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding: 0 20px; padding: 0 20px;
+  scrollbar-width: none; -webkit-mask: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 20px), transparent); mask: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 20px), transparent); }
+[data-theme="dienanh"] .wd-gallery::-webkit-scrollbar { display: none; }
+[data-theme="dienanh"] .wd-g { counter-increment: da-fr; aspect-ratio: 3 / 4.6; scroll-snap-align: start; padding: 26px 5px; border-radius: 0;
+  background: var(--sprocket) 0 6px / 22px 14px repeat-x, var(--sprocket) 0 calc(100% - 6px) / 22px 14px repeat-x, #1b1916; }
+[data-theme="dienanh"] .wd-g img { border-radius: 0; }
+[data-theme="dienanh"] .wd-g::after { content: counter(da-fr, decimal-leading-zero) "A"; inset: auto auto 6px 10px; display: block; background: none; opacity: 1;
+  font: 500 10px/14px var(--f-ui); letter-spacing: .2em; color: var(--amber); }
+[data-theme="dienanh"] .wd-g::before { content: ""; position: absolute; inset: 26px 5px; z-index: 1; pointer-events: none; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .6), inset 0 0 30px rgba(0, 0, 0, .35); }
+[data-theme="dienanh"] .wd-g:hover img { transform: scale(1.04); }
+@media (min-width: 761px) {
+  [data-theme="dienanh"] .wd-gallery { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 1240px; margin: 0 auto 44px; padding: 0;
+    overflow: visible; -webkit-mask: none; mask: none; row-gap: 14px; }
+  [data-theme="dienanh"] .wd-g { aspect-ratio: 3 / 4; }
+}
+[data-theme="dienanh"] .gallery-sec .center { text-align: center; }
+[data-theme="dienanh"] .more-albums { max-width: 1040px; margin: 30px auto 0; padding: 0 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 380px)); justify-content: center; }
+[data-theme="dienanh"] .wd .album-card { background: #121110; border-radius: 0; box-shadow: none; border: 1px solid var(--line); }
+[data-theme="dienanh"] .album-cover { aspect-ratio: 2.39 / 1; background: #181715; }
+[data-theme="dienanh"] .wd .album-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 14px 16px; }
+[data-theme="dienanh"] .wd .album-meta h3 { font: 500 1.15rem var(--f-head); text-transform: uppercase; letter-spacing: .12em; color: var(--ink); margin: 0; }
+[data-theme="dienanh"] .wd .album-meta p { font: italic 300 .95rem var(--f-body); color: var(--muted); }
+[data-theme="dienanh"] .gallery-sec .muted { color: var(--muted); font-style: italic; }
+
+/* ════════ Gửi ảnh: khung ngắm "hậu trường" ════════ */
+[data-theme="dienanh"] .cta { max-width: 760px; margin: 0 auto; padding: 80px 20px; }
+[data-theme="dienanh"] .cta { --vf: rgba(239, 233, 223, .6); background:
+  linear-gradient(var(--vf), var(--vf)) 0 0 / 26px 1.5px no-repeat, linear-gradient(var(--vf), var(--vf)) 0 0 / 1.5px 26px no-repeat,
+  linear-gradient(var(--vf), var(--vf)) 100% 0 / 26px 1.5px no-repeat, linear-gradient(var(--vf), var(--vf)) 100% 0 / 1.5px 26px no-repeat,
+  linear-gradient(var(--vf), var(--vf)) 0 100% / 26px 1.5px no-repeat, linear-gradient(var(--vf), var(--vf)) 0 100% / 1.5px 26px no-repeat,
+  linear-gradient(var(--vf), var(--vf)) 100% 100% / 26px 1.5px no-repeat, linear-gradient(var(--vf), var(--vf)) 100% 100% / 1.5px 26px no-repeat; }
+[data-theme="dienanh"] .wd .cta { margin: 40px 16px; }
+@media (min-width: 800px) { [data-theme="dienanh"] .wd .cta { margin: 60px auto; } }
+[data-theme="dienanh"] .cta::before { content: "● HẬU TRƯỜNG"; content: "● HẬU TRƯỜNG" / ""; display: block; margin-bottom: 20px; font: 500 .875rem/1 var(--f-ui); letter-spacing: .3em; color: #e0574d; }
+[data-theme="dienanh"] .wd .cta h2 { font: 300 clamp(1.8rem, 6.4vw, 2.8rem)/1.2 var(--f-head); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; color: var(--ink); }
+[data-theme="dienanh"] .cta p { font: italic 300 1.1rem/1.6 var(--f-body); color: var(--muted); margin: 0 auto 28px; max-width: 46ch; }
+
+/* ════════ CẢNH 05 — Xác nhận: vé xem phim ════════ */
+[data-theme="dienanh"] .rsvp { max-width: 640px; padding-top: 110px; }
+[data-theme="dienanh"] .rsvp-card, [data-theme="dienanh"] .rsvp-card.paper { --tk: #efe9df; --tk-ink: #1a1814; color: var(--tk-ink); padding: 54px 28px 26px; gap: 16px; border-radius: 4px;
+  background: radial-gradient(circle at 0 calc(100% - 100px), var(--page) 0 14px, transparent 15px), radial-gradient(circle at 100% calc(100% - 100px), var(--page) 0 14px, transparent 15px),
+    repeating-linear-gradient(90deg, rgba(26, 24, 20, .45) 0 7px, transparent 7px 13px) 0 calc(100% - 100px) / 100% 1.5px no-repeat,
+    radial-gradient(ellipse at 50% 0%, #fbf7ef, transparent 70%), var(--tk);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .9); }
+[data-theme="dienanh"] .rsvp-card::before { content: "VÉ MỜI  ·  ADMIT ONE"; content: "VÉ MỜI  ·  ADMIT ONE" / ""; display: block; position: absolute; inset: 0 0 auto; z-index: 0; transform: none; background: #1a1814;
+  color: var(--amber); padding: 9px 0; text-align: center; font: 500 .875rem/1 var(--f-ui); letter-spacing: .4em; box-shadow: none; border-radius: 4px 4px 0 0; }
+[data-theme="dienanh"] .rsvp-card .lead { font: italic 400 1.15rem/1.55 var(--f-body); color: #2c2924; margin: 4px 0 4px; }
+[data-theme="dienanh"] .rsvp-card label { font: 500 .875rem/1.4 var(--f-ui); letter-spacing: .16em; text-transform: uppercase; color: #3e3a33; }
+[data-theme="dienanh"] .rsvp-card label small { font: italic 300 .875rem var(--f-body); letter-spacing: 0; text-transform: none; color: #5b564c; }
+[data-theme="dienanh"] .rsvp-card :is(input, textarea) { background: transparent; border: 0; border-bottom: 1.5px solid #1a1814; border-radius: 0; color: #1a1814; padding: 10px 2px; font: 400 1.05rem/1.4 var(--f-body); letter-spacing: 0; text-transform: none; }
+[data-theme="dienanh"] .rsvp-card textarea { border: 1.5px solid #1a1814; padding: 10px 12px; }
+[data-theme="dienanh"] .rsvp-card :is(input, textarea):focus { outline: 2px solid rgba(143, 122, 79, .6); outline-offset: 2px; border-color: #8f7a4f; }
+[data-theme="dienanh"] .rsvp-card .field-hint { color: #5b564c; font: italic 300 .9375rem var(--f-body); text-transform: none; letter-spacing: 0; }
+[data-theme="dienanh"] .rsvp-choice span { border: 1.5px solid #1a1814; border-radius: 0; background: transparent; color: #1a1814; font: 500 1rem/1.25 var(--f-ui); letter-spacing: .08em; text-transform: uppercase; padding: 14px 8px; }
+[data-theme="dienanh"] .rsvp-choice input:checked + span { background: #1a1814; color: var(--amber-hi); border-color: #1a1814; }
+[data-theme="dienanh"] .rsvp-choice input:focus-visible + span { outline: 2px solid #8f7a4f; outline-offset: 2px; }
+[data-theme="dienanh"] .rsvp-invitee { font: italic 300 1.05rem var(--f-body); color: #2c2924; }
+[data-theme="dienanh"] .rsvp-invitee b { font: 500 1.6rem/1.3 var(--f-ui); text-transform: uppercase; letter-spacing: .12em; color: #1a1814; }
+[data-theme="dienanh"] .rsvp-card .btn-accent { margin-top: 40px; background: #1a1814; color: var(--amber-hi); border-color: #1a1814; }
+[data-theme="dienanh"] .rsvp-card .btn-accent:hover { background: #000; }
+[data-theme="dienanh"] .rsvp-card .err { margin: 0; }
+[data-theme="dienanh"] :is(.rsvp-done, .form-thanks), [data-theme="dienanh"] .rsvp-done.paper { background: #121110; border: 1px solid rgba(200, 169, 106, .45); border-radius: 0; color: var(--ink); }
+[data-theme="dienanh"] .rsvp-done b { font: 500 1.4rem var(--f-head); text-transform: uppercase; letter-spacing: .1em; color: var(--amber); }
+[data-theme="dienanh"] .form-thanks { font: italic 400 1.15rem/1.5 var(--f-body); }
+
+/* ════════ CẢNH 06 — Lời chúc: phụ đề ════════ */
+[data-theme="dienanh"] .wd .wishes { max-width: 760px; padding-top: 100px; }
+[data-theme="dienanh"] .wd .wish-form, [data-theme="dienanh"] .wd .wish-form.paper { background: #121110; border: 1px solid var(--line); border-radius: 0; box-shadow: none; padding: 30px 24px; gap: 18px; }
+[data-theme="dienanh"] .wish-form label { font: 500 .875rem/1.4 var(--f-ui); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+[data-theme="dienanh"] .wish-form :is(input, textarea) { background: transparent; border: 0; border-bottom: 1px solid #4a463e; border-radius: 0; color: var(--ink); padding: 10px 2px; font: 400 1.05rem/1.4 var(--f-body); text-transform: none; letter-spacing: 0; }
+[data-theme="dienanh"] .wish-form textarea { border: 1px solid #4a463e; padding: 10px 12px; }
+[data-theme="dienanh"] .wish-form :is(input, textarea):focus { border-color: var(--amber); outline: 1px solid var(--amber); outline-offset: 0; }
+[data-theme="dienanh"] .wish-list { grid-template-columns: 1fr; gap: 0; margin-top: 18px; }
+[data-theme="dienanh"] .wd .wish { counter-increment: da-wish; position: relative; background: none; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 26px 0 22px 0; text-align: center; }
+[data-theme="dienanh"] .wd .wish::before { content: "00:" counter(da-wish, decimal-leading-zero) ":14:02"; display: block; margin-bottom: 12px; font: 500 .875rem/1 var(--f-ui); letter-spacing: .24em; color: var(--muted); }
+[data-theme="dienanh"] .wd .wish p { font: italic 400 1.2rem/1.55 var(--f-body); color: #fff6d8; text-shadow: 0 1px 2px #000; margin: 0 auto 10px; max-width: 34ch; }
+[data-theme="dienanh"] .wd .wish cite { font: 500 .875rem/1.3 var(--f-ui); letter-spacing: .24em; text-transform: uppercase; color: var(--amber); }
+[data-theme="dienanh"] .wd .wish cite::before { content: "— "; }
+
+/* ════════ CẢNH 07 — Mừng cưới ════════ */
+[data-theme="dienanh"] .gift { max-width: 900px; padding-top: 100px; }
+[data-theme="dienanh"] .gift-text, [data-theme="dienanh"] .gift-hint { color: var(--muted); font: italic 300 1.05rem/1.7 var(--f-body); }
+[data-theme="dienanh"] .gift-thanks { color: var(--amber); font-style: italic; }
+[data-theme="dienanh"] .gift-card { background: #121110; color: var(--ink); border: 1px solid var(--line); border-radius: 0; box-shadow: none; padding: 0 22px 24px; overflow: hidden; }
+[data-theme="dienanh"] .gift-side { justify-self: stretch; margin: 0 -22px 20px; padding: 11px; background: var(--clap); background-size: 31px 100%; color: transparent; position: relative; }
+[data-theme="dienanh"] .gift-side { background: #1a1815; color: var(--amber); font: 500 .875rem/1 var(--f-ui); letter-spacing: .32em; border-bottom: 1px solid var(--line); }
+[data-theme="dienanh"] .gift-qr { border-radius: 0; border: 0; padding: 10px; box-shadow: 0 0 0 1px var(--line); }
+[data-theme="dienanh"] .gift-holder { font: 500 1.05rem var(--f-ui); letter-spacing: .14em; color: var(--ink); }
+[data-theme="dienanh"] .gift-bank { color: var(--muted); font: italic 300 1rem var(--f-body); }
+[data-theme="dienanh"] .gift-num { color: var(--ink); }
+[data-theme="dienanh"] :is(.gift-copy, .gift-dl) { border-radius: 0; background: transparent; color: var(--ink); border: 1px solid rgba(239, 233, 223, .38); font: 500 .95rem var(--f-ui); letter-spacing: .14em; text-transform: uppercase; }
+[data-theme="dienanh"] :is(.gift-copy, .gift-dl):hover { background: var(--amber); color: #0b0b0a; border-color: var(--amber); }
+[data-theme="dienanh"] .gift-off { color: var(--muted); }
+
+/* ════════ Credits ════════ */
+[data-theme="dienanh"] .wd-foot { position: relative; background: #000; padding: 110px 20px 90px; border-top: 1px solid var(--line); display: flex; flex-direction: column; align-items: center; }
+[data-theme="dienanh"] .pd-foot { color: rgba(200, 169, 106, .55); margin-bottom: 40px; }
+[data-theme="dienanh"] .da-reel { width: 74px; height: 74px; animation: dienanh-spin 14s linear infinite; }
+@keyframes dienanh-spin { to { transform: rotate(360deg); } }
+[data-theme="dienanh"] .wd-mono.big { width: 120px; height: 74px; margin: 0 auto 50px; font-size: 1.9rem; color: var(--ink) !important; border-color: var(--ink); }
+[data-theme="dienanh"] .wd-mono.big::before { top: -13px; height: 12px; background-size: 30px 12px; }
+[data-theme="dienanh"] .wd-mono.big i { font-size: 1rem; }
+[data-theme="dienanh"] .wd-foot > p { margin: 0 0 34px; max-width: 36ch; }
+[data-theme="dienanh"] .wd-foot > p::before { display: block; margin-bottom: 10px; font: 500 .875rem/1.3 var(--f-ui); font-style: normal; letter-spacing: .32em; color: var(--muted); text-transform: uppercase; }
+[data-theme="dienanh"] .wd-foot > p[data-edit]::before { content: "Lời cảm ơn"; }
+[data-theme="dienanh"] .wd-foot > p.muted.small::before { content: "Diễn viên chính"; }
+[data-theme="dienanh"] .wd-foot > p.music-credit::before { content: "Nhạc phim"; }
+[data-theme="dienanh"] .wd-foot > p[data-edit] { font: italic 300 1.3rem/1.55 var(--f-body); color: var(--ink); }
+[data-theme="dienanh"] .wd-foot > p.muted.small { font: 300 1.2rem/1.45 var(--f-head) !important; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); }
+[data-theme="dienanh"] .wd-foot > p.music-credit { font: 300 1rem/1.6 var(--f-body) !important; color: var(--muted); }
+[data-theme="dienanh"] .wd-foot::after { content: "HẾT"; content: "HẾT" / ""; margin-top: 30px; font: 300 1rem/1 var(--f-head); letter-spacing: .8em; text-indent: .8em; color: var(--amber); padding-top: 26px; border-top: 1px solid rgba(200, 169, 106, .45); width: 120px; text-align: center; }
+[data-theme="dienanh"].js-reveal .wd-foot .wd-mono.reveal { transform: translateY(40px); transition-duration: 1.4s; }
+[data-theme="dienanh"].js-reveal .wd-foot .wd-mono.reveal.in { transform: none; }
+
+/* ════════ Màn "Mở thiệp": đầu phim ════════ */
+[data-theme="dienanh"] .wd-cover { background: radial-gradient(ellipse 55% 45% at 50% 46%, #26221a 0%, #0b0b0a 70%, #000 100%); color: var(--ink); }
+[data-theme="dienanh"] .wd-cover::before, [data-theme="dienanh"] .wd-cover::after { content: ""; position: absolute; left: 0; right: 0; height: 12svh; background: #000; }
+[data-theme="dienanh"] .wd-cover::before { top: 0; } [data-theme="dienanh"] .wd-cover::after { bottom: 0; }
+[data-theme="dienanh"] .wd-cover-in { position: relative; z-index: 1; }
+[data-theme="dienanh"] .wd-cover-mono { width: 108px; height: 108px; border: 1px solid rgba(239, 233, 223, .5); color: var(--ink); font: 300 1.5rem var(--f-name);
+  background: linear-gradient(90deg, transparent calc(50% - .5px), rgba(239, 233, 223, .25) calc(50% - .5px) calc(50% + .5px), transparent calc(50% + .5px)),
+    linear-gradient(0deg, transparent calc(50% - .5px), rgba(239, 233, 223, .25) calc(50% - .5px) calc(50% + .5px), transparent calc(50% + .5px));
+  box-shadow: inset 0 0 0 7px #17150f, inset 0 0 0 8px rgba(239, 233, 223, .2); }
+[data-theme="dienanh"] .wd-cover-mono i { color: var(--amber); font-size: 1rem; }
+[data-theme="dienanh"] .wd-cover-eyebrow { font: 500 .875rem var(--f-ui); letter-spacing: .4em; color: var(--amber); }
+[data-theme="dienanh"] .wd-cover-names { font: 300 clamp(2.2rem, 10vw, 4.4rem)/1.18 var(--f-name); text-transform: uppercase; letter-spacing: .14em; }
+[data-theme="dienanh"] .wd-cover-names i { font: italic 400 .55em/1.4 var(--f-body); text-transform: none; letter-spacing: 0; color: var(--amber); }
+[data-theme="dienanh"] .wd-cover-date { font: 500 1rem var(--f-ui); letter-spacing: .4em; color: var(--muted); }
+[data-theme="dienanh"] .wd-cover-btn { border-radius: 0; background: var(--amber); color: #0b0b0a; font: 500 1rem var(--f-ui); letter-spacing: .24em; text-transform: uppercase; box-shadow: 0 0 0 1px var(--amber), 0 0 0 5px #0b0b0a, 0 0 0 6px rgba(200, 169, 106, .45); }
+
+/* Hiệu ứng rơi trên nền đen: hạt sáng ấm */
+[data-theme="dienanh"] .fx[data-fx="hearts"] i::before { color: var(--amber); opacity: .5; }
+[data-theme="dienanh"] .fx[data-fx="petals"] i { background: linear-gradient(135deg, #f3e2c4, #c8a96a); opacity: .6; }
+[data-theme="dienanh"] .flash:not(.flash-error) { background: var(--ink); color: #0b0b0a; }
+[data-theme="dienanh"] .ed-active { color: #0b0b0a !important; }
+
+/* ── Thiệp mời riêng: phong bì đen, sáp hổ phách, giấy lót lỗ phim ── */
+[data-theme="dienanh"] .ic { --ic-on-accent: #0b0b0a; --ic-env-front: #1c1a17; --ic-env-flap: #171512; --ic-env-in: #0b0b0a; --ic-wax: #c8a96a; --ic-wax-ink: #1a1610;
+  --ic-to-small: #a8a196; --ic-to-name: #efe9df; --ic-card-bg: #141311; --ic-paper: #141311; --ic-line: rgba(200, 169, 106, .5);
+  --ic-liner: var(--sprocket) 0 4px / 22px 14px repeat-x, var(--sprocket) 0 calc(100% - 4px) / 22px 14px repeat-x; }
+[data-theme="dienanh"] .ic-preview { background: #2b2518; color: #f0dfb4; }
+[data-theme="dienanh"] .ic :is(.ic-btn, .ic-enter) { border-radius: 0; }
+[data-theme="dienanh"] .ic :is(input, textarea) { background: #0f0e0c; color: var(--ink); border-color: #3a362f; }
+
+/* ════════ Điện thoại ════════ */
+@media (max-width: 760px) {
+  [data-theme="dienanh"] { --bar: 9svh; }
+  [data-theme="dienanh"] .wd-nav { padding-top: 8px; padding-bottom: 8px; }
+  [data-theme="dienanh"] .wd-mono { width: 50px; height: 38px; margin-top: 6px; font-size: 1rem; }
+  [data-theme="dienanh"] .wd-burger { color: var(--ink); }
+  [data-theme="dienanh"] .pd-hero { inset: calc(var(--bar) + 54px) 14px calc(var(--bar) + 10px); }
+  [data-theme="dienanh"] .da-rec { left: 30px; top: 10px; } [data-theme="dienanh"] .da-tc { right: 30px; top: 10px; }
+  [data-theme="dienanh"] .save-card, [data-theme="dienanh"] .save-card.paper { padding: 0 16px calc(var(--bar) * .5 - 12px); }
+  [data-theme="dienanh"] .save-card .eyebrow { letter-spacing: .24em; text-indent: .24em; margin-bottom: 10px; }
+  [data-theme="dienanh"] .names { letter-spacing: .1em; }
+  [data-theme="dienanh"] .save-card .date { letter-spacing: .16em; text-indent: .16em; font-size: .95rem; margin-top: 14px; }
+  [data-theme="dienanh"] .save-card .lunar { font-size: .9375rem; }
+  [data-theme="dienanh"] .save-card .lunar::before, [data-theme="dienanh"] .save-card .lunar::after { display: none; }
+  [data-theme="dienanh"] :is(section.couple, .event, .location, .gallery-sec) { padding: 92px 20px; }
+  [data-theme="dienanh"] .gallery-sec { padding-left: 0; padding-right: 0; }
+  [data-theme="dienanh"] .sec-head { margin-bottom: 44px; }
+  [data-theme="dienanh"] .wd h2 { letter-spacing: .07em; }
+  [data-theme="dienanh"] .couple-row { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  [data-theme="dienanh"] .person-b { margin-top: 0; }
+  [data-theme="dienanh"] .person-g { margin-right: 38px; }
+  [data-theme="dienanh"] .person-b { margin-left: 38px; }
+  [data-theme="dienanh"] .couple-amp { margin: 18px 0 22px; text-align: center; font-size: 3.6rem; }
+  [data-theme="dienanh"] .event-row { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  [data-theme="dienanh"] .event-photo, [data-theme="dienanh"] .js-reveal .event-photo.reveal.in { width: auto; margin: 0 -20px; aspect-ratio: 4 / 5; }
+  [data-theme="dienanh"] .location .ev-card { grid-template-columns: 58px minmax(0, 1fr) !important; column-gap: 10px !important; }
+  [data-theme="dienanh"] .location .ev-card::before { font-size: 2.8rem; }
+  [data-theme="dienanh"] .location .events::before { letter-spacing: .16em; }
+  [data-theme="dienanh"] .quote { min-height: 82svh; }
+  [data-theme="dienanh"] .rsvp-card, [data-theme="dienanh"] .rsvp-card.paper { padding: 52px 20px 26px; }
+  [data-theme="dienanh"] .rsvp-choice span { letter-spacing: .04em; font-size: .95rem; }
+  [data-theme="dienanh"] .wd .wish-form { padding: 26px 18px; }
+}
+@media (min-width: 761px) {
+  [data-theme="dienanh"] .pd-hero .da-meta { display: flex; }
+}
+
+/* ════════ Giảm chuyển động: hiện trạng thái cuối ════════ */
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="dienanh"] .intro::before, [data-theme="dienanh"] .intro::after { animation: none; transform: scaleY(.22); }
+  [data-theme="dienanh"] :is(.main-photo, .pd-hero, .save-card .eyebrow, .names .name, .names .amp, .save-card .date, .save-card .lunar, .invitee, .da-reel, .mq-track, .pd-grain i, .da-rec em, .da-roll > span) { animation: none !important; }
+  [data-theme="dienanh"] .names::after { animation: none; }
+  [data-theme="dienanh"] .wd .countdown div:last-child::after { animation: none; }
+  [data-theme="dienanh"] .sec-head::before { transition: none !important; transform: none !important; }
+}
+[data-theme="dienanh"] .wd .wd-nav a:not(.btn) { color: var(--nav-ink); }
+[data-theme="dienanh"] .wd .wd-nav a:not(.btn):hover { color: var(--amber); }
+
+/* Chủ nhà sửa (R1-THEMES-01/10): nút ảnh đầu trang đặt ở TRÊN ảnh (dưới thanh đen + REC) để khối tên/ngày (.save-card)
+   không đè; khung ngắm không bắt chạm. Ảnh cô dâu/chú rể: nút lên góc trên, không đè tên in trên ảnh. */
+[data-theme="dienanh"] .is-draft .pd-hero { pointer-events: none; }
+[data-theme="dienanh"] .is-draft .main-photo { animation: none; }
+[data-theme="dienanh"] .is-draft .main-photo .ed-img-tools { top: calc(var(--bar) + 84px); bottom: auto; right: 20px; z-index: 7; }
+[data-theme="dienanh"] .is-draft .oval .ed-img-tools { top: 10px; bottom: auto; right: 10px; transform: none; flex-direction: row; }
+
+/* Địa điểm (R1-THEMES-05): dòng "LỊCH QUAY" nằm NGOÀI lưới (tuyệt đối) để auto-fit gộp cột trống — 2 sự kiện chia đều bề ngang. */
+[data-theme="dienanh"] .location .events { padding-top: 40px; }
+[data-theme="dienanh"] .location .events::before { position: absolute; top: 0; left: 0; right: 0; box-sizing: border-box; height: 40px; align-items: center; }
+
+/* ── Ngôn ngữ khác tiếng Việt (html:not([lang=vi]), 04/10 — chữ phong cách quốc tế dùng chung): chữ trang trí kiểu phim ── */
+html:not([lang="vi"])[data-theme="dienanh"] .names::after { content: "a love story"; content: "a love story" / ""; }
+html:not([lang="vi"])[data-theme="dienanh"] .sec-head .divider::before { content: "SCENE " counter(da-sc, decimal-leading-zero); }
+html:not([lang="vi"])[data-theme="dienanh"] .sec-head .divider::after { content: "TAKE 1"; }
+html:not([lang="vi"])[data-theme="dienanh"] .location .events::before { content: "CALL SHEET  ·  SCHEDULE"; }
+html:not([lang="vi"])[data-theme="dienanh"] .ev-card .ev-place::before { content: "Location"; }
+html:not([lang="vi"])[data-theme="dienanh"] .ev-card .ev-addr::before { content: "Address"; }
+html:not([lang="vi"])[data-theme="dienanh"] .ev-card .ev-time::before { content: "Call time"; }
+html:not([lang="vi"])[data-theme="dienanh"] .quote--noimg blockquote::before { content: "SUBTITLES"; content: "SUBTITLES" / ""; }
+html:not([lang="vi"])[data-theme="dienanh"] .cta::before { content: "● BEHIND THE SCENES"; content: "● BEHIND THE SCENES" / ""; }
+html:not([lang="vi"])[data-theme="dienanh"] .rsvp-card::before { content: "INVITATION  ·  ADMIT ONE"; content: "INVITATION  ·  ADMIT ONE" / ""; }
+html:not([lang="vi"])[data-theme="dienanh"] .wd-foot > p[data-edit]::before { content: "Thank you"; }
+html:not([lang="vi"])[data-theme="dienanh"] .wd-foot > p.muted.small::before { content: "Starring"; }
+html:not([lang="vi"])[data-theme="dienanh"] .wd-foot > p.music-credit::before { content: "Soundtrack"; }
+html:not([lang="vi"])[data-theme="dienanh"] .wd-foot::after { content: "THE END"; content: "THE END" / ""; }

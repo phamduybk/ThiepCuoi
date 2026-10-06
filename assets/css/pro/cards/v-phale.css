@@ -1,0 +1,223 @@
+/* Phông thiệp v-phale — Google Fonts, SIL Open Font License 1.1: Newsreader, Plus Jakarta Sans (tự host assets/fonts/pro) */
+@font-face { font-family: 'Newsreader'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/pro/Newsreader-300i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Newsreader'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/pro/Newsreader-300i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Newsreader'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/pro/Newsreader-300i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Newsreader'; font-style: normal; font-weight: 300 400; font-display: swap;
+  src: url(../../../fonts/pro/Newsreader-300-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Newsreader'; font-style: normal; font-weight: 300 400; font-display: swap;
+  src: url(../../../fonts/pro/Newsreader-300-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Newsreader'; font-style: normal; font-weight: 300 400; font-display: swap;
+  src: url(../../../fonts/pro/Newsreader-300-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal; font-weight: 300 600; font-display: swap;
+  src: url(../../../fonts/pro/PlusJakartaSans-300-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal; font-weight: 300 600; font-display: swap;
+  src: url(../../../fonts/pro/PlusJakartaSans-300-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal; font-weight: 300 600; font-display: swap;
+  src: url(../../../fonts/pro/PlusJakartaSans-300-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════
+   Thiệp VIP "v-phale" — THIỆP PHA LÊ / ACRYLIC. View: views/public/pro/cards/v-phale.php
+   Bìa: tấm acrylic trong (cạnh vát, viền quang phổ 1px, 4 ốc bạc, chữ khắc) cắm trong BAO KÍNH MỜ (ảnh cặp đôi nhòe
+   sau lớp sương, in tên khách); dấu pha lê giác cắt giữ miệng bao. Mở (≈2 s, open_ms 2000): dấu xoay tan (0–.4s) ->
+   tấm acrylic trượt lên + nghiêng 3D, bao lùi xuống (.25–1.35s) -> tia cầu vồng quét ngang (.9–1.6s) -> thiệp kính.
+   Thiệp mở: kính mờ (backdrop-filter; không hỗ trợ -> nền gần đặc .94, chữ vẫn đạt AA). Màu RIÊNG của thiệp.
+   Không dùng backdrop-filter trong bìa 3D (lỗi dựng hình preserve-3d) — sương của bao là ảnh làm nhòe bằng filter.
+   ═══════════════════════════════════════════════════════════════════════════════════════════════ */
+.ic--v-phale.ic {
+  --accent: #2f5d72; --accent-2: #9cc7d3; --ink: #1f2b33; --muted: #46545e; --paper: #fbfcfc; --page: #eef3f5;
+  --f-head: "Newsreader", Georgia, serif; --f-name: "Newsreader", Georgia, serif; --name-style: normal;
+  --f-body: "Plus Jakarta Sans", system-ui, sans-serif; --f-ui: "Plus Jakarta Sans", system-ui, sans-serif;
+  --ic-paper: #fbfcfc; --ic-on-accent: #fff; --ic-line: rgba(62, 111, 134, .3); --ic-card-bg: rgba(255, 255, 255, .6);
+  --ic-to-small: #3e5563; --ic-to-name: #1f2b33;
+  --ic-out-delay: 1.66s;
+  --ph-prism: linear-gradient(118deg, #fff 0%, #f6c4ba 16%, #f7e2b2 30%, #b2e6d6 44%, #a0ceec 58%, #cec4ee 72%, #fff 88%);
+  --ph-spectrum: linear-gradient(90deg, transparent, #f3b9a8 16%, #f2dca6 32%, #a9dcc9 48%, #93c3e3 64%, #b7a8e6 80%, transparent);
+  word-spacing: normal;
+}
+/* Phông nền: sương trắng + vệt sáng khúc xạ trôi chậm */
+.ic--v-phale.ic .ic-backdrop, .ic--v-phale.ic:not(.is-open) .ic-backdrop {
+  overflow: hidden; background: radial-gradient(90% 60% at 50% 0%, #fdfefe, transparent 70%), linear-gradient(180deg, #f3f6f8, #e4ecf0);
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+}
+.ic--v-phale .ic-backdrop::before, .ic--v-phale .ic-backdrop::after { content: ""; position: absolute; pointer-events: none; }
+.ic--v-phale .ic-backdrop::before {
+  inset: -20%;
+  background: radial-gradient(30% 22% at 28% 30%, rgba(246, 196, 180, .75), transparent 70%), radial-gradient(28% 24% at 74% 26%, rgba(170, 214, 238, .8), transparent 70%),
+    radial-gradient(32% 26% at 64% 74%, rgba(184, 232, 218, .75), transparent 70%), radial-gradient(26% 20% at 26% 78%, rgba(210, 198, 240, .7), transparent 70%);
+  filter: blur(10px); animation: v-phale-drift 18s ease-in-out infinite alternate;
+}
+.ic--v-phale .ic-backdrop::after {   /* tia sáng chéo mảnh như ánh đèn qua lăng kính */
+  inset: 0; background: linear-gradient(112deg, transparent 38%, rgba(255, 255, 255, .7) 44%, transparent 47%, transparent 58%, rgba(255, 255, 255, .45) 61%, transparent 63%);
+}
+@keyframes v-phale-drift { from { transform: translate(-4%, -3%) rotate(-4deg); } to { transform: translate(5%, 4%) rotate(5deg); } }
+.ic--v-phale .ic-env { gap: 30px; }
+.ic--v-phale .ic-env-hint { box-shadow: 0 0 0 1px rgba(255, 255, 255, .9), 0 10px 26px -12px rgba(30, 70, 90, .45); }
+
+/* ── Bìa ── */
+.ic--v-phale .ic-env-btn { width: min(370px, 80vw, 46svh); aspect-ratio: 3 / 4.4; animation: v-phale-float 6s ease-in-out infinite; }
+.ic--v-phale .ph { position: absolute; inset: 0; display: block; transform-style: preserve-3d; }
+.ic--v-phale .ph > span, .ic--v-phale .ph-card > span, .ic--v-phale .ph-sleeve > span { position: absolute; display: block; }
+.ic--v-phale .ph-glow { left: 6%; right: 6%; bottom: -6%; height: 16%; border-radius: 50%; background: radial-gradient(closest-side, rgba(40, 80, 100, .35), transparent);
+  filter: blur(6px); transform: translateZ(-20px); }
+.ic--v-phale .ph-edge {   /* viền quang phổ 1,5px chỉ ở mép (mask) */
+  inset: 0; border-radius: inherit; padding: 1.5px; background: var(--ph-prism); pointer-events: none;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+}
+/* Tấm acrylic */
+.ic--v-phale .ph-card {
+  left: 8%; right: 8%; top: 0; height: 84%; border-radius: 14px; overflow: hidden; transform: translateZ(1px);
+  display: grid; align-content: start; justify-items: center; padding-top: 10%; gap: 10px;
+  background: linear-gradient(150deg, rgba(255, 255, 255, .82), rgba(255, 255, 255, .52) 45%, rgba(225, 240, 246, .62));
+  box-shadow: inset 0 1px 0 #fff, inset 0 0 0 7px rgba(255, 255, 255, .28), inset 0 0 0 8px rgba(255, 255, 255, .7), inset -3px -3px 10px rgba(120, 170, 200, .18),
+    0 22px 40px -18px rgba(30, 70, 90, .45);
+}
+.ic--v-phale .ph-card > .ph-card-top, .ic--v-phale .ph-card > .ph-card-wreath, .ic--v-phale .ph-card > .ph-card-names, .ic--v-phale .ph-card > .ph-card-date { position: relative; }
+.ic--v-phale .ph-card-top { font: 600 .875rem/1 var(--f-ui); letter-spacing: .26em; text-transform: uppercase; color: rgba(46, 76, 92, .78); }
+.ic--v-phale .ph-card-wreath { width: 54%; height: auto; aspect-ratio: 1; justify-self: center; left: 0; right: 0; margin-inline: auto !important; display: grid !important; place-items: center; margin: 2px 0 10px; }
+.ic--v-phale .ph-wreath { position: absolute; inset: 0; width: 100%; height: 100%; color: rgba(255, 255, 255, .95);
+  filter: drop-shadow(0 1px 0 rgba(70, 110, 130, .45)); }
+.ic--v-phale .ph-card-mono { position: relative; font: italic 300 2.8rem/1 var(--f-name); color: rgba(31, 52, 64, .78); display: flex !important; gap: 4px; align-items: baseline;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .95), 0 -1px 0 rgba(120, 160, 180, .25); }
+.ic--v-phale .ph-card-mono i, .ic--v-phale .ph-seal i, .ic--v-phale .ph-sign i { font-style: italic; font-size: .6em; }
+.ic--v-phale .ph-card-rule { width: 56px; height: 1px; background: var(--ph-spectrum); }
+.ic--v-phale .ph-card-names { margin-top: 22%; font: 400 1.05rem/1.3 var(--f-head); color: rgba(31, 43, 51, .85); text-align: center; padding: 0 10%; }
+.ic--v-phale .ph-card-date { font: 600 .875rem/1 var(--f-ui); letter-spacing: .2em; color: rgba(46, 76, 92, .8); }
+.ic--v-phale .ph-screw {
+  width: 15px; height: 15px; border-radius: 50%;
+  background: radial-gradient(circle at 34% 30%, #fff 0 18%, #dfe6ea 34%, #a3b1ba 70%, #d5dde2 100%);
+  box-shadow: 0 0 0 1px rgba(120, 140, 150, .35), 0 2px 3px rgba(20, 40, 50, .3), inset 0 -1px 1px rgba(60, 80, 90, .3);
+}
+.ic--v-phale .ph-s1 { top: 12px; left: 12px; } .ic--v-phale .ph-s2 { top: 12px; right: 12px; }
+.ic--v-phale .ph-s3 { bottom: 12px; left: 12px; } .ic--v-phale .ph-s4 { bottom: 12px; right: 12px; }
+.ic--v-phale .ph-sweep {
+  inset: 0; overflow: hidden; border-radius: inherit; pointer-events: none;
+}
+.ic--v-phale .ph-sweep::before {
+  content: ""; position: absolute; top: -20%; bottom: -20%; left: -60%; width: 55%;
+  background: linear-gradient(100deg, transparent, rgba(246, 196, 186, .4) 30%, rgba(255, 255, 255, .7) 45%, rgba(178, 230, 214, .4) 58%, rgba(160, 206, 236, .35) 70%, transparent);
+  transform: translateX(calc(var(--tx) * 30%)) skewX(-14deg); opacity: .0;
+}
+/* Bao kính mờ: ảnh nhòe + sương trắng + vân xước rất mảnh */
+.ic--v-phale .ph-sleeve {
+  left: 0; right: 0; top: 46%; bottom: 0; border-radius: 16px; overflow: hidden; transform: translateZ(8px);
+  box-shadow: 0 30px 50px -26px rgba(20, 60, 80, .55), 0 2px 0 rgba(255, 255, 255, .6) inset;
+  -webkit-mask: radial-gradient(circle 30px at 50% 0, transparent 29px, #000 30px); mask: radial-gradient(circle 30px at 50% 0, transparent 29px, #000 30px);
+}
+.ic--v-phale .ph-sleeve-photo { inset: -12%; background: linear-gradient(160deg, #f9ded4, #cfe9ef 50%, #e0d8f5); }
+.ic--v-phale .ph-sleeve-photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: blur(18px) saturate(1.8) brightness(1.4); opacity: .3; }
+.ic--v-phale .ph-frost {
+  inset: 0; background: var(--ic-grain), linear-gradient(118deg, rgba(255, 255, 255, 0) 8%, rgba(255, 255, 255, .7) 14%, rgba(255, 255, 255, 0) 22%), linear-gradient(170deg, rgba(255, 255, 255, .9), rgba(247, 251, 252, .74) 55%, rgba(255, 255, 255, .86));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .8), inset 0 18px 30px -18px rgba(255, 255, 255, .9);
+}
+.ic--v-phale .ph-sleeve-line { left: 14%; right: 14%; bottom: 21%; height: 1px; background: var(--ph-spectrum); opacity: .9; }
+/* Dấu pha lê giác cắt giữ miệng bao */
+.ic--v-phale .ph-seal {
+  left: 50%; top: 89%; width: 54px; height: 54px; margin: -27px 0 0 -27px; border-radius: 50%; transform: translateZ(14px);
+  display: grid !important; place-items: center;
+  background: radial-gradient(circle at 34% 28%, rgba(255, 255, 255, .95), transparent 38%),
+    repeating-conic-gradient(from 10deg, rgba(255, 255, 255, .55) 0 7deg, rgba(255, 255, 255, 0) 7deg 30deg),
+    conic-gradient(from 30deg, #f6cfc3, #f6e6bd, #c3eadb, #b2d6ee, #d6cdf2, #f6cfc3);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .95), 0 0 0 4px rgba(255, 255, 255, .35), 0 10px 20px -8px rgba(30, 70, 90, .5), inset 0 -4px 8px rgba(90, 120, 160, .25);
+}
+.ic--v-phale .ph-seal span { display: flex; align-items: baseline; gap: 1px; font: italic 400 1.2rem/1 var(--f-name); color: #1f3a48; text-shadow: 0 1px 0 rgba(255, 255, 255, .8); }
+.ic--v-phale .ic-env-to { left: 10%; right: 10%; top: 50%; bottom: 23%; align-content: center; justify-items: center; text-align: center; gap: 8px; transform: translateZ(16px); }
+.ic--v-phale .ic-env-to small { font-weight: 600; letter-spacing: .24em; }
+.ic--v-phale .ic-env-to b { font: italic 300 clamp(1.6rem, 6.8vw, 2.05rem)/1.18 var(--f-name); max-width: 100%; }
+
+/* ── Hiệu ứng mở ── */
+.ic--v-phale.is-opening .ic-env-btn { animation: none; }
+.ic--v-phale.is-opening .ph-seal { animation: v-phale-seal .45s ease-in both; }
+.ic--v-phale.is-opening .ph-card { animation: v-phale-card 1.15s var(--ic-ease) .25s both; }
+.ic--v-phale.is-opening .ph-sleeve { animation: v-phale-sleeve 1.1s var(--ic-ease) .3s both; }
+.ic--v-phale.is-opening .ph-card .ph-sweep::before { animation: v-phale-sweep .75s ease-in-out .9s both; }
+@keyframes v-phale-float { 0%, 100% { transform: translateY(0) rotateX(4deg); } 50% { transform: translateY(-7px) rotateX(4deg); } }
+@keyframes v-phale-seal { to { transform: translateZ(14px) rotate(120deg) scale(.4); opacity: 0; } }
+@keyframes v-phale-card {
+  60% { transform: translateZ(60px) translateY(-26%) rotateX(10deg); }
+  to { transform: translateZ(90px) translateY(-16%) rotateX(0) scale(1.04); }
+}
+@keyframes v-phale-sleeve { to { transform: translateZ(-30px) translateY(30%); opacity: 0; } }
+@keyframes v-phale-sweep { from { transform: translateX(0) skewX(-14deg); opacity: 1; } to { transform: translateX(330%) skewX(-14deg); opacity: 1; } }
+
+/* ══ Thiệp đã mở: tấm kính acrylic, viền quang phổ, 4 ốc bạc, ô vòm ảnh ══ */
+.ic--v-phale .ic-card {
+  width: min(470px, 100%); padding-top: 292px; border-radius: 22px;
+  background: linear-gradient(155deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .56) 50%, rgba(236, 246, 249, .7));
+  -webkit-backdrop-filter: blur(22px) saturate(1.5); backdrop-filter: blur(22px) saturate(1.5);
+  box-shadow: inset 0 1px 0 #fff, 0 60px 100px -50px rgba(20, 60, 80, .55), 0 14px 30px -18px rgba(20, 60, 80, .3);
+}
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .ic--v-phale .ic-card { background: rgba(251, 253, 253, .95); }
+}
+.ic--v-phale .ph-d { border-radius: inherit; }
+.ic--v-phale .ph-d > span { position: absolute; display: block; }
+.ic--v-phale .ph-d .ph-edge { padding: 1.5px; }
+.ic--v-phale .ph-bevel { inset: 9px; border-radius: 14px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .9), 0 0 0 1px rgba(62, 111, 134, .1); }
+.ic--v-phale .ph-d .ph-screw { width: 17px; height: 17px; }
+.ic--v-phale .ph-d .ph-s1, .ic--v-phale .ph-d .ph-s2 { top: 22px; } .ic--v-phale .ph-d .ph-s3, .ic--v-phale .ph-d .ph-s4 { bottom: 22px; }
+.ic--v-phale .ph-d .ph-s1, .ic--v-phale .ph-d .ph-s3 { left: 22px; } .ic--v-phale .ph-d .ph-s2, .ic--v-phale .ph-d .ph-s4 { right: 22px; }
+.ic--v-phale .ph-win {
+  top: 46px; left: 50%; width: 176px; height: 214px; margin-left: -88px; border-radius: 88px 88px 12px 12px; overflow: hidden;
+  background: linear-gradient(160deg, #f6d6ca, #bfe0e8 50%, #d5ccef);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .95), 0 0 0 7px rgba(255, 255, 255, .45), 0 0 0 8px rgba(62, 111, 134, .14), 0 26px 44px -22px rgba(20, 60, 80, .55);
+}
+.ic--v-phale .ph-win img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ic--v-phale .ph-win::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: linear-gradient(125deg, rgba(255, 255, 255, .4), transparent 30%, transparent 70%, rgba(160, 206, 236, .25)); }
+.ic--v-phale .ph-gem { position: absolute; inset: 22% 18%; clip-path: polygon(50% 0, 100% 30%, 82% 100%, 18% 100%, 0 30%);
+  background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(255, 255, 255, .6) 0 10deg, rgba(255, 255, 255, 0) 10deg 36deg), conic-gradient(from 20deg at 50% 40%, #f6cfc3, #f6e6bd, #c3eadb, #b2d6ee, #d6cdf2, #f6cfc3); }
+.ic--v-phale .ph-d .ph-sweep::before { opacity: .7; filter: blur(6px); animation: v-phale-shine 7s ease-in-out 1s infinite; }
+@keyframes v-phale-shine { 0% { transform: translateX(0) skewX(-14deg); } 30%, 100% { transform: translateX(340%) skewX(-14deg); } }
+.ic--v-phale .ic-mono { display: none; }
+.ic--v-phale .ic-greet, .ic--v-phale .ic-label { letter-spacing: .22em; color: #46545e; }
+.ic--v-phale .ic-card .ic-name { font: italic 300 clamp(2.4rem, 9.6vw, 3.3rem)/1.12 var(--f-name); color: #2f5d72; letter-spacing: -.01em; }
+.ic--v-phale .ic-text { font: italic 300 1.12rem/1.65 var(--f-head); color: #2b3a44; }
+.ic--v-phale .ic-rule { color: #6f9db3; }
+.ic--v-phale .ic-rule::before, .ic--v-phale .ic-rule::after { border: 0; height: 1px; background: var(--ph-spectrum); }
+.ic--v-phale .ic-rule span { font-size: 0; width: 8px; height: 8px; transform: rotate(45deg); border: 1px solid #6f9db3; }
+.ic--v-phale .ic-couple { font: 300 clamp(2rem, 8vw, 2.6rem)/1.15 var(--f-name); color: #1f2b33; letter-spacing: -.01em; }
+.ic--v-phale .ic-couple i { font-style: italic; color: #6f9db3; }
+.ic--v-phale .ic-wd, .ic--v-phale .ic-place-title { color: #2f5d72; }
+.ic--v-phale .ic-dmy { font: 300 2.5rem/1 var(--f-head); }
+.ic--v-phale .ic-dmy i { width: 1px; height: 1.6rem; background: linear-gradient(#f3b9a8, #93c3e3); }
+.ic--v-phale .ic-lunar { font-family: var(--f-head); font-size: 1rem; color: #46545e; }
+.ic--v-phale .ic-place-name { font: 400 1.3rem/1.3 var(--f-head); }
+.ic--v-phale .ic-place, .ic--v-phale .ic-rsvp { border-top: 0; position: relative; }
+.ic--v-phale .ic-place::before, .ic--v-phale .ic-rsvp::before { content: ""; position: absolute; top: 0; left: 15%; right: 15%; height: 1px; background: var(--ph-spectrum); opacity: .8; }
+.ic--v-phale .ic-btn-yes { background: linear-gradient(160deg, #3a6e86, #24495b); border-color: #24495b; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 10px 20px -12px rgba(20, 60, 80, .6); }
+.ic--v-phale .ic-btn-yes:hover:not(:disabled) { background: #24495b; }
+.ic--v-phale .ic-btn-no, .ic--v-phale .ic-enter { background: rgba(255, 255, 255, .55); border-color: rgba(62, 111, 134, .35); }
+.ic--v-phale .ic-enter { font-weight: 600; letter-spacing: .16em; }
+.ic--v-phale .ic-msg textarea, .ic--v-phale .ic-stepper input { background: rgba(255, 255, 255, .8); border-color: rgba(62, 111, 134, .3); border-radius: 12px; }
+.ic--v-phale .ic-stepper input { border-radius: 12px; }
+.ic--v-phale .ic-stepper button { background: rgba(255, 255, 255, .6); border-color: rgba(62, 111, 134, .35); }
+.ic--v-phale .ph-end { margin: 28px 0 18px; display: grid; justify-items: center; gap: 10px; }
+.ic--v-phale .ph-spec { width: 160px; height: 1px; background: var(--ph-spectrum); }
+.ic--v-phale .ph-sign > span { display: flex; align-items: baseline; gap: 3px; }
+.ic--v-phale .ph-sign { display: grid; justify-items: center; gap: 10px; font: italic 300 1.9rem/1 var(--f-name); color: #2f5d72; }
+.ic--v-phale .ph-sign small { font: 600 .875rem/1 var(--f-ui); font-style: normal; letter-spacing: .24em; color: #46545e; }
+
+/* Tên khách dài (≥ 22 ký tự) */
+.ic--v-phale.ic--long .ic-env-to b { font-size: clamp(1.25rem, 5.2vw, 1.55rem); }
+
+@media (max-width: 420px) {
+  .ic--v-phale .ic-card { padding-top: 266px; }
+  .ic--v-phale .ph-win { top: 42px; width: 158px; height: 194px; margin-left: -79px; }
+}
+@media (max-width: 340px) {
+  .ic--v-phale .ic-env-btn { width: 86vw; }
+  .ic--v-phale .ph-card-mono { font-size: 2.4rem; }
+}

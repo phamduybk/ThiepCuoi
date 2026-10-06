@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="120" viewBox="0 0 160 120">
+<!-- Hoa văn nền: mây cuộn nhỏ xen kẽ (tile lặp) -->
+<g fill="none" stroke="#b8860b" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M14 40c-6-8 4-16 10-10 2-8 14-8 16 0 6-4 14 2 10 8H14z"/>
+  <path d="M24 30c2 4 6 4 7 1M40 30c-1 4 2 6 5 5"/>
+  <path d="M50 38c8 0 12-4 18-2s8 6 4 8c-3 1-4-2-2-3"/>
+  <path d="M94 100c-6-8 4-16 10-10 2-8 14-8 16 0 6-4 14 2 10 8h-36z"/>
+  <path d="M104 90c2 4 6 4 7 1M120 90c-1 4 2 6 5 5"/>
+  <path d="M94 98c-8 0-12-4-18-2s-8 6-4 8c3 1 4-2 2-3"/>
+</g>
+</svg>

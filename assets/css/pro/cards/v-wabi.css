@@ -1,0 +1,214 @@
+/* Thiệp VIP "v-wabi" — phông (Google Fonts, SIL OFL 1.1: Gowun Batang; tự host ở assets/fonts/pro). Khai báo lại ở đây để thiệp dùng được với mọi giao diện. */
+@font-face { font-family: 'Gowun Batang'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/GowunBatang-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Gowun Batang'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/GowunBatang-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Gowun Batang'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/GowunBatang-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Gowun Batang'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../../../fonts/pro/GowunBatang-700-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Gowun Batang'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../../../fonts/pro/GowunBatang-700-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Gowun Batang'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../../../fonts/pro/GowunBatang-700-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+   Thiệp VIP "v-wabi" — THƯ THIỀN. Đi cùng giao diện VIP wabi nhưng dùng bảng màu + phông RIÊNG (đặt lại biến của khung
+   chung trên .ic) nên đẹp như nhau trên mọi giao diện. Giấy washi có sợi, mực tàu, son triện, hồng anh đào.
+   Bìa: gói thư gấp kiểu origami (tato — hai vạt chéo), dây mizuhiki ba sợi, triện son ở nút dây, cành anh đào, nhãn tên.
+   Chạm -> triện nhấc lên (0–.4s) · dây tuột hai bên (.25s) · vạt phải lật mở 3D (.45s) · vạt trái (.7s) để lộ thiệp trong:
+   ảnh tròn trong vòng enso · bìa lùi, thiệp mở (1.55s). open_ms = 1950 (config/content.php).
+   Thiệp: nền washi, cành anh đào nét mực, ảnh trong enso tự vẽ + triện đóng dấu, chữ Gowun Batang nhiều khoảng thở.
+   Chỉ animate transform/opacity. Keyframes tiền tố v-wabi-.
+   ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
+html .ic.ic--v-wabi {
+  --wb-ink: #1c1a17; --wb-son: #b23a2b; --wb-son-d: #8f2a1e; --wb-sakura: #e9c9c3; --wb-gold: #c9a24f; --wb-paper: #f8f5ee; --wb-muted: #5f5850;
+  --accent: #b23a2b; --accent-2: #e9c9c3; --ink: #1c1a17; --muted: #5f5850; --page: #ece6da; --paper: #f8f5ee;
+  --f-head: "Gowun Batang", "Noto Serif Display", Georgia, serif; --f-name: "Gowun Batang", Georgia, serif;
+  --f-body: "Gowun Batang", Georgia, serif; --f-ui: "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
+  --ic-paper: #f8f5ee; --ic-on-accent: #fffaf3; --ic-line: rgba(28, 26, 23, .22); --ic-card-bg: #f8f5ee;
+  --ic-to-small: #5f5850; --ic-to-name: #1c1a17; --ic-out-delay: 1.55s;
+  --wb-washi: url(../../../img/pro/wabi-washi.svg);
+  --wb-branch: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 210 120'><g fill='none' stroke='%231c1a17' stroke-linecap='round'><path d='M-4 6C30 14 58 26 84 50S128 92 196 104' stroke-width='3.4'/><path d='M84 50C92 34 104 26 122 22' stroke-width='2'/><path d='M140 86c8-10 20-16 34-16' stroke-width='1.6'/><path d='M40 18c6 10 8 22 6 34' stroke-width='1.6'/></g><g fill='%23ecc6c0' fill-opacity='1'><ellipse cx='128.5' cy='23.2' rx='4.3' ry='3.5' transform='rotate(10 128.5 23.2)'/><ellipse cx='122.9' cy='28.6' rx='4.3' ry='3.5' transform='rotate(82 122.9 28.6)'/><ellipse cx='116.0' cy='24.9' rx='4.3' ry='3.5' transform='rotate(154 116.0 24.9)'/><ellipse cx='117.4' cy='17.2' rx='4.3' ry='3.5' transform='rotate(226 117.4 17.2)'/><ellipse cx='125.1' cy='16.1' rx='4.3' ry='3.5' transform='rotate(298 125.1 16.1)'/></g><circle cx='122.0' cy='22.0' r='2.2' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23e7bdb6' fill-opacity='1'><ellipse cx='178.4' cy='73.7' rx='3.7' ry='3.0' transform='rotate(40 178.4 73.7)'/><ellipse cx='171.9' cy='75.3' rx='3.7' ry='3.0' transform='rotate(112 171.9 75.3)'/><ellipse cx='168.3' cy='69.6' rx='3.7' ry='3.0' transform='rotate(184 168.3 69.6)'/><ellipse cx='172.6' cy='64.5' rx='3.7' ry='3.0' transform='rotate(256 172.6 64.5)'/><ellipse cx='178.8' cy='67.0' rx='3.7' ry='3.0' transform='rotate(328 178.8 67.0)'/></g><circle cx='174.0' cy='70.0' r='1.9' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23ecc6c0' fill-opacity='1'><ellipse cx='51.8' cy='49.9' rx='4.0' ry='3.2' transform='rotate(-20 51.8 49.9)'/><ellipse cx='49.8' cy='56.9' rx='4.0' ry='3.2' transform='rotate(52 49.8 56.9)'/><ellipse cx='42.5' cy='57.1' rx='4.0' ry='3.2' transform='rotate(124 42.5 57.1)'/><ellipse cx='40.1' cy='50.3' rx='4.0' ry='3.2' transform='rotate(196 40.1 50.3)'/><ellipse cx='45.8' cy='45.8' rx='4.0' ry='3.2' transform='rotate(268 45.8 45.8)'/></g><circle cx='46.0' cy='52.0' r='2.1' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23f0d3ce' fill-opacity='1'><ellipse cx='108.5' cy='73.6' rx='3.1' ry='2.5' transform='rotate(20 108.5 73.6)'/><ellipse cx='103.8' cy='76.7' rx='3.1' ry='2.5' transform='rotate(92 103.8 76.7)'/><ellipse cx='99.4' cy='73.3' rx='3.1' ry='2.5' transform='rotate(164 99.4 73.3)'/><ellipse cx='101.3' cy='68.1' rx='3.1' ry='2.5' transform='rotate(236 101.3 68.1)'/><ellipse cx='106.9' cy='68.3' rx='3.1' ry='2.5' transform='rotate(308 106.9 68.3)'/></g><circle cx='104.0' cy='72.0' r='1.6' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23ecc6c0' fill-opacity='1'><ellipse cx='201.2' cy='104.0' rx='3.4' ry='2.8' transform='rotate(0 201.2 104.0)'/><ellipse cx='197.6' cy='109.0' rx='3.4' ry='2.8' transform='rotate(72 197.6 109.0)'/><ellipse cx='191.8' cy='107.1' rx='3.4' ry='2.8' transform='rotate(144 191.8 107.1)'/><ellipse cx='191.8' cy='100.9' rx='3.4' ry='2.8' transform='rotate(216 191.8 100.9)'/><ellipse cx='197.6' cy='99.0' rx='3.4' ry='2.8' transform='rotate(288 197.6 99.0)'/></g><circle cx='196.0' cy='104.0' r='1.8' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23f0d3ce' fill-opacity='1'><ellipse cx='67.3' cy='31.9' rx='2.5' ry='2.0' transform='rotate(30 67.3 31.9)'/><ellipse cx='63.2' cy='33.7' rx='2.5' ry='2.0' transform='rotate(102 63.2 33.7)'/><ellipse cx='60.2' cy='30.4' rx='2.5' ry='2.0' transform='rotate(174 60.2 30.4)'/><ellipse cx='62.5' cy='26.5' rx='2.5' ry='2.0' transform='rotate(246 62.5 26.5)'/><ellipse cx='66.8' cy='27.5' rx='2.5' ry='2.0' transform='rotate(318 66.8 27.5)'/></g><circle cx='64.0' cy='30.0' r='1.3' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23d99a92'><circle cx='134' cy='18' r='2.4'/><circle cx='150' cy='94' r='2.2'/><circle cx='30' cy='12' r='2'/></g></svg>");
+  --wb-branch-r: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 210 120'><g transform='translate(210 0) scale(-1 1)'><g fill='none' stroke='%231c1a17' stroke-linecap='round'><path d='M-4 6C30 14 58 26 84 50S128 92 196 104' stroke-width='3.4'/><path d='M84 50C92 34 104 26 122 22' stroke-width='2'/><path d='M140 86c8-10 20-16 34-16' stroke-width='1.6'/><path d='M40 18c6 10 8 22 6 34' stroke-width='1.6'/></g><g fill='%23ecc6c0' fill-opacity='1'><ellipse cx='128.5' cy='23.2' rx='4.3' ry='3.5' transform='rotate(10 128.5 23.2)'/><ellipse cx='122.9' cy='28.6' rx='4.3' ry='3.5' transform='rotate(82 122.9 28.6)'/><ellipse cx='116.0' cy='24.9' rx='4.3' ry='3.5' transform='rotate(154 116.0 24.9)'/><ellipse cx='117.4' cy='17.2' rx='4.3' ry='3.5' transform='rotate(226 117.4 17.2)'/><ellipse cx='125.1' cy='16.1' rx='4.3' ry='3.5' transform='rotate(298 125.1 16.1)'/></g><circle cx='122.0' cy='22.0' r='2.2' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23e7bdb6' fill-opacity='1'><ellipse cx='178.4' cy='73.7' rx='3.7' ry='3.0' transform='rotate(40 178.4 73.7)'/><ellipse cx='171.9' cy='75.3' rx='3.7' ry='3.0' transform='rotate(112 171.9 75.3)'/><ellipse cx='168.3' cy='69.6' rx='3.7' ry='3.0' transform='rotate(184 168.3 69.6)'/><ellipse cx='172.6' cy='64.5' rx='3.7' ry='3.0' transform='rotate(256 172.6 64.5)'/><ellipse cx='178.8' cy='67.0' rx='3.7' ry='3.0' transform='rotate(328 178.8 67.0)'/></g><circle cx='174.0' cy='70.0' r='1.9' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23ecc6c0' fill-opacity='1'><ellipse cx='51.8' cy='49.9' rx='4.0' ry='3.2' transform='rotate(-20 51.8 49.9)'/><ellipse cx='49.8' cy='56.9' rx='4.0' ry='3.2' transform='rotate(52 49.8 56.9)'/><ellipse cx='42.5' cy='57.1' rx='4.0' ry='3.2' transform='rotate(124 42.5 57.1)'/><ellipse cx='40.1' cy='50.3' rx='4.0' ry='3.2' transform='rotate(196 40.1 50.3)'/><ellipse cx='45.8' cy='45.8' rx='4.0' ry='3.2' transform='rotate(268 45.8 45.8)'/></g><circle cx='46.0' cy='52.0' r='2.1' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23f0d3ce' fill-opacity='1'><ellipse cx='108.5' cy='73.6' rx='3.1' ry='2.5' transform='rotate(20 108.5 73.6)'/><ellipse cx='103.8' cy='76.7' rx='3.1' ry='2.5' transform='rotate(92 103.8 76.7)'/><ellipse cx='99.4' cy='73.3' rx='3.1' ry='2.5' transform='rotate(164 99.4 73.3)'/><ellipse cx='101.3' cy='68.1' rx='3.1' ry='2.5' transform='rotate(236 101.3 68.1)'/><ellipse cx='106.9' cy='68.3' rx='3.1' ry='2.5' transform='rotate(308 106.9 68.3)'/></g><circle cx='104.0' cy='72.0' r='1.6' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23ecc6c0' fill-opacity='1'><ellipse cx='201.2' cy='104.0' rx='3.4' ry='2.8' transform='rotate(0 201.2 104.0)'/><ellipse cx='197.6' cy='109.0' rx='3.4' ry='2.8' transform='rotate(72 197.6 109.0)'/><ellipse cx='191.8' cy='107.1' rx='3.4' ry='2.8' transform='rotate(144 191.8 107.1)'/><ellipse cx='191.8' cy='100.9' rx='3.4' ry='2.8' transform='rotate(216 191.8 100.9)'/><ellipse cx='197.6' cy='99.0' rx='3.4' ry='2.8' transform='rotate(288 197.6 99.0)'/></g><circle cx='196.0' cy='104.0' r='1.8' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23f0d3ce' fill-opacity='1'><ellipse cx='67.3' cy='31.9' rx='2.5' ry='2.0' transform='rotate(30 67.3 31.9)'/><ellipse cx='63.2' cy='33.7' rx='2.5' ry='2.0' transform='rotate(102 63.2 33.7)'/><ellipse cx='60.2' cy='30.4' rx='2.5' ry='2.0' transform='rotate(174 60.2 30.4)'/><ellipse cx='62.5' cy='26.5' rx='2.5' ry='2.0' transform='rotate(246 62.5 26.5)'/><ellipse cx='66.8' cy='27.5' rx='2.5' ry='2.0' transform='rotate(318 66.8 27.5)'/></g><circle cx='64.0' cy='30.0' r='1.3' fill='%23b23a2b' fill-opacity='.75'/><g fill='%23d99a92'><circle cx='134' cy='18' r='2.4'/><circle cx='150' cy='94' r='2.2'/><circle cx='30' cy='12' r='2'/></g></g></svg>");
+  --wb-petal: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M10 19C4 15 1 10 3 5c1-3 5-4 7-1 2-3 6-2 7 1 2 5-1 10-7 14z' fill='%23e9c9c3'/><path d='M10 6v8' stroke='%23d9a39b' stroke-width='.8'/></svg>");
+}
+
+/* ══ Bìa: gói thư washi gấp kiểu origami ══ */
+.ic--v-wabi .ic-env-btn { width: min(310px, 78vw, calc((100vh - 150px) / 1.4)); aspect-ratio: 5 / 7; animation: ic-float 5.5s ease-in-out infinite; }
+.ic--v-wabi .wb, .ic--v-wabi .wb span { position: absolute; display: block; }
+.ic--v-wabi .wb { inset: 0; transform-style: preserve-3d; }
+/* Thiệp trong (lộ ra khi hai vạt mở) */
+.ic--v-wabi .wb-in {
+  inset: 0; background: var(--wb-washi) 0 0 / 360px 360px, linear-gradient(170deg, #fbf8f2, #f1ebdf);
+  box-shadow: 0 1px 1px rgba(28, 26, 23, .1), 0 22px 40px -18px rgba(60, 45, 25, .5), 0 60px 80px -50px rgba(60, 45, 25, .5);
+  display: grid !important; justify-items: center; align-content: start; padding-top: 16%;
+}
+.ic--v-wabi .wb .wb-in-enso { position: relative; width: 68%; aspect-ratio: 1; background: url(../../../img/pro/wabi-enso.svg) center / contain no-repeat; }
+.ic--v-wabi .wb-in-photo, .ic--v-wabi .wb-top-photo { inset: 15%; border-radius: 50%; overflow: hidden; background: #e9e2d3; }
+.ic--v-wabi .wb-in-photo img, .ic--v-wabi .wb-top-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(.85) contrast(1.02); }
+.ic--v-wabi .wb-noimg { inset: 0; display: grid !important; place-items: center; grid-auto-flow: column; justify-content: center; gap: 4px;
+  font: 400 2.2rem/1 var(--f-name); color: var(--wb-ink); background: radial-gradient(circle at 50% 45%, #f4dcd7, #e9e2d3 70%); }
+.ic--v-wabi .wb-noimg i { font-style: normal; font-size: .5em; color: var(--wb-son); }
+.ic--v-wabi .wb .wb-in-names { position: relative; margin-top: 8%; font: 400 1.9rem/1 var(--f-name); color: var(--wb-ink); letter-spacing: .04em; }
+.ic--v-wabi .wb-in-names i { font-style: normal; font-size: .55em; color: var(--wb-son); margin: 0 .3em; vertical-align: .2em; }
+
+/* Hai vạt gấp chéo (tato): mỗi vạt = khung xoay 3D + mặt giấy cắt chéo; bóng đổ ở khung để không bị clip-path cắt */
+.ic--v-wabi .wb-pl, .ic--v-wabi .wb-pr { top: 0; bottom: 0; width: 64%; transform-style: preserve-3d; }
+.ic--v-wabi .wb-pl { left: 0; transform-origin: 0 50%; transform: translateZ(1px); filter: drop-shadow(2px 0 3px rgba(60, 45, 25, .16));
+  transition: transform .75s cubic-bezier(.55, .05, .3, 1) .7s ; }
+.ic--v-wabi .wb-pr { right: 0; transform-origin: 100% 50%; transform: translateZ(2px); filter: drop-shadow(-4px 1px 6px rgba(60, 45, 25, .32));
+  transition: transform .75s cubic-bezier(.55, .05, .3, 1) .45s ; }
+.ic--v-wabi .wb-face { inset: 0; overflow: hidden; }
+.ic--v-wabi .wb-pl .wb-face { clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%);
+  background: var(--wb-washi) 0 0 / 360px 360px, linear-gradient(100deg, #ecdcd3 0%, #e8d5cb 70%, #dfc8bc 100%); }
+.ic--v-wabi .wb-pr .wb-face { clip-path: polygon(22% 0, 100% 0, 100% 100%, 0 100%);
+  background: var(--wb-branch-r) right -14px top 10px / 96% auto no-repeat, var(--wb-washi) 40px 0 / 360px 360px, linear-gradient(260deg, #faf6ee 0%, #f5efe4 60%, #ece3d3 100%); }
+/* Mép gấp sáng (nếp giấy) chạy dọc đường chéo của vạt phải */
+.ic--v-wabi .wb-pr .wb-face::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to right, rgba(255, 255, 255, .7), transparent 7%) ; clip-path: polygon(22% 0, 30% 0, 8% 100%, 0 100%); }
+/* Dây mizuhiki ba sợi (son · kem · vàng) + nút dây */
+.ic--v-wabi .wb-cord { top: 57%; height: 8px; margin-top: -4px; transform: translateZ(4px);
+  background: repeating-linear-gradient(115deg, rgba(0, 0, 0, .14) 0 1px, transparent 1px 4px),
+    linear-gradient(#b23a2b 0 2.4px, #f6efe3 2.4px 5px, #c9a24f 5px 8px);
+  box-shadow: 0 2px 3px rgba(60, 45, 25, .25); transition: transform .45s cubic-bezier(.5, 0, .7, .4) .25s, opacity .3s .35s; }
+.ic--v-wabi .wb-cord-l { left: -3%; width: 53%; }
+.ic--v-wabi .wb-cord-r { right: -3%; width: 53%; }
+.ic--v-wabi .wb-knot { left: 50%; top: 57%; width: 96px; height: 46px; margin: -23px 0 0 -48px; transform: translateZ(5px); transition: opacity .3s .2s;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 46'><g fill='none' stroke-linecap='round'><path d='M48 23C36 6 14 6 12 16s16 14 36 7c20 7 38 3 36-7S60 6 48 23z' stroke='%23b23a2b' stroke-width='2.4'/><path d='M48 23C38 10 20 10 18 17s14 10 30 6c16 4 32 2 30-6S58 10 48 23z' stroke='%23c9a24f' stroke-width='1.6'/><path d='M48 23c-6 8-14 16-24 21M48 23c6 8 14 16 24 21' stroke='%23b23a2b' stroke-width='2.4'/></g></svg>") center / contain no-repeat;
+  filter: drop-shadow(0 2px 2px rgba(60, 45, 25, .25)); }
+/* Triện son (mép đá sần = mask wabi-seal.svg), chữ cái đầu viết dọc */
+.ic--v-wabi .wb-seal {
+  width: 56px; height: 56px; display: grid !important; place-content: center; gap: 1px; background: radial-gradient(circle at 35% 30%, #c4483a, #b23a2b 55%, #9b3023);
+  -webkit-mask: url(../../../img/pro/wabi-seal.svg) center / contain no-repeat; mask: url(../../../img/pro/wabi-seal.svg) center / contain no-repeat;
+}
+.ic--v-wabi .wb-seal b { display: block; font: 700 1.05rem/1 var(--f-name); color: #fbf1e6; text-align: center; }
+.ic--v-wabi .wb > .wb-seal { left: 50%; top: 57%; margin: -28px 0 0 -28px; transform: translateZ(7px) rotate(-4deg);
+  transition: transform .45s cubic-bezier(.3, 0, .6, 1), opacity .3s .12s; }
+.ic--v-wabi .wb-seal-wrap { display: none; }
+/* Nhãn tên (giấy trắng dán) — tên do khung chung in */
+.ic--v-wabi .ic-env-to {
+  left: 12%; right: 12%; bottom: 7%; padding: 9px 10px 11px; text-align: center; justify-items: center; transform: translateZ(6px);
+  background: var(--wb-washi) 0 0 / 360px 360px, #fdfbf6; box-shadow: 0 1px 2px rgba(60, 45, 25, .18), 0 6px 12px -8px rgba(60, 45, 25, .35);
+  border-top: 2px solid var(--wb-son);
+}
+.ic--v-wabi .ic-env-to small { font: 400 .875rem/1.2 var(--f-ui); letter-spacing: .24em; color: var(--wb-muted); }
+.ic--v-wabi .ic-env-to b { font: 400 clamp(1.25rem, 5.4vw, 1.5rem)/1.3 var(--f-name); color: var(--wb-ink); }
+.ic--v-wabi.ic--long .ic-env-to b { font-size: 1.1rem; }
+
+/* Mở: triện nhấc -> dây tuột -> vạt phải, vạt trái lật mở */
+.ic--v-wabi.is-opening .ic-env-btn { animation: none; }
+.ic--v-wabi.is-opening .wb { animation: v-wabi-pull 1.5s cubic-bezier(.4, 0, .2, 1) both; }
+.ic--v-wabi.is-opening .wb > .wb-seal { transform: translateZ(90px) translate(10px, -46px) rotate(-18deg) scale(1.1); opacity: 0; }
+.ic--v-wabi.is-opening .wb-knot { opacity: 0; }
+.ic--v-wabi.is-opening .wb-cord-l { transform: translateZ(4px) translateX(-60%); opacity: 0; }
+.ic--v-wabi.is-opening .wb-cord-r { transform: translateZ(4px) translateX(60%); opacity: 0; }
+.ic--v-wabi.is-opening .wb-pr { transform: translateZ(2px) rotateY(-128deg); }
+.ic--v-wabi.is-opening .wb-pl { transform: translateZ(1px) rotateY(124deg); }
+.ic--v-wabi.is-opening .ic-env { animation-name: v-wabi-env-out; animation-duration: .4s; }
+@keyframes v-wabi-pull { 0%, 25% { transform: none; } 100% { transform: translateZ(-150px) translateY(10px); } }
+@keyframes v-wabi-env-out { to { opacity: 0; transform: scale(1.06); } }
+
+/* ══ Thiệp mở: giấy washi, anh đào, enso ══ */
+.ic--v-wabi .ic-card {
+  width: min(470px, 100%); flex-shrink: 0; padding: 0 40px 30px; border-radius: 2px; overflow: hidden;
+  background: var(--wb-washi) 0 0 / 360px 360px, linear-gradient(175deg, #faf7f1, #f3eee4);
+  box-shadow: 0 0 0 1px rgba(28, 26, 23, .06), 0 1px 2px rgba(28, 26, 23, .08), 0 30px 60px -30px rgba(60, 45, 25, .5);
+}
+.ic--v-wabi.is-open .ic-card { animation: v-wabi-card-in 1s cubic-bezier(.22, .61, .36, 1) both; }
+@keyframes v-wabi-card-in { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: none; } }
+.ic--v-wabi .wb-deco > span { position: absolute; display: block; }
+.ic--v-wabi .wb-d-enso { right: -110px; bottom: 18%; width: 320px; aspect-ratio: 1; background: url(../../../img/pro/wabi-enso.svg) center / contain no-repeat; opacity: .07; transform: rotate(40deg); }
+.ic--v-wabi .wb-d-branch { left: -26px; top: -8px; width: 250px; aspect-ratio: 210 / 120; background: var(--wb-branch) center / contain no-repeat; transform: rotate(4deg); transform-origin: 0 0; }
+.ic--v-wabi .wb-d-petal { width: 14px; aspect-ratio: 1; background: var(--wb-petal) center / contain no-repeat; opacity: .85; }
+.ic--v-wabi .wb-p1 { left: 22%; top: 150px; transform: rotate(30deg); }
+.ic--v-wabi .wb-p2 { right: 14%; top: 300px; width: 11px; transform: rotate(-50deg); }
+.ic--v-wabi .wb-p3 { left: 10%; top: 46%; width: 12px; transform: rotate(110deg); }
+.ic--v-wabi.is-open .wb-d-petal { animation: v-wabi-fall 9s ease-in-out infinite; }
+.ic--v-wabi.is-open .wb-p2 { animation-delay: -3s; animation-duration: 11s; }
+.ic--v-wabi.is-open .wb-p3 { animation-delay: -6s; animation-duration: 10s; }
+@keyframes v-wabi-fall { 0%, 100% { translate: 0 0; rotate: 0deg; } 50% { translate: 14px 26px; rotate: 50deg; } }
+
+/* Đầu thiệp: ảnh tròn trong vòng enso + triện son đóng dấu */
+.ic--v-wabi .ic-card > .wb-top { position: relative; height: 262px; perspective: 800px; }
+.ic--v-wabi .wb-top span { position: absolute; display: block; }
+.ic--v-wabi .wb-top-enso { left: 50%; top: 42px; width: 214px; aspect-ratio: 1; margin-left: -107px; background: url(../../../img/pro/wabi-enso.svg) center / contain no-repeat;
+  transform: rotateY(calc(var(--tx) * 10deg)) rotateX(calc(var(--ty) * -8deg)); }
+.ic--v-wabi .wb-top > .wb-seal { left: calc(50% + 58px); top: 196px; width: 46px; height: 46px; transform: rotate(-6deg); }
+.ic--v-wabi .wb-top .wb-seal b { font-size: .95rem; }
+.ic--v-wabi.is-open .wb-top-photo { animation: v-wabi-ink .9s ease-out .25s both; }
+.ic--v-wabi.is-open .wb-top > .wb-seal { animation: v-wabi-stamp .55s cubic-bezier(.3, 1.5, .5, 1) 1.2s both; }
+@keyframes v-wabi-ink { from { opacity: 0; transform: scale(.9); } to { opacity: 1; transform: none; } }
+@keyframes v-wabi-stamp { from { opacity: 0; transform: scale(1.6) rotate(-6deg); } to { opacity: 1; transform: rotate(-6deg); } }
+
+/* Chữ */
+.ic--v-wabi .ic-mono { display: none; }
+.ic--v-wabi .ic-greet { font: 400 .875rem/1.5 var(--f-ui); letter-spacing: .3em; color: var(--wb-muted); }
+.ic--v-wabi .ic-card .ic-name { margin: 10px 0 16px; font: 400 clamp(2.05rem, 8.6vw, 2.6rem)/1.25 var(--f-name); color: var(--wb-ink); letter-spacing: .01em; }
+.ic--v-wabi.ic--long .ic-card .ic-name { font-size: clamp(1.7rem, 7vw, 2.1rem); }
+.ic--v-wabi .ic-text { font: 400 1.06rem/1.9 var(--f-body); font-style: normal; color: #3a352f; }
+.ic--v-wabi .ic-rule { width: 130px; height: 12px; margin: 28px auto 20px; background: var(--wb-ink); opacity: .85;
+  -webkit-mask: url(../../../img/pro/wabi-stroke.svg) center / 100% 100% no-repeat; mask: url(../../../img/pro/wabi-stroke.svg) center / 100% 100% no-repeat; }
+.ic--v-wabi .ic-rule::before, .ic--v-wabi .ic-rule::after, .ic--v-wabi .ic-rule span { display: none; }
+.ic--v-wabi .ic-label { font: 400 .875rem/1.5 var(--f-ui); letter-spacing: .3em; color: var(--wb-son); }
+.ic--v-wabi .ic-couple { margin: 8px 0 0 !important; font: 400 clamp(1.8rem, 7.4vw, 2.2rem)/1.3 var(--f-name); color: var(--wb-ink); gap: 0 14px; }
+.ic--v-wabi .ic-couple i { font-size: .6em; color: var(--wb-son); }
+.ic--v-wabi .ic-date { margin: 24px 0 4px; }
+.ic--v-wabi .ic-wd { font: 400 1rem/1.4 var(--f-ui); letter-spacing: .04em; color: var(--wb-muted); }
+.ic--v-wabi .ic-dmy { font: 400 2.5rem/1 var(--f-head); color: var(--wb-ink); gap: 18px; margin: 12px 0 10px !important; }
+.ic--v-wabi .ic-dmy i { width: 1px; height: 1.9rem; background: var(--wb-son); opacity: .7; transform: rotate(14deg); }
+.ic--v-wabi .ic-lunar { font: 400 1rem/1.5 var(--f-body); font-style: normal; color: var(--wb-muted); }
+.ic--v-wabi .ic-place { border-top: 0; margin-top: 22px; padding-top: 20px; background: linear-gradient(var(--ic-line), var(--ic-line)) center top / 40px 1px no-repeat; }
+.ic--v-wabi .ic-place-title { font: 400 1rem/1.4 var(--f-ui); color: var(--wb-son); }
+.ic--v-wabi .ic-place-name { font: 400 1.25rem/1.4 var(--f-head); color: var(--wb-ink); }
+.ic--v-wabi .ic-place-addr { font: 400 .98rem/1.55 var(--f-body); color: var(--wb-muted); }
+html .ic.ic--v-wabi .ic-link { color: var(--wb-son); font-family: var(--f-ui); }
+
+/* Trả lời + nút */
+.ic--v-wabi .ic-rsvp { border-top: 0; margin-top: 26px; padding-top: 24px; background: linear-gradient(90deg, transparent, var(--ic-line) 20%, var(--ic-line) 80%, transparent) top / 100% 1px no-repeat; }
+.ic--v-wabi .ic-q { font: 400 1.12rem/1.6 var(--f-body); }
+html .ic.ic--v-wabi .ic-btn { border-radius: 2px; font: 600 1rem/1.2 var(--f-ui); letter-spacing: .04em; }
+html .ic.ic--v-wabi .ic-btn-yes { background: var(--wb-son); border-color: var(--wb-son); color: #fffaf3; }
+html .ic.ic--v-wabi .ic-btn-yes:hover:not(:disabled) { background: var(--wb-son-d); }
+html .ic.ic--v-wabi .ic-btn-no { color: var(--wb-ink); border-color: rgba(28, 26, 23, .4); background: rgba(250, 247, 241, .7); }
+html .ic.ic--v-wabi .ic-enter { border-radius: 2px; font-family: var(--f-ui); color: var(--wb-ink); border-color: rgba(28, 26, 23, .3); background: rgba(250, 247, 241, .7); letter-spacing: .2em; }
+#thiep-moi.ic--v-wabi .ic-msg textarea { background: rgba(253, 251, 246, .9); border: 1px solid rgba(28, 26, 23, .22); border-radius: 2px; color: var(--wb-ink); font: 1.05rem/1.7 var(--f-body); padding: 8px 10px; }
+#thiep-moi.ic--v-wabi .ic-stepper input, #thiep-moi.ic--v-wabi .ic-stepper button { background: rgba(253, 251, 246, .9); color: var(--wb-ink); border-color: rgba(28, 26, 23, .28); }
+#thiep-moi.ic--v-wabi .ic-stepper button { border-radius: 2px; }
+.ic--v-wabi .ic-msg, .ic--v-wabi .ic-count-label { color: #4d4740; }
+.ic--v-wabi .ic-done-title { font: 400 1.8rem/1.3 var(--f-name); color: var(--wb-son); }
+.ic--v-wabi .ic-form-title { font: 400 1.12rem/1.5 var(--f-body); }
+
+/* Cuối thiệp: nét cọ + triện nhỏ */
+.ic--v-wabi .wb-end { position: relative; margin-top: 26px; height: 44px; }
+.ic--v-wabi .wb-end > span { position: absolute; display: block; }
+.ic--v-wabi .wb-end-stroke { left: 50%; top: 18px; width: 120px; height: 9px; margin-left: -80px; background: var(--wb-ink); opacity: .55;
+  -webkit-mask: url(../../../img/pro/wabi-stroke.svg) center / 100% 100% no-repeat; mask: url(../../../img/pro/wabi-stroke.svg) center / 100% 100% no-repeat; }
+.ic--v-wabi .wb-end > .wb-seal { left: calc(50% + 46px); top: 2px; width: 38px; height: 38px; transform: rotate(4deg); }
+.ic--v-wabi .wb-end .wb-seal b { font-size: .78rem; }
+
+@media (max-width: 420px) {
+  .ic--v-wabi .ic-card { padding: 0 24px 26px; }
+  .ic--v-wabi .ic-card > .wb-top { height: 240px; }
+  .ic--v-wabi .wb-top-enso { width: 196px; margin-left: -98px; top: 38px; }
+  .ic--v-wabi .wb-top > .wb-seal { left: calc(50% + 52px); top: 182px; }
+  .ic--v-wabi .wb-d-branch { width: 210px; }
+  .ic--v-wabi .ic-dmy { font-size: 2.15rem; gap: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ic--v-wabi .wb-top-enso { transform: none; }
+}
+
+/* Điện thoại xoay ngang / màn thấp (R1-CARDS-01): triện nhỏ + lên cao, nhãn tên gọn -> triện không đè "Thân gửi". */
+@media (max-height: 500px) {
+  .ic--v-wabi .wb > .wb-seal { width: 42px; height: 42px; top: 44%; margin: -21px 0 0 -21px; }
+  .ic--v-wabi .wb > .wb-seal b { font-size: .8rem; }
+  .ic--v-wabi .ic-env-to { padding: 5px 8px 7px; bottom: 6%; }
+  .ic--v-wabi .ic-env-to small { font-size: .6875rem; letter-spacing: .16em; }
+  .ic--v-wabi .ic-env-to b, .ic--v-wabi.ic--long .ic-env-to b { font-size: 1rem; line-height: 1.2; }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+<!-- Khung ảnh góc triện (border-image, cắt 30): viền lam ngoài + chỉ vàng trong, góc gấp bậc -->
+<path d="M16 2H74V16H88V74H74V88H16V74H2V16H16Z" fill="none" stroke="#1e3f86" stroke-width="4"/>
+<path d="M16 5.5H74" stroke="#1e3f86" stroke-width="0"/>
+<path d="M20.5 8.5H69.5V20.5H81.5V69.5H69.5V81.5H20.5V69.5H8.5V20.5H20.5Z" fill="none" stroke="#e2bb57" stroke-width="1.6"/>
+<g fill="#e2bb57"><path d="M27 23l4 4-4 4-4-4zM63 23l4 4-4 4-4-4zM27 59l4 4-4 4-4-4zM63 59l4 4-4 4-4-4z"/></g>
+</svg>

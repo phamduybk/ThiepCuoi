@@ -1,0 +1,260 @@
+/* Phông thiệp v-hongnhung — Google Fonts, SIL Open Font License 1.1: Imperial Script, Bona Nova (tự host assets/fonts/pro) */
+@font-face { font-family: 'Imperial Script'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/ImperialScript-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Imperial Script'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/ImperialScript-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Imperial Script'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/ImperialScript-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Bona Nova'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/BonaNova-400i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Bona Nova'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/BonaNova-400i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Bona Nova'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/BonaNova-400i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Bona Nova'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/BonaNova-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Bona Nova'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/BonaNova-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Bona Nova'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/BonaNova-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Bona Nova'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../../../fonts/pro/BonaNova-700-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Bona Nova'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../../../fonts/pro/BonaNova-700-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Bona Nova'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../../../fonts/pro/BonaNova-700-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════
+   Thiệp VIP "v-hongnhung" — HỘP NHUNG HỒNG. View: views/public/pro/cards/v-hongnhung.php
+   Bìa: hộp nhung đỏ đô 3D (mặt nắp + thành hộp + gờ nắp), dải satin ngà + nơ, khung cartouche vàng quanh tên khách.
+   Mở (≈2,3 s, open_ms 2300): nơ tuột + dải satin rút (0–.7s) -> nắp lật lên theo bản lề (.45–1.4s) -> hai bông hồng
+   nhung nở trong lòng hộp lót satin (.9–1.9s) -> tấm thiệp nâng lên (1.3–2.05s) -> bìa rời sân khấu (--ic-out-delay).
+   Màu RIÊNG của thiệp (không phụ thuộc giao diện): đặt lại --accent/--ink/... trên chính .ic. Phông OFL tự host.
+   Chỉ animate transform/opacity. prefers-reduced-motion: JS mở tức thì + khung chung tắt mọi animation.
+   ═══════════════════════════════════════════════════════════════════════════════════════════════ */
+.ic--v-hongnhung.ic {
+  --accent: #7a1f2b; --accent-2: #b98f4e; --ink: #3a0f16; --muted: #6e4a52; --paper: #fffaf6; --page: #2a060d;
+  --f-head: "Bona Nova", "EB Garamond", Georgia, serif; --f-body: "Bona Nova", "EB Garamond", Georgia, serif;
+  --f-ui: "Bona Nova", "EB Garamond", Georgia, serif; --f-name: "Imperial Script", "Great Vibes", cursive; --name-style: normal;
+  --ic-paper: #fffaf6; --ic-on-accent: #fff7f2; --ic-line: rgba(185, 143, 78, .55); --ic-card-bg: #fffaf6;
+  --ic-to-small: #e6c98f; --ic-to-name: #fff3ec;
+  --ic-out-delay: 2s;
+  --hn-gold: #c9a463; --hn-gold-lt: #ecd39d;
+  --hn-foil: linear-gradient(105deg, #9c7637 0%, #e2c27f 26%, #fbefc8 44%, #d7b46e 58%, #a8853d 78%, #e9cf94 100%);
+  --hn-nap: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 .8 0 0 0 0 .85 0 0 0 .07 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  --hn-velvet: radial-gradient(ellipse 75% 55% at 26% 16%, rgba(196, 64, 88, .5), transparent 62%),
+    radial-gradient(ellipse 80% 60% at 84% 98%, rgba(16, 0, 4, .6), transparent 70%),
+    linear-gradient(162deg, #741a29 0%, #5a1220 46%, #3c0a13 100%);
+  --hn-satin: linear-gradient(180deg, #b8925f 0%, #e6cda8 22%, #fffaf1 42%, #f0dcc0 58%, #c9a679 82%, #a07a4b 100%);
+  --hn-lining: repeating-linear-gradient(118deg, rgba(255, 255, 255, 0) 0 22px, rgba(255, 255, 255, .16) 30px, rgba(160, 70, 80, .05) 40px, rgba(255, 255, 255, 0) 48px),
+    radial-gradient(ellipse 70% 60% at 40% 30%, #fbe9e3, #ecc8c0 70%, #d9a9a0);
+  word-spacing: normal;
+}
+.ic--v-hongnhung.ic .ic-backdrop, .ic--v-hongnhung.ic:not(.is-open) .ic-backdrop {
+  background:
+    radial-gradient(56% 42% at 50% 42%, rgba(176, 44, 68, .5), transparent 72%),
+    radial-gradient(120% 70% at 50% 110%, rgba(8, 0, 2, .75), transparent 70%),
+    var(--hn-nap), linear-gradient(172deg, #4a0c17, #2a060d 70%);
+}
+.ic--v-hongnhung .ic-preview { background: #f6e7c8; color: #5a3b06; }
+.ic--v-hongnhung .ic-env { gap: 34px; }
+.ic--v-hongnhung .ic-env-hint { box-shadow: 0 0 0 1px rgba(201, 164, 99, .7), 0 10px 26px -10px rgba(0, 0, 0, .6); }
+
+/* ── Hộp (nút bìa): nghiêng nhẹ ra sau để thấy mặt nắp + thành hộp ── */
+.ic--v-hongnhung .ic-env-btn {
+  width: min(390px, 80vw, 52svh); aspect-ratio: 4 / 5; margin-bottom: 18px;
+  transform: rotateX(16deg); animation: v-hongnhung-float 6s ease-in-out infinite;
+  transition: transform 1.3s var(--ic-ease);
+}
+.ic--v-hongnhung .hn { position: absolute; inset: 0; display: block; transform-style: preserve-3d; --hn-d: 30px; }
+.ic--v-hongnhung .hn > span, .ic--v-hongnhung .hn-lid > span { position: absolute; display: block; }
+.ic--v-hongnhung .hn-shadow {
+  inset: 6% 2% -4%; border-radius: 10px; background: rgba(10, 0, 3, .75); filter: blur(22px);
+  transform: translateZ(calc(var(--hn-d) * -1)) translateY(18px);
+}
+/* Thành hộp (đáy -> mặt nắp), cùng chất nhung nhưng tối hơn */
+.ic--v-hongnhung .hn-side { background: var(--hn-nap), linear-gradient(180deg, #4d0d18, #2c050c); }
+.ic--v-hongnhung .hn-side-b { left: 0; right: 0; top: 100%; height: var(--hn-d); transform-origin: 50% 0; transform: rotateX(-90deg);
+  box-shadow: inset 0 1px 0 rgba(255, 180, 190, .18); }
+.ic--v-hongnhung .hn-side-l { top: 0; bottom: 0; right: 100%; width: var(--hn-d); transform-origin: 100% 50%; transform: rotateY(90deg); }
+.ic--v-hongnhung .hn-side-r { top: 0; bottom: 0; left: 100%; width: var(--hn-d); transform-origin: 0 50%; transform: rotateY(-90deg); }
+
+/* Lòng hộp: satin hồng xếp nếp + bóng thành trong */
+.ic--v-hongnhung .hn-inside {
+  inset: 0; border-radius: 3px; background: var(--hn-lining); transform-style: preserve-3d;
+  box-shadow: inset 0 0 0 7px #3f0a13, inset 0 0 0 8px rgba(201, 164, 99, .6), inset 0 22px 28px -6px rgba(60, 0, 12, .55), inset 0 -8px 18px rgba(60, 0, 12, .3);
+}
+.ic--v-hongnhung .hn-insert {
+  position: absolute; left: 17%; right: 17%; top: 13%; bottom: 17%; display: grid; align-content: center; justify-items: center; gap: 10px;
+  background: var(--ic-grain), linear-gradient(170deg, #fffdf9, #f8eee6); border-radius: 2px;
+  box-shadow: inset 0 0 0 6px #fffaf6, inset 0 0 0 7px rgba(185, 143, 78, .7), 0 6px 14px -4px rgba(74, 14, 23, .45);
+  transform: translateZ(2px); overflow: hidden;
+}
+.ic--v-hongnhung .hn-insert-mono { font: 400 2.4rem/1 var(--f-name); color: #7a1f2b; display: flex; gap: 4px; align-items: baseline; }
+.ic--v-hongnhung .hn-insert-mono i, .ic--v-hongnhung .hn-crest i, .ic--v-hongnhung .hn-cameo-mono i { font-style: normal; font-size: .62em; }
+.ic--v-hongnhung .hn-insert-t { font: 400 .875rem/1.3 var(--f-ui); letter-spacing: .08em; text-transform: uppercase; color: #6e4a52; max-width: 100%; text-align: center; }   /* M2-CARDS-02: không nowrap — phong bì co khi xoay ngang thì chữ xuống 2 dòng, không lộ ra ngoài */
+.ic--v-hongnhung .hn-rose { position: absolute; display: block; overflow: visible; }
+/* S1-DESK-02: Firefox vẽ phần tử có `filter` trong cảnh preserve-3d thành lớp riêng NỔI LÊN TRÊN nắp (hoa z=6px đè lên nắp
+   z=12px, che tên khách trên bìa đóng) -> hoa trong hộp KHÔNG dùng filter (bóng vẽ trong SVG đủ dùng; hoa trên thiệp mở .hn-d
+   là 2D nên vẫn giữ drop-shadow). Thêm lưới an toàn cho mọi engine: hoa ẩn tới khi nắp đã hé (~.8 s sau khi chạm), rồi nở. */
+.ic--v-hongnhung .hn-rose-a { width: 44%; left: 1%; bottom: 3%; transform: translateZ(6px) rotate(-12deg); }
+.ic--v-hongnhung .hn-rose-b { width: 32%; right: 3%; bottom: 14%; transform: translateZ(5px) rotate(28deg); }
+.ic--v-hongnhung .hn-inside .hn-rose { visibility: hidden; }
+.ic--v-hongnhung.is-opening .hn-inside .hn-rose { visibility: visible; transition: visibility 0s linear .8s; }
+.ic--v-hongnhung .hn-ring { transform-box: view-box; transform-origin: 50% 50%; }
+
+/* Nắp: mặt nhung + mặt trong (satin) + gờ nắp 3D; bản lề ở mép trên */
+.ic--v-hongnhung .hn-lid { inset: 0; transform-style: preserve-3d; transform-origin: 50% 0; transform: translateZ(12px); }
+.ic--v-hongnhung .hn-lid-face, .ic--v-hongnhung .hn-lid-under { position: absolute; inset: 0; border-radius: 4px; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.ic--v-hongnhung .hn-lid-face {
+  background: var(--hn-nap), var(--hn-velvet); overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 190, 200, .22), inset 0 0 0 1px rgba(255, 190, 200, .07), inset 0 -26px 40px rgba(0, 0, 0, .28);
+}
+/* Ánh nhung trôi theo độ nghiêng */
+.ic--v-hongnhung .hn-lid-face::after {
+  content: ""; position: absolute; inset: -30%; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(255, 170, 185, .2), transparent);
+  transform: translate(calc(var(--tx) * 18% - 12%), calc(var(--ty) * 14% - 16%));
+}
+.ic--v-hongnhung .hn-lid-under { transform: rotateX(180deg); background: var(--hn-lining);
+  box-shadow: inset 0 0 0 7px #4a0d17, inset 0 0 0 8px rgba(201, 164, 99, .55), inset 0 0 30px rgba(90, 10, 30, .25); }
+.ic--v-hongnhung .hn-rim { background: var(--hn-nap), linear-gradient(180deg, #5d1220, #3a0912); }
+.ic--v-hongnhung .hn-rim-b { left: 0; right: 0; top: 100%; height: 12px; transform-origin: 50% 0; transform: rotateX(-90deg);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 190, 200, .2); }
+.ic--v-hongnhung .hn-rim-l { top: 0; bottom: 0; right: 100%; width: 12px; transform-origin: 100% 50%; transform: rotateY(90deg); }
+.ic--v-hongnhung .hn-rim-r { top: 0; bottom: 0; left: 100%; width: 12px; transform-origin: 0 50%; transform: rotateY(-90deg); }
+
+.ic--v-hongnhung .hn-frame { position: absolute; inset: 12px; border: 1px solid rgba(220, 189, 132, .55); border-radius: 2px; }
+.ic--v-hongnhung .hn-frame::after { content: ""; position: absolute; inset: 4px; border: 1px solid rgba(220, 189, 132, .22); }
+.ic--v-hongnhung .hn-corner { position: absolute; width: 44px; height: 44px; top: 7px; left: 7px; color: #d4b07a; }
+.ic--v-hongnhung .hn-c-tr { left: auto; right: 7px; transform: scaleX(-1); }
+.ic--v-hongnhung .hn-c-bl { top: auto; bottom: 7px; transform: scaleY(-1); }
+.ic--v-hongnhung .hn-c-br { top: auto; left: auto; bottom: 7px; right: 7px; transform: scale(-1); }
+.ic--v-hongnhung .hn-crest {
+  position: absolute; left: 0; right: 0; top: 7%; display: flex; justify-content: center; align-items: baseline; gap: 3px;
+  font: 400 2.1rem/1.2 var(--f-name); background: var(--hn-foil); background-size: 220% 100%;
+  background-position: calc(50% + var(--tx) * 40%) 0; -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.ic--v-hongnhung .hn-cartouche { position: absolute; left: 9%; right: 9%; top: 50%; bottom: 9%; width: 82%; height: 41%; overflow: visible; }
+.ic--v-hongnhung .hn-band {
+  position: absolute; left: 0; right: 0; top: 30%; height: 30px; margin-top: -15px; background: var(--hn-satin);
+  box-shadow: 0 4px 8px -2px rgba(20, 0, 4, .55), 0 1px 0 rgba(255, 255, 255, .3) inset; transform-origin: 100% 50%;
+}
+.ic--v-hongnhung .hn-bow {
+  position: absolute; left: 25%; width: 50%; top: 17.6%; overflow: visible; transform-origin: 50% 46%;
+  filter: drop-shadow(0 8px 7px rgba(20, 0, 4, .55));
+}
+.ic--v-hongnhung .ic-env-to {
+  left: 15%; right: 15%; top: 51%; bottom: 10%; z-index: 6; align-content: center; justify-items: center; text-align: center; gap: 6px;
+  transform: translateZ(14px);
+}
+.ic--v-hongnhung .ic-env-to small { letter-spacing: .22em; font-family: var(--f-ui); font-weight: 400; }
+.ic--v-hongnhung .ic-env-to b { font: 400 clamp(1.65rem, 7vw, 2.15rem)/1.15 var(--f-name); text-shadow: 0 1px 0 rgba(0, 0, 0, .35); max-width: 100%; }
+
+/* ── Hiệu ứng mở ── */
+.ic--v-hongnhung.is-opening .ic-env-btn { animation: none; transform: rotateX(30deg) translateY(40px) scale(.92); }
+.ic--v-hongnhung.is-opening .hn-bow { animation: v-hongnhung-bow .62s var(--ic-ease) both; }
+.ic--v-hongnhung.is-opening .hn-band { animation: v-hongnhung-band .5s cubic-bezier(.6, 0, .4, 1) .22s both; }
+.ic--v-hongnhung.is-opening .hn-lid { animation: v-hongnhung-lid 1s var(--ic-fold) .45s both; }
+/* Dự phòng khi trình duyệt dựng phẳng (không preserve-3d / backface): mặt nhung tắt đúng lúc nắp qua 90°. */
+.ic--v-hongnhung.is-opening .hn-lid-face { animation: v-hongnhung-face 1s linear .45s both; }
+.ic--v-hongnhung.is-opening .hn-l1 { animation: v-hongnhung-bloom .9s var(--ic-ease) .85s both; }
+.ic--v-hongnhung.is-opening .hn-l2 { animation: v-hongnhung-bloom .9s var(--ic-ease) .98s both; }
+.ic--v-hongnhung.is-opening .hn-l3 { animation: v-hongnhung-bloom .9s var(--ic-ease) 1.1s both; }
+.ic--v-hongnhung.is-opening .hn-leaf { animation: v-hongnhung-leaf .8s var(--ic-ease) .8s both; }
+.ic--v-hongnhung.is-opening .hn-insert { animation: v-hongnhung-lift .8s var(--ic-ease) 1.3s both; }
+@keyframes v-hongnhung-float { 0%, 100% { transform: rotateX(16deg) translateY(0); } 50% { transform: rotateX(16deg) translateY(-7px); } }
+@keyframes v-hongnhung-bow {
+  35% { transform: scale(1.08, .9); }
+  to { transform: translateY(-40%) scale(.25) rotate(-14deg); opacity: 0; }
+}
+@keyframes v-hongnhung-band { to { transform: translateX(30%) scaleX(0); opacity: 0; } }
+@keyframes v-hongnhung-lid { from { transform: translateZ(12px) rotateX(0); } to { transform: translateZ(12px) rotateX(112deg); } }
+@keyframes v-hongnhung-face { 0%, 62% { opacity: 1; } 63%, 100% { opacity: 0; } }
+@keyframes v-hongnhung-bloom { from { transform: scale(.3) rotate(-70deg); } to { transform: none; } }
+@keyframes v-hongnhung-leaf { from { transform: scale(.5); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes v-hongnhung-lift { to { transform: translateZ(70px) translateY(-30%) rotateX(-14deg) scale(1.04); } }
+
+/* ══ Thiệp đã mở: giấy ngà, khung vàng đôi, 4 góc baroque, ảnh cameo kẹp giữa hai bông hồng ══ */
+.ic--v-hongnhung .ic-card {
+  width: min(480px, 100%); padding-top: 258px; border-radius: 6px;
+  background: var(--ic-grain), radial-gradient(ellipse 90% 30% at 50% 0, #fff, rgba(255, 255, 255, 0)), linear-gradient(180deg, #fffaf6, #fbf1ea);
+  box-shadow: 0 70px 110px -40px rgba(0, 0, 0, .85), 0 20px 40px -20px rgba(0, 0, 0, .5), 0 0 0 1px rgba(185, 143, 78, .4);
+}
+.ic--v-hongnhung .hn-d { overflow: hidden; border-radius: inherit; }
+.ic--v-hongnhung .hn-d > * { position: absolute; display: block; }
+.ic--v-hongnhung .hn-d-frame { inset: 11px; border: 1px solid rgba(185, 143, 78, .75); border-radius: 2px; }
+.ic--v-hongnhung .hn-d-frame::after { content: ""; position: absolute; inset: 4px; border: 1px solid rgba(185, 143, 78, .32); }
+.ic--v-hongnhung .hn-d .hn-corner { width: 58px; height: 58px; top: 6px; left: 6px; color: #b98f4e; }
+.ic--v-hongnhung .hn-d .hn-c-tr { left: auto; right: 6px; }
+.ic--v-hongnhung .hn-d .hn-c-bl { top: auto; bottom: 6px; }
+.ic--v-hongnhung .hn-d .hn-c-br { top: auto; left: auto; bottom: 6px; right: 6px; }
+.ic--v-hongnhung .hn-cameo {
+  top: 40px; left: 50%; width: 152px; height: 192px; margin-left: -76px; border-radius: 50%; overflow: hidden; background: var(--hn-nap), var(--hn-velvet);
+  box-shadow: 0 0 0 3px #fffaf6, 0 0 0 5px #b98f4e, 0 0 0 9px #fffaf6, 0 0 0 10px rgba(185, 143, 78, .55), 0 18px 34px -12px rgba(74, 14, 23, .55);
+}
+.ic--v-hongnhung .hn-cameo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ic--v-hongnhung .hn-cameo-mono { height: 100%; display: flex; align-items: center; justify-content: center; gap: 3px; font: 400 2.6rem/1 var(--f-name); color: #ecd39d; }
+.ic--v-hongnhung .hn-d .hn-rose { filter: drop-shadow(0 6px 6px rgba(74, 14, 23, .3)); }
+.ic--v-hongnhung .hn-rose-dl { width: 118px; top: 150px; left: calc(50% - 168px); transform: rotate(-18deg); }
+.ic--v-hongnhung .hn-rose-dr { width: 92px; top: 36px; left: calc(50% + 52px); transform: rotate(32deg); }
+.ic--v-hongnhung.is-open .hn-d .hn-l1 { animation: v-hongnhung-bloom 1.1s var(--ic-ease) .25s both; }
+.ic--v-hongnhung.is-open .hn-d .hn-l2 { animation: v-hongnhung-bloom 1.1s var(--ic-ease) .4s both; }
+.ic--v-hongnhung.is-open .hn-d .hn-l3 { animation: v-hongnhung-bloom 1.1s var(--ic-ease) .55s both; }
+.ic--v-hongnhung .ic-mono { display: none; }
+.ic--v-hongnhung .ic-greet { letter-spacing: .2em; font-weight: 400; color: #6e4a52; }
+.ic--v-hongnhung .ic-card .ic-name { font: 400 clamp(2.7rem, 11vw, 3.7rem)/1.12 var(--f-name); color: #7a1f2b; margin: 8px 0 12px; word-spacing: .12em; }
+.ic--v-hongnhung .ic-text { font-size: 1.06rem; color: #4a2129; }
+.ic--v-hongnhung .ic-rule { color: #b98f4e; }
+.ic--v-hongnhung .ic-label { letter-spacing: .2em; font-weight: 400; }
+.ic--v-hongnhung .ic-couple { font: 400 clamp(2.2rem, 9vw, 2.8rem)/1.15 var(--f-name); color: #3a0f16; word-spacing: .1em; }
+.ic--v-hongnhung .ic-couple i { color: #b98f4e; }
+.ic--v-hongnhung .ic-wd, .ic--v-hongnhung .ic-place-title { font-weight: 700; color: #7a1f2b; }
+.ic--v-hongnhung .ic-dmy { font-weight: 400; color: #3a0f16; }
+.ic--v-hongnhung .ic-dmy i { width: 6px; height: 6px; background: #b98f4e; transform: rotate(45deg); }
+.ic--v-hongnhung .ic-place, .ic--v-hongnhung .ic-rsvp { border-top: 0; position: relative; }
+.ic--v-hongnhung .ic-place::before, .ic--v-hongnhung .ic-rsvp::before {
+  content: ""; position: absolute; top: 0; left: 50%; width: min(240px, 70%); height: 1px; transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, #b98f4e, transparent);
+}
+.ic--v-hongnhung .ic-btn { border-radius: 2px; letter-spacing: .08em; font-weight: 700; }
+.ic--v-hongnhung .ic-btn-yes { background: linear-gradient(165deg, #82202f, #4a0e17); border-color: #b98f4e; color: #fff7f2;
+  box-shadow: inset 0 0 0 3px #5a121f, inset 0 0 0 4px rgba(220, 189, 132, .55); }
+.ic--v-hongnhung .ic-btn-yes:hover:not(:disabled) { background: linear-gradient(165deg, #6b1624, #3a0912); }
+.ic--v-hongnhung .ic-btn-no { border-color: rgba(122, 31, 43, .45); }
+.ic--v-hongnhung .ic-enter { border-radius: 2px; border-color: #b98f4e; color: #3a0f16; }
+.ic--v-hongnhung .ic-msg textarea, .ic--v-hongnhung .ic-stepper input { border-radius: 2px; background: #fff; border-color: rgba(185, 143, 78, .6); }
+.ic--v-hongnhung .ic-stepper button { border-color: rgba(185, 143, 78, .7); }
+.ic--v-hongnhung .hn-end { margin: 26px 0 22px; display: grid; justify-items: center; gap: 4px; color: #b98f4e; }
+.ic--v-hongnhung .hn-end-rule { width: 190px; height: 30px; }
+.ic--v-hongnhung .hn-sign { font: 400 2rem/1.2 var(--f-name); color: #7a1f2b; word-spacing: .1em; }
+.ic--v-hongnhung .hn-sign i { font-style: normal; color: #b98f4e; }
+
+/* Tên khách dài (≥ 22 ký tự): chữ nhỏ lại để nằm gọn trong khung cartouche */
+.ic--v-hongnhung.ic--long .ic-env-to { left: 14%; right: 14%; }
+.ic--v-hongnhung.ic--long .ic-env-to b { font-size: clamp(1.3rem, 5.4vw, 1.65rem); }
+
+@media (max-width: 420px) {
+  .ic--v-hongnhung .ic-card { padding-top: 236px; }
+  .ic--v-hongnhung .hn-cameo { top: 36px; width: 138px; height: 176px; margin-left: -69px; }
+  .ic--v-hongnhung .hn-rose-dl { width: 100px; top: 138px; left: calc(50% - 146px); }
+  .ic--v-hongnhung .hn-rose-dr { width: 80px; top: 30px; left: calc(50% + 46px); }
+  .ic--v-hongnhung .hn-d .hn-corner { width: 46px; height: 46px; }
+}
+@media (max-width: 340px) {
+  .ic--v-hongnhung .ic-env-btn { width: 86vw; }
+  .ic--v-hongnhung .hn-crest { font-size: 1.6rem; }
+  .ic--v-hongnhung .ic-env-to { left: 12%; right: 12%; }
+}

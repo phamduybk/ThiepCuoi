@@ -1,0 +1,270 @@
+/* Thiệp VIP "v-cungdinh" — HỘP GẤM LAM, CUỘN CHIẾU CHỈ VÀNG TRẢI RA (đi cùng giao diện VIP cungdinh).
+   Bìa: nắp gấm lam dệt mây vàng, khung chữ Công, bọc góc đồng, dải lụa son + mề đay chữ lồng, nhãn giấy "Thân gửi".
+   Chạm -> dải lụa tháo -> nắp nhấc bay lên (3D) -> khay lót lụa vàng lộ cuộn chiếu chỉ buộc dây -> 2 trục gỗ son tách ra,
+   lụa vàng chữ Song Hỷ trải dọc -> thiệp chiếu chỉ (lụa vàng, khung lam – vàng, 2 trục gỗ) trải từ trên xuống, ấn son đóng dấu.
+   Màu + phông RIÊNG (không phụ thuộc giao diện). Phông OFL tự host: Yeseva One, Alegreya (nhúng dưới đây), Be Vietnam Pro. */
+@font-face { font-family: 'Yeseva One'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/YesevaOne-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Yeseva One'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/YesevaOne-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Yeseva One'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/YesevaOne-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Alegreya'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Alegreya-400i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Alegreya'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Alegreya-400i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Alegreya'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Alegreya-400i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Alegreya'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../../fonts/pro/Alegreya-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Alegreya'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../../fonts/pro/Alegreya-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Alegreya'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../../fonts/pro/Alegreya-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+html .ic.ic--v-cungdinh {
+  --vc-lam: #1e3f86; --vc-lam-d: #132b62; --vc-lam-dd: #0c1d45; --vc-gold: #c9961a; --vc-gold-l: #e9c66a; --vc-gold-d: #8a620c;
+  --vc-son: #a8321f; --vc-silk: #fbf1d0; --vc-silk-2: #f4dc91; --vc-ink: #172a5c;
+  --vc-foil: linear-gradient(100deg, #9a6d0e 0%, #c9961a 30%, #f6dc8c 46%, #fff3c8 50%, #f6dc8c 54%, #c9961a 70%, #9a6d0e 100%);
+  --vc-van: url(../../../img/pro/cungdinh-van.svg);
+  --vc-key: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='14'><path d='M0 12.5H17V2H4V9H12V5H8' fill='none' stroke='%23e9c66a' stroke-width='1.4'/></svg>");
+  --vc-weave: repeating-linear-gradient(45deg, rgba(255, 255, 255, .05) 0 1px, transparent 1px 4px), repeating-linear-gradient(-45deg, rgba(0, 0, 0, .035) 0 1px, transparent 1px 4px);
+  --accent: #1e3f86; --accent-2: #c9961a; --ink: #172a5c; --muted: #5c4a1f; --page: #0c1d45; --paper: #fbf1d0;
+  --ic-paper: #fbf1d0; --ic-line: rgba(201, 150, 26, .6); --ic-on-accent: #fff3d0;
+  --ic-to-small: #6b5212; --ic-to-name: #1e3f86;
+  --f-name: "Yeseva One", "Prata", Georgia, serif; --f-head: "Yeseva One", "Prata", Georgia, serif;
+  --f-body: "Alegreya", "Lora", Georgia, serif; --f-ui: "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
+  --vc-w: min(336px, 80vw, calc((100vh - 150px) / 1.25));   /* xoay ngang: vừa chiều cao (R1-CARDS-01) */ --vc-h: calc(var(--vc-w) * 1.42);
+  --ic-out-delay: 1.95s;
+  color: var(--ink);
+}
+html .ic.ic--v-cungdinh .ic-backdrop {
+  background: radial-gradient(60% 45% at 50% 42%, rgba(233, 198, 106, .2), transparent 70%), linear-gradient(180deg, rgba(19, 43, 98, .97), rgba(12, 29, 69, .98));
+}
+.ic--v-cungdinh .ic-backdrop::after { content: ""; position: absolute; inset: 0; background: var(--vc-van) 0 0 / 160px 120px; opacity: .14; }
+html .ic--v-cungdinh .ic-preview { background: #fbf1d0; color: #5c3d00; }
+html .ic--v-cungdinh .ic-env-hint { background: var(--vc-silk); color: var(--vc-lam-d); border-radius: 4px; box-shadow: 0 0 0 1px var(--vc-gold), 0 0 0 4px rgba(251, 241, 208, .15), 0 10px 22px -10px #000; }
+
+/* ══ BÌA: hộp gấm lam ══ */
+.ic--v-cungdinh .ic-stage { transform: perspective(2400px) rotateX(calc(var(--ty) * -7deg)) rotateY(calc(var(--tx) * 9deg)); }
+.ic--v-cungdinh .ic-env-btn {
+  width: var(--vc-w); aspect-ratio: 4 / 5; border-radius: 6px; transform-style: preserve-3d;
+  box-shadow: 0 2px 0 #0e214d, 0 8px 0 #0a1838, 0 9px 0 rgba(201, 150, 26, .6), 0 46px 70px -26px #000, 0 18px 30px -18px rgba(0, 0, 0, .7);
+  animation: vc-float 6s ease-in-out infinite;
+}
+/* Khay lót lụa vàng xếp nếp (lộ ra khi nhấc nắp) */
+.ic--v-cungdinh .vc-base {
+  position: absolute; inset: 0; border-radius: 6px;
+  background: radial-gradient(70% 60% at 50% 50%, rgba(255, 250, 225, .5), transparent 70%),
+    repeating-linear-gradient(90deg, rgba(138, 98, 12, .22) 0 1px, rgba(255, 255, 255, .18) 1px 3px, transparent 3px 12px),
+    linear-gradient(180deg, #d8ad45, #f1d27a 45%, #c99a2e);
+  box-shadow: inset 0 0 0 7px var(--vc-lam-d), inset 0 0 0 8px var(--vc-gold), inset 0 0 26px 10px rgba(90, 60, 0, .45);
+}
+/* Cuộn chiếu chỉ: lụa vàng giữa 2 trục gỗ son đầu đồng; lúc đóng 2 trục khép sát = cuộn tròn buộc dây */
+.ic--v-cungdinh .vc-scroll {
+  position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform: translateZ(1px);
+}
+.ic--v-cungdinh .vc-silk {
+  position: absolute; left: calc(var(--vc-w) * -.36); width: calc(var(--vc-w) * .72); top: calc(var(--vc-h) * -.5); height: var(--vc-h);
+  background: var(--vc-weave), linear-gradient(90deg, rgba(150, 105, 10, .25), transparent 12% 88%, rgba(150, 105, 10, .25)), linear-gradient(180deg, #f6e19a, #fbf1d0 30% 70%, #f6e19a);
+  box-shadow: inset 0 0 0 7px #f3d98a, inset 0 0 0 9px var(--vc-lam), inset 0 0 0 11px var(--vc-gold), 0 20px 40px -18px rgba(0, 0, 0, .6);
+  clip-path: inset(calc(50% - 10px) 0 calc(50% - 10px) 0); transition: clip-path 1s cubic-bezier(.45, .05, .25, 1) 1s;
+  display: grid; place-items: center;
+}
+.ic--v-cungdinh .vc-silk-hy { width: 36%; color: var(--vc-son); opacity: .9; }
+.ic--v-cungdinh .vc-silk-hy svg { display: block; width: 100%; }
+.ic--v-cungdinh .vc-roll {
+  position: absolute; left: calc(var(--vc-w) * -.42); width: calc(var(--vc-w) * .84); height: 20px; margin-top: -10px; border-radius: 10px;
+  background:
+    radial-gradient(circle at 50% 40%, #fff3c8, #e9c66a 35%, #9a6d0e 75%) 0 0 / 22px 100% no-repeat,
+    radial-gradient(circle at 50% 40%, #fff3c8, #e9c66a 35%, #9a6d0e 75%) 100% 0 / 22px 100% no-repeat,
+    linear-gradient(180deg, #3e0e07, #8b2a17 30%, #d0664a 48%, #8b2a17 66%, #3e0e07) 50% 0 / calc(100% - 40px) 100% no-repeat;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, .55);
+  transition: transform 1s cubic-bezier(.45, .05, .25, 1) 1s;
+}
+.ic--v-cungdinh .vc-roll--t { transform: translateY(-11px); }
+.ic--v-cungdinh .vc-roll--b { transform: translateY(11px); }
+.ic--v-cungdinh .vc-tie {
+  position: absolute; left: -7px; top: -24px; width: 14px; height: 48px; border-radius: 3px;
+  background: linear-gradient(90deg, #7a1d10, #c2412a 50%, #7a1d10); box-shadow: 0 2px 4px rgba(0, 0, 0, .4); transition: opacity .3s 1s, transform .4s 1s;
+}
+.ic--v-cungdinh .vc-tie::after { content: ""; position: absolute; left: 50%; top: 40px; width: 4px; height: 34px; margin-left: -2px; background: linear-gradient(#c2412a, #7a1d10); border-radius: 0 0 4px 4px; }
+
+/* Nắp gấm: nền lam dệt mây vàng, khung chữ Công, bọc góc đồng, dải lụa son, mề đay, nhãn giấy */
+.ic--v-cungdinh .vc-lid {
+  position: absolute; inset: 0; border-radius: 6px; transform: translateZ(2px); overflow: hidden;
+  background: var(--vc-weave), var(--vc-van) 0 0 / 120px 90px, radial-gradient(80% 60% at 30% 15%, rgba(255, 255, 255, .14), transparent 60%), linear-gradient(160deg, #2a52a6, #1e3f86 45%, #132b62);
+  box-shadow: inset 0 0 0 10px transparent, inset 0 1px 0 rgba(255, 255, 255, .25);
+}
+.ic--v-cungdinh .vc-lid::before {   /* khung hoa văn chữ Công */
+  content: ""; position: absolute; inset: 14px; border: 1px solid var(--vc-gold-l);
+  background: var(--vc-key) 0 1px / 24px 14px repeat-x, var(--vc-key) 0 calc(100% - 1px) / 24px 14px repeat-x,
+    linear-gradient(#132b62, #132b62) 0 0 / 100% 16px no-repeat, linear-gradient(#132b62, #132b62) 0 100% / 100% 16px no-repeat;
+  box-shadow: 0 0 0 3px rgba(19, 43, 98, .9), 0 0 0 4px rgba(233, 198, 106, .55), inset 0 0 0 4px rgba(19, 43, 98, .6), inset 0 0 0 5px rgba(233, 198, 106, .4);
+}
+.ic--v-cungdinh .vc-cap { position: absolute; width: 34px; height: 34px;
+  background: linear-gradient(135deg, #fff3c8, #e9c66a 30%, #a57a12 70%, #6e4a08);
+  clip-path: polygon(0 0, 100% 0, 100% 26%, 26% 26%, 26% 100%, 0 100%); }
+.ic--v-cungdinh .vc-cap:nth-of-type(1) { left: 0; top: 0; }
+.ic--v-cungdinh .vc-cap:nth-of-type(2) { right: 0; top: 0; transform: scaleX(-1); }
+.ic--v-cungdinh .vc-cap:nth-of-type(3) { left: 0; bottom: 0; transform: scaleY(-1); }
+.ic--v-cungdinh .vc-cap:nth-of-type(4) { right: 0; bottom: 0; transform: scale(-1); }
+.ic--v-cungdinh .vc-band {
+  position: absolute; left: 0; right: 0; top: 34%; height: 38px; margin-top: -19px; transform-origin: 50% 50%;
+  background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .06) 0 2px, transparent 2px 5px), linear-gradient(180deg, #7a1d10, #b8402a 30%, #d5644b 50%, #a8321f 70%, #6a180c);
+  box-shadow: 0 0 0 1px rgba(233, 198, 106, .7), 0 6px 10px -4px rgba(0, 0, 0, .5);
+  transition: transform .45s cubic-bezier(.5, 0, .7, .2), opacity .45s;
+}
+.ic--v-cungdinh .vc-medal {
+  position: absolute; left: 50%; top: 34%; width: calc(var(--vc-w) * .36); aspect-ratio: 1; transform: translate(-50%, -50%);
+  border-radius: 50%; padding: 5px; background: var(--vc-foil); background-size: 220% 100%; background-position: calc(50% + var(--tx) * 40%) 0;
+  box-shadow: 0 10px 18px -6px rgba(0, 0, 0, .6);
+}
+.ic--v-cungdinh .vc-medal > span {
+  width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: baseline; justify-content: center; padding-top: 32%;
+  background: radial-gradient(circle at 50% 35%, #2a52a6, #132b62 75%); box-shadow: inset 0 0 0 3px #e9c66a, inset 0 0 0 6px #132b62, inset 0 0 0 7px rgba(233, 198, 106, .6);
+  font: 400 calc(var(--vc-w) * .085)/1 var(--f-name); color: #f6dc8c; text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+}
+.ic--v-cungdinh .vc-medal i { font-style: normal; font-size: .55em; margin: 0 2px; color: #e9c66a; }
+.ic--v-cungdinh .vc-plaque {
+  position: absolute; left: 13%; right: 13%; top: 60%; height: 27%; border-radius: 4px;
+  background: var(--vc-weave), linear-gradient(180deg, #fff8e0, #f6e3a6);
+  box-shadow: 0 0 0 2px var(--vc-gold), 0 0 0 5px rgba(19, 43, 98, .9), 0 0 0 6px rgba(233, 198, 106, .7), inset 0 0 0 4px #fff8e0, inset 0 0 0 5px rgba(201, 150, 26, .55), 0 10px 16px -6px rgba(0, 0, 0, .55);
+}
+.ic--v-cungdinh .ic-env-to { left: 15%; right: 15%; top: 60%; height: 27%; display: flex; flex-direction: column; justify-content: center; text-align: center; transform: translateZ(3px); gap: 6px; }
+.ic--v-cungdinh .ic-env-to small { font: 600 .875rem/1 var(--f-ui); letter-spacing: .18em; }
+.ic--v-cungdinh .ic-env-to b { font-family: var(--f-name); font-size: clamp(1.25rem, 5.2vw, 1.55rem); line-height: 1.18; }
+
+/* ── Mở: tháo dải lụa -> nhấc nắp bay lên (3D) -> cuộn chiếu chỉ trải dọc ── */
+.ic--v-cungdinh.is-opening .ic-env-btn { animation: vc-settle 2.2s cubic-bezier(.3, .6, .3, 1) both; }
+.ic--v-cungdinh.is-opening .vc-band { transform: scaleX(0); opacity: 0; }
+.ic--v-cungdinh.is-opening .vc-lid { animation: vc-lid-off 1s cubic-bezier(.5, .05, .3, 1) .3s both; }
+.ic--v-cungdinh.is-opening .vc-tie { opacity: 0; transform: translateY(30px); }
+.ic--v-cungdinh.is-opening .vc-silk { clip-path: inset(0 0 0 0); }
+.ic--v-cungdinh.is-opening .vc-roll--t { transform: translateY(calc(var(--vc-h) * -.5)); }
+.ic--v-cungdinh.is-opening .vc-roll--b { transform: translateY(calc(var(--vc-h) * .5)); }
+@keyframes vc-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@keyframes vc-lid-off {
+  0% { transform: translateZ(2px); opacity: 1; }
+  30% { transform: translateZ(70px) translateY(-3%) rotateX(4deg); opacity: 1; }
+  75% { opacity: 1; }
+  100% { transform: translateZ(160px) translateY(-120%) rotateX(32deg) rotateZ(-5deg); opacity: 0; }
+}
+@keyframes vc-settle { 0%, 40% { transform: none; } 100% { transform: translateY(14px) scale(.98); } }
+
+/* ══ THIỆP: chiếu chỉ lụa vàng, khung lam – vàng, 2 trục gỗ son ══ */
+html .ic.ic--v-cungdinh.is-open .ic-card { display: flex; flex-direction: column; animation: vc-unroll 1.2s cubic-bezier(.45, .05, .25, 1) both; }
+.ic--v-cungdinh .ic-card {
+  overflow: visible; width: min(460px, calc(100% - 20px)); margin-top: 18px; margin-bottom: 18px; padding: 50px 40px 40px; border-radius: 0;
+  background: var(--vc-weave), linear-gradient(90deg, rgba(160, 115, 15, .16), transparent 8% 92%, rgba(160, 115, 15, .16)), linear-gradient(180deg, #f6e19a, #fbf1d0 6%, #fbf1d0 94%, #f6e19a);
+  box-shadow: 0 50px 90px -40px #000, 0 14px 30px -16px rgba(0, 0, 0, .6);
+}
+.ic--v-cungdinh .ic-card::before, .ic--v-cungdinh .ic-card::after {   /* 2 trục gỗ son đầu đồng */
+  content: ""; position: absolute; left: -14px; right: -14px; height: 24px; z-index: 2; border-radius: 12px; pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 40%, #fff3c8, #e9c66a 35%, #9a6d0e 75%) 0 0 / 26px 100% no-repeat,
+    radial-gradient(circle at 50% 40%, #fff3c8, #e9c66a 35%, #9a6d0e 75%) 100% 0 / 26px 100% no-repeat,
+    linear-gradient(180deg, #3e0e07, #8b2a17 30%, #d0664a 48%, #8b2a17 66%, #3e0e07) 50% 0 / calc(100% - 46px) 100% no-repeat;
+  box-shadow: 0 8px 12px -6px rgba(0, 0, 0, .6);
+}
+.ic--v-cungdinh .ic-card::before { top: -12px; }
+.ic--v-cungdinh .ic-card::after { bottom: -12px; }
+.ic--v-cungdinh .vc-frame {
+  inset: 22px 12px !important; border: 1px solid var(--vc-gold);
+  box-shadow: 0 0 0 4px var(--vc-lam), 0 0 0 5px var(--vc-gold), inset 0 0 0 4px #fbf1d0, inset 0 0 0 5px rgba(201, 150, 26, .5);
+}
+.ic--v-cungdinh .vc-frame::before, .ic--v-cungdinh .vc-frame::after {
+  content: ""; position: absolute; left: -5px; right: -5px; height: 16px; background: var(--vc-key) center / 24px 14px repeat-x, var(--vc-lam);
+  box-shadow: 0 0 0 1px var(--vc-gold);
+}
+.ic--v-cungdinh .vc-frame::before { top: -21px; }
+.ic--v-cungdinh .vc-frame::after { bottom: -21px; }
+
+.ic--v-cungdinh .ic-p1 { order: 1; } .ic--v-cungdinh .ic-p2 { order: 2; } .ic--v-cungdinh .ic-p3 { order: 4; }
+.ic--v-cungdinh .ic-mono { display: none; }
+.ic--v-cungdinh .vc-head { order: 0; display: grid; justify-items: center; margin: 8px auto 14px; }
+.ic--v-cungdinh .vc-ring {
+  display: block; width: 156px; height: 156px; border-radius: 50%; padding: 5px; position: relative;
+  background: var(--vc-foil); background-size: 220% 100%; background-position: calc(50% + var(--tx) * 40%) 0;
+  box-shadow: 0 0 0 4px var(--vc-lam), 0 0 0 5px var(--vc-gold), 0 14px 24px -12px rgba(0, 0, 0, .5);
+}
+.ic--v-cungdinh .vc-ring img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px #fbf1d0; }
+.ic--v-cungdinh .vc-ring--hy > span { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; background: #fbf1d0; color: var(--vc-son); }
+.ic--v-cungdinh .vc-ring--hy svg { width: 52%; }
+.ic--v-cungdinh .vc-lotus { width: 60px; height: 36px; margin-top: 12px; }
+.ic--v-cungdinh .vc-seal { order: 3; align-self: center; margin: 22px 0 2px; }
+.ic--v-cungdinh .vc-seal > span {
+  display: grid; place-items: center; gap: 2px; width: 74px; height: 74px; transform: rotate(-5deg);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, .12), transparent 50%), #b3261e; color: #fff1d6;
+  box-shadow: inset 0 0 0 4px #b3261e, inset 0 0 0 6px #fff1d6, 0 2px 6px rgba(120, 20, 10, .35);
+  font: 400 1.5rem/.95 var(--f-name); padding: 10px 0;
+  opacity: .94;
+}
+
+.ic--v-cungdinh .ic-greet, .ic--v-cungdinh .ic-label { font: 600 .875rem/1.4 var(--f-ui); letter-spacing: .18em; color: #7a5a0e; }
+.ic--v-cungdinh .ic-card .ic-name { margin: 10px 0 14px; font: 400 clamp(2.15rem, 8.8vw, 3.05rem)/1.15 var(--f-name); color: var(--vc-lam); }
+.ic--v-cungdinh .ic-text { font: italic 400 1.125rem/1.6 var(--f-body); color: #3a3220; }
+.ic--v-cungdinh .ic-rule { width: min(230px, 74%); height: 22px; margin: 24px auto 18px; gap: 0;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 22'><path d='M0 11H62M138 11H200' stroke='%23c9961a' stroke-width='1.2'/><path d='M66 11c0-6 8-8 11-3 2-6 11-6 12 0M66 11h26M111 11c0-6 8-8 11-3 2-6 11-6 12 0M108 11h26' fill='none' stroke='%23c9961a' stroke-width='1.6' stroke-linecap='round'/><path d='M100 3l7 8-7 8-7-8z' fill='%23a8321f'/><circle cx='56' cy='11' r='2' fill='%23c9961a'/><circle cx='144' cy='11' r='2' fill='%23c9961a'/></svg>") center / contain no-repeat; }
+.ic--v-cungdinh .ic-rule::before, .ic--v-cungdinh .ic-rule::after, .ic--v-cungdinh .ic-rule span { display: none; }
+.ic--v-cungdinh .ic-couple { font: 400 clamp(1.65rem, 6.8vw, 2.15rem)/1.2 var(--f-name); color: var(--vc-son); }
+.ic--v-cungdinh .ic-couple i { color: var(--vc-gold-d); font-family: var(--f-body); font-style: italic; }
+.ic--v-cungdinh .ic-wd { font: 600 1rem/1.4 var(--f-ui); color: var(--vc-lam); }
+.ic--v-cungdinh .ic-dmy { font: 400 2.4rem/1 var(--f-head); color: var(--vc-lam); gap: 14px; }
+.ic--v-cungdinh .ic-dmy i { width: 8px; height: 8px; background: var(--vc-son); transform: rotate(45deg); }
+.ic--v-cungdinh .ic-lunar { font: italic 400 1.0625rem/1.5 var(--f-body); color: #5c4a1f; }
+.ic--v-cungdinh .ic-place, .ic--v-cungdinh .ic-rsvp { border-top: 1px solid rgba(201, 150, 26, .55); box-shadow: inset 0 3px 0 -2px rgba(201, 150, 26, .3); }
+.ic--v-cungdinh .ic-place-title { font: 600 1rem/1.4 var(--f-ui); color: var(--vc-lam); }
+.ic--v-cungdinh .ic-place-name { font: 400 1.25rem/1.3 var(--f-head); color: var(--vc-ink); }
+.ic--v-cungdinh .ic-place-addr { font-size: 1.0625rem; color: #5c4a1f; }
+.ic--v-cungdinh .ic-link { color: var(--vc-lam); }
+.ic--v-cungdinh .ic-q { font: 400 1.2rem/1.45 var(--f-body); color: var(--vc-ink); }
+.ic--v-cungdinh .ic-btn { border-radius: 4px; }
+.ic--v-cungdinh .ic-btn-yes { background: linear-gradient(180deg, #2a52a6, #1e3f86 55%, #132b62); color: #fff3d0; border: 1px solid #132b62;
+  box-shadow: inset 0 0 0 2px rgba(233, 198, 106, .65), 0 8px 18px -10px rgba(19, 43, 98, .8); }
+.ic--v-cungdinh .ic-btn-yes:hover:not(:disabled) { background: #132b62; }
+.ic--v-cungdinh .ic-btn-no { color: var(--vc-ink); border-color: rgba(30, 63, 134, .45); }
+.ic--v-cungdinh .ic-enter { border-color: var(--vc-gold); color: var(--vc-lam); border-radius: 4px; align-self: center; }
+.ic--v-cungdinh .ic-p3 { display: flex; flex-direction: column; }
+.ic--v-cungdinh .ic-p3 .ic-rsvp { align-self: stretch; }
+.ic--v-cungdinh .ic-msg { color: #5c4a1f; }
+html .ic.ic--v-cungdinh .ic-card .ic-form .ic-msg textarea, html .ic.ic--v-cungdinh .ic-card .ic-form .ic-stepper input { margin: 0; background: #fffaf0; color: var(--vc-ink); border-color: rgba(201, 150, 26, .7); }
+.ic--v-cungdinh .ic-stepper button { color: var(--vc-lam); border-color: rgba(201, 150, 26, .7); }
+.ic--v-cungdinh .ic-done-title { color: var(--vc-son); }
+.ic--v-cungdinh .ic-note, .ic--v-cungdinh .ic-done-sub, .ic--v-cungdinh .ic-count-label, .ic--v-cungdinh .ic-count-hint { color: #5c4a1f; }
+
+/* Nhịp xuất hiện: thiệp trải từ trên xuống như chiếu chỉ mở, nội dung hiện dần */
+.ic--v-cungdinh.is-open .vc-head { animation: vc-fade-up .8s ease .35s both; }
+.ic--v-cungdinh.is-open .ic-p1 { animation: vc-fade-up .8s ease .5s both; }
+.ic--v-cungdinh.is-open .ic-p2 { animation: vc-fade-up .8s ease .65s both; }
+.ic--v-cungdinh.is-open .vc-seal { animation: vc-stamp .5s cubic-bezier(.3, 1.6, .5, 1) 1.1s both; }
+.ic--v-cungdinh.is-open .ic-p3 { animation: vc-fade-up .8s ease .8s both; }
+@keyframes vc-unroll { from { clip-path: inset(0 -20px 100% -20px); } to { clip-path: inset(-20px -20px -20px -20px); } }
+@keyframes vc-fade-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes vc-stamp { from { opacity: 0; transform: scale(1.8); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 420px) {
+  .ic--v-cungdinh .ic-card { padding: 46px 26px 36px; }
+  .ic--v-cungdinh .ic-dmy { font-size: 2.1rem; gap: 11px; }
+  .ic--v-cungdinh .ic-card::before, .ic--v-cungdinh .ic-card::after { left: -10px; right: -10px; }
+}
+@media (max-width: 340px) {
+  .ic--v-cungdinh .ic-card { padding: 42px 18px 32px; }
+  .ic--v-cungdinh .ic-greet, .ic--v-cungdinh .ic-label, .ic--v-cungdinh .ic-env-to small { letter-spacing: .08em; }
+}
+
+/* Điện thoại xoay ngang / màn thấp (R1-CARDS-01): chữ nhãn nhỏ theo bìa. */
+@media (max-height: 500px) {
+  .ic--v-cungdinh .ic-env-to { gap: 3px; }
+  .ic--v-cungdinh .ic-env-to small { font-size: .875rem; letter-spacing: .08em; }
+  .ic--v-cungdinh .ic-env-to b { font-size: .95rem; line-height: 1.12; }
+}

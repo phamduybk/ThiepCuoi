@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+<!-- Khung thẻ giấy lụa (border-image, cắt 30): chỉ vàng, góc triện gấp bậc, thoi nhỏ -->
+<g fill="none" stroke="#c9961a">
+  <path d="M.75 .75H89.25V89.25H.75Z" stroke-width="1.5" opacity=".5"/>
+  <path d="M18 6H72V18H84V72H72V84H18V72H6V18H18Z" stroke-width="1.5"/>
+  <path d="M6 6h7v7H6zM77 6h7v7h-7zM6 77h7v7H6zM77 77h7v7h-7z" stroke-width="1.2"/>
+</g>
+<g fill="#c9961a"><path d="M24 20l3 3-3 3-3-3zM66 20l3 3-3 3-3-3zM24 64l3 3-3 3-3-3zM66 64l3 3-3 3-3-3z"/></g>
+</svg>

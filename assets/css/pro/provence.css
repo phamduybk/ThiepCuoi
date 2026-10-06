@@ -1,0 +1,484 @@
+/* Phông của giao diện VIP "provence" — Google Fonts, SIL Open Font License 1.1: Mea Culpa, Crimson Pro, Hanken Grotesk */
+@font-face { font-family: 'Mea Culpa'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../fonts/pro/MeaCulpa-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Mea Culpa'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../fonts/pro/MeaCulpa-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Mea Culpa'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../fonts/pro/MeaCulpa-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Crimson Pro'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/pro/CrimsonPro-400i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Crimson Pro'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/pro/CrimsonPro-400i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Crimson Pro'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../fonts/pro/CrimsonPro-400i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../fonts/pro/CrimsonPro-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../fonts/pro/CrimsonPro-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../fonts/pro/CrimsonPro-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Hanken Grotesk'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../fonts/pro/HankenGrotesk-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Hanken Grotesk'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../fonts/pro/HankenGrotesk-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Hanken Grotesk'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../fonts/pro/HankenGrotesk-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+   PROVENCE (VIP) — bộ thiệp in màu nước kiểu Pháp: giấy cotton kem có thớ, mảng màu nước loang (xanh Pháp xám ·
+   vàng đất son · xanh xô thơm), mực xanh đen. Ngôn ngữ bưu chính: tem răng cưa đựng ảnh, dấu bưu điện tròn ghi ngày
+   cưới + "Hà Nội", vé tàu mép răng, phong bì viền "par avion", bưu thiếp. Tên viết tay Mea Culpa, tiêu đề Crimson Pro,
+   chữ giao diện Hanken Grotesk. Mọi selector nằm trong [data-theme="provence"].
+   ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
+[data-theme="provence"] {
+  --accent: #5a6fa8; --accent-2: #d9a441; --soft: #eef1f7; --ink: #24304f; --muted: #5b6176; --page: #fbf7ef;
+  --nav-bg: #fbf7ef; --nav-ink: #24304f; --paper: #fffdf8; --line: #e3dac8; --bg: #fbf7ef;
+  --f-head: "Crimson Pro", "EB Garamond", Georgia, serif; --f-name: "Mea Culpa", "Great Vibes", cursive;
+  --f-body: "Crimson Pro", "EB Garamond", Georgia, serif; --f-ui: "Hanken Grotesk", "Be Vietnam Pro", system-ui, sans-serif;
+  --name-style: normal; --name-size: clamp(4.2rem, 15vw, 7.4rem);
+  --pv-blue: #6f86b8; --pv-ochre: #d9a441; --pv-ochre-ink: #8a5c0e; --pv-sage: #a3b18a; --pv-sage-ink: #56653f;
+  --pv-grain: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .38  0 0 0 0 .25  0 0 0 .07 0'/></filter><rect width='220' height='220' filter='url(%23n)'/></svg>");
+  --pv-fibre: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='.012 .09' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .55  0 0 0 0 .47  0 0 0 0 .32  0 0 0 .09 -.02'/></filter><rect width='300' height='300' filter='url(%23f)'/></svg>");
+  /* Răng cưa tem thư: lỗ bán nguyệt dọc 4 mép (lớp 1) + phần ruột đặc (lớp 2, trong viền). */
+  --pv-perf: radial-gradient(circle, #0000 0 4.1px, #000 4.7px) -6.5px -6.5px / 13px 13px round border-box, linear-gradient(#000 0 0) padding-box;
+  --pv-swash: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 30'><path d='M4 22C40 6 70 26 108 14S170 2 200 14s30 6 36 0' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'/><path d='M116 12c3-4 8-4 8 0s-6 6-8 0z' fill='black'/></svg>");
+  --pv-pin: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 32'><path d='M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19.5 12 31 12 31s10.5-11.5 10.5-19.6C22.5 5.6 18 1 12 1zm0 14.2a3.9 3.9 0 1 1 0-7.8 3.9 3.9 0 0 1 0 7.8z'/></svg>");
+  --pv-airmail: repeating-linear-gradient(-45deg, #c75b4a 0 9px, var(--paper) 9px 15px, #5a6fa8 15px 24px, var(--paper) 24px 30px);
+  --pv-sh: 0 1px 1px rgba(36, 48, 79, .08), 0 6px 14px -6px rgba(36, 48, 79, .22), 0 22px 40px -26px rgba(36, 48, 79, .35);
+}
+[data-theme="provence"] body.wd { background: var(--pv-fibre), var(--pv-grain), var(--page); color: var(--ink); font-size: 17px; }
+[data-theme="provence"] .wd a { color: var(--accent); }
+[data-theme="provence"] .pd-provence { display: block; }
+[data-theme="provence"] .pd-provence, [data-theme="provence"] .pd-provence * { pointer-events: none; }
+[data-theme="provence"] :is(.ev-card, .cta, .person, .event-card, .gift-card, .wish, .rsvp-card, .wish-form)::before, [data-theme="provence"] :is(.ev-card, .cta, .person, .event-card, .rsvp-card, .wish-form)::after { pointer-events: none; }
+[data-theme="provence"] .pd-provence.pd-defs { display: inline; }
+[data-theme="provence"] :is(.photowall .pw img) { filter: none; }
+[data-theme="provence"] :is(.orn, .rings, .paper::before) { display: none; }
+[data-theme="provence"] .paper::before, [data-theme="provence"] .paper::after { display: none; }
+[data-theme="provence"] .paper { background: var(--paper); }
+[data-theme="provence"] .dr { stroke-dasharray: 1; }
+
+/* ── Chữ & nút ── */
+[data-theme="provence"] .wd h2 { font: 400 clamp(2.25rem, 6.4vw, 3.3rem)/1.12 var(--f-head); color: var(--ink); letter-spacing: -.005em; }
+[data-theme="provence"] .wd h2 { font-style: italic; }
+[data-theme="provence"] .eyebrow { font: 600 .875rem/1.5 var(--f-ui); letter-spacing: .2em; text-transform: uppercase; color: var(--pv-ochre-ink); }
+[data-theme="provence"] .wd .btn { font: 600 .95rem var(--f-ui); letter-spacing: .1em; text-transform: uppercase; border-radius: 2px; min-height: 48px; padding: 0 26px; }
+[data-theme="provence"] .wd .btn-accent { background: var(--accent); color: #fff; border: 0; box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 8px 18px -10px rgba(36,48,79,.6); }
+[data-theme="provence"] .wd .btn-accent:hover { background: #4a5e96; }
+[data-theme="provence"] .wd .btn-ghost { background: transparent; color: var(--ink); border: 1px solid color-mix(in srgb, var(--ink) 45%, transparent); }
+[data-theme="provence"] .wd .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+[data-theme="provence"] .wd :is(input:not([type=radio]):not([type=checkbox]), textarea) { background: transparent; border: 0; border-bottom: 1px solid color-mix(in srgb, var(--ink) 35%, transparent);
+  border-radius: 0; padding: 10px 2px; font: 1.12rem var(--f-body); color: var(--ink); }
+/* M1-GUEST-07: ô nhập cao ≥44px như các giao diện khác (trước đó 41px). */
+[data-theme="provence"] .wd input:not([type=radio]):not([type=checkbox]) { min-height: 44px; box-sizing: border-box; }
+[data-theme="provence"] .wd textarea { background: repeating-linear-gradient(transparent 0 33px, color-mix(in srgb, var(--ink) 18%, transparent) 33px 34px); line-height: 34px; padding-top: 0; border-bottom: 0; }
+[data-theme="provence"] .wd :is(input, textarea):focus { outline: none; border-color: var(--accent); box-shadow: 0 2px 0 -0.5px var(--accent); }
+[data-theme="provence"] .wd label { font: 600 .9rem var(--f-ui); letter-spacing: .06em; color: var(--ink); }
+[data-theme="provence"] .wd label small { font: italic 400 1rem var(--f-body); letter-spacing: 0; color: var(--muted); }
+
+/* Vạch chia: nét bút vẽ tay màu đất son. */
+[data-theme="provence"] .divider { width: 150px; height: 20px; margin: 10px auto 0; background: var(--pv-ochre);
+  -webkit-mask: var(--pv-swash) center / contain no-repeat; mask: var(--pv-swash) center / contain no-repeat; }
+[data-theme="provence"] .divider::before, [data-theme="provence"] .divider span { display: none; }
+/* Tiêu đề mục: số hiệu bưu chính "Nº 01", mảng màu nước nở ra phía sau khi cuộn tới. */
+[data-theme="provence"] body.wd { counter-reset: pvn; }
+[data-theme="provence"] .sec-head { counter-increment: pvn; margin-bottom: 40px; isolation: isolate; }
+[data-theme="provence"] .sec-head::before { content: "Nº " counter(pvn, decimal-leading-zero); display: block; margin-bottom: 6px;
+  font: 600 .875rem/1 var(--f-ui); letter-spacing: .24em; color: var(--accent); }
+[data-theme="provence"] .sec-head::after { content: ""; position: absolute; z-index: -1; left: 50%; top: -8px; width: 190px; aspect-ratio: 600 / 420;
+  translate: -50% -32%; background: url(../../img/pro/provence-wash-blue.svg) center / contain no-repeat; opacity: .26; pointer-events: none;
+  transition: transform 1.6s cubic-bezier(.2, .7, .2, 1), opacity 1.6s ease; }
+[data-theme="provence"] .couple .sec-head::after, [data-theme="provence"] .wishes .sec-head::after { background-image: url(../../img/pro/provence-wash-sage.svg); opacity: .3; }
+[data-theme="provence"] :is(.location, .gift) .sec-head::after { background-image: url(../../img/pro/provence-wash-ochre.svg); opacity: .26; }
+[data-theme="provence"].js-reveal .sec-head.reveal { transform: none; opacity: 1; }
+[data-theme="provence"].js-reveal .sec-head.reveal > * { opacity: 0; transform: translateY(14px); transition: opacity .9s ease .25s, transform .9s cubic-bezier(.2,.7,.2,1) .25s; }
+[data-theme="provence"].js-reveal .sec-head.reveal::after { transform: scale(.55) rotate(-6deg); opacity: 0; }
+[data-theme="provence"].js-reveal .sec-head.reveal::before { opacity: 0; transition: opacity .8s ease .1s; }
+[data-theme="provence"].js-reveal .sec-head.reveal.in > *, [data-theme="provence"].js-reveal .sec-head.reveal.in::before { opacity: 1; transform: none; }
+[data-theme="provence"].js-reveal .sec-head.reveal.in::after { transform: none; opacity: .26; }
+[data-theme="provence"].js-reveal :is(.couple, .wishes) .sec-head.reveal.in::after { opacity: .3; }
+[data-theme="provence"].js-reveal :is(.location, .gift) .sec-head.reveal.in::after { opacity: .26; }
+
+/* ── Thanh menu: giấy kem, chỉ mảnh đôi; logo = dấu bưu điện tròn. ── */
+[data-theme="provence"] .wd-nav { background: color-mix(in srgb, var(--page) 94%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line); box-shadow: 0 3px 0 -2px var(--line); font-family: var(--f-ui); }
+[data-theme="provence"] .wd-nav a { font: 600 .875rem var(--f-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--ink); }
+[data-theme="provence"] .wd-nav a:hover { color: var(--accent); }
+[data-theme="provence"] .wd-mono { border: 1.5px solid var(--ink); box-shadow: inset 0 0 0 3px var(--page), inset 0 0 0 4px color-mix(in srgb, var(--ink) 40%, transparent);
+  font: italic 600 1.15rem/1 var(--f-head); color: var(--ink) !important; gap: 1px; padding-top: 0; }
+[data-theme="provence"] .wd-mono span { font: inherit; }
+[data-theme="provence"] .wd-mono i { color: var(--pv-ochre); font: 400 14px var(--f-ui); margin: 0 1px; }
+[data-theme="provence"] .wd-burger { border: 0; color: var(--ink); font-size: 22px; }
+[data-theme="provence"] .wd-nav.scrolled { box-shadow: 0 3px 0 -2px var(--line), 0 10px 24px -18px rgba(36, 48, 79, .5); }
+
+/* ── Nút nhạc: con dấu xanh, vòng răng cưa. ── */
+[data-theme="provence"] .music-btn { background: var(--accent); color: #fff; font-size: 19px;
+  box-shadow: 0 0 0 3px var(--page), 0 0 0 4px var(--accent), 0 8px 18px -6px rgba(36, 48, 79, .5); }
+[data-theme="provence"] .music-hint { font-family: var(--f-ui); color: var(--ink); background: var(--paper); }
+
+/* ── Hiệu ứng rơi: cánh oải hương & hoa đất son. ── */
+[data-theme="provence"] .fx[data-fx="petals"] i { background: linear-gradient(135deg, #dfe5f4, #9eb0d8); opacity: .75; }
+[data-theme="provence"] .fx[data-fx="petals"] i:nth-child(3n) { background: linear-gradient(135deg, #fbecc7, #e3b65e); }
+[data-theme="provence"] .fx[data-fx="petals"] i:nth-child(4n) { background: linear-gradient(135deg, #eef1e4, #b7c39f); }
+[data-theme="provence"] .fx[data-fx="hearts"] i::before { color: var(--pv-blue); }
+
+/* ════════ ĐẦU TRANG — tem thư cỡ lớn trên mảng màu nước, dấu bưu điện ngày cưới, tên viết tay ════════ */
+[data-theme="provence"] .intro { background: none; padding: 92px 18px 56px; display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; overflow: clip; isolation: isolate; }
+[data-theme="provence"] .intro::before, [data-theme="provence"] .intro::after { content: ""; position: absolute; z-index: -1; pointer-events: none; background: center / contain no-repeat; }
+[data-theme="provence"] .intro::before { left: -14%; top: 64px; width: 128%; aspect-ratio: 600 / 420; background-image: url(../../img/pro/provence-wash-blue.svg); opacity: .5;
+  animation: provence-bloom 2.2s cubic-bezier(.2, .7, .2, 1) both; }
+[data-theme="provence"] .intro::after { right: -30%; bottom: 3%; width: 92%; aspect-ratio: 600 / 420; background-image: url(../../img/pro/provence-wash-ochre.svg); opacity: .34;
+  animation: provence-bloom 2.4s cubic-bezier(.2, .7, .2, 1) .5s both; }
+[data-theme="provence"] :is(.photowall, .intro-main) { grid-area: 1 / 1; }
+[data-theme="provence"] .intro-main { width: min(76%, 330px); margin: 0 0 0 -8%; filter: drop-shadow(0 2px 2px rgba(36, 48, 79, .12)) drop-shadow(0 18px 22px rgba(36, 48, 79, .22));
+  animation: provence-stamp-in 1.4s cubic-bezier(.2, .7, .2, 1) .1s both; }
+/* Ảnh = tem thư: viền giấy trắng, răng cưa thật (mask), khung in mảnh bên trong. */
+[data-theme="provence"] :is(.main-photo, .pw, .oval, .event-photo, .wd-g) { border: 11px solid var(--paper); border-radius: 0; background-color: var(--paper);
+  -webkit-mask: var(--pv-perf); mask: var(--pv-perf); box-shadow: none; }
+[data-theme="provence"] :is(.main-photo, .pw, .oval, .event-photo) img { outline: 1px solid rgba(36, 48, 79, .18); outline-offset: -1px; }
+[data-theme="provence"] .main-photo { aspect-ratio: 4 / 5; rotate: -2.5deg; transform: none; border-width: 13px; }
+[data-theme="provence"] .photowall { position: relative; inset: auto; width: 100%; max-width: 440px; height: 100%; display: block; pointer-events: none; z-index: 4;
+  filter: drop-shadow(0 2px 2px rgba(36, 48, 79, .12)) drop-shadow(0 14px 16px rgba(36, 48, 79, .22)); }
+[data-theme="provence"] .pw { position: absolute; width: 36%; max-width: 170px; aspect-ratio: 4 / 5; margin: 0; border-width: 9px; }
+[data-theme="provence"] .pw-l { display: none; }
+[data-theme="provence"] .pw-r { right: 2%; bottom: -26px; rotate: 6deg; transform: none; animation: provence-stamp-in 1.3s cubic-bezier(.2, .7, .2, 1) .55s both; }
+[data-theme="provence"] .pw:hover img { filter: none; }
+/* Dấu bưu điện + cành oải hương */
+[data-theme="provence"] .pd-hero { position: absolute; inset: 0; pointer-events: none; z-index: 5; }
+[data-theme="provence"] .pv-postmark { position: absolute; color: var(--ink); overflow: visible; }
+[data-theme="provence"] .pd-hero .pv-postmark { width: 210px; height: 110px; left: 46%; top: 70px; rotate: -12deg; opacity: .72;
+  animation: provence-cancel 1s cubic-bezier(.3, 1.4, .5, 1) 1.2s both; }
+[data-theme="provence"] .pv-pm-ring { font: 600 9.5px var(--f-ui); letter-spacing: .06em; fill: currentColor; }
+[data-theme="provence"] .pv-pm-mid { font: 600 17px var(--f-head); fill: currentColor; letter-spacing: .02em; }
+[data-theme="provence"] .pv-sprig { position: absolute; left: 2%; top: 330px; width: 54px; height: 150px; color: var(--pv-sage-ink); rotate: -14deg; }
+[data-theme="provence"] .pv-sprig .pv-buds { color: var(--pv-blue); fill: var(--pv-blue); animation: provence-fade 1.2s ease 1.9s both; }
+[data-theme="provence"] .pv-sprig .dr { animation: provence-draw 2.2s ease .6s both; }
+/* Chữ đầu trang trên giấy (không khung) */
+[data-theme="provence"] .save-card.paper { grid-area: 2 / 1; background: none; padding: 0; margin: 58px 0 0; width: 100%; max-width: 560px; display: flex; flex-direction: column; align-items: center; }
+[data-theme="provence"] .save-card .eyebrow { order: 1; margin: 0 0 4px; }
+[data-theme="provence"] .save-card .names { order: 2; }
+[data-theme="provence"] .save-card .pd-swash { order: 3; display: block; width: 190px; height: 24px; margin: -6px 0 14px; color: var(--pv-ochre); }
+[data-theme="provence"] .save-card .pd-swash .dr { animation: provence-draw 1.8s ease 1.1s both; }
+[data-theme="provence"] .save-card .date { order: 4; }
+[data-theme="provence"] .save-card .lunar { order: 5; }
+[data-theme="provence"] .save-card .invitee { order: 0; }
+[data-theme="provence"] .save-card .divider { display: none; }
+[data-theme="provence"] .names { font: 400 var(--name-size)/1.32 var(--f-name); color: var(--ink); flex-direction: column; align-items: center; gap: 0; margin: 0;
+  padding: .12em .2em 0; letter-spacing: 0; }
+[data-theme="provence"] .names .name { display: block; overflow-wrap: anywhere; text-wrap: balance; }
+[data-theme="provence"] .names .amp { font: 400 .5em/1 var(--f-name); color: var(--pv-ochre); margin: -.08em 0 -.02em; }
+[data-theme="provence"] .names.names--long { font-size: calc(var(--name-size) * .74); line-height: 1.3; }
+[data-theme="provence"] .names.names--xl { font-size: calc(var(--name-size) * .6); line-height: 1.3; }
+[data-theme="provence"] .save-card .date { font: italic 400 1.4rem/1.35 var(--f-head); color: var(--ink); letter-spacing: .01em; }
+[data-theme="provence"] .lunar { font: italic 400 1.06rem/1.5 var(--f-body); color: var(--muted); }
+[data-theme="provence"] .invitee { font: italic 1.15rem var(--f-body); color: var(--muted); }
+[data-theme="provence"] .invitee b { font: 400 2.5rem/1.3 var(--f-name); color: var(--accent); }
+[data-theme="provence"].js-reveal .save-card.reveal { transform: translateY(18px); transition-delay: .4s; }
+[data-theme="provence"].js-reveal .save-card.reveal.in { transform: none; }
+/* Không có ảnh chính: tem + dấu bưu điện thu gọn, chữ thành tâm điểm. */
+[data-theme="provence"] .intro--noimg { min-height: 86svh; align-content: center; }
+[data-theme="provence"] .intro--noimg .intro-main { display: none; }
+[data-theme="provence"] .intro--noimg .save-card.paper { grid-area: 1 / 1; margin-top: 90px; }
+[data-theme="provence"] .intro--noimg .pd-hero .pv-postmark { left: 50%; top: 82px; translate: -50% 0; }
+[data-theme="provence"] .intro--noimg .pv-sprig { top: auto; bottom: 40px; }
+
+/* ════════ CẶP ĐÔI — hai tấm bưu thiếp, ảnh là tem dán góc, dấu bưu điện đè lên ════════ */
+[data-theme="provence"] .watercolor { background: transparent; }
+[data-theme="provence"] section.couple { padding: 84px 16px 80px; }
+[data-theme="provence"] .couple-row { grid-template-columns: minmax(0, 1fr); gap: 0; max-width: 1060px; }
+[data-theme="provence"] .person { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 57%; grid-template-rows: auto 1fr auto auto; column-gap: 14px;
+  text-align: left; padding: 20px 20px 24px; background: var(--pv-grain), var(--paper); box-shadow: var(--pv-sh); rotate: -1.2deg; }
+[data-theme="provence"] .person-b { rotate: 1.1deg; grid-template-columns: 57% minmax(0, 1fr); }
+[data-theme="provence"] .person::before { content: ""; position: absolute; inset: 7px; border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent); pointer-events: none; }
+[data-theme="provence"] .person::after { content: ""; position: absolute; width: 170px; aspect-ratio: 230 / 120; left: 6px; top: 96px; rotate: -10deg; pointer-events: none;
+  background: url(../../img/pro/provence-postmark.svg) center / contain no-repeat; }
+[data-theme="provence"] .person-b::after { left: auto; right: -6px; rotate: 8deg; transform: scaleX(-1); }
+[data-theme="provence"] .person .house { display: block; grid-column: 1; grid-row: 1; margin: 4px 0 0; font: 600 .875rem/1.4 var(--f-ui); letter-spacing: .2em; text-transform: uppercase; color: var(--accent); }
+[data-theme="provence"] .person .role { grid-column: 1; grid-row: 2; align-self: end; margin: 0 0 4px; font: italic 400 1.15rem/1.3 var(--f-head) !important; letter-spacing: 0 !important; text-transform: none; color: var(--muted); }
+[data-theme="provence"] .person .oval { grid-column: 2; grid-row: 1 / span 2; width: 100%; aspect-ratio: 4 / 5; margin: 0; rotate: 2.5deg; border-radius: 0; border-width: 10px; z-index: 1; }
+[data-theme="provence"] .person-b > :is(.house, .role, .banner, .info) { grid-column: 2; text-align: right; }
+[data-theme="provence"] .person-b > .oval { grid-column: 1; rotate: -2.5deg; }
+[data-theme="provence"] .banner { grid-column: 1 / -1 !important; grid-row: 3; display: block; background: none; color: var(--ink); padding: 0; border-radius: 0; text-align: left;
+  font: 400 clamp(2.6rem, 11vw, 3.4rem)/1.3 var(--f-name); margin: 14px 0 0; padding: 0 .12em; text-wrap: balance; position: relative; z-index: 2; }
+[data-theme="provence"] .person-b .banner { text-align: right !important; }
+[data-theme="provence"] .info { text-wrap: balance; grid-column: 1 / -1 !important; grid-row: 4; max-width: none; margin: 4px 0 0; color: var(--ink); font: italic 400 1.1rem/30px var(--f-body);
+  background: repeating-linear-gradient(transparent 0 29px, color-mix(in srgb, var(--accent) 26%, transparent) 29px 30px); padding-bottom: 1px; text-align: left; }
+[data-theme="provence"] .person-b .info { text-align: right !important; }
+[data-theme="provence"] .couple-amp { display: block; justify-self: center; margin: -18px 0 -30px; position: relative; z-index: 4;
+  font: 400 5.2rem/1.2 var(--f-name); color: var(--pv-ochre); text-shadow: 0 0 18px var(--page), 0 0 4px var(--page); }
+[data-theme="provence"].js-reveal .person.reveal { transform: translateY(30px); }
+[data-theme="provence"].js-reveal .person.reveal.in { transform: none; }
+[data-theme="provence"] .person:hover .oval { animation: provence-wiggle .7s ease; }
+
+/* ════════ LỄ THÀNH HÔN — tem ảnh lễ + vé tàu mép răng (cuống vé = đếm ngược) ════════ */
+[data-theme="provence"] .event { padding: 84px 16px; isolation: isolate; }
+[data-theme="provence"] .event::before { content: ""; position: absolute; z-index: -1; left: 50%; translate: -50% 0; top: 18%; width: min(160%, 1000px); aspect-ratio: 600 / 420; pointer-events: none;
+  background: url(../../img/pro/provence-wash-blue.svg) center / contain no-repeat; opacity: .26; }
+[data-theme="provence"] .event-row { grid-template-columns: minmax(0, 1fr); gap: 0; max-width: 1040px; filter: drop-shadow(0 2px 2px rgba(36, 48, 79, .1)) drop-shadow(0 16px 20px rgba(36, 48, 79, .18)); }
+[data-theme="provence"] .event-photo { width: 64%; max-width: 330px; aspect-ratio: 4 / 5; margin: 0 auto -34px; rotate: 3deg; transform: none; z-index: 4; position: relative; }
+[data-theme="provence"].js-reveal .event-photo.reveal { transform: translateY(26px); }
+[data-theme="provence"].js-reveal .event-photo.reveal.in, [data-theme="provence"] .is-draft .event-photo.reveal { transform: none !important; }
+[data-theme="provence"] .event-card { --notch: radial-gradient(circle at 50% 0, #0000 6px, #000 6.5px) 0 0 / 16px 51% repeat-x, radial-gradient(circle at 50% 100%, #0000 6px, #000 6.5px) 0 100% / 16px 51% repeat-x;
+  background: var(--pv-grain), var(--paper); padding: 64px 22px 30px; text-align: center; -webkit-mask: var(--notch); mask: var(--notch); }
+[data-theme="provence"] .event--noimg .event-card { padding-top: 40px; }
+[data-theme="provence"] .event-card::before { display: block !important; content: ""; position: absolute; inset: 14px 10px; border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); background: none; transform: none; box-shadow: none; z-index: 0; pointer-events: none; }
+[data-theme="provence"] .event-card > * { position: relative; z-index: 1; }
+[data-theme="provence"] .event-card .lead { font: italic 400 1.2rem/1.5 var(--f-body); color: var(--muted); margin: 0 auto 10px; max-width: 30ch; }
+[data-theme="provence"] .event-card:has(.dlock) > .date.big { display: none; }
+[data-theme="provence"] .event-card .date.big { font: 600 1.3rem var(--f-head); }
+[data-theme="provence"] .dlock { display: grid; justify-items: center; margin: 10px auto 6px; }
+[data-theme="provence"] .dl-wd { order: 2; font: 600 .875rem var(--f-ui); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+[data-theme="provence"] .dl-wd i { color: var(--pv-ochre); }
+[data-theme="provence"] .dl-row { order: 1; display: grid !important; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; }
+[data-theme="provence"] .dl-m, [data-theme="provence"] .dl-y { font: 600 .9375rem var(--f-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--ink);
+  padding: 8px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+[data-theme="provence"] .dl-m { text-align: right; } [data-theme="provence"] .dl-y { text-align: left; }
+[data-theme="provence"] .dl-d { font: 400 5.2rem/1 var(--f-head); color: var(--accent); }
+[data-theme="provence"] .dl-t { display: none; }
+[data-theme="provence"] .event-card .lunar { margin: 6px 0 0; }
+/* Cuống vé: đường xé chấm + 2 lỗ khuyết */
+[data-theme="provence"] .wd .event-card .countdown { position: relative; gap: 0; margin: 26px -22px 20px; padding: 24px 12px 2px; border-top: 1.5px dashed color-mix(in srgb, var(--ink) 30%, transparent); }
+[data-theme="provence"] .wd .countdown div { background: none; border-radius: 0; min-width: 0; flex: 1; padding: 0 4px; }
+[data-theme="provence"] .wd .countdown div + div { border-left: 1px solid var(--line); }
+[data-theme="provence"] .wd .countdown b { font: 400 2.3rem/1.05 var(--f-head); color: var(--ink); font-variant-numeric: lining-nums tabular-nums; }
+[data-theme="provence"] .wd .countdown span { font: 600 .875rem var(--f-ui); letter-spacing: .1em; color: var(--muted); }
+[data-theme="provence"] .event-card .btn-row { gap: 10px; }
+
+/* ════════ ĐỊA ĐIỂM — phong bì viền "par avion", tem nhỏ màu nước, bản đồ như bưu ảnh ════════ */
+[data-theme="provence"] .location { padding: 84px 16px; }
+[data-theme="provence"] .events { gap: 54px; max-width: 1120px; }
+[data-theme="provence"] .ev-map { height: 210px; border-radius: 0; background: var(--paper); border: 9px solid var(--paper); box-shadow: var(--pv-sh); rotate: -1deg; margin: 0 10px; }
+[data-theme="provence"] .ev-map-load { background: repeating-linear-gradient(0deg, transparent 0 23px, rgba(111, 134, 184, .16) 23px 24px), repeating-linear-gradient(90deg, transparent 0 23px, rgba(111, 134, 184, .16) 23px 24px), #eef1f7;
+  font-family: var(--f-ui); color: var(--ink); }
+[data-theme="provence"] .ev-map-pin { font-size: 0; width: 26px; height: 34px; background: #c75b4a; -webkit-mask: var(--pv-pin) center / contain no-repeat; mask: var(--pv-pin) center / contain no-repeat; }
+[data-theme="provence"] .ev-map-load b { border-radius: 2px; background: var(--paper); color: var(--ink); font: 600 .9375rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; box-shadow: 0 0 0 1px var(--line), 0 6px 14px -8px rgba(36,48,79,.4); }
+[data-theme="provence"] .ev-map-load small { font: italic 1.02rem var(--f-body); color: var(--muted); }
+[data-theme="provence"] .ev-map-load:hover b { background: var(--accent); color: #fff; }
+[data-theme="provence"] .ev-card { position: relative; text-align: left; padding: 30px 24px 26px; border: 9px solid transparent; border-image: var(--pv-airmail) 9;
+  background: var(--pv-grain) padding-box, var(--paper) padding-box; box-shadow: var(--pv-sh); }
+[data-theme="provence"] .ev-card::before { display: block !important; content: ""; position: absolute; top: 14px; right: 14px; left: auto; bottom: auto; inset: 14px 14px auto auto; width: 62px; height: 75px;
+  background: url(../../img/pro/provence-stamp.svg) center / contain no-repeat; transform: rotate(4deg); box-shadow: none; z-index: 1; }
+[data-theme="provence"] .ev-card::after { display: block !important; content: ""; position: absolute; inset: 52px -4px auto auto; width: 130px; aspect-ratio: 230 / 120; transform: rotate(-8deg); left: auto; bottom: auto;
+  background: url(../../img/pro/provence-postmark.svg) center / contain no-repeat; box-shadow: none; z-index: 2; opacity: .85; }
+[data-theme="provence"] .ev:nth-child(even) .ev-card::before { transform: rotate(-3deg); }
+[data-theme="provence"] .ev-card h3 { font: 400 3rem/1.3 var(--f-name); color: var(--accent); margin: 0 84px 6px 0; }
+[data-theme="provence"] .ev-place { font: 600 .9375rem/1.45 var(--f-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--ink); margin: 0 76px 10px 0; }
+[data-theme="provence"] .ev-card :is(.ev-addr, .ev-time) { font: italic 400 1.12rem/30px var(--f-body); color: var(--ink); margin: 0;
+  background: repeating-linear-gradient(transparent 0 29px, color-mix(in srgb, var(--ink) 16%, transparent) 29px 30px); }
+[data-theme="provence"] .ev-card .ev-time { margin-bottom: 8px; }
+[data-theme="provence"] .ev-card .btn { margin: 14px 8px 0 0; }
+[data-theme="provence"] .ev-map iframe { filter: saturate(.7) sepia(.12); }
+
+/* ════════ TRÍCH DẪN — ảnh loang mép màu nước, chữ nghiêng trên giấy ════════ */
+[data-theme="provence"] .quote { min-height: 0; display: grid; place-items: center; color: var(--ink); padding: 40px 16px 70px; overflow: hidden; isolation: isolate; }
+[data-theme="provence"] .quote::after { display: none; }
+[data-theme="provence"] .quote-bg { position: relative; inset: auto; width: min(100%, 980px); aspect-ratio: 4 / 3; background: transparent;
+  -webkit-mask: url(../../img/pro/provence-mask.svg) center / 100% 100% no-repeat; mask: url(../../img/pro/provence-mask.svg) center / 100% 100% no-repeat; }
+[data-theme="provence"] .quote-bg img { filter: saturate(.86) contrast(.96); }
+[data-theme="provence"] .quote blockquote { position: relative; z-index: 2; max-width: 680px; margin: -14px auto 0; padding: 26px 18px 0; }
+[data-theme="provence"] .quote blockquote::before { content: "“"; display: block; font: 400 5rem/.6 var(--f-head); color: var(--pv-ochre); margin-bottom: 4px; }
+[data-theme="provence"] .quote blockquote p { font: italic 400 clamp(1.6rem, 5.4vw, 2.4rem)/1.4 var(--f-head); color: var(--ink); }
+[data-theme="provence"] .quote blockquote::after { content: ""; display: block; width: 140px; height: 20px; margin: 18px auto 0; background: var(--pv-blue);
+  -webkit-mask: var(--pv-swash) center / contain no-repeat; mask: var(--pv-swash) center / contain no-repeat; }
+[data-theme="provence"] .quote.quote--noimg { background: none; padding: 70px 16px; }
+[data-theme="provence"] .quote.quote--noimg::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url(../../img/pro/provence-wash-ochre.svg) center / min(760px, 140%) auto no-repeat; opacity: .4; }
+[data-theme="provence"] .quote--noimg blockquote { margin: 0 auto; }
+
+/* ════════ ALBUM — bộ sưu tập tem: lưới tem răng cưa nghiêng so le ════════ */
+[data-theme="provence"] .gallery-sec { padding: 84px 14px; }
+[data-theme="provence"] .wd-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 12px; max-width: 1180px; padding: 6px 4px 18px;
+  filter: drop-shadow(0 1px 1px rgba(36, 48, 79, .12)) drop-shadow(0 10px 12px rgba(36, 48, 79, .16)); }
+[data-theme="provence"] .wd-g { aspect-ratio: 4 / 5; border-width: 9px; background: var(--paper); overflow: hidden; rotate: -1.4deg; }
+[data-theme="provence"] .wd-g:nth-child(3n + 2) { rotate: 1.6deg; }
+[data-theme="provence"] .wd-g:nth-child(3n) { rotate: -.4deg; }
+[data-theme="provence"] .wd-g:nth-child(4n + 1) { aspect-ratio: 4 / 5; }
+[data-theme="provence"] .wd-g img { transition: transform .8s cubic-bezier(.2, .7, .2, 1); }
+[data-theme="provence"] .wd-g::after { content: ""; background: linear-gradient(transparent 60%, rgba(36, 48, 79, .18)); }
+[data-theme="provence"] .wd-g:hover { animation: provence-wiggle .7s ease; z-index: 2; }
+[data-theme="provence"] .wd-g:hover img { transform: scale(1.04); }
+[data-theme="provence"] .gallery-sec > .center { margin-top: 18px; }
+[data-theme="provence"] .album-grid { gap: 30px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 340px)); justify-content: center; }
+[data-theme="provence"] .wd .album-card { background: var(--pv-grain), var(--paper); border-radius: 0; padding: 10px 10px 4px; box-shadow: var(--pv-sh); rotate: -1deg; }
+[data-theme="provence"] .wd .album-card:nth-child(even) { rotate: 1deg; }
+[data-theme="provence"] .album-cover { aspect-ratio: 3 / 2; }
+[data-theme="provence"] .album-meta { padding: 12px 6px 10px; display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+[data-theme="provence"] .wd .album-meta h3 { font: italic 400 1.45rem/1.2 var(--f-head); color: var(--ink); margin: 0; }
+[data-theme="provence"] .album-meta p { font: 600 .875rem var(--f-ui); letter-spacing: .1em; color: var(--muted); white-space: nowrap; }
+[data-theme="provence"] .album-cover-ph { color: var(--accent); }
+
+/* ════════ GỬI ẢNH — phong bì thư: viền par avion, nắp chữ V ════════ */
+[data-theme="provence"] .cta { position: relative; max-width: 620px; margin: 30px 16px 40px; padding: 120px 26px 40px; text-align: center;
+  background: var(--pv-grain) padding-box, var(--paper) padding-box; border: 10px solid transparent; border-image: var(--pv-airmail) 10; box-shadow: var(--pv-sh); isolation: isolate; }
+[data-theme="provence"] .cta::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 104px; z-index: -1;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40' preserveAspectRatio='none'><path d='M0 0L50 38 100 0' fill='%23f3eee2' stroke='%2324304f' stroke-opacity='.22' stroke-width='.6' vector-effect='non-scaling-stroke'/></svg>") center / 100% 100% no-repeat; }
+[data-theme="provence"] .cta::after { content: ""; position: absolute; left: 50%; top: 70px; width: 58px; height: 58px; translate: -50% 0;
+  background: url(../../img/pro/provence-seal.svg) center / contain no-repeat; filter: drop-shadow(0 3px 3px rgba(36, 48, 79, .3)); }
+[data-theme="provence"] .wd .cta h2 { font: italic 400 clamp(1.9rem, 6vw, 2.5rem)/1.2 var(--f-head); margin: 0 0 10px; }
+[data-theme="provence"] .cta p { font: 400 1.12rem/1.6 var(--f-body); color: var(--muted); }
+[data-theme="provence"] .cta > p:last-of-type { margin-bottom: 22px; }
+
+/* ════════ XÁC NHẬN — thiệp hồi âm "carte-réponse" ════════ */
+[data-theme="provence"] .rsvp { max-width: 640px; padding: 70px 16px; }
+[data-theme="provence"] :is(.rsvp, .wishes, .gift) { overflow-x: clip; overflow-y: visible; }
+[data-theme="provence"] .rsvp-card, [data-theme="provence"] .wish-form, [data-theme="provence"] .form-thanks, [data-theme="provence"] .rsvp-done { background: var(--pv-grain), var(--paper);
+  padding: 38px 26px 30px; border-radius: 0; box-shadow: var(--pv-sh); position: relative; }
+[data-theme="provence"] :is(.rsvp-card, .wish-form, .form-thanks, .rsvp-done)::after { display: block !important; content: ""; position: absolute; inset: 8px; border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  box-shadow: inset 0 0 0 3px var(--paper), inset 0 0 0 4px color-mix(in srgb, var(--accent) 16%, transparent); background: none; transform: none; pointer-events: none; z-index: 0; }
+[data-theme="provence"] .rsvp-card { gap: 18px; }
+[data-theme="provence"] .rsvp-card > *, [data-theme="provence"] .wish-form > * { position: relative; z-index: 1; }
+[data-theme="provence"] .rsvp-card .lead { font: italic 400 1.2rem/1.5 var(--f-body); color: var(--muted); margin: 0; }
+[data-theme="provence"] .rsvp-invitee b, [data-theme="provence"] .rsvp-done b { font: 400 2.6rem/1.3 var(--f-name); color: var(--accent); }
+[data-theme="provence"] .rsvp-choice { gap: 10px; }
+[data-theme="provence"] .rsvp-choice span { position: relative; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 10px 12px; border-radius: 0;
+  border: 1px solid color-mix(in srgb, var(--ink) 30%, transparent); background: transparent; font: 600 .95rem/1.3 var(--f-ui); color: var(--ink); }
+[data-theme="provence"] .rsvp-choice input:checked + span { background: var(--soft); border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); color: var(--ink); }
+[data-theme="provence"] .rsvp-card .btn, [data-theme="provence"] .wish-form .btn { justify-self: center; min-width: 220px; }
+[data-theme="provence"] .row2 { gap: 18px; }
+[data-theme="provence"] .field-hint { font: italic 1rem var(--f-body); color: var(--muted); }
+
+/* ════════ LỜI CHÚC — bưu thiếp nhỏ với tem màu ════════ */
+[data-theme="provence"] .wd .wishes { max-width: 860px; padding: 70px 16px; }
+[data-theme="provence"] .wish-form { margin-bottom: 40px; gap: 16px; }
+[data-theme="provence"] .wish-list { gap: 22px; }
+[data-theme="provence"] .wd .wish { position: relative; border: 0; border-radius: 0; background: var(--pv-grain), var(--paper); padding: 26px 22px 20px; box-shadow: var(--pv-sh); rotate: -.8deg; }
+[data-theme="provence"] .wd .wish:nth-child(even) { rotate: .9deg; }
+[data-theme="provence"] .wd .wish::before { content: ""; position: absolute; top: -10px; right: 18px; width: 34px; height: 40px; background: var(--pv-blue); rotate: 6deg;
+  -webkit-mask: var(--pv-perf); mask: var(--pv-perf); border: 4px solid var(--paper); opacity: .85; }
+[data-theme="provence"] .wd .wish:nth-child(3n + 2)::before { background: var(--pv-ochre); rotate: -5deg; }
+[data-theme="provence"] .wd .wish:nth-child(3n)::before { background: var(--pv-sage); }
+[data-theme="provence"] .wd .wish p { font: italic 400 1.18rem/1.55 var(--f-body); color: var(--ink); }
+[data-theme="provence"] .wd .wish cite { font: 600 .875rem var(--f-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+[data-theme="provence"] .wd .wish cite::before { content: "— "; }
+
+/* ════════ MỪNG CƯỚI — thẻ chuyển tiền bưu điện ════════ */
+[data-theme="provence"] .gift { padding: 70px 16px; }
+[data-theme="provence"] .gift-text, [data-theme="provence"] .gift-hint { font: italic 400 1.12rem/1.6 var(--f-body); color: var(--muted); }
+[data-theme="provence"] .gift-card { position: relative; border-radius: 0; border: 0; background: var(--pv-grain), var(--paper); box-shadow: var(--pv-sh); padding: 32px 20px 24px; color: var(--ink); }
+[data-theme="provence"] .gift-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 8px; background: var(--pv-airmail); }
+[data-theme="provence"] .gift-card:nth-child(even) { rotate: .6deg; } [data-theme="provence"] .gift-card:nth-child(odd) { rotate: -.6deg; }
+[data-theme="provence"] .gift-side { font: 600 .9rem var(--f-ui); letter-spacing: .2em; color: var(--accent); }
+[data-theme="provence"] .gift-qr { border-radius: 0; border: 1px solid var(--line); padding: 8px; background: #fff; }
+[data-theme="provence"] .gift-holder { font: 600 1rem var(--f-ui); letter-spacing: .1em; color: var(--ink); }
+[data-theme="provence"] .gift-bank { font: italic 1.08rem var(--f-body); color: var(--muted); }
+[data-theme="provence"] .gift-num { color: var(--ink); }
+[data-theme="provence"] :is(.gift-copy, .gift-dl) { border-radius: 2px; font: 600 .95rem var(--f-ui); letter-spacing: .06em; color: var(--ink); background: transparent; border: 1px solid color-mix(in srgb, var(--ink) 35%, transparent); }
+[data-theme="provence"] :is(.gift-copy, .gift-dl):hover { border-color: var(--accent); color: var(--accent); background: var(--soft); }
+
+/* ════════ CHÂN TRANG — dấu bưu điện lớn trên mảng màu nước ════════ */
+[data-theme="provence"] .wd-foot { position: relative; background: none; padding: 80px 16px 70px; overflow: clip; isolation: isolate; border-top: 1px solid var(--line); }
+[data-theme="provence"] .wd-foot::before { content: ""; position: absolute; z-index: -1; left: 50%; top: 10px; width: min(720px, 150%); aspect-ratio: 600 / 420; translate: -50% 0;
+  background: url(../../img/pro/provence-wash-blue.svg) center / contain no-repeat; opacity: .36; }
+[data-theme="provence"] .wd-foot .wd-mono.big { display: none; }
+[data-theme="provence"] .pd-foot { position: relative; height: 120px; margin: 0 auto 18px; width: 230px; }
+[data-theme="provence"] .pd-foot .pv-postmark { inset: 0; width: 230px; height: 120px; rotate: -6deg; color: var(--ink); opacity: .8; }
+[data-theme="provence"] .pd-foot .pv-pm-mid { font: 400 22px var(--f-name); }
+[data-theme="provence"] .wd-foot p { font: italic 400 1.3rem/1.5 var(--f-body); color: var(--ink); }
+[data-theme="provence"] .wd-foot .muted.small { font: 600 .9375rem var(--f-ui) !important; letter-spacing: .1em; color: var(--muted); font-style: normal; }
+[data-theme="provence"] .music-credit { font-family: var(--f-ui) !important; color: var(--muted); }
+
+/* ════════ MÀN "MỞ THIỆP" ════════ */
+[data-theme="provence"] .wd-cover { background: var(--pv-fibre), var(--pv-grain), var(--page); overflow: hidden; }
+[data-theme="provence"] .wd-cover::before, [data-theme="provence"] .wd-cover::after { content: ""; position: absolute; pointer-events: none; aspect-ratio: 600 / 420; background: center / contain no-repeat; }
+[data-theme="provence"] .wd-cover::before { width: min(620px, 140vw); left: 50%; top: 50%; translate: -50% -62%; background-image: url(../../img/pro/provence-wash-blue.svg); opacity: .5; animation: provence-bloom 2s cubic-bezier(.2,.7,.2,1) both; }
+[data-theme="provence"] .wd-cover::after { width: min(300px, 64vw); right: -14%; bottom: 2%; background-image: url(../../img/pro/provence-wash-ochre.svg); opacity: .3; animation: provence-bloom 2.2s cubic-bezier(.2,.7,.2,1) .4s both; }
+[data-theme="provence"] .wd-cover-in { position: relative; z-index: 1; }
+[data-theme="provence"] .wd-cover-mono { border: 2px solid var(--ink); box-shadow: inset 0 0 0 4px var(--page), inset 0 0 0 5px color-mix(in srgb, var(--ink) 45%, transparent);
+  color: var(--ink); font: 400 1.45rem/1 var(--f-name); rotate: -8deg; }
+[data-theme="provence"] .wd-cover-mono i { color: var(--pv-ochre); font: 400 .5em var(--f-ui); }
+[data-theme="provence"] .wd-cover-eyebrow { color: var(--pv-ochre-ink); font: 600 .875rem var(--f-ui); letter-spacing: .24em; }
+[data-theme="provence"] .wd-cover-names { font: 400 clamp(3.4rem, 15vw, 5.4rem)/1.3 var(--f-name); color: var(--ink); }
+[data-theme="provence"] .wd-cover-names i { color: var(--pv-ochre); font-style: normal; line-height: 1; }
+[data-theme="provence"] .wd-cover-date { font: italic 400 1.3rem var(--f-head); letter-spacing: .12em; color: var(--ink); }
+[data-theme="provence"] .wd-cover-btn { border-radius: 2px; font: 600 1rem var(--f-ui); letter-spacing: .14em; text-transform: uppercase; background: var(--accent); }
+
+/* ════════ THIỆP MỜI RIÊNG — phong bì giấy kem, lót xanh Pháp, dấu sáp xanh ════════ */
+[data-theme="provence"] .ic { --ic-paper: #fffdf8; --ic-env-front: #f4eee1; --ic-env-flap: #efe7d6; --ic-env-in: #9fb0d6; --ic-wax: #4f63a0; --ic-wax-ink: #f6f1e4;
+  --ic-card-bg: #fffdf8; --ic-line: rgba(90, 111, 168, .4);
+  --ic-liner: repeating-linear-gradient(-45deg, rgba(199, 91, 74, .55) 0 7px, transparent 7px 12px, rgba(90, 111, 168, .6) 12px 19px, transparent 19px 24px); }
+
+/* ════════ MÁY TÍNH ════════ */
+@media (min-width: 761px) {
+  [data-theme="provence"] .intro { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; column-gap: 4vw; min-height: 100svh; padding: 110px 6vw 80px; }
+  [data-theme="provence"] .intro::before { left: -6%; top: 6%; width: 64%; }
+  [data-theme="provence"] .intro::after { right: -6%; bottom: 0; width: 46%; }
+  [data-theme="provence"] .intro-main { width: min(78%, 440px); margin: 0; justify-self: center; }
+  [data-theme="provence"] .photowall { max-width: 640px; height: 100%; justify-self: center; }
+  [data-theme="provence"] .pw-l { display: block; left: -2%; top: 4%; width: 30%; rotate: -7deg; transform: none; animation: provence-stamp-in 1.3s cubic-bezier(.2,.7,.2,1) .4s both; }
+  [data-theme="provence"] .pw-r { right: -2%; bottom: 2%; }
+  [data-theme="provence"] .save-card.paper { grid-area: 1 / 2; margin: 0; }
+  [data-theme="provence"] .pd-hero .pv-postmark { left: 41%; top: 16%; width: 250px; height: 130px; }
+  [data-theme="provence"] .pv-sprig { left: auto; right: 4%; top: 14%; width: 64px; height: 180px; rotate: 10deg; }
+  [data-theme="provence"] .intro--noimg { grid-template-columns: minmax(0, 1fr); }
+  [data-theme="provence"] .intro--noimg .save-card.paper { grid-area: 1 / 1; }
+  [data-theme="provence"] section.couple, [data-theme="provence"] .event, [data-theme="provence"] .location, [data-theme="provence"] .gallery-sec { padding: 120px 40px; }
+  [data-theme="provence"] .couple-row { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 0; max-width: 1180px; }
+  [data-theme="provence"] .couple-amp { margin: 0 -26px; font-size: 6rem; }
+  [data-theme="provence"] .person { padding: 26px 26px 30px; }
+  [data-theme="provence"] .person::after { top: 120px; }
+  [data-theme="provence"] .banner { font-size: 3.2rem; }
+  [data-theme="provence"] .event-row { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: center; }
+  [data-theme="provence"] .event-photo { width: 100%; margin: 0 -40px 0 0; rotate: -3deg; }
+  [data-theme="provence"] .event-card { padding: 60px 52px 36px 70px; }
+  [data-theme="provence"] .event--noimg .event-row { max-width: 640px; }
+  [data-theme="provence"] .event--noimg .event-card { padding: 50px 44px 34px; }
+  [data-theme="provence"] .wd .event-card .countdown { margin-left: -52px; margin-right: -52px; }
+  [data-theme="provence"] .ev-map { height: 360px; margin: 0; rotate: -1.2deg; }
+  [data-theme="provence"] .ev:nth-child(even) .ev-map { rotate: 1.2deg; }
+  [data-theme="provence"] .ev-card { margin-left: -70px; padding: 40px 36px 34px; }
+  [data-theme="provence"] .ev:nth-child(even) .ev-card { margin: 0 -70px 0 0; }
+  [data-theme="provence"] .quote { padding: 70px 40px 100px; }
+  [data-theme="provence"] .quote-bg { aspect-ratio: 16 / 8; }
+  [data-theme="provence"] .wd-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 30px 24px; }
+  [data-theme="provence"] .wd-g:nth-child(4n + 2) { translate: 0 18px; }
+  [data-theme="provence"] .cta { padding: 130px 60px 50px; margin: 40px auto 60px; }
+}
+/* Điện thoại hẹp */
+@media (max-width: 760px) {
+  [data-theme="provence"] .wd-mono:not(.big) { font-size: 1.1rem; }
+  [data-theme="provence"] .ev-card, [data-theme="provence"] .ev:nth-child(even) .ev-card { margin: -26px 4px 0; }
+  [data-theme="provence"] .ev-card h3 { font-size: 2.7rem; }
+  [data-theme="provence"] .gift-cards { gap: 30px; }
+}
+@media (max-width: 380px) {
+  [data-theme="provence"] .person { grid-template-columns: minmax(0, 1fr) 54%; padding: 18px 16px 22px; }
+  [data-theme="provence"] .person-b { grid-template-columns: 54% minmax(0, 1fr); }
+  [data-theme="provence"] .ev-card { padding: 26px 18px 22px; }
+}
+
+/* ── Chuyển động ── */
+@keyframes provence-bloom { from { opacity: 0; transform: scale(.6) rotate(-5deg); } }
+@keyframes provence-stamp-in { from { opacity: 0; transform: translateY(26px) scale(.96); } to { opacity: 1; transform: none; } }
+@keyframes provence-cancel { 0% { opacity: 0; transform: scale(1.5); } 60% { opacity: .85; } 100% { opacity: .72; transform: none; } }
+@keyframes provence-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes provence-fade { from { opacity: 0; } }
+@keyframes provence-wiggle { 0%, 100% { transform: none; } 30% { transform: rotate(-2.4deg) scale(1.02); } 65% { transform: rotate(1.6deg) scale(1.02); } }
+[data-theme="provence"] .is-draft :is(.intro-main, .pw, .pv-postmark) { animation-duration: .01s !important; animation-delay: 0s !important; }
+[data-theme="provence"] .is-draft .sec-head.reveal > *, [data-theme="provence"] .is-draft .sec-head.reveal::before { opacity: 1 !important; transform: none !important; }
+[data-theme="provence"] .is-draft .sec-head.reveal::after { opacity: .26 !important; transform: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="provence"] *, [data-theme="provence"] *::before, [data-theme="provence"] *::after { animation: none !important; transition: none !important; }
+  [data-theme="provence"] .dr { stroke-dashoffset: 0 !important; }
+}
+/* Hiệu năng: phần tử nằm trong khung có filter drop-shadow (tem răng cưa) không chạy hiệu ứng hiện dần — tránh vẽ lại bóng mỗi khung hình. */
+[data-theme="provence"].js-reveal :is(.event-photo, .event-card, .wd-g, .ev).reveal { opacity: 1; transform: none !important; transition: none; }
+
+/* Chủ nhà sửa (R1-THEMES-06): tem nhỏ .pw-r đè góc dưới phải ảnh chính -> nút ảnh chính lên góc trên phải;
+   tem nhỏ: nút gọn, xếp dọc để không bị cắt chữ. */
+[data-theme="provence"] .is-draft .main-photo .ed-img-tools { top: 12px; bottom: auto; right: 12px; z-index: 7; }
+[data-theme="provence"] .is-draft .pw .ed-img-tools { right: 4px; bottom: 4px; max-width: none; flex-direction: column; align-items: flex-end; gap: 4px; }
+[data-theme="provence"] .is-draft .pw .ed-img-btn { padding: 6px 9px; font-size: 12px; gap: 4px; }
+/* WebKit (Safari): filter drop-shadow trên .event-row chứa phần tử có mask vẽ nhầm 1 vệt đen dưới thanh menu (R1-THEMES-12).
+   Ép lớp riêng (translateZ) thì WebKit vẽ đúng; trình duyệt khác không đổi. */
+[data-theme="provence"] .event-row { transform: translateZ(0); }

@@ -1,0 +1,215 @@
+/* Phông của thiệp VIP v-lucbao — Google Fonts, SIL Open Font License 1.1: Lavishly Yours, Trirong (tự host, assets/fonts/pro) */
+@font-face { font-family: 'Lavishly Yours'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/LavishlyYours-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Lavishly Yours'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/LavishlyYours-400-vietnamese.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Lavishly Yours'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/LavishlyYours-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Trirong'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-300-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Trirong'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-300-vietnamese.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Trirong'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-300-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Trirong'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Trirong'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-400-vietnamese.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Trirong'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Trirong'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-400i-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Trirong'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-400i-vietnamese.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Trirong'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-400i-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Trirong'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-600-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Trirong'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-600-vietnamese.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Trirong'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(../../../fonts/pro/Trirong-600-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+   THIỆP VIP "HỘP LỤC BẢO" (v-lucbao) — hộp nhung xanh lục bảo đứng, nắp vòm Art Nouveau dập nhũ quạt lông công, viền
+   chỉ vàng, khóa cài vàng chữ lồng. Chạm -> khóa bật, nắp xoay 3D nâng lên lộ lớp lót lụa ngà, thiệp ngà viền vàng
+   trong hộp nhô lên rồi thiệp mở. Thiệp: giấy ngà viền vàng kép, vòm Art Nouveau ôm ảnh cặp đôi, quạt lông công phía
+   sau. Màu/phông RIÊNG (không phụ thuộc giao diện): lục bảo #14513f / #0a2a21, vàng #d4b06a, ngà #f8f2e4;
+   Lavishly Yours (tên cặp đôi) + Trirong (OFL, tự host). Thời gian mở ~1,9 s (config/content.php open_ms).
+   ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
+.ic--v-lucbao.ic {
+  --accent: #14513f; --accent-2: #d4b06a; --ink: #1d2b24; --muted: #56645a; --page: #0f3b2e; --paper: #f8f2e4;
+  --f-head: "Trirong", "Lora", Georgia, serif; --f-name: "Trirong", "Lora", Georgia, serif; --f-body: "Trirong", "Lora", Georgia, serif;
+  --f-ui: "Trirong", "Lora", Georgia, serif; --name-style: italic;
+  --ic-paper: #f8f2e4; --ic-on-accent: #f8f2e4; --ic-line: rgba(184, 146, 74, .55); --ic-card-bg: #f8f2e4; --ic-card-deco: linear-gradient(transparent, transparent);
+  --ic-to-small: #d4b06a; --ic-to-name: #f6efe0;
+  --lk-em: #14513f; --lk-deep: #0a2a21; --lk-gold: #d4b06a; --lk-gold-ink: #7a5c24; --lk-ivory: #f8f2e4;
+  --lk-grain: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  --lk-grain-d: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .12 0 0 0 .08 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  --lk-velvet: var(--lk-grain), radial-gradient(110% 70% at 50% 0%, rgba(58, 150, 116, .45), transparent 62%), radial-gradient(90% 60% at 100% 100%, rgba(3, 18, 13, .6), transparent 70%), linear-gradient(180deg, #16583f, #0c3226);
+  --lk-lid-m: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 196' preserveAspectRatio='none'><path d='M0 196V140C0 128 7 120 18 117C30 50 86 22 150 2C214 22 270 50 282 117C293 120 300 128 300 140V196Z'/></svg>");
+  --lk-back-m: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 419' preserveAspectRatio='none'><path d='M0 419V140C0 128 7 120 18 117C30 50 86 22 150 2C214 22 270 50 282 117C293 120 300 128 300 140V419Z'/></svg>");
+  --lk-card-m: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250' preserveAspectRatio='none'><path d='M0 250V86C0 74 7 66 18 63C30 -4 36 22 100 2C164 22 170 -4 182 63C193 66 200 74 200 86V250Z'/></svg>");
+  --lk-arch-m: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 290' preserveAspectRatio='none'><path d='M0 290V104C0 92 7 84 18 81C30 14 46 22 110 2C174 22 190 14 202 81C213 84 220 92 220 104V290Z'/></svg>");
+  --lk-corner: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><g transform='translate(0 0)'><g fill='none' stroke='%23b8924a' stroke-width='1' stroke-linecap='round'><path d='M4 56V20C4 10 10 4 20 4H56'/><path d='M10 50C10 30 16 18 28 14C36 11 42 16 38 22C35 26 29 24 30 20'/><path d='M50 10C30 10 18 16 14 28C11 36 16 42 22 38C26 35 24 29 20 30'/></g><circle cx='4' cy='56' r='1.6' fill='%23b8924a'/><circle cx='56' cy='4' r='1.6' fill='%23b8924a'/></g></svg>");
+  --lk-corner-tr: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><g transform='translate(60 0) scale(-1 1)'><g fill='none' stroke='%23b8924a' stroke-width='1' stroke-linecap='round'><path d='M4 56V20C4 10 10 4 20 4H56'/><path d='M10 50C10 30 16 18 28 14C36 11 42 16 38 22C35 26 29 24 30 20'/><path d='M50 10C30 10 18 16 14 28C11 36 16 42 22 38C26 35 24 29 20 30'/></g><circle cx='4' cy='56' r='1.6' fill='%23b8924a'/><circle cx='56' cy='4' r='1.6' fill='%23b8924a'/></g></svg>");
+  --lk-corner-bl: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><g transform='translate(0 60) scale(1 -1)'><g fill='none' stroke='%23b8924a' stroke-width='1' stroke-linecap='round'><path d='M4 56V20C4 10 10 4 20 4H56'/><path d='M10 50C10 30 16 18 28 14C36 11 42 16 38 22C35 26 29 24 30 20'/><path d='M50 10C30 10 18 16 14 28C11 36 16 42 22 38C26 35 24 29 20 30'/></g><circle cx='4' cy='56' r='1.6' fill='%23b8924a'/><circle cx='56' cy='4' r='1.6' fill='%23b8924a'/></g></svg>");
+  --lk-corner-br: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><g transform='translate(60 60) scale(-1 -1)'><g fill='none' stroke='%23b8924a' stroke-width='1' stroke-linecap='round'><path d='M4 56V20C4 10 10 4 20 4H56'/><path d='M10 50C10 30 16 18 28 14C36 11 42 16 38 22C35 26 29 24 30 20'/><path d='M50 10C30 10 18 16 14 28C11 36 16 42 22 38C26 35 24 29 20 30'/></g><circle cx='4' cy='56' r='1.6' fill='%23b8924a'/><circle cx='56' cy='4' r='1.6' fill='%23b8924a'/></g></svg>");
+}
+.ic--v-lucbao.ic .ic-backdrop, .ic--v-lucbao.ic:not(.is-open) .ic-backdrop {
+  background: var(--lk-grain), radial-gradient(70% 45% at 50% 34%, rgba(212, 176, 106, .16), transparent 70%),
+    radial-gradient(120% 70% at 50% 0%, rgba(46, 128, 100, .5), transparent 62%), linear-gradient(180deg, rgba(15, 59, 46, .97), rgba(8, 34, 26, .98));
+}
+.ic--v-lucbao .ic-preview { background: #f3dfa8; color: #0a2a21; }
+.ic--v-lucbao.ic .ic-env-hint { background: var(--lk-ivory); color: var(--lk-deep); box-shadow: 0 0 0 1px rgba(212, 176, 106, .7), 0 10px 22px -10px rgba(0, 0, 0, .6); }
+
+/* ── Bìa: hộp nhung ── */
+.ic--v-lucbao .ic-env-btn { width: min(380px, 82vw, calc((100vh - 170px) / 1.34)); aspect-ratio: 3 / 4; transform-style: flat; }
+.ic--v-lucbao .lk { position: absolute; inset: 0; }
+.ic--v-lucbao .lk > * { position: absolute; display: block; }
+.ic--v-lucbao .lk svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.ic--v-lucbao .lk-back {
+  left: 4%; right: 4%; top: 0; height: 94%;
+  background: var(--lk-grain), radial-gradient(60% 40% at 50% 40%, rgba(46, 128, 100, .35), transparent 70%), linear-gradient(180deg, #0b2f24, #06201a);
+  -webkit-mask: var(--lk-back-m) 0 0 / 100% 100% no-repeat; mask: var(--lk-back-m) 0 0 / 100% 100% no-repeat;
+}
+.ic--v-lucbao .lk-card {
+  left: 16%; right: 16%; top: 7%; height: 58%; display: flex !important; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding-top: 18%;
+  background: var(--lk-grain-d), radial-gradient(90% 50% at 50% 0%, #fffcf2, transparent 70%), #f5eddb;
+  -webkit-mask: var(--lk-card-m) 0 0 / 100% 100% no-repeat; mask: var(--lk-card-m) 0 0 / 100% 100% no-repeat;
+  transition: transform .8s cubic-bezier(.2, .7, .2, 1) .95s;
+}
+.ic--v-lucbao .lk-card small { font: 400 .62rem/1.2 var(--f-ui); letter-spacing: .2em; text-transform: uppercase; color: var(--lk-gold-ink); }
+.ic--v-lucbao .lk-card em { font: italic 400 .7rem/1 var(--f-body); letter-spacing: .12em; color: var(--lk-gold-ink); }
+.ic--v-lucbao .lk-m { display: inline-flex; align-items: baseline; gap: 2px; font: 400 2.2rem/1 "Lavishly Yours", "Great Vibes", cursive; color: var(--lk-em); }
+.ic--v-lucbao .lk-m i { font: italic 400 .45em/1 var(--f-body); color: var(--lk-gold-ink); }
+.ic--v-lucbao .lk-body {
+  left: 4%; right: 4%; top: 42%; height: 52%; border-radius: 2px 2px 8px 8px; background: var(--lk-velvet);
+  box-shadow: inset 0 -10px 18px -8px rgba(0, 0, 0, .55), inset 0 10px 14px -10px rgba(255, 255, 255, .12),
+    0 46px 70px -30px rgba(0, 0, 0, .8), 0 14px 26px -14px rgba(0, 0, 0, .6);
+}
+.ic--v-lucbao .lk-body::after {   /* bệ đế vàng */
+  content: ""; position: absolute; left: -3%; right: -3%; bottom: -10px; height: 12px; border-radius: 3px;
+  background: linear-gradient(180deg, #f3dfa8, #c9a24f 40%, #8a6a2c); box-shadow: 0 8px 14px -6px rgba(0, 0, 0, .6);
+}
+.ic--v-lucbao .lk-lid { left: 4%; right: 4%; top: 0; height: 44%; transform-style: preserve-3d; transform-origin: 50% 0; transform: perspective(900px) rotateX(0deg);
+  transition: transform 1.05s cubic-bezier(.5, .05, .25, 1) .28s; }
+.ic--v-lucbao .lk-face, .ic--v-lucbao .lk-under { position: absolute; inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.ic--v-lucbao .lk-face {
+  background: var(--lk-velvet); background-size: 160px 160px, auto, auto, auto;
+  -webkit-mask: var(--lk-lid-m) 0 0 / 100% 100% no-repeat; mask: var(--lk-lid-m) 0 0 / 100% 100% no-repeat;
+}
+.ic--v-lucbao .lk-face svg { filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .45)) drop-shadow(0 -0.5px 0 rgba(255, 240, 200, .35)); }
+.ic--v-lucbao .lk-under {
+  transform: rotateX(180deg); display: flex; align-items: center; justify-content: center;
+  background: repeating-linear-gradient(45deg, rgba(160, 128, 60, .14) 0 1px, transparent 1px 18px), repeating-linear-gradient(-45deg, rgba(160, 128, 60, .14) 0 1px, transparent 1px 18px),
+    radial-gradient(70% 60% at 50% 60%, #fffaf0, #efe4cb 70%, #d9c8a0);
+  -webkit-mask: var(--lk-lid-m) 0 0 / 100% 100% no-repeat; mask: var(--lk-lid-m) 0 0 / 100% 100% no-repeat;
+}
+.ic--v-lucbao .lk-under .lk-m { font-size: 1.8rem; color: #a8843f; padding-top: 14%; }
+.ic--v-lucbao .lk-seam { left: 4%; right: 4%; top: calc(42% - 3px); height: 6px; border-radius: 3px;
+  background: linear-gradient(180deg, #f3dfa8, #c9a24f 50%, #8a6a2c); box-shadow: 0 3px 6px -2px rgba(0, 0, 0, .5); transition: opacity .3s .3s; }
+.ic--v-lucbao .lk-clasp {
+  left: 50%; top: 42%; width: 74px; height: 74px; margin: -37px 0 0 -37px; display: flex !important; align-items: center; justify-content: center;
+  border-radius: 50%; transform: translateZ(14px);
+  background: radial-gradient(circle at 50% 50%, #f8f2e4 0 52%, transparent 53%),
+    radial-gradient(circle at 34% 28%, #fdf0c8 0, #e3c27a 28%, #b8924a 58%, #7a5c24 100%);
+  box-shadow: inset 0 0 0 3px #e9cf8e, inset 0 0 0 4px #8a6a2c, inset 0 0 0 19px rgba(0, 0, 0, 0), 0 10px 18px -6px rgba(0, 0, 0, .7), 0 0 0 1px rgba(122, 92, 36, .6);
+  transition: opacity .3s ease, transform .4s ease;
+}
+.ic--v-lucbao .lk-clasp .lk-m { font-size: 1.42rem; padding-top: 4px; }
+.ic--v-lucbao .ic-env-to { left: 11%; right: 11%; top: 53%; bottom: 13%; z-index: 3; text-align: center; align-content: center; justify-items: center; gap: 6px; }
+.ic--v-lucbao .ic-env-to small { letter-spacing: .24em; }
+.ic--v-lucbao .ic-env-to b { font-family: var(--f-head); font-style: italic; font-weight: 300; color: #f6e7bd; text-shadow: 0 1px 0 rgba(0, 0, 0, .55), 0 -1px 0 rgba(255, 240, 200, .18); }
+.ic--v-lucbao .ic-env-to small { color: #d4b06a; text-shadow: 0 1px 0 rgba(0, 0, 0, .5); }
+
+/* ── Mở ── */
+.ic--v-lucbao.is-opening .lk-clasp { opacity: 0; transform: translateZ(14px) translateY(18px) scale(.6); }
+.ic--v-lucbao.is-opening .lk-lid { transform: perspective(900px) rotateX(-162deg); }
+/* WebKit: đổi mặt nhung / mặt lót bằng opacity khi nắp qua 90° (không dựa riêng vào backface-visibility). */
+.ic--v-lucbao .lk-under { opacity: 0; }
+.ic--v-lucbao.is-opening .lk-under { opacity: 1; transition: opacity 0s linear .83s; }
+.ic--v-lucbao.is-opening .lk-face { opacity: 0; transition: opacity 0s linear .83s; }
+.ic--v-lucbao.is-opening .lk-seam { opacity: 0; }
+.ic--v-lucbao.is-opening .ic-env-to { opacity: 1; }
+.ic--v-lucbao.is-opening .lk-card { transform: translateY(-28%) translateZ(30px) scale(1.04); }
+.ic--v-lucbao.is-opening .ic-env { animation: v-lucbao-out .55s cubic-bezier(.6, 0, .35, 1) 1.38s both; transform-origin: 50% 30%; }
+.ic--v-lucbao.is-open .ic-card { animation: v-lucbao-card 1s var(--ic-ease) both; }
+
+/* ── Thiệp ngà ── */
+.ic--v-lucbao .ic-card {
+  width: min(480px, 100%); padding: 22px 38px 34px; border-radius: 3px;
+  background: var(--lk-corner) 12px 12px / 54px no-repeat, var(--lk-grain-d), radial-gradient(90% 40% at 50% 0%, #fffcf2, transparent 70%), linear-gradient(180deg, #f8f2e4, #f2e9d4);
+  box-shadow: 0 0 0 1px rgba(212, 176, 106, .55), 0 60px 100px -40px rgba(0, 0, 0, .85), 0 12px 28px -14px rgba(0, 0, 0, .5);
+}
+.ic--v-lucbao .ic-card::before, .ic--v-lucbao .ic-card::after { content: ""; position: absolute; pointer-events: none; }
+.ic--v-lucbao .ic-card::before { inset: 9px; border: 1.5px solid #c9a24f; }
+.ic--v-lucbao .ic-card::after { inset: 14px; border: 1px solid rgba(184, 146, 74, .5);
+  background: var(--lk-corner-tr) 100% 0 / 54px no-repeat, var(--lk-corner-bl) 0 100% / 54px no-repeat, var(--lk-corner-br) 100% 100% / 54px no-repeat; }
+.ic--v-lucbao .ic-mono { display: none; }
+.ic--v-lucbao .lk-hero { position: relative; display: grid; justify-items: center; padding-top: 26px; margin: 0 -10px 22px; }
+.ic--v-lucbao .lk-fan { position: absolute; left: 50%; bottom: 0; width: 104%; transform: translateX(-50%); overflow: visible; }
+.ic--v-lucbao .lk-harch {
+  position: relative; display: block; width: 50%; aspect-ratio: 220 / 290; background: var(--lk-velvet);
+  -webkit-mask: var(--lk-arch-m) 0 0 / 100% 100% no-repeat; mask: var(--lk-arch-m) 0 0 / 100% 100% no-repeat;
+}
+.ic--v-lucbao .lk-harch img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.ic--v-lucbao .lk-hmono { position: absolute; inset: 0; display: grid; place-items: center; }
+.ic--v-lucbao .lk-hmono .lk-m { color: var(--lk-gold); font-size: 3rem; }
+.ic--v-lucbao .lk-hframe { position: absolute; top: 26px; left: 50%; width: 50%; aspect-ratio: 220 / 290; height: auto; transform: translateX(-50%) scale(1.06); transform-origin: 50% 100%; overflow: visible; }
+.ic--v-lucbao.is-open:not(.is-instant) .lk-fan { animation: v-lucbao-fan 1.4s cubic-bezier(.2, .7, .2, 1) .2s both; transform-origin: 50% 100%; }
+.ic--v-lucbao .lk-foot { display: flex; justify-content: center; margin-top: 22px; }
+.ic--v-lucbao .lk-foot svg { width: 150px; height: auto; }
+
+.ic--v-lucbao .ic-greet { color: var(--lk-gold-ink); letter-spacing: .22em; font-weight: 400; }
+.ic--v-lucbao .ic-card .ic-name { color: var(--lk-em); font: italic 300 clamp(2.1rem, 8.4vw, 2.9rem)/1.15 var(--f-head); margin: 8px 0 12px; }
+.ic--v-lucbao .ic-text { font-size: 1.04rem; color: #2d3a32; }
+.ic--v-lucbao .ic-rule { color: #b8924a; width: min(240px, 74%); }
+.ic--v-lucbao .ic-rule::before, .ic--v-lucbao .ic-rule::after { border-top-color: rgba(184, 146, 74, .6); }
+.ic--v-lucbao .ic-label { color: var(--lk-gold-ink); letter-spacing: .22em; font-weight: 400; }
+.ic--v-lucbao .ic-couple { font: 400 clamp(2.5rem, 10vw, 3.3rem)/1.15 "Lavishly Yours", "Great Vibes", cursive; color: var(--lk-em); gap: 0 12px; }
+.ic--v-lucbao .ic-couple i { font: italic 400 .5em/1 var(--f-body); color: var(--lk-gold-ink); }
+.ic--v-lucbao .ic-date { margin-top: 18px; padding: 14px 0 12px; border-block: 1px solid rgba(184, 146, 74, .45); }
+.ic--v-lucbao .ic-wd { color: var(--lk-gold-ink); font-weight: 400; font-style: italic; }
+.ic--v-lucbao .ic-dmy { font: 300 2.5rem/1 var(--f-head); color: var(--lk-em); }
+.ic--v-lucbao .ic-dmy i { width: 7px; height: 7px; background: #c9a24f; transform: rotate(45deg); }
+.ic--v-lucbao .ic-place { border-top: 0; margin-top: 14px; padding-top: 4px; }
+.ic--v-lucbao .ic-place-title { color: var(--lk-gold-ink); font-weight: 400; font-style: italic; }
+.ic--v-lucbao .ic-place-name { font-weight: 400; color: var(--lk-em); font-size: 1.25rem; }
+.ic--v-lucbao .ic-link { color: var(--lk-em); }
+.ic--v-lucbao .ic-rsvp { border-top: 1px solid rgba(184, 146, 74, .45); }
+.ic--v-lucbao .ic-btn { border-radius: 2px; letter-spacing: .06em; font-weight: 400; }
+.ic--v-lucbao .ic-btn-yes { background: var(--lk-velvet); color: var(--lk-ivory); border: 1px solid #c9a24f; box-shadow: inset 0 0 0 3px #14513f, inset 0 0 0 4px rgba(212, 176, 106, .55), 0 10px 18px -12px rgba(10, 42, 33, .9); }
+.ic--v-lucbao .ic-btn-yes:hover:not(:disabled) { background: #0c3226; }
+.ic--v-lucbao .ic-btn-no { color: var(--lk-em); border-color: rgba(184, 146, 74, .8); }
+.ic--v-lucbao .ic-enter { border-radius: 2px; border-color: rgba(184, 146, 74, .8); color: var(--lk-em); font-weight: 400; }
+.ic--v-lucbao .ic-done-title { font-family: "Lavishly Yours", "Great Vibes", cursive; font-style: normal; font-size: 2.3rem; color: var(--lk-em); }
+.ic--v-lucbao .ic-msg { font-weight: 400; }
+.ic--v-lucbao .ic-msg textarea { background: #fffcf4; padding: 10px 12px; border-radius: 2px; }
+.ic--v-lucbao .ic-stepper input { border-radius: 2px; }
+.ic--v-lucbao .ic-count-label { font-weight: 400; }
+.ic--v-lucbao .ic-stepper button, .ic--v-lucbao .ic-stepper input { border-color: rgba(184, 146, 74, .7); }
+
+@keyframes v-lucbao-out { 0% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(4%) scale(1.5); } }
+@keyframes v-lucbao-card { from { opacity: 0; transform: translateY(40px) scale(.96); } to { opacity: 1; transform: none; } }
+@keyframes v-lucbao-fan { from { opacity: 0; transform: translateX(-50%) scale(.6); } to { opacity: 1; transform: translateX(-50%); } }
+
+@media (max-width: 420px) {
+  .ic--v-lucbao .ic-card { padding: 18px 24px 30px; }
+  .ic--v-lucbao .lk-hero { margin: 0 -6px 18px; }
+  .ic--v-lucbao .lk-harch, .ic--v-lucbao .lk-hframe { width: 54%; }
+  .ic--v-lucbao .ic-dmy { font-size: 2.1rem; }
+}
+@media (max-width: 340px) {
+  .ic--v-lucbao .ic-card { padding: 16px 16px 26px; }
+  .ic--v-lucbao .lk-clasp { width: 60px; height: 60px; margin: -30px 0 0 -30px; }
+  .ic--v-lucbao .lk-clasp .lk-m { font-size: 1.4rem; }
+  .ic--v-lucbao .ic-env-to b { font-size: 1.15rem; }
+}
+
+/* Điện thoại xoay ngang / màn thấp (R1-CARDS-01): bìa co theo chiều cao -> nhãn tên co theo, hạ xuống dưới huy hiệu. */
+@media (max-height: 500px) {
+  .ic--v-lucbao .ic-env-to { top: 60%; bottom: 9%; gap: 3px; }
+  .ic--v-lucbao .ic-env-to small { font-size: .875rem; letter-spacing: .1em; }
+  .ic--v-lucbao .ic-env-to b { font-size: 1rem; line-height: 1.15; }
+}

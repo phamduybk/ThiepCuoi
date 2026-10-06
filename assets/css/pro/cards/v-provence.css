@@ -1,0 +1,257 @@
+/* Thiệp VIP "v-provence" — phông (Google Fonts, SIL OFL 1.1: Mea Culpa, Crimson Pro, Hanken Grotesk; tự host ở assets/fonts/pro). Khai báo lại ở đây để thiệp dùng được với mọi giao diện. */
+@font-face { font-family: 'Mea Culpa'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/MeaCulpa-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Mea Culpa'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/MeaCulpa-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Mea Culpa'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/MeaCulpa-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Crimson Pro'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/CrimsonPro-400i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Crimson Pro'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/CrimsonPro-400i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Crimson Pro'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/CrimsonPro-400i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../../fonts/pro/CrimsonPro-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../../fonts/pro/CrimsonPro-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../../fonts/pro/CrimsonPro-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Hanken Grotesk'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../../fonts/pro/HankenGrotesk-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Hanken Grotesk'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../../fonts/pro/HankenGrotesk-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Hanken Grotesk'; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url(../../../fonts/pro/HankenGrotesk-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+   Thiệp VIP "v-provence" — BƯU THIẾP PROVENCE. Đi cùng giao diện VIP provence nhưng dùng bảng màu + phông RIÊNG (đặt
+   lại biến của khung chung trên .ic) nên đẹp như nhau trên mọi giao diện.
+   Bìa: phong bì "par avion" (viền sọc đỏ–xanh, nhãn Par Avion, tem răng cưa đựng ảnh cặp đôi, dấu bưu điện ghi ngày cưới,
+   cành oải hương). Chạm -> phong bì nhấc lên LẬT 3D ra mặt sau (0–.8s) · dấu sáp oải hương bật ra (.7s) · nắp mở lộ giấy
+   lót (.85s) · tấm thiệp màu nước rút lên (1.2s) · bìa lùi, thiệp mở (1.75s). open_ms = 2100 (config/content.php).
+   Thiệp: giấy cotton kem viền sọc thư máy bay, vệt màu nước, tem ảnh lớn được "đóng dấu" ở đầu thiệp.
+   Chỉ animate transform/opacity. Keyframes tiền tố v-provence-.
+   ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
+html .ic.ic--v-provence {
+  --pv-ink: #24304f; --pv-blue: #5a6fa8; --pv-blue-l: #6f86b8; --pv-ochre: #d9a441; --pv-ochre-ink: #8a5c0e;
+  --pv-sage: #a3b18a; --pv-sage-ink: #56653f; --pv-red: #c75b4a; --pv-cream: #f7f0e2; --pv-paper: #fffdf8;
+  --accent: #5a6fa8; --accent-2: #d9a441; --ink: #24304f; --muted: #5b6176; --page: #f1eadc; --paper: #fffdf8;
+  --f-head: "Crimson Pro", "EB Garamond", Georgia, serif; --f-body: "Crimson Pro", "EB Garamond", Georgia, serif;
+  --f-name: "Mea Culpa", "Great Vibes", cursive; --f-ui: "Hanken Grotesk", "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
+  --ic-paper: #fffdf8; --ic-on-accent: #fff; --ic-line: rgba(90, 111, 168, .4); --ic-card-bg: #fffdf8;
+  --ic-to-small: #8a5c0e; --ic-to-name: #24304f; --ic-out-delay: 1.75s;
+  --pv-fibre: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='.012 .09' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .55  0 0 0 0 .47  0 0 0 0 .32  0 0 0 .1 -.02'/></filter><rect width='300' height='300' filter='url(%23f)'/></svg>");
+  --pv-air: repeating-linear-gradient(-45deg, #c75b4a 0 10px, #fbf6ec 10px 16px, #4f64a0 16px 26px, #fbf6ec 26px 32px);
+  --pv-perf: radial-gradient(circle, #0000 0 3.6px, #000 4.2px) -6px -6px / 12px 12px round border-box, linear-gradient(#000 0 0) padding-box;
+  --pv-sprig: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 150'><g fill='none' stroke='%237d8c5e' stroke-width='1.5' stroke-linecap='round'><path d='M32 148C31 110 30 72 33 18'/><path d='M31 148C27 118 20 92 12 54'/><path d='M32 148C36 120 44 96 52 64'/><path d='M31 130c-6-4-10-10-11-17M32 122c6-3 10-9 11-15'/></g><g fill='%237b7fc0'><ellipse cx='33' cy='18' rx='2.6' ry='4.4'/><ellipse cx='30' cy='26' rx='2.8' ry='4.6' transform='rotate(-24 30 26)'/><ellipse cx='36' cy='29' rx='2.8' ry='4.6' transform='rotate(24 36 29)'/><ellipse cx='30' cy='37' rx='3' ry='4.8' transform='rotate(-24 30 37)'/><ellipse cx='36.5' cy='41' rx='3' ry='4.8' transform='rotate(24 36.5 41)'/><ellipse cx='30.5' cy='49' rx='3' ry='4.8' transform='rotate(-24 30.5 49)'/></g><g fill='%236f86b8'><ellipse cx='12' cy='54' rx='2.4' ry='4' transform='rotate(-20 12 54)'/><ellipse cx='12' cy='63' rx='2.6' ry='4.2' transform='rotate(-40 12 63)'/><ellipse cx='17.5' cy='64' rx='2.6' ry='4.2' transform='rotate(10 17.5 64)'/><ellipse cx='15' cy='73' rx='2.8' ry='4.4' transform='rotate(-36 15 73)'/><ellipse cx='20.5' cy='75' rx='2.8' ry='4.4' transform='rotate(14 20.5 75)'/></g><g fill='%238a86c4'><ellipse cx='52' cy='64' rx='2.4' ry='4' transform='rotate(20 52 64)'/><ellipse cx='47.5' cy='72' rx='2.6' ry='4.2' transform='rotate(-12 47.5 72)'/><ellipse cx='53' cy='74' rx='2.6' ry='4.2' transform='rotate(34 53 74)'/><ellipse cx='45.5' cy='83' rx='2.8' ry='4.4' transform='rotate(-14 45.5 83)'/></g></svg>");
+  --pv-toile: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='44' height='52' viewBox='0 0 44 52'><g fill='none' stroke='%235a6fa8' stroke-opacity='.35' stroke-width='1' stroke-linecap='round'><path d='M12 44V14M12 34c-4-2-6-6-6-10M34 22V-4M34 48V40'/></g><g fill='%235a6fa8' fill-opacity='.3'><ellipse cx='12' cy='12' rx='1.8' ry='3'/><ellipse cx='10' cy='18' rx='1.8' ry='3' transform='rotate(-24 10 18)'/><ellipse cx='14' cy='20' rx='1.8' ry='3' transform='rotate(24 14 20)'/><ellipse cx='10.5' cy='26' rx='1.8' ry='3' transform='rotate(-24 10.5 26)'/><circle cx='34' cy='30' r='1.3'/><circle cx='26' cy='6' r='1'/><circle cx='40' cy='44' r='1'/></g></svg>");
+}
+
+/* ══ Bìa: phong bì par avion ══ */
+/* R2-CARDS-01: điện thoại xoay ngang -> bìa vừa chiều cao màn (tên khách + nút "Chạm để mở" không rơi khỏi màn) */
+.ic--v-provence .ic-env-btn { width: min(440px, calc(100vw - 32px), calc((100vh - 140px) * 10 / 7));   /* M2-CARDS-04: 92vw ở 320px = 294 > 288 vùng cuộn -> tràn ngang 3px */ aspect-ratio: 10 / 7; animation: ic-float 5s ease-in-out infinite; }
+.ic--v-provence .pv, .ic--v-provence .pv span, .ic--v-provence .pv-top span { position: absolute; display: block; }
+.ic--v-provence .pv { inset: 0; transform-style: preserve-3d; }
+.ic--v-provence .pv-flip { inset: 0; transform-style: preserve-3d; }
+.ic--v-provence .pv-front, .ic--v-provence .pv-back { inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.ic--v-provence .pv-front {
+  transform: rotateY(0deg) translateZ(.5px);
+  background: var(--pv-sprig) left 4% bottom 7% / auto 44% no-repeat, var(--pv-fibre), var(--ic-grain), linear-gradient(160deg, #fbf6ec, #f3eadb);
+  border: 9px solid; border-image: var(--pv-air) 9;
+  box-shadow: 0 1px 1px rgba(36, 48, 79, .12), 0 18px 34px -16px rgba(36, 48, 79, .45), 0 50px 80px -40px rgba(36, 48, 79, .5);
+}
+/* Nhãn PAR AVION */
+.ic--v-provence .pv-label {
+  left: 6%; top: 9%; padding: 5px 10px 6px; border: 1.5px solid var(--pv-blue); border-radius: 2px; transform: rotate(-3deg);
+  display: grid !important; gap: 1px; text-align: left; background: rgba(255, 253, 248, .6);
+}
+.ic--v-provence .pv-label b { font: 600 .875rem/1.1 var(--f-ui); letter-spacing: .2em; text-transform: uppercase; color: var(--pv-blue); }
+.ic--v-provence .pv-label small { font: italic 400 .9rem/1.1 var(--f-body); color: var(--pv-red); }
+/* Tem răng cưa đựng ảnh cặp đôi (mask răng cưa; bóng đổ đặt ở lớp ngoài để không bị mask cắt) */
+.ic--v-provence .pv-stamp { right: 6%; top: 8%; width: 23%; aspect-ratio: 5 / 6; transform: rotate(3deg); filter: drop-shadow(0 2px 2px rgba(36, 48, 79, .25)); }
+.ic--v-provence .pv-stamp-in {
+  inset: 0; border: 6px solid transparent; background: #fffdf8 border-box; overflow: hidden;
+  -webkit-mask: var(--pv-perf); mask: var(--pv-perf);
+}
+.ic--v-provence .pv-stamp-in > img, .ic--v-provence .pv-noimg { position: absolute; inset: 3px; width: calc(100% - 6px); height: calc(100% - 6px); object-fit: cover; }
+.ic--v-provence .pv-noimg { display: block; background: url(../../../img/pro/provence-stamp.svg) center / 140% no-repeat; }
+.ic--v-provence .pv-stamp-in::after { content: ""; position: absolute; inset: 3px; box-shadow: inset 0 0 0 1px rgba(36, 48, 79, .15), inset 0 0 18px rgba(36, 48, 79, .25); background: linear-gradient(transparent 55%, rgba(20, 28, 50, .45)); }
+.ic--v-provence .pv-stamp-cap { left: 8px; top: 7px; z-index: 1; font: 600 .5625rem/1 var(--f-ui); letter-spacing: .18em; text-transform: uppercase; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, .5); }
+.ic--v-provence .pv-stamp-val { right: 8px; bottom: 6px; z-index: 1; font: 600 .875rem/1 var(--f-head); color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, .5); }
+/* Dấu bưu điện + vạch hủy tem (SVG, chữ chạy theo cung) */
+.ic--v-provence .pv-pm { position: absolute; color: var(--pv-ink); opacity: .6; mix-blend-mode: multiply; overflow: visible; }
+.ic--v-provence .pv-front .pv-pm { right: 14%; top: 22%; width: 52%; transform: rotate(-9deg); }
+.ic--v-provence .pv-lines { left: 27%; right: 8%; bottom: 13%; height: 1px; background: repeating-linear-gradient(90deg, rgba(36, 48, 79, .35) 0 3px, transparent 3px 6px); }
+.ic--v-provence .ic-env-to { left: 27%; right: 8%; bottom: calc(13% + 8px); text-align: left; transform: translateZ(2px); }
+.ic--v-provence .ic-env-to small { font: italic 400 1rem/1.1 var(--f-body); letter-spacing: 0; text-transform: none; color: var(--pv-ochre-ink); }
+.ic--v-provence .ic-env-to b { font: 400 clamp(1.9rem, 8.4vw, 2.5rem)/1.05 var(--f-name); color: var(--pv-ink); padding-top: 2px; }
+.ic--long .pv ~ .ic-env-to b, .ic--v-provence.ic--long .ic-env-to b { font-size: clamp(1.55rem, 6.6vw, 2rem); }
+/* R2-CARDS-02: tên dài 2 dòng đẩy "Thân gửi" lên -> dấu bưu điện nhỏ lại, lên cao, lệch về giữa để không đè nhãn. */
+.ic--v-provence.ic--long .pv-front .pv-pm { top: 13%; right: 16%; width: 40%; }
+
+/* Mặt sau: thành trong (giấy lót) · thiệp màu nước · túi phong bì · nắp · dấu sáp */
+.ic--v-provence .pv-back { transform: rotateY(180deg) translateZ(.5px); opacity: 0; }
+/* WebKit đôi khi bỏ qua backface-visibility trong chuỗi 3D lồng nhau -> đổi mặt bằng opacity đúng lúc phong bì quay qua 90°. */
+.ic--v-provence.is-opening .pv-back { animation: v-provence-swap .01s linear .37s both reverse; }
+.ic--v-provence.is-opening .pv-front { animation: v-provence-swap .01s linear .37s both; }
+@keyframes v-provence-swap { from { opacity: 1; } to { opacity: 0; } }
+.ic--v-provence .pv-wall { inset: 0; background: var(--pv-toile) 0 0 / 30px 36px, #e9edf6; box-shadow: inset 0 0 0 1px rgba(36, 48, 79, .1); }
+.ic--v-provence .pv-insert {
+  left: 6%; right: 6%; top: 5%; bottom: 7%; z-index: 1; overflow: hidden;
+  background: var(--ic-grain), #fffdf8; box-shadow: 0 0 0 1px rgba(36, 48, 79, .08), 0 6px 14px -6px rgba(36, 48, 79, .3);
+  display: grid !important; place-content: start center; padding-top: 7%; text-align: center;
+  transition: transform .65s cubic-bezier(.2, .75, .25, 1) 1.2s;
+}
+.ic--v-provence .pv-wash { inset: -20% -10% auto -30%; height: 90%; background: url(../../../img/pro/provence-wash-blue.svg) center / contain no-repeat; opacity: .7; }
+.ic--v-provence .pv-insert-mono { position: relative !important; font: 400 3.2rem/1 var(--f-name); color: var(--pv-ink); }
+.ic--v-provence .pv-insert-mono i { font: italic 400 .45em var(--f-head); color: var(--pv-ochre-ink); margin: 0 .15em; }
+.ic--v-provence .pv-insert-sub { position: relative !important; margin-top: 4px; font: 600 .625rem/1.3 var(--f-ui); letter-spacing: .22em; text-transform: uppercase; color: var(--pv-ochre-ink); }
+.ic--v-provence .pv-pocket {
+  inset: 0; z-index: 2;
+  background: var(--pv-fibre), var(--ic-grain), linear-gradient(175deg, #f8f1e4, #efe5d3);
+  clip-path: polygon(0 0, 50% 55%, 100% 0, 100% 100%, 0 100%);
+}
+.ic--v-provence .pv-pocket::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top left, transparent 49.6%, rgba(36, 48, 79, .1) 50%, transparent 50.6%), linear-gradient(to top right, transparent 49.6%, rgba(36, 48, 79, .1) 50%, transparent 50.6%); }
+.ic--v-provence .pv-flap {
+  left: 0; right: 0; top: 0; height: 57%; z-index: 4; transform-origin: 50% 0; transform: perspective(700px) rotateX(0deg);
+  transition: transform .5s cubic-bezier(.45, 0, .25, 1) .85s, z-index 0s 1.07s;
+  filter: drop-shadow(0 3px 3px rgba(36, 48, 79, .18));
+}
+.ic--v-provence .pv-flap > span { inset: 0; clip-path: polygon(0 0, 100% 0, 54% 94%, 50% 100%, 46% 94%); }
+.ic--v-provence .pv-flap-out { background: var(--pv-fibre), var(--ic-grain), linear-gradient(180deg, #fbf6ec, #f1e7d6); transition: opacity 0s 1.07s; }
+.ic--v-provence .pv-flap-in { background: var(--pv-toile) 0 0 / 30px 36px, #e9edf6; }
+.ic--v-provence .pv-flap-out { z-index: 1; }
+.ic--v-provence .pv-seal {
+  left: 50%; top: 57%; z-index: 5; width: 74px; height: 74px; margin: -40px 0 0 -37px;
+  background: url(../../../img/pro/provence-seal.svg) center / contain no-repeat; filter: drop-shadow(0 4px 4px rgba(20, 28, 50, .35));
+  transition: transform .35s cubic-bezier(.5, 0, .7, .4) .7s, opacity .25s .8s;
+}
+
+/* Mở: nhấc + lật 3D -> gỡ sáp -> mở nắp -> rút thiệp */
+.ic--v-provence.is-opening .ic-env-btn { animation: none; }
+.ic--v-provence.is-opening .pv-flip { animation: v-provence-flip .8s cubic-bezier(.5, 0, .25, 1) both; }
+.ic--v-provence.is-opening .pv-seal { transform: translate(30px, -46px) rotate(28deg) scale(1.15); opacity: 0; }
+.ic--v-provence.is-opening .pv-flap { transform: perspective(700px) rotateX(180deg); z-index: 0; }
+.ic--v-provence.is-opening .pv-flap-out { opacity: 0; }
+.ic--v-provence.is-opening .pv-insert { transform: translateY(-64%); }
+.ic--v-provence.is-opening .ic-env { animation-name: v-provence-env-out; animation-duration: .36s; }
+@keyframes v-provence-flip {
+  0% { transform: none; }
+  45% { transform: translateZ(70px) rotateY(80deg) rotateZ(-3deg); }
+  100% { transform: rotateY(180deg); }
+}
+@keyframes v-provence-env-out { to { opacity: 0; transform: translateY(-24px) scale(1.05); } }
+
+/* ══ Thiệp mở: bưu thiếp màu nước ══ */
+.ic--v-provence .ic-card {
+  width: min(480px, 100%); flex-shrink: 0; padding: 0 40px 30px; border-radius: 2px; overflow: hidden;
+  background: var(--pv-fibre), var(--ic-grain), #fffdf8;
+  box-shadow: 0 1px 1px rgba(36, 48, 79, .1), 0 20px 40px -18px rgba(36, 48, 79, .4), 0 60px 90px -50px rgba(36, 48, 79, .55);
+}
+.ic--v-provence.is-open .ic-card { animation: v-provence-card-in .9s var(--ic-ease) both; }
+@keyframes v-provence-card-in { from { opacity: 0; transform: translateY(-40px) scale(.94) rotate(-1.5deg); } to { opacity: 1; transform: none; } }
+.ic--v-provence .pv-deco > span { position: absolute; display: block; pointer-events: none; }
+.ic--v-provence .pv-frame { inset: 0; border: 7px solid; border-image: var(--pv-air) 7; }
+.ic--v-provence .pv-frame::after { content: ""; position: absolute; inset: 9px; border: 1px solid rgba(90, 111, 168, .35); }
+.ic--v-provence .pv-w { background: center / contain no-repeat; }
+.ic--v-provence .pv-w1 { left: -34%; top: -6%; width: 100%; aspect-ratio: 600 / 420; background-image: url(../../../img/pro/provence-wash-blue.svg); opacity: .55; }
+.ic--v-provence .pv-w2 { right: -40%; bottom: -5%; width: 105%; aspect-ratio: 600 / 420; background-image: url(../../../img/pro/provence-wash-ochre.svg); opacity: .5; }
+.ic--v-provence .pv-w3 { left: -45%; top: 46%; width: 80%; aspect-ratio: 600 / 420; background-image: url(../../../img/pro/provence-wash-sage.svg); opacity: .4; }
+
+/* Tem ảnh lớn + dấu bưu điện đóng đè ở đầu thiệp (nghiêng theo chuột/cảm biến) */
+.ic--v-provence .ic-card > .pv-top { position: relative; height: 252px; margin: 0 -40px; perspective: 800px; }
+.ic--v-provence .pv-top .pv-stamp--lg {
+  position: absolute; left: 50%; top: 40px; right: auto; width: 170px; margin-left: -85px;
+  transform: rotate(-3deg) rotateY(calc(var(--tx) * 12deg)) rotateX(calc(var(--ty) * -8deg));
+  filter: drop-shadow(0 2px 2px rgba(36, 48, 79, .2)) drop-shadow(0 14px 16px rgba(36, 48, 79, .22));
+}
+.ic--v-provence .pv-stamp--lg .pv-stamp-in { border-width: 9px; -webkit-mask: radial-gradient(circle, #0000 0 5.2px, #000 5.9px) -8.5px -8.5px / 17px 17px round border-box, linear-gradient(#000 0 0) padding-box;
+  mask: radial-gradient(circle, #0000 0 5.2px, #000 5.9px) -8.5px -8.5px / 17px 17px round border-box, linear-gradient(#000 0 0) padding-box; }
+.ic--v-provence .pv-stamp--lg .pv-stamp-in > img, .ic--v-provence .pv-stamp--lg .pv-noimg { inset: 5px; width: calc(100% - 10px); height: calc(100% - 10px); }
+.ic--v-provence .pv-stamp--lg .pv-stamp-in::after { inset: 5px; }
+.ic--v-provence .pv-stamp--lg .pv-stamp-cap { left: 14px; top: 13px; font-size: .6875rem; }
+.ic--v-provence .pv-stamp--lg .pv-stamp-val { right: 14px; bottom: 12px; font-size: 1.25rem; }
+.ic--v-provence .pv-top .pv-pm { z-index: 2; left: calc(50% - 168px); top: 150px; width: 230px; transform: rotate(-8deg); opacity: .62; }
+.ic--v-provence.is-open .pv-top .pv-stamp--lg { animation: v-provence-stick .8s cubic-bezier(.3, 1.25, .5, 1) .2s both; }
+.ic--v-provence.is-open .pv-top .pv-pm { animation: v-provence-thunk .5s cubic-bezier(.5, 0, .3, 1.4) .85s both; }
+@keyframes v-provence-stick { from { opacity: 0; transform: translateY(-30px) rotate(-12deg) scale(1.15); } to { opacity: 1; transform: rotate(-3deg); } }
+@keyframes v-provence-thunk { from { opacity: 0; transform: rotate(-8deg) scale(1.35); } to { opacity: .62; transform: rotate(-8deg); } }
+
+/* Chữ */
+.ic--v-provence .ic-mono { display: none; }
+.ic--v-provence .ic-greet { font: 600 .875rem/1.4 var(--f-ui); letter-spacing: .22em; color: var(--pv-ochre-ink); }
+.ic--v-provence .ic-card .ic-name { margin: 6px 0 12px; font: 400 clamp(3rem, 13vw, 3.6rem)/1.05 var(--f-name); color: var(--pv-blue); }
+.ic--v-provence.ic--long .ic-card .ic-name { font-size: clamp(2.4rem, 10vw, 3.2rem); }
+.ic--v-provence .ic-text { font: italic 400 1.15rem/1.6 var(--f-body); color: #2f3a58; }
+.ic--v-provence .ic-rule { width: 150px; height: 20px; margin: 24px auto 16px; background: var(--pv-ochre);
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 30'><path d='M4 22C40 6 70 26 108 14S170 2 200 14s30 6 36 0' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'/><path d='M116 12c3-4 8-4 8 0s-6 6-8 0z' fill='black'/></svg>") center / contain no-repeat;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 30'><path d='M4 22C40 6 70 26 108 14S170 2 200 14s30 6 36 0' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'/><path d='M116 12c3-4 8-4 8 0s-6 6-8 0z' fill='black'/></svg>") center / contain no-repeat; }
+.ic--v-provence .ic-rule::before, .ic--v-provence .ic-rule::after, .ic--v-provence .ic-rule span { display: none; }
+.ic--v-provence .ic-label { font: 600 .875rem/1.4 var(--f-ui); letter-spacing: .22em; color: var(--pv-ochre-ink); }
+.ic--v-provence .ic-couple { margin: 4px 0 0 !important; font: 400 clamp(2.5rem, 10.5vw, 3.2rem)/1.1 var(--f-name); color: var(--pv-ink); gap: 0 12px; }
+.ic--v-provence .ic-couple i { font: italic 400 .5em var(--f-head); color: var(--pv-ochre-ink); }
+.ic--v-provence .ic-date { position: relative; margin: 20px auto 4px; padding: 16px 0 14px; max-width: 300px;
+  border-top: 1px solid rgba(36, 48, 79, .22); border-bottom: 1px solid rgba(36, 48, 79, .22); }
+.ic--v-provence .ic-wd { font: 600 1rem/1.4 var(--f-ui); color: var(--pv-blue); }
+.ic--v-provence .ic-dmy { font: 400 2.6rem/1 var(--f-head); color: var(--pv-ink); gap: 16px; margin: 8px 0 6px !important; }
+.ic--v-provence .ic-dmy i { width: 6px; height: 6px; border-radius: 50%; background: var(--pv-ochre); opacity: .8; }
+.ic--v-provence .ic-lunar { font: italic 400 1.05rem/1.4 var(--f-body); color: var(--muted); }
+.ic--v-provence .ic-place { border-top: 0; margin-top: 18px; padding-top: 0; }
+.ic--v-provence .ic-place::before { content: ""; justify-self: center; width: 18px; height: 24px; margin-bottom: 4px; background: var(--pv-red);
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 32'><path d='M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19.5 12 31 12 31s10.5-11.5 10.5-19.6C22.5 5.6 18 1 12 1zm0 14.2a3.9 3.9 0 1 1 0-7.8 3.9 3.9 0 0 1 0 7.8z'/></svg>") center / contain no-repeat;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 32'><path d='M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19.5 12 31 12 31s10.5-11.5 10.5-19.6C22.5 5.6 18 1 12 1zm0 14.2a3.9 3.9 0 1 1 0-7.8 3.9 3.9 0 0 1 0 7.8z'/></svg>") center / contain no-repeat; }
+.ic--v-provence .ic-place-title { font: 600 1rem/1.4 var(--f-ui); color: var(--pv-blue); }
+.ic--v-provence .ic-place-name { font: 600 1.3rem/1.3 var(--f-head); color: var(--pv-ink); }
+.ic--v-provence .ic-place-addr { font: 400 1.02rem/1.45 var(--f-body); color: var(--muted); }
+html .ic.ic--v-provence .ic-link { color: var(--pv-blue); font-family: var(--f-ui); }
+
+/* Trả lời + nút */
+.ic--v-provence .ic-rsvp { border-top: 0; margin-top: 24px; padding-top: 22px; background: repeating-linear-gradient(90deg, rgba(36, 48, 79, .3) 0 4px, transparent 4px 8px) top / 100% 1px no-repeat; }
+.ic--v-provence .ic-q { font: italic 400 1.2rem/1.45 var(--f-body); }
+html .ic.ic--v-provence .ic-btn { border-radius: 2px; font: 600 1rem/1.2 var(--f-ui); letter-spacing: .04em; }
+html .ic.ic--v-provence .ic-btn-yes { background: var(--pv-blue); border-color: var(--pv-blue); color: #fff; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 8px 18px -10px rgba(36, 48, 79, .7); }
+html .ic.ic--v-provence .ic-btn-yes:hover:not(:disabled) { background: #4a5e96; }
+html .ic.ic--v-provence .ic-btn-no { color: var(--pv-ink); border-color: rgba(36, 48, 79, .45); background: rgba(255, 253, 248, .7); }
+html .ic.ic--v-provence .ic-enter { border-radius: 2px; font-family: var(--f-ui); color: var(--pv-ink); border-color: rgba(36, 48, 79, .35); background: rgba(255, 253, 248, .7); }
+#thiep-moi.ic--v-provence .ic-msg textarea { background: repeating-linear-gradient(transparent 0 29px, rgba(36, 48, 79, .16) 29px 30px), rgba(255, 253, 248, .85); line-height: 30px; padding: 0 8px; border: 1px solid rgba(36, 48, 79, .25); border-radius: 2px; color: var(--pv-ink); font: 1.1rem/30px var(--f-body); }
+#thiep-moi.ic--v-provence .ic-stepper input, #thiep-moi.ic--v-provence .ic-stepper button { background: rgba(255, 253, 248, .85); color: var(--pv-ink); border-color: rgba(36, 48, 79, .3); }
+.ic--v-provence .ic-msg, .ic--v-provence .ic-count-label { color: #4b5168; }
+.ic--v-provence .ic-done-title { font: 400 2.6rem/1.1 var(--f-name); color: var(--pv-blue); }
+.ic--v-provence .ic-form-title { font: italic 400 1.2rem/1.4 var(--f-body); }
+
+/* Cuối thiệp: dòng bưu chính */
+.ic--v-provence .pv-end { position: relative; margin-top: 22px; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding-top: 12px; border-top: 1px solid rgba(36, 48, 79, .15); }
+.ic--v-provence .pv-end-air { font: 400 .875rem/1.2 var(--f-body); font-style: italic; color: var(--muted); }
+.ic--v-provence .pv-end-air b { font: 600 .8125rem/1 var(--f-ui); font-style: normal; letter-spacing: .18em; text-transform: uppercase; color: var(--pv-red); }
+.ic--v-provence .pv-end-mono { font: 400 1.9rem/1 var(--f-name); color: var(--pv-ink); }
+.ic--v-provence .pv-end-mono i { font: italic .5em var(--f-head); color: var(--pv-ochre-ink); margin: 0 .12em; }
+
+@media (max-width: 420px) {
+  .ic--v-provence .ic-card { padding: 0 24px 26px; }
+  .ic--v-provence .ic-card > .pv-top { margin: 0 -24px; height: 232px; }
+  .ic--v-provence .pv-top .pv-stamp--lg { width: 150px; margin-left: -75px; top: 36px; }
+  .ic--v-provence .pv-top .pv-pm { left: calc(50% - 150px); top: 136px; width: 200px; }
+  .ic--v-provence .ic-dmy { font-size: 2.2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ic--v-provence .pv-top .pv-stamp--lg { transform: rotate(-3deg); }
+}
+
+/* R2-CARDS-01: xoay ngang bìa vẫn rộng ~350px -> giữ tên chữ viết tay dễ đọc (quy tắc chung co về 1rem quá nhỏ). */
+@media (max-height: 500px) {
+  .ic.ic--v-provence .ic-env-to b { font-size: 1.5rem; line-height: 1.1; }
+}

@@ -1,0 +1,247 @@
+/* Thiệp VIP "v-ngoctrai" — HỘP NGỌC TRAI (đi cùng giao diện VIP ngoctrai). Hộp lụa trắng 3D có nắp và thành hộp thật (thành gập -90°),
+   vòng ngọc trai ôm chữ lồng, chỉ bạc đôi. Chạm -> nắp bật lên quanh bản lề sau (122°) lộ lòng hộp lót lụa xám ngọc, tấm thiệp nhỏ
+   nằm trong vòng chuỗi ngọc nhấc lên quay về phía người xem -> thiệp mở: giấy ngà ánh xà cừ (đổi theo độ nghiêng), chuỗi ngọc
+   võng ôm mép trên + mặt dây giọt ngọc. Màu/phông riêng (không phụ thuộc giao diện). Ngọc trai = SVG tự vẽ (data-URI).
+   Phông OFL: Noto Serif Display 300, Manrope 300/500 (assets/fonts/pro). */
+@font-face { font-family: 'Noto Serif Display'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/pro/NotoSerifDisplay-200i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Noto Serif Display'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/pro/NotoSerifDisplay-200i-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Noto Serif Display'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/pro/NotoSerifDisplay-200i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Noto Serif Display'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/NotoSerifDisplay-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Noto Serif Display'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/NotoSerifDisplay-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Noto Serif Display'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url(../../../fonts/NotoSerifDisplay-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Manrope'; font-style: normal; font-weight: 300 500; font-display: swap;
+  src: url(../../../fonts/pro/Manrope-300-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Manrope'; font-style: normal; font-weight: 300 500; font-display: swap;
+  src: url(../../../fonts/pro/Manrope-300-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Manrope'; font-style: normal; font-weight: 300 500; font-display: swap;
+  src: url(../../../fonts/pro/Manrope-300-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+.ic--v-ngoctrai.ic {
+  --vnt-ring: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><defs><radialGradient id='g' cx='.4' cy='.36' r='.68' fx='.34' fy='.28'><stop offset='0' stop-color='%23fff'/><stop offset='.3' stop-color='%23f8f6f2'/><stop offset='.62' stop-color='%23e9e4e6'/><stop offset='.84' stop-color='%23cfccd6'/><stop offset='1' stop-color='%23a9a8b3'/></radialGradient></defs><circle cx='60' cy='60' r='52' fill='none' stroke='%23aab0b8' stroke-width='.5'/><circle cx='60.0' cy='9.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='60.0' cy='8.0' r='4.60' fill='url(%23g)'/><circle cx='70.1' cy='10.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='70.1' cy='9.0' r='4.60' fill='url(%23g)'/><circle cx='79.9' cy='13.2' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='79.9' cy='12.0' r='4.60' fill='url(%23g)'/><circle cx='88.9' cy='18.1' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='88.9' cy='16.8' r='4.60' fill='url(%23g)'/><circle cx='96.8' cy='24.5' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='96.8' cy='23.2' r='4.60' fill='url(%23g)'/><circle cx='103.2' cy='32.4' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='103.2' cy='31.1' r='4.60' fill='url(%23g)'/><circle cx='108.0' cy='41.4' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='108.0' cy='40.1' r='4.60' fill='url(%23g)'/><circle cx='111.0' cy='51.1' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='111.0' cy='49.9' r='4.60' fill='url(%23g)'/><circle cx='112.0' cy='61.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='112.0' cy='60.0' r='4.60' fill='url(%23g)'/><circle cx='111.0' cy='71.4' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='111.0' cy='70.1' r='4.60' fill='url(%23g)'/><circle cx='108.0' cy='81.2' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='108.0' cy='79.9' r='4.60' fill='url(%23g)'/><circle cx='103.2' cy='90.2' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='103.2' cy='88.9' r='4.60' fill='url(%23g)'/><circle cx='96.8' cy='98.1' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='96.8' cy='96.8' r='4.60' fill='url(%23g)'/><circle cx='88.9' cy='104.5' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='88.9' cy='103.2' r='4.60' fill='url(%23g)'/><circle cx='79.9' cy='109.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='79.9' cy='108.0' r='4.60' fill='url(%23g)'/><circle cx='70.1' cy='112.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='70.1' cy='111.0' r='4.60' fill='url(%23g)'/><circle cx='60.0' cy='113.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='60.0' cy='112.0' r='4.60' fill='url(%23g)'/><circle cx='49.9' cy='112.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='49.9' cy='111.0' r='4.60' fill='url(%23g)'/><circle cx='40.1' cy='109.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='40.1' cy='108.0' r='4.60' fill='url(%23g)'/><circle cx='31.1' cy='104.5' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='31.1' cy='103.2' r='4.60' fill='url(%23g)'/><circle cx='23.2' cy='98.1' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='23.2' cy='96.8' r='4.60' fill='url(%23g)'/><circle cx='16.8' cy='90.2' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='16.8' cy='88.9' r='4.60' fill='url(%23g)'/><circle cx='12.0' cy='81.2' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='12.0' cy='79.9' r='4.60' fill='url(%23g)'/><circle cx='9.0' cy='71.4' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='9.0' cy='70.1' r='4.60' fill='url(%23g)'/><circle cx='8.0' cy='61.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='8.0' cy='60.0' r='4.60' fill='url(%23g)'/><circle cx='9.0' cy='51.1' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='9.0' cy='49.9' r='4.60' fill='url(%23g)'/><circle cx='12.0' cy='41.4' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='12.0' cy='40.1' r='4.60' fill='url(%23g)'/><circle cx='16.8' cy='32.4' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='16.8' cy='31.1' r='4.60' fill='url(%23g)'/><circle cx='23.2' cy='24.5' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='23.2' cy='23.2' r='4.60' fill='url(%23g)'/><circle cx='31.1' cy='18.1' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='31.1' cy='16.8' r='4.60' fill='url(%23g)'/><circle cx='40.1' cy='13.2' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='40.1' cy='12.0' r='4.60' fill='url(%23g)'/><circle cx='49.9' cy='10.3' r='4.60' fill='%23000' fill-opacity='.13'/><circle cx='49.9' cy='9.0' r='4.60' fill='url(%23g)'/></svg>");
+  --vnt-swag: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 64'><defs><radialGradient id='g' cx='.4' cy='.36' r='.68' fx='.34' fy='.28'><stop offset='0' stop-color='%23fff'/><stop offset='.3' stop-color='%23f8f6f2'/><stop offset='.62' stop-color='%23e9e4e6'/><stop offset='.84' stop-color='%23cfccd6'/><stop offset='1' stop-color='%23a9a8b3'/></radialGradient></defs><path d='M10 6Q200 74 390 6' fill='none' stroke='%23aab0b8' stroke-width='.6'/><circle cx='10.9' cy='7.6' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='10.9' cy='6.3' r='4.40' fill='url(%23g)'/><circle cx='20.4' cy='10.9' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='20.4' cy='9.6' r='4.40' fill='url(%23g)'/><circle cx='29.9' cy='14.0' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='29.9' cy='12.8' r='4.40' fill='url(%23g)'/><circle cx='39.5' cy='17.0' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='39.5' cy='15.7' r='4.40' fill='url(%23g)'/><circle cx='49.0' cy='19.7' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='49.0' cy='18.5' r='4.40' fill='url(%23g)'/><circle cx='58.5' cy='22.4' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='58.5' cy='21.1' r='4.40' fill='url(%23g)'/><circle cx='68.0' cy='24.8' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='68.0' cy='23.6' r='4.40' fill='url(%23g)'/><circle cx='77.5' cy='27.1' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='77.5' cy='25.9' r='4.40' fill='url(%23g)'/><circle cx='87.0' cy='29.2' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='87.0' cy='28.0' r='4.40' fill='url(%23g)'/><circle cx='96.5' cy='31.1' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='96.5' cy='29.9' r='4.40' fill='url(%23g)'/><circle cx='106.0' cy='32.9' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='106.0' cy='31.7' r='4.40' fill='url(%23g)'/><circle cx='115.5' cy='34.5' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='115.5' cy='33.3' r='4.40' fill='url(%23g)'/><circle cx='125.0' cy='35.9' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='125.0' cy='34.7' r='4.40' fill='url(%23g)'/><circle cx='134.4' cy='37.2' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='134.4' cy='36.0' r='4.40' fill='url(%23g)'/><circle cx='143.9' cy='38.3' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='143.9' cy='37.0' r='4.40' fill='url(%23g)'/><circle cx='153.4' cy='39.2' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='153.4' cy='38.0' r='4.40' fill='url(%23g)'/><circle cx='162.9' cy='39.9' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='162.9' cy='38.7' r='4.40' fill='url(%23g)'/><circle cx='172.4' cy='40.5' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='172.4' cy='39.3' r='4.40' fill='url(%23g)'/><circle cx='181.9' cy='40.9' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='181.9' cy='39.7' r='4.40' fill='url(%23g)'/><circle cx='191.4' cy='41.2' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='191.4' cy='39.9' r='4.40' fill='url(%23g)'/><circle cx='200.9' cy='41.2' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='200.9' cy='40.0' r='4.40' fill='url(%23g)'/><circle cx='210.4' cy='41.1' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='210.4' cy='39.9' r='4.40' fill='url(%23g)'/><circle cx='219.9' cy='40.9' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='219.9' cy='39.6' r='4.40' fill='url(%23g)'/><circle cx='229.4' cy='40.4' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='229.4' cy='39.2' r='4.40' fill='url(%23g)'/><circle cx='238.9' cy='39.8' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='238.9' cy='38.6' r='4.40' fill='url(%23g)'/><circle cx='248.4' cy='39.0' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='248.4' cy='37.8' r='4.40' fill='url(%23g)'/><circle cx='257.9' cy='38.1' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='257.9' cy='36.8' r='4.40' fill='url(%23g)'/><circle cx='267.4' cy='36.9' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='267.4' cy='35.7' r='4.40' fill='url(%23g)'/><circle cx='276.9' cy='35.7' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='276.9' cy='34.4' r='4.40' fill='url(%23g)'/><circle cx='286.4' cy='34.2' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='286.4' cy='33.0' r='4.40' fill='url(%23g)'/><circle cx='295.9' cy='32.6' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='295.9' cy='31.3' r='4.40' fill='url(%23g)'/><circle cx='305.4' cy='30.8' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='305.4' cy='29.5' r='4.40' fill='url(%23g)'/><circle cx='314.9' cy='28.8' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='314.9' cy='27.6' r='4.40' fill='url(%23g)'/><circle cx='324.4' cy='26.6' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='324.4' cy='25.4' r='4.40' fill='url(%23g)'/><circle cx='333.9' cy='24.3' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='333.9' cy='23.1' r='4.40' fill='url(%23g)'/><circle cx='343.4' cy='21.9' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='343.4' cy='20.6' r='4.40' fill='url(%23g)'/><circle cx='352.9' cy='19.2' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='352.9' cy='18.0' r='4.40' fill='url(%23g)'/><circle cx='362.4' cy='16.4' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='362.4' cy='15.1' r='4.40' fill='url(%23g)'/><circle cx='371.9' cy='13.4' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='371.9' cy='12.2' r='4.40' fill='url(%23g)'/><circle cx='381.4' cy='10.2' r='4.40' fill='%23000' fill-opacity='.13'/><circle cx='381.4' cy='9.0' r='4.40' fill='url(%23g)'/><path d='M200.0 40 v9.680000000000001' stroke='%23aab0b8' stroke-width='.8'/><circle cx='200.0' cy='59.3' r='7.48' fill='%23000' fill-opacity='.13'/><circle cx='200.0' cy='57.2' r='7.48' fill='url(%23g)'/><circle cx='10.0' cy='7.4' r='4.84' fill='%23000' fill-opacity='.13'/><circle cx='10.0' cy='6.0' r='4.84' fill='url(%23g)'/><circle cx='390.0' cy='7.4' r='4.84' fill='%23000' fill-opacity='.13'/><circle cx='390.0' cy='6.0' r='4.84' fill='url(%23g)'/></svg>");
+  --vnt-oval: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'><defs><radialGradient id='g' cx='.4' cy='.36' r='.68' fx='.34' fy='.28'><stop offset='0' stop-color='%23fff'/><stop offset='.3' stop-color='%23f8f6f2'/><stop offset='.62' stop-color='%23e9e4e6'/><stop offset='.84' stop-color='%23cfccd6'/><stop offset='1' stop-color='%23a9a8b3'/></radialGradient></defs><circle cx='193.8' cy='127.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='193.8' cy='126.2' r='4.20' fill='url(%23g)'/><circle cx='193.5' cy='136.1' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='193.5' cy='134.9' r='4.20' fill='url(%23g)'/><circle cx='192.6' cy='144.8' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='192.6' cy='143.6' r='4.20' fill='url(%23g)'/><circle cx='191.1' cy='154.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='191.1' cy='153.3' r='4.20' fill='url(%23g)'/><circle cx='188.9' cy='164.1' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='188.9' cy='162.9' r='4.20' fill='url(%23g)'/><circle cx='186.1' cy='173.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='186.1' cy='172.2' r='4.20' fill='url(%23g)'/><circle cx='182.7' cy='182.3' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='182.7' cy='181.1' r='4.20' fill='url(%23g)'/><circle cx='178.7' cy='190.9' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='178.7' cy='189.7' r='4.20' fill='url(%23g)'/><circle cx='174.1' cy='199.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='174.1' cy='197.8' r='4.20' fill='url(%23g)'/><circle cx='169.0' cy='206.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='169.0' cy='205.4' r='4.20' fill='url(%23g)'/><circle cx='163.5' cy='213.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='163.5' cy='212.4' r='4.20' fill='url(%23g)'/><circle cx='157.5' cy='220.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='157.5' cy='218.9' r='4.20' fill='url(%23g)'/><circle cx='150.3' cy='226.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='150.3' cy='225.3' r='4.20' fill='url(%23g)'/><circle cx='142.6' cy='232.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='142.6' cy='230.9' r='4.20' fill='url(%23g)'/><circle cx='134.5' cy='236.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='134.5' cy='235.5' r='4.20' fill='url(%23g)'/><circle cx='126.2' cy='240.3' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='126.2' cy='239.1' r='4.20' fill='url(%23g)'/><circle cx='117.6' cy='242.9' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='117.6' cy='241.7' r='4.20' fill='url(%23g)'/><circle cx='108.8' cy='244.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='108.8' cy='243.3' r='4.20' fill='url(%23g)'/><circle cx='100.0' cy='245.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='100.0' cy='243.8' r='4.20' fill='url(%23g)'/><circle cx='91.2' cy='244.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='91.2' cy='243.3' r='4.20' fill='url(%23g)'/><circle cx='82.4' cy='242.9' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='82.4' cy='241.7' r='4.20' fill='url(%23g)'/><circle cx='73.8' cy='240.3' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='73.8' cy='239.1' r='4.20' fill='url(%23g)'/><circle cx='65.5' cy='236.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='65.5' cy='235.5' r='4.20' fill='url(%23g)'/><circle cx='57.4' cy='232.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='57.4' cy='230.9' r='4.20' fill='url(%23g)'/><circle cx='49.7' cy='226.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='49.7' cy='225.3' r='4.20' fill='url(%23g)'/><circle cx='42.5' cy='220.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='42.5' cy='218.9' r='4.20' fill='url(%23g)'/><circle cx='36.5' cy='213.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='36.5' cy='212.4' r='4.20' fill='url(%23g)'/><circle cx='31.0' cy='206.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='31.0' cy='205.4' r='4.20' fill='url(%23g)'/><circle cx='25.9' cy='199.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='25.9' cy='197.8' r='4.20' fill='url(%23g)'/><circle cx='21.3' cy='190.9' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='21.3' cy='189.7' r='4.20' fill='url(%23g)'/><circle cx='17.3' cy='182.3' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='17.3' cy='181.1' r='4.20' fill='url(%23g)'/><circle cx='13.9' cy='173.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='13.9' cy='172.2' r='4.20' fill='url(%23g)'/><circle cx='11.1' cy='164.1' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='11.1' cy='162.9' r='4.20' fill='url(%23g)'/><circle cx='8.9' cy='154.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='8.9' cy='153.3' r='4.20' fill='url(%23g)'/><circle cx='7.4' cy='144.8' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='7.4' cy='143.6' r='4.20' fill='url(%23g)'/><circle cx='6.5' cy='136.1' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='6.5' cy='134.9' r='4.20' fill='url(%23g)'/><circle cx='6.2' cy='127.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='6.2' cy='126.2' r='4.20' fill='url(%23g)'/><circle cx='6.4' cy='118.7' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='6.4' cy='117.5' r='4.20' fill='url(%23g)'/><circle cx='7.1' cy='110.1' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='7.1' cy='108.9' r='4.20' fill='url(%23g)'/><circle cx='8.2' cy='101.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='8.2' cy='100.3' r='4.20' fill='url(%23g)'/><circle cx='10.2' cy='91.8' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='10.2' cy='90.7' r='4.20' fill='url(%23g)'/><circle cx='12.8' cy='82.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='12.8' cy='81.3' r='4.20' fill='url(%23g)'/><circle cx='16.0' cy='73.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='16.0' cy='72.2' r='4.20' fill='url(%23g)'/><circle cx='19.8' cy='64.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='19.8' cy='63.5' r='4.20' fill='url(%23g)'/><circle cx='24.1' cy='56.3' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='24.1' cy='55.2' r='4.20' fill='url(%23g)'/><circle cx='29.0' cy='48.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='29.0' cy='47.4' r='4.20' fill='url(%23g)'/><circle cx='34.4' cy='41.3' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='34.4' cy='40.1' r='4.20' fill='url(%23g)'/><circle cx='40.2' cy='34.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='40.2' cy='33.5' r='4.20' fill='url(%23g)'/><circle cx='46.5' cy='28.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='46.5' cy='27.4' r='4.20' fill='url(%23g)'/><circle cx='54.0' cy='22.7' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='54.0' cy='21.5' r='4.20' fill='url(%23g)'/><circle cx='61.8' cy='17.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='61.8' cy='16.5' r='4.20' fill='url(%23g)'/><circle cx='70.1' cy='13.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='70.1' cy='12.4' r='4.20' fill='url(%23g)'/><circle cx='78.6' cy='10.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='78.6' cy='9.3' r='4.20' fill='url(%23g)'/><circle cx='87.3' cy='8.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='87.3' cy='7.3' r='4.20' fill='url(%23g)'/><circle cx='96.1' cy='7.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='96.1' cy='6.3' r='4.20' fill='url(%23g)'/><circle cx='104.9' cy='7.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='104.9' cy='6.4' r='4.20' fill='url(%23g)'/><circle cx='113.7' cy='8.7' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='113.7' cy='7.5' r='4.20' fill='url(%23g)'/><circle cx='122.4' cy='10.8' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='122.4' cy='9.6' r='4.20' fill='url(%23g)'/><circle cx='130.8' cy='14.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='130.8' cy='12.8' r='4.20' fill='url(%23g)'/><circle cx='139.0' cy='18.2' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='139.0' cy='17.0' r='4.20' fill='url(%23g)'/><circle cx='146.9' cy='23.3' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='146.9' cy='22.1' r='4.20' fill='url(%23g)'/><circle cx='154.3' cy='29.3' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='154.3' cy='28.2' r='4.20' fill='url(%23g)'/><circle cx='160.5' cy='35.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='160.5' cy='34.3' r='4.20' fill='url(%23g)'/><circle cx='166.3' cy='42.2' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='166.3' cy='41.0' r='4.20' fill='url(%23g)'/><circle cx='171.6' cy='49.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='171.6' cy='48.3' r='4.20' fill='url(%23g)'/><circle cx='176.5' cy='57.4' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='176.5' cy='56.2' r='4.20' fill='url(%23g)'/><circle cx='180.7' cy='65.7' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='180.7' cy='64.5' r='4.20' fill='url(%23g)'/><circle cx='184.4' cy='74.5' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='184.4' cy='73.3' r='4.20' fill='url(%23g)'/><circle cx='187.6' cy='83.6' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='187.6' cy='82.4' r='4.20' fill='url(%23g)'/><circle cx='190.1' cy='93.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='190.1' cy='91.9' r='4.20' fill='url(%23g)'/><circle cx='191.9' cy='102.7' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='191.9' cy='101.5' r='4.20' fill='url(%23g)'/><circle cx='193.1' cy='111.3' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='193.1' cy='110.1' r='4.20' fill='url(%23g)'/><circle cx='193.7' cy='120.0' r='4.20' fill='%23000' fill-opacity='.13'/><circle cx='193.7' cy='118.8' r='4.20' fill='url(%23g)'/></svg>");
+  --vnt-line: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 79.60000000000001 13'><defs><radialGradient id='g' cx='.4' cy='.36' r='.68' fx='.34' fy='.28'><stop offset='0' stop-color='%23fff'/><stop offset='.3' stop-color='%23f8f6f2'/><stop offset='.62' stop-color='%23e9e4e6'/><stop offset='.84' stop-color='%23cfccd6'/><stop offset='1' stop-color='%23a9a8b3'/></radialGradient></defs><circle cx='6.0' cy='6.7' r='2.40' fill='%23000' fill-opacity='.13'/><circle cx='6.0' cy='6.0' r='2.40' fill='url(%23g)'/><circle cx='14.4' cy='6.8' r='2.80' fill='%23000' fill-opacity='.13'/><circle cx='14.4' cy='6.0' r='2.80' fill='url(%23g)'/><circle cx='22.8' cy='6.9' r='3.20' fill='%23000' fill-opacity='.13'/><circle cx='22.8' cy='6.0' r='3.20' fill='url(%23g)'/><circle cx='31.2' cy='7.0' r='3.60' fill='%23000' fill-opacity='.13'/><circle cx='31.2' cy='6.0' r='3.60' fill='url(%23g)'/><circle cx='39.6' cy='7.1' r='4.00' fill='%23000' fill-opacity='.13'/><circle cx='39.6' cy='6.0' r='4.00' fill='url(%23g)'/><circle cx='48.0' cy='7.0' r='3.60' fill='%23000' fill-opacity='.13'/><circle cx='48.0' cy='6.0' r='3.60' fill='url(%23g)'/><circle cx='56.4' cy='6.9' r='3.20' fill='%23000' fill-opacity='.13'/><circle cx='56.4' cy='6.0' r='3.20' fill='url(%23g)'/><circle cx='64.8' cy='6.8' r='2.80' fill='%23000' fill-opacity='.13'/><circle cx='64.8' cy='6.0' r='2.80' fill='url(%23g)'/><circle cx='73.2' cy='6.7' r='2.40' fill='%23000' fill-opacity='.13'/><circle cx='73.2' cy='6.0' r='2.40' fill='url(%23g)'/></svg>");
+  --vnt-pearl: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 23'><defs><radialGradient id='g' cx='.4' cy='.36' r='.68' fx='.34' fy='.28'><stop offset='0' stop-color='%23fff'/><stop offset='.3' stop-color='%23f8f6f2'/><stop offset='.62' stop-color='%23e9e4e6'/><stop offset='.84' stop-color='%23cfccd6'/><stop offset='1' stop-color='%23a9a8b3'/></radialGradient></defs><circle cx='11.0' cy='13.8' r='10.00' fill='%23000' fill-opacity='.13'/><circle cx='11.0' cy='11.0' r='10.00' fill='url(%23g)'/></svg>");
+}
+
+/* ── Bảng màu + phông riêng của thiệp (không phụ thuộc giao diện đang dùng) ── */
+html .ic--v-ngoctrai.ic {
+  --accent: #4f5661; --accent-2: #c5cad1; --ink: #2c2e33; --muted: #585c64; --page: #f4f2ee; --paper: #fdfcfa;
+  --f-head: "Noto Serif Display", Georgia, serif; --f-name: "Noto Serif Display", Georgia, serif;
+  --f-body: "Manrope", system-ui, sans-serif; --f-ui: "Manrope", system-ui, sans-serif; --name-style: normal;
+  --ic-paper: #fdfcfa; --ic-on-accent: #fff; --ic-line: rgba(125, 131, 140, .42); --ic-card-bg: #fdfcfa;
+  --ic-to-small: #5c626b; --ic-to-name: #2c2e33;
+  --vnt-silver: linear-gradient(100deg, #3a4049 0%, #6f7680 30%, #a9afb8 46%, #6f7680 62%, #3a4049 100%);
+  --vnt-satin: linear-gradient(128deg, #fdfcfa 0%, #eeebe6 26%, #fbfaf7 44%, #e7e4de 63%, #f8f6f2 82%, #ece9e3 100%);
+  --vnt-silk: linear-gradient(160deg, #e3e1e4 0%, #cfcdd3 30%, #e6e4e7 48%, #c7c5cc 70%, #dcdade 100%);
+  --vnt-T: 34px;  /* độ sâu thân hộp */
+  --vnt-L: 13px;  /* độ dày nắp */
+  --ic-out-delay: 1.78s;
+  color: var(--ink); font-family: var(--f-body);
+}
+.ic--v-ngoctrai.ic .ic-backdrop, .ic--v-ngoctrai.ic:not(.is-open) .ic-backdrop {
+  background: radial-gradient(65% 50% at 50% 42%, #fff, #f0ede8 62%, #e2ded8);
+}
+/* Manrope chỉ có 300/500: tránh in đậm giả */
+.ic--v-ngoctrai.ic :is(.ic-env-to small, .ic-greet, .ic-label, .ic-wd, .ic-place-title, .ic-link, .ic-btn, .ic-count-label, .ic-enter, .ic-env-hint, .ic-msg) { font-weight: 500; }
+
+/* ══ Bìa: hộp lụa 3D (mặt trên = lòng hộp ở z=0; thành hộp gập -90° vào trong màn; nắp đặt ở z = độ dày nắp) ══ */
+.ic--v-ngoctrai.ic .ic-env { gap: 30px; }
+.ic--v-ngoctrai.ic .ic-env-btn { width: min(350px, 76vw, 44vh); aspect-ratio: 1 / 1.1; margin: 10px 0 22px; animation: ic-float 6s ease-in-out infinite; }
+.ic--v-ngoctrai.is-opening .ic-env-btn { animation: none; }
+.ic--v-ngoctrai .vnt, .ic--v-ngoctrai .vnt span { position: absolute; display: block; }
+.ic--v-ngoctrai .vnt { inset: 0; transform-style: preserve-3d; transform: rotateX(28deg); transition: transform 1.2s var(--ic-ease) .1s; }
+.ic--v-ngoctrai .vnt-base, .ic--v-ngoctrai .vnt-lid { inset: 0; transform-style: preserve-3d; }
+.ic--v-ngoctrai .vnt-shadow {
+  left: -4%; right: -4%; top: 4%; bottom: -10%; border-radius: 30px; background: rgba(58, 56, 72, .42); filter: blur(24px);
+  transform: translateZ(calc(var(--vnt-T) * -1 - 4px));
+}
+/* Thành hộp (thân): lụa trắng, đường chỉ bạc sát mép trên */
+.ic--v-ngoctrai .vnt-wall { inset: 0; transform-style: preserve-3d; }
+.ic--v-ngoctrai .vnt-wall > span { background: linear-gradient(180deg, #a3a8b0 0 1px, #f1efeb 1px, #dcd9d3 60%, #c9c6c0); }
+.ic--v-ngoctrai .vnt-wall .w-f { left: 0; right: 0; top: 100%; height: var(--vnt-T); transform-origin: 50% 0; transform: rotateX(-90deg); }
+.ic--v-ngoctrai .vnt-wall .w-l { right: 100%; top: 0; bottom: 0; width: var(--vnt-T); transform-origin: 100% 50%; transform: rotateY(-90deg);
+  background: linear-gradient(270deg, #a3a8b0 0 1px, #e6e3de 1px, #cfccc6); }
+.ic--v-ngoctrai .vnt-wall .w-r { left: 100%; top: 0; bottom: 0; width: var(--vnt-T); transform-origin: 0 50%; transform: rotateY(90deg);
+  background: linear-gradient(90deg, #a3a8b0 0 1px, #ebe8e3 1px, #d3d0ca); }
+/* Lòng hộp: lụa xám ngọc lót, viền thành trắng + bóng sâu */
+.ic--v-ngoctrai .vnt-base {
+  border-radius: 1px;
+  background: radial-gradient(70% 55% at 50% 50%, rgba(255, 255, 255, .5), transparent 70%), var(--ic-grain), var(--vnt-silk);
+  box-shadow: inset 0 0 0 7px #f3f1ed, inset 0 0 0 8px #b9bcc2, inset 0 18px 26px -6px rgba(40, 40, 52, .45), inset 0 -6px 14px rgba(40, 40, 52, .2);
+}
+.ic--v-ngoctrai .vnt-loop { inset: 7% 11%; background: var(--vnt-oval) center / contain no-repeat; transform: translateZ(2px); }
+.ic--v-ngoctrai .vnt-nest {
+  left: 25%; right: 25%; top: 21%; bottom: 21%; display: grid !important; place-items: center; align-content: center; gap: 10px;
+  background: var(--ic-grain), linear-gradient(160deg, #fffefc, #f3f1ec); border-radius: 1px;
+  box-shadow: inset 0 0 0 5px #fdfcfa, inset 0 0 0 6px #a9aeb6, 0 6px 12px -4px rgba(30, 30, 40, .35);
+  transform: translateZ(3px); transition: transform .85s cubic-bezier(.2, .7, .2, 1) 1.02s, box-shadow .85s ease 1.02s;
+}
+.ic--v-ngoctrai .vnt-nest-mono { position: static !important; font: 300 1.5rem/1 var(--f-name); color: #4f5661; letter-spacing: .02em; }
+.ic--v-ngoctrai .vnt-nest-mono i, .ic--v-ngoctrai .vnt-mono i, .ic--v-ngoctrai .vnt-sign i { font-style: italic; font-size: .62em; color: #8a9099; margin: 0 .12em; }
+.ic--v-ngoctrai .vnt-nest-line { position: static !important; width: 46px; height: 9px; background: var(--vnt-line) center / contain no-repeat; }
+
+/* Nắp hộp */
+.ic--v-ngoctrai .vnt-lid { transform-origin: 50% 0; transform: translateZ(var(--vnt-L)); transition: transform 1.12s cubic-bezier(.5, .02, .22, 1) .14s; }
+.ic--v-ngoctrai .vnt-lid > span { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.ic--v-ngoctrai .vnt-lid-lip { inset: 0; transform-style: preserve-3d; -webkit-backface-visibility: visible !important; backface-visibility: visible !important; }
+.ic--v-ngoctrai .vnt-lid-lip > span { background: linear-gradient(180deg, #fbfaf7, #e9e6e0 70%, #bfc3c9 92%, #9aa0a8); }
+.ic--v-ngoctrai .vnt-lid-lip .l-f { left: 0; right: 0; top: 100%; height: var(--vnt-L); transform-origin: 50% 0; transform: rotateX(-90deg); }
+.ic--v-ngoctrai .vnt-lid-lip .l-l { right: 100%; top: 0; bottom: 0; width: var(--vnt-L); transform-origin: 100% 50%; transform: rotateY(-90deg);
+  background: linear-gradient(270deg, #f4f2ee, #dedbd5 70%, #a8adb4); }
+.ic--v-ngoctrai .vnt-lid-lip .l-r { left: 100%; top: 0; bottom: 0; width: var(--vnt-L); transform-origin: 0 50%; transform: rotateY(90deg);
+  background: linear-gradient(90deg, #f7f5f1, #e2dfd9 70%, #a8adb4); }
+.ic--v-ngoctrai .vnt-lid-in {
+  inset: 0; transform: rotateX(180deg) translateZ(.5px);
+  background: radial-gradient(60% 50% at 50% 55%, rgba(255, 255, 255, .55), transparent 70%), var(--ic-grain), var(--vnt-silk);
+  box-shadow: inset 0 0 0 7px #f6f4f0, inset 0 0 0 8px #b9bcc2, inset 0 0 22px rgba(40, 40, 52, .28);
+}
+/* lòng nắp: khung bầu dục chỉ bạc + nút chần lụa */
+.ic--v-ngoctrai .vnt-lid-in::before { content: ""; position: absolute; inset: 22% 24%; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .75);
+  box-shadow: 0 0 0 1px rgba(150, 154, 162, .5), inset 0 0 0 5px rgba(255, 255, 255, .18), inset 0 0 0 6px rgba(150, 154, 162, .35); }
+.ic--v-ngoctrai .vnt-lid-in::after { content: ""; position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; margin: -7px; background: var(--vnt-pearl) center / contain no-repeat; }
+.ic--v-ngoctrai .vnt-lid-top {
+  inset: 0; overflow: hidden; background: var(--ic-grain), var(--vnt-satin);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .9), inset 0 -2px 0 rgba(150, 150, 160, .25);
+}
+/* chỉ bạc đôi */
+.ic--v-ngoctrai .vnt-lid-top::before, .ic--v-ngoctrai .vnt-lid-top::after { content: ""; position: absolute; pointer-events: none; }
+.ic--v-ngoctrai .vnt-lid-top::before { inset: 13px; border: 1px solid rgba(138, 144, 153, .75); }
+.ic--v-ngoctrai .vnt-lid-top::after { inset: 18px; border: .5px solid rgba(138, 144, 153, .55);
+  background: var(--vnt-pearl) 0 0 / 9px no-repeat, var(--vnt-pearl) 100% 0 / 9px no-repeat, var(--vnt-pearl) 0 100% / 9px no-repeat, var(--vnt-pearl) 100% 100% / 9px no-repeat;
+  margin: -4.5px; padding: 0; }
+.ic--v-ngoctrai .vnt-ring { left: 50%; top: 13%; width: 46%; aspect-ratio: 1; transform: translateX(-50%); background: var(--vnt-ring) center / contain no-repeat;
+  display: grid !important; place-items: center; filter: drop-shadow(0 2px 2px rgba(60, 60, 75, .12)); }
+.ic--v-ngoctrai .vnt-mono {
+  position: static !important; font: 300 clamp(1.9rem, 8.6vw, 2.35rem)/1 var(--f-name); letter-spacing: .01em;
+  background: var(--vnt-silver); background-size: 240% 100%; background-position: calc(50% + var(--tx) * 40%) 0; -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.ic--v-ngoctrai .vnt-mono i { -webkit-text-fill-color: #8a9099; }
+.ic--v-ngoctrai .vnt-sheen {
+  inset: 0; mix-blend-mode: soft-light;
+  background: linear-gradient(118deg, transparent 32%, rgba(255, 255, 255, .95) 47%, rgba(255, 240, 248, .4) 53%, transparent 66%) no-repeat;
+  background-size: 280% 100%; background-position: calc(50% + var(--tx) * 50%) 0; animation: vnt-glint 5.5s ease-in-out 1s infinite;
+}
+/* Tên người nhận nằm trên mặt nắp: cùng phép nghiêng với hộp */
+.ic--v-ngoctrai.ic .ic-env-to {
+  inset: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; text-align: center;
+  padding: 0 28px 14%; transform: rotateX(28deg) translateZ(calc(var(--vnt-L) + 1px));
+}
+.ic--v-ngoctrai.ic .ic-env-to small { letter-spacing: .3em; text-indent: .3em; color: #5c626b; }
+.ic--v-ngoctrai.ic .ic-env-to b { font: 300 clamp(1.45rem, 6.6vw, 1.85rem)/1.2 var(--f-name); color: #2c2e33; max-width: 100%; }
+.ic--v-ngoctrai.ic.ic--long .ic-env-to b { font-size: clamp(1.15rem, 5vw, 1.4rem); -webkit-line-clamp: 3; line-clamp: 3; }
+.ic--v-ngoctrai.ic .ic-preview { background: #fff1d6; color: #7a4f00; }
+.ic--v-ngoctrai.ic .ic-env-hint { border-radius: 2px; letter-spacing: .04em; background: #fdfcfa; color: #2c2e33; box-shadow: 0 0 0 1px rgba(138, 144, 153, .55), 0 10px 22px -12px rgba(40, 40, 52, .45); }
+
+/* ── Mở: nắp bật quanh bản lề sau, hộp ngả ra, tấm thiệp nhấc lên đối diện người xem ── */
+.ic--v-ngoctrai.is-opening .vnt { transform: translateY(22%) scale(.9) rotateX(34deg); }
+.ic--v-ngoctrai.is-opening .vnt-lid { transform: translateZ(var(--vnt-L)) rotateX(110deg); }
+/* S1-DESK-08: trình dựng không có 3D thật (WebKit của Playwright dựng trực giao, bỏ qua backface-visibility; đã kiểm bằng trang
+   thử tối giản) -> thành hộp/gờ nắp (xoay 90°) tự biến mất, hộp thành tấm phẳng gọn gàng; mặt trong nắp (quay 180°) phải ẩn
+   bằng visibility để không vẽ đè lên mặt nắp lụa, đổi mặt đúng lúc nắp qua 90° (transition 1.12s, delay .14s -> ~.63s). */
+.ic--v-ngoctrai .vnt-lid-in { visibility: hidden; }
+.ic--v-ngoctrai.is-opening .vnt-lid-in { visibility: visible; transition: visibility 0s linear .63s; }
+.ic--v-ngoctrai.is-opening .vnt-lid-top { visibility: hidden; transition: visibility 0s linear .63s; }
+.ic--v-ngoctrai.is-opening .vnt-nest { transform: translateZ(120px) translateY(-8%) rotateX(-30deg) scale(1.12); box-shadow: inset 0 0 0 5px #fdfcfa, inset 0 0 0 6px #a9aeb6, 0 30px 40px -18px rgba(30, 30, 40, .45); }
+.ic--v-ngoctrai.is-opening .vnt-sheen { animation: none; }
+
+/* ══ Thiệp mở: giấy ngà ánh xà cừ, khung chỉ bạc đôi, chuỗi ngọc võng ôm mép trên ══ */
+.ic--v-ngoctrai.ic .ic-card {
+  width: min(460px, 100%); padding: 104px 40px 40px; border-radius: 2px;
+  background: var(--ic-grain), linear-gradient(180deg, #fefdfb, #faf8f4);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .9), 0 60px 90px -44px rgba(40, 40, 56, .55), 0 14px 30px -18px rgba(40, 40, 56, .3);
+}
+.ic--v-ngoctrai.is-open:not(.is-instant) .ic-card { animation: vnt-card-in 1s var(--ic-ease) both; }
+.ic--v-ngoctrai .vnt-deco span { position: absolute; display: block; }
+.ic--v-ngoctrai .vnt-frame { inset: 12px; border: 1px solid rgba(138, 144, 153, .7); }
+.ic--v-ngoctrai .vnt-frame::before, .ic--v-ngoctrai .vnt-frame::after { content: ""; position: absolute; }
+.ic--v-ngoctrai .vnt-frame::before { inset: 4px; border: .5px solid rgba(138, 144, 153, .5); }
+.ic--v-ngoctrai .vnt-frame::after { left: -5px; right: -5px; bottom: -5px; height: 10px;
+  background: var(--vnt-pearl) 0 0 / 10px no-repeat, var(--vnt-pearl) 100% 0 / 10px no-repeat; }
+.ic--v-ngoctrai .vnt-swag { left: 6px; right: 6px; top: 4px; aspect-ratio: 400 / 64; background: var(--vnt-swag) top center / 100% auto no-repeat;
+  filter: drop-shadow(0 2px 1.5px rgba(50, 50, 66, .16)); }
+.ic--v-ngoctrai.is-open:not(.is-instant) .vnt-swag { animation: vnt-swag-in 1.3s cubic-bezier(.3, 1.4, .5, 1) .25s both; transform-origin: 50% 0; }
+.ic--v-ngoctrai .vnt-nacre {
+  inset: 0; pointer-events: none; mix-blend-mode: multiply; opacity: .7;
+  background: linear-gradient(125deg, rgba(255, 226, 238, .32), rgba(222, 238, 255, .28) 28%, transparent 50%, rgba(236, 228, 255, .26) 76%, rgba(255, 240, 226, .24)) no-repeat;
+  background-size: 160% 160%; background-position: calc(50% + var(--tx) * 30%) calc(50% + var(--ty) * 30%);
+}
+.ic--v-ngoctrai.ic .ic-mono {
+  width: 100px; height: 100px; margin: 0 auto 18px; border: 0; box-shadow: none; gap: 1px;
+  background: var(--vnt-ring) center / contain no-repeat; font: 300 1.75rem/1 var(--f-name); color: #4f5661;
+}
+.ic--v-ngoctrai.ic .ic-mono i { font-style: italic; color: #8a9099; }
+.ic--v-ngoctrai.ic .ic-greet { font-size: .875rem; letter-spacing: .3em; text-indent: .3em; color: #5c626b; }
+.ic--v-ngoctrai.ic .ic-card .ic-name {
+  margin: 8px 0 12px; padding: .1em 0 .06em; font: 300 clamp(2.35rem, 9.6vw, 3.3rem)/1.2 var(--f-name); letter-spacing: -.005em;
+  background: linear-gradient(100deg, #30353d 0%, #555c66 34%, #8b919a 50%, #555c66 66%, #30353d 100%); background-size: 220% 100%;
+  background-position: calc(50% + var(--tx) * 35%) 0; -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.ic--v-ngoctrai.ic.ic--long .ic-card .ic-name { font-size: clamp(1.9rem, 7.6vw, 2.6rem); }
+.ic--v-ngoctrai.ic .ic-text { font: italic 300 1.125rem/1.62 var(--f-head); color: #3d4047; max-width: 32ch; }
+.ic--v-ngoctrai.ic .ic-rule { width: min(240px, 76%); margin: 28px auto 22px; }
+.ic--v-ngoctrai.ic .ic-rule::before, .ic--v-ngoctrai.ic .ic-rule::after { border-top-color: rgba(138, 144, 153, .6); }
+.ic--v-ngoctrai.ic .ic-rule span { width: 52px; height: 12px; font-size: 0; background: var(--vnt-line) center / contain no-repeat; }
+.ic--v-ngoctrai.ic .ic-label { letter-spacing: .3em; text-indent: .3em; color: #5c626b; }
+.ic--v-ngoctrai.ic .ic-couple { margin: 10px 0 6px !important; font: 300 clamp(1.8rem, 7vw, 2.3rem)/1.2 var(--f-name); color: #2c2e33; gap: 0 12px; }
+.ic--v-ngoctrai.ic .ic-couple i { font-style: italic; color: #8a9099; }
+.ic--v-ngoctrai.ic .ic-date { margin: 22px auto 6px; padding: 16px 0 14px; max-width: 300px; border-top: 1px solid rgba(138, 144, 153, .45); border-bottom: 1px solid rgba(138, 144, 153, .45); }
+.ic--v-ngoctrai.ic .ic-wd { color: #4f5661; letter-spacing: .06em; }
+.ic--v-ngoctrai.ic .ic-dmy { font: 300 2.5rem/1 var(--f-head); color: #2c2e33; gap: 16px; }
+.ic--v-ngoctrai.ic .ic-dmy i { width: 7px; height: 7px; background: var(--vnt-pearl) center / contain no-repeat; }
+.ic--v-ngoctrai.ic .ic-lunar { font: italic 300 1rem/1.5 var(--f-head); color: #585c64; }
+.ic--v-ngoctrai.ic .ic-place { border-top: 0; margin-top: 20px; padding-top: 6px; }
+.ic--v-ngoctrai.ic .ic-place-title { color: #4f5661; }
+.ic--v-ngoctrai.ic .ic-place-name { font: 300 1.4rem/1.3 var(--f-head); }
+.ic--v-ngoctrai.ic .ic-link { color: #4f5661; letter-spacing: .04em; text-decoration-color: rgba(79, 86, 97, .45); }
+.ic--v-ngoctrai.ic .ic-rsvp { border-top: 1px solid rgba(138, 144, 153, .45); margin-top: 26px; padding-top: 24px; }
+.ic--v-ngoctrai.ic .ic-q { font: italic 300 1.25rem/1.4 var(--f-head); }
+.ic--v-ngoctrai.ic .ic-btn { border-radius: 2px; letter-spacing: .08em; }
+.ic--v-ngoctrai.ic .ic-btn-yes { background: #4f5661; border-color: #4f5661; position: relative; overflow: hidden; }
+.ic--v-ngoctrai.ic .ic-btn-yes:hover:not(:disabled) { background: #2c2e33; }
+.ic--v-ngoctrai.ic .ic-btn-no { border-color: rgba(79, 86, 97, .45); }
+.ic--v-ngoctrai.ic .ic-stepper button, .ic--v-ngoctrai.ic .ic-stepper input, .ic--v-ngoctrai.ic .ic-msg textarea { border-color: rgba(125, 131, 140, .5); }
+.ic--v-ngoctrai.ic .ic-msg textarea { background: #fff; border-radius: 2px; padding: 10px 12px; }
+.ic--v-ngoctrai.ic .ic-done-title { font: italic 300 1.9rem/1.2 var(--f-name); color: #4f5661; }
+.ic--v-ngoctrai.ic .ic-enter { border-radius: 2px; letter-spacing: .16em; border-color: rgba(138, 144, 153, .6); }
+.ic--v-ngoctrai .vnt-end { margin-top: 30px; display: grid; justify-items: center; gap: 10px; }
+.ic--v-ngoctrai .vnt-endline { display: block; width: 92px; height: 12px; background: var(--vnt-line) center / contain no-repeat; }
+.ic--v-ngoctrai .vnt-sign { font: italic 300 1.15rem/1.3 var(--f-head); color: #585c64; }
+
+@keyframes vnt-glint { 0%, 70%, 100% { background-position: calc(50% + var(--tx) * 50%) 0; } 85% { background-position: -40% 0; } }
+@keyframes vnt-card-in { from { opacity: 0; transform: translateY(46px) scale(.9); } 55% { opacity: 1; } to { opacity: 1; transform: none; } }
+@keyframes vnt-swag-in { from { opacity: 0; transform: scaleY(.3); } 40% { opacity: 1; } to { opacity: 1; transform: none; } }
+
+@media (max-width: 420px) {
+  .ic--v-ngoctrai.ic .ic-card { padding: 90px 26px 32px; }
+  .ic--v-ngoctrai.ic .ic-dmy { font-size: 2.1rem; gap: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ic--v-ngoctrai .vnt { transform: rotateX(28deg); }
+}
+
+/* Điện thoại xoay ngang / màn thấp (R3-CARDS-02): bìa co theo 44vh (~165px) -> monogram, nhãn và tên co theo, lề nhỏ lại
+   để "Thân gửi" không đè lên H&M và tên ngắn không bị cắt. (Quy tắc chung trong invite-card.css thua quy tắc riêng của mẫu.) */
+@media (max-height: 500px) {
+  .ic--v-ngoctrai .vnt-ring { top: 9%; width: 40%; }
+  .ic--v-ngoctrai .vnt-mono { font-size: clamp(1.1rem, 6vh, 1.6rem); }
+  .ic--v-ngoctrai .vnt-lid-top::before { inset: 7px; }
+  .ic--v-ngoctrai .vnt-lid-top::after { inset: 10px; }
+  .ic--v-ngoctrai.ic .ic-env-to { padding: 0 12px 11%; gap: 2px; }
+  .ic--v-ngoctrai.ic .ic-env-to small { font-size: .875rem; letter-spacing: .1em; text-indent: .1em; }
+  .ic--v-ngoctrai.ic .ic-env-to b, .ic--v-ngoctrai.ic.ic--long .ic-env-to b { font-size: .95rem; line-height: 1.15; }
+}

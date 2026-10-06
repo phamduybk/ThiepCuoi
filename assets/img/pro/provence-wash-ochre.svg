@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+<defs>
+<filter id="w" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency=".009" numOctaves="3" seed="11" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="64" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" seed="16" result="f"/>
+<feDisplacementMap in="d" in2="f" scale="5" xChannelSelector="R" yChannelSelector="B" result="d2"/>
+<feGaussianBlur in="d2" stdDeviation="5" result="b"/>
+<feComposite in="d2" in2="b" operator="out" result="rim"/>
+<feComponentTransfer in="rim" result="rim2"><feFuncA type="linear" slope="2.4"/></feComponentTransfer>
+<feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="2" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -.7 1.05" result="ga"/>
+<feComposite in="d2" in2="ga" operator="in" result="body"/>
+<feMerge><feMergeNode in="body"/><feMergeNode in="rim2"/></feMerge>
+</filter>
+<filter id="bl" x="-30%" y="-30%" width="160%" height="160%">
+<feTurbulence type="fractalNoise" baseFrequency=".02" numOctaves="2" seed="20" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="50" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feGaussianBlur in="d" stdDeviation="16"/>
+</filter>
+<radialGradient id="rg" cx=".42" cy=".42" r=".7"><stop offset="0" stop-color="#d9a441" stop-opacity=".26"/><stop offset="1" stop-color="#d9a441" stop-opacity=".5"/></radialGradient>
+</defs>
+<path d="M90 200C80 110 200 70 310 80S520 120 520 210 430 350 300 340 100 290 90 200Z" fill="url(#rg)" filter="url(#w)"/>
+<g filter="url(#bl)" fill="#c1832a"><ellipse cx="350" cy="230" rx="100" ry="60" opacity=".24"/><ellipse cx="190" cy="160" rx="60" ry="40" opacity=".16"/></g>
+</svg>

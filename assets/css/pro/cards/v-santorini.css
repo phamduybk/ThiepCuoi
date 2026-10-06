@@ -1,0 +1,272 @@
+/* Phông của thiệp VIP v-santorini — Google Fonts, SIL Open Font License 1.1: Philosopher, Faustina (tự host, assets/fonts/pro) */
+@font-face { font-family: 'Philosopher'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Philosopher-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Philosopher'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Philosopher-400-vietnamese.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Philosopher'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Philosopher-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Philosopher'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../../../fonts/pro/Philosopher-700-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Philosopher'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../../../fonts/pro/Philosopher-700-vietnamese.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Philosopher'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../../../fonts/pro/Philosopher-700-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Faustina'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Faustina-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Faustina'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Faustina-400-vietnamese.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Faustina'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Faustina-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Faustina'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Faustina-400i-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Faustina'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Faustina-400i-vietnamese.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: 'Faustina'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(../../../fonts/pro/Faustina-400i-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+   THIỆP VIP "CỬA SỔ SANTORINI" (v-santorini) — bức tường trắng vôi, mái vòm cobalt phía sau, ô cửa vòm với hai cánh
+   cửa chớp cobalt; chạm -> viên gạch men chữ lồng mờ đi, hai cánh xoay 3D áp vào tường, thấy trời + biển Aegean +
+   tấm thiệp nhỏ trên bậu cửa, rồi ống kính tiến vào ô cửa và thiệp hiện ra. Thiệp: ô cửa vòm đã mở (ảnh cặp đôi),
+   hoa giấy rủ góc, chân thiệp là hoa văn chìa khóa Hy Lạp + sóng biển. Màu/phông RIÊNG của thiệp (không phụ thuộc
+   giao diện): cobalt #1f4e9c, biển #2f8fa3, mực #182a47, hoa giấy #c2185b; Philosopher + Faustina (OFL, tự host).
+   Thời gian mở ~1,65 s (config/content.php open_ms).
+   ═══════════════════════════════════════════════════════════════════════════════════════════════════════════ */
+.ic--v-santorini.ic {
+  --accent: #1f4e9c; --accent-2: #2f8fa3; --ink: #182a47; --muted: #4a5870; --page: #f6f4ee; --paper: #fff;
+  --f-head: "Philosopher", "Prata", Georgia, serif; --f-name: "Philosopher", "Prata", Georgia, serif;
+  --f-body: "Faustina", "Lora", Georgia, serif; --f-ui: "Philosopher", "Be Vietnam Pro", system-ui, sans-serif; --name-style: normal;
+  --ic-paper: #fff; --ic-on-accent: #fff; --ic-line: rgba(31, 78, 156, .3); --ic-card-bg: #fffefa; --ic-card-deco: linear-gradient(transparent, transparent);
+  --ic-to-small: #2b6a80; --ic-to-name: #1f4e9c;
+  --sv-cobalt: #1f4e9c; --sv-deep: #163a78; --sv-sea: #2f8fa3; --sv-bouga: #c2185b;
+  --sv-plaster: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='p'><feTurbulence type='fractalNoise' baseFrequency='.02 .035' numOctaves='3' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .55  0 0 0 0 .52  0 0 0 0 .45  0 0 0 .13 -.035'/></filter><rect width='220' height='220' filter='url(%23p)'/></svg>");
+  --sv-wave: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='10' viewBox='0 0 60 10'><path d='M0 5c7.5 0 7.5-3.5 15-3.5S22.5 5 30 5s7.5 3.5 15 3.5S52.5 5 60 5' fill='none' stroke='white' stroke-width='1.3' stroke-linecap='round'/></svg>");
+  --sv-key: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 20'><path d='M0 18.5H24M3 18.5V3h15v11.5H8V8h5.5v2.5' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='square'/></svg>");
+  --sv-edge: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='24' viewBox='0 0 120 24' preserveAspectRatio='none'><path d='M0 12C20 2 40 2 60 12S100 22 120 12V24H0Z'/></svg>");
+}
+.ic--v-santorini.ic .ic-backdrop, .ic--v-santorini.ic:not(.is-open) .ic-backdrop {
+  background: radial-gradient(80% 50% at 50% 32%, rgba(255, 255, 255, .85), transparent 70%),
+    linear-gradient(180deg, rgba(205, 228, 240, .96) 0%, rgba(236, 243, 245, .96) 48%, rgba(244, 239, 228, .97) 100%);
+}
+
+/* ── Bìa: tường + vòm + cửa sổ ── */
+.ic--v-santorini .ic-env-btn { width: min(380px, 84vw, calc((100vh - 170px) / 1.53)); aspect-ratio: 3 / 4.6; transform-style: preserve-3d; }
+.ic--v-santorini .sv { position: absolute; inset: 0; transform-style: preserve-3d; }
+.ic--v-santorini .sv > *, .ic--v-santorini .sv-win > *, .ic--v-santorini .sv-view > * { position: absolute; display: block; }
+.ic--v-santorini .sv-dome {
+  left: 26%; width: 48%; top: 0; height: 18%; border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  background: radial-gradient(120% 90% at 34% 22%, #5c8ad8 0, #2a5bb0 32%, #1f4e9c 55%, #13356f 100%);
+  box-shadow: inset -10px -4px 18px rgba(8, 22, 52, .35);
+}
+.ic--v-santorini .sv-dome::before {   /* đỉnh chóp nhỏ */
+  content: ""; position: absolute; left: 50%; top: -11px; width: 8px; height: 14px; margin-left: -4px; border-radius: 50% 50% 2px 2px;
+  background: linear-gradient(90deg, #fff, #e7e2d6);
+}
+.ic--v-santorini .sv-dome::after {   /* gờ trắng chân vòm */
+  content: ""; position: absolute; left: -6%; right: -6%; bottom: -6px; height: 10px; border-radius: 4px; background: #fff;
+  box-shadow: 0 3px 6px -2px rgba(24, 42, 71, .25);
+}
+.ic--v-santorini .sv-wall {
+  inset: 15.5% 0 0; border-radius: 6px 6px 4px 4px;
+  background: var(--sv-plaster), radial-gradient(90% 60% at 30% 20%, #fff, transparent 70%), linear-gradient(180deg, #fdfcf8, #f1ede3);
+  box-shadow: 0 46px 80px -34px rgba(24, 42, 71, .5), 0 14px 26px -16px rgba(24, 42, 71, .3), inset 0 -18px 30px -18px rgba(140, 120, 90, .22);
+}
+.ic--v-santorini .sv-wall::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4.2%; border-radius: 0 0 4px 4px;
+  background: var(--sv-plaster), linear-gradient(180deg, #2a5cb0, #1f4e9c); box-shadow: 0 -3px 0 #fff, 0 -4px 0 rgba(24, 42, 71, .08); }
+.ic--v-santorini .sv-win {
+  left: 18%; width: 64%; top: 23%; aspect-ratio: 1 / 1.25; border-radius: 50% 50% 0 0 / 40% 40% 0 0;
+  transform-style: preserve-3d; perspective: 900px; perspective-origin: 50% 40%;
+  box-shadow: 0 0 0 9px #fff, 0 0 0 10px rgba(24, 42, 71, .1), 0 12px 22px -8px rgba(24, 42, 71, .3);
+}
+.ic--v-santorini .sv-view { position: absolute; inset: 0; border-radius: inherit; overflow: hidden; box-shadow: inset 0 6px 14px rgba(8, 22, 52, .3); }
+.ic--v-santorini .sv-sky { inset: 0; background: linear-gradient(180deg, #8fc3e0 0%, #bfdeee 34%, #e9f1ef 56%, #f7eedc 59%); }
+.ic--v-santorini .sv-sun { left: 58%; top: 30%; width: 24%; aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle, #fffaf0 0 36%, #fde7b8 37% 56%, rgba(253, 231, 184, .35) 57% 70%, transparent 71%); }
+.ic--v-santorini .sv-isle { left: -8%; width: 58%; bottom: 41.5%; height: 9%; border-radius: 50% 70% 0 0 / 100% 100% 0 0; background: #86a9bb; opacity: .75; }
+.ic--v-santorini .sv-sea { left: 0; right: 0; bottom: 0; height: 42%; overflow: hidden; background: linear-gradient(180deg, #3a9cb0 0%, #2a87a0 35%, #1e6c8c 100%); }
+.ic--v-santorini .sv-w { position: absolute; left: -60px; width: calc(100% + 120px); height: 10px; background: var(--sv-wave) 0 0 / 60px 10px repeat-x; opacity: .6;
+  animation: v-santorini-drift 7s linear infinite; }
+.ic--v-santorini .sv-w1 { top: 12%; opacity: .45; }
+.ic--v-santorini .sv-w2 { top: 38%; animation-duration: 10s; animation-direction: reverse; }
+.ic--v-santorini .sv-w3 { top: 66%; opacity: .5; animation-duration: 13s; }
+.ic--v-santorini .sv-glint { position: absolute; inset: 0 0 50%; background:
+  radial-gradient(1.6px 1.1px at 20% 30%, #fff 98%, transparent), radial-gradient(1.4px 1px at 44% 70%, #fff 98%, transparent), radial-gradient(1.8px 1.2px at 63% 22%, #fff 98%, transparent),
+  radial-gradient(1.4px 1px at 80% 58%, #fff 98%, transparent), radial-gradient(1.2px 1px at 32% 52%, #fff 98%, transparent);
+  animation: v-santorini-glint 2.4s ease-in-out infinite alternate; }
+/* Tấm thiệp nhỏ đứng trên bậu cửa, sau hai cánh */
+.ic--v-santorini .sv-note {
+  left: 27%; right: 27%; bottom: 3%; height: 36%; display: grid !important; align-content: center; justify-items: center; gap: 4px;
+  border-radius: 999px 999px 3px 3px / 60% 60% 3px 3px; background: linear-gradient(180deg, #fffefa, #f7f2e6);
+  box-shadow: inset 0 0 0 4px #fffefa, inset 0 0 0 5px rgba(31, 78, 156, .45), 0 10px 14px -8px rgba(8, 22, 52, .55);
+  transform: translateY(14%); transition: transform .9s var(--ic-ease) .55s;
+}
+.ic--v-santorini .sv-note b { font: 400 1.15rem/1 var(--f-name); color: var(--sv-cobalt); display: flex; align-items: baseline; gap: 1px; padding-top: 10%; }
+.ic--v-santorini .sv-note b i { font-style: normal; font-size: .62em; color: var(--sv-bouga); }
+.ic--v-santorini .sv-note small { font: 700 .5rem/1 var(--f-ui); letter-spacing: .14em; color: #2b6a80; }
+
+/* Hai cánh cửa chớp */
+.ic--v-santorini .sv-door { top: 0; bottom: 0; width: 50%; transform-style: preserve-3d; transition: transform 1.05s cubic-bezier(.55, .02, .25, 1) .16s; }
+.ic--v-santorini .sv-l { left: 0; transform-origin: 0 50%; }
+.ic--v-santorini .sv-r { right: 0; transform-origin: 100% 50%; }
+.ic--v-santorini .sv-face, .ic--v-santorini .sv-back { position: absolute; inset: 0; overflow: hidden; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.ic--v-santorini .sv-l > * { border-radius: 100% 0 0 0 / 40% 0 0 0; }
+.ic--v-santorini .sv-r > * { border-radius: 0 100% 0 0 / 0 40% 0 0; }
+.ic--v-santorini .sv-face {
+  background: var(--sv-plaster), linear-gradient(90deg, #1a438a, #2556a8 45%, #1d4a95);
+  box-shadow: inset 0 0 0 1px rgba(8, 22, 52, .4), inset 0 0 0 3px rgba(120, 160, 225, .25);
+}
+.ic--v-santorini .sv-r .sv-face { background: var(--sv-plaster), linear-gradient(90deg, #1d4a95, #2556a8 55%, #1a438a); }
+.ic--v-santorini .sv-back { transform: rotateY(180deg); background: var(--sv-plaster), linear-gradient(90deg, #2a5aa8, #3a6cbc); box-shadow: inset 0 0 0 1px rgba(8, 22, 52, .35); }
+.ic--v-santorini .sv-back::before { content: ""; position: absolute; inset: 17% 15% 7%; border-radius: 2px;
+  background: linear-gradient(transparent 0 46%, #2a5aa8 46% 50%, transparent 50%), repeating-linear-gradient(180deg, #4a7cca 0 2.5px, #3061ae 2.5px 5px, #1a3f7c 5px 6.5px, #2a5aa8 6.5px 7px); }
+.ic--v-santorini .sv-lv {
+  position: absolute; left: 15%; right: 15%; border-radius: 2px;
+  background: repeating-linear-gradient(180deg, #3d70c0 0 2.5px, #2858a6 2.5px 5px, #123468 5px 6.5px, #1e4b97 6.5px 7px);
+  box-shadow: inset 0 0 0 1px rgba(8, 22, 52, .45), inset 0 2px 4px rgba(8, 22, 52, .35), 0 1px 0 rgba(255, 255, 255, .18);
+}
+.ic--v-santorini .sv-lv1 { top: 17%; bottom: 52%; }
+.ic--v-santorini .sv-l .sv-lv1 { left: 22%; border-top-left-radius: 100% 60%; }
+.ic--v-santorini .sv-r .sv-lv1 { right: 22%; border-top-right-radius: 100% 60%; }
+.ic--v-santorini .sv-lv2 { top: 53%; bottom: 7%; }
+.ic--v-santorini .sv-l .sv-face::after, .ic--v-santorini .sv-r .sv-face::after {   /* tay nắm đồng */
+  content: ""; position: absolute; top: 49.5%; width: 7px; height: 7px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fbe9b8, #c9a24f 55%, #7a5c24); box-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+.ic--v-santorini .sv-l .sv-face::after { right: 6px; }
+.ic--v-santorini .sv-r .sv-face::after { left: 6px; }
+/* Viên gạch men chữ lồng gài giữa hai cánh */
+.ic--v-santorini .sv-tile {
+  left: 50%; top: 47%; width: 76px; height: 76px; margin: -38px 0 0 -38px; border-radius: 50%; display: flex !important; align-items: center; justify-content: center; gap: 1px;
+  background:
+    radial-gradient(circle, #fffefa 0 38%, #1f4e9c 38.5% 41%, #fffefa 41.5% 43%, transparent 43.5%),
+    radial-gradient(circle, transparent 0 59%, #fffefa 59.5% 61%, #1f4e9c 61.5% 100%),
+    repeating-conic-gradient(from 6deg, #2a5cb0 0 9deg, #fffefa 9deg 15deg);
+  color: var(--sv-cobalt); font: 400 1.02rem/1 var(--f-name); padding-top: 2px; transform: translateZ(8px);
+  transition: opacity .3s ease, transform .35s ease;
+}
+.ic--v-santorini .sv-tile::before { content: ""; position: absolute; inset: 0; border-radius: 50%; box-shadow: inset 0 0 0 2px #fffefa, inset 0 0 0 3px rgba(31, 78, 156, .5), 0 8px 14px -5px rgba(8, 22, 52, .55); }
+.ic--v-santorini .sv-tile i { font-style: normal; font-size: .6em; color: var(--sv-bouga); }
+.ic--v-santorini .sv-sill {
+  left: 13%; right: 13%; top: 73.4%; height: 3%; border-radius: 3px; background: linear-gradient(180deg, #fff, #f1ede3);
+  box-shadow: 0 8px 10px -6px rgba(24, 42, 71, .4), 0 1px 0 rgba(24, 42, 71, .08);
+}
+.ic--v-santorini .sv .sv-bouga { left: -7%; top: 9.5%; width: 52%; height: auto; transform: translateZ(12px); filter: drop-shadow(0 6px 6px rgba(60, 20, 40, .22));
+  transform-origin: 8% 10%; animation: v-santorini-sway 6s ease-in-out infinite alternate; }
+.ic--v-santorini .ic-env-to { left: 9%; right: 9%; top: 78%; bottom: 6%; z-index: 5; text-align: center; align-content: center; justify-items: center; gap: 4px; }
+.ic--v-santorini .ic-env-to small { letter-spacing: .2em; }
+.ic--v-santorini .ic-env-to b { font-weight: 400; }
+
+/* Nghiêng: cảnh biển trôi ngược hướng, hoa giấy nổi lên */
+.ic--v-santorini .sv-view .sv-sun { translate: calc(var(--tx) * -6px) calc(var(--ty) * -4px); }
+.ic--v-santorini .sv-view .sv-isle { translate: calc(var(--tx) * -4px) 0; }
+
+/* ── Mở ── */
+.ic--v-santorini.is-opening .sv-tile { opacity: 0; transform: translateZ(8px) scale(.55); }
+/* WebKit không luôn tôn trọng backface-visibility trong cảnh 3D lồng nhau -> đổi mặt trước/sau bằng opacity đúng lúc cánh qua 90°. */
+.ic--v-santorini .sv-door .sv-back { opacity: 0; }
+.ic--v-santorini.is-opening .sv-door .sv-back { opacity: 1; transition: opacity 0s linear .74s; }
+.ic--v-santorini.is-opening .sv-door .sv-face { opacity: 0; transition: opacity 0s linear .74s; }
+.ic--v-santorini .sv-hshut .sv-back { display: none; }
+.ic--v-santorini.is-opening .sv-l { transform: rotateY(-150deg); }
+.ic--v-santorini.is-opening .sv-r { transform: rotateY(150deg); }
+.ic--v-santorini.is-opening .sv-note { transform: translateY(-4%) scale(1.06); }
+.ic--v-santorini.is-opening .ic-env { animation: v-santorini-zoom .58s cubic-bezier(.6, 0, .35, 1) 1.06s both; transform-origin: 50% 42%; }
+.ic--v-santorini.is-open .ic-card { animation: v-santorini-card .9s var(--ic-ease) both; }
+
+/* ── Thiệp ── */
+.ic--v-santorini .ic-card {
+  width: min(480px, 100%); padding: 22px 36px 104px; border-radius: 10px;
+  background: var(--sv-plaster), radial-gradient(90% 40% at 50% 0%, #fff, transparent 70%), linear-gradient(180deg, #fffefa, #faf6ec);
+  box-shadow: 0 50px 90px -40px rgba(24, 42, 71, .55), 0 10px 24px -14px rgba(24, 42, 71, .25);
+}
+.ic--v-santorini .ic-card::before, .ic--v-santorini .ic-card::after { content: ""; position: absolute; pointer-events: none; border-radius: 6px; }
+.ic--v-santorini .ic-card::before { inset: 10px 10px 56px; border: 1px solid rgba(31, 78, 156, .35); }
+.ic--v-santorini .ic-card::after { inset: 14px 14px 60px; border: 1px solid rgba(47, 143, 163, .2); }
+.ic--v-santorini .ic-mono { display: none; }
+.ic--v-santorini .sv-hero { position: relative; margin: 0 -14px 18px; padding-top: 14px; perspective: 800px; display: grid; justify-items: center; }
+.ic--v-santorini .sv-hero > span { display: block; }
+.ic--v-santorini .sv-harch {
+  position: relative; width: 46%; aspect-ratio: 1 / 1.22; border-radius: 50% 50% 0 0 / 41% 41% 0 0; overflow: hidden; isolation: isolate;
+  box-shadow: 0 0 0 7px #fff, 0 0 0 8px rgba(31, 78, 156, .22), 0 14px 22px -12px rgba(24, 42, 71, .45);
+}
+.ic--v-santorini .sv-harch .sv-view { position: absolute; inset: 0; }
+.ic--v-santorini .sv-harch img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.ic--v-santorini .sv-harch::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 8px 16px rgba(8, 22, 52, .28); pointer-events: none; }
+.ic--v-santorini .sv-hshut { position: absolute; top: 14px; width: 23%; aspect-ratio: 1 / 2.44; transform-style: preserve-3d; }
+.ic--v-santorini .sv-hl { right: calc(73% + 8px); transform-origin: 100% 50%; transform: rotateY(32deg); }
+.ic--v-santorini .sv-hr { left: calc(73% + 8px); transform-origin: 0 50%; transform: rotateY(-32deg); }
+.ic--v-santorini .sv-hl > * { border-radius: 100% 0 0 0 / 41% 0 0 0; }
+.ic--v-santorini .sv-hr > * { border-radius: 0 100% 0 0 / 0 41% 0 0; }
+.ic--v-santorini .sv-hshut .sv-face { box-shadow: inset 0 0 0 1px rgba(8, 22, 52, .4), 0 10px 16px -10px rgba(8, 22, 52, .5); }
+.ic--v-santorini .sv-hl .sv-lv1 { left: 22%; border-top-left-radius: 100% 60%; }
+.ic--v-santorini .sv-hr .sv-lv1 { right: 22%; border-top-right-radius: 100% 60%; }
+.ic--v-santorini .sv-hl .sv-face::after { content: ""; position: absolute; top: 49.5%; left: 6px; width: 6px; height: 6px; border-radius: 50%; background: #c9a24f; }
+.ic--v-santorini .sv-hr .sv-face::after { content: ""; position: absolute; top: 49.5%; right: 6px; width: 6px; height: 6px; border-radius: 50%; background: #c9a24f; }
+.ic--v-santorini .sv-hsill { width: 56%; height: 11px; margin-top: 7px; border-radius: 3px; background: linear-gradient(180deg, #fff, #efeadf); box-shadow: 0 7px 9px -6px rgba(24, 42, 71, .45); }
+.ic--v-santorini .sv-hero .sv-bouga { position: absolute; left: -12px; top: -20px; width: 30%; max-width: 140px; z-index: 2; filter: drop-shadow(0 6px 6px rgba(60, 20, 40, .2));
+  transform-origin: 6% 8%; animation: v-santorini-sway 6s ease-in-out infinite alternate; }
+.ic--v-santorini.is-open:not(.is-instant) .sv-hl { animation: v-santorini-shut-l 1.3s cubic-bezier(.3, .7, .2, 1) .15s both; }
+.ic--v-santorini.is-open:not(.is-instant) .sv-hr { animation: v-santorini-shut-r 1.3s cubic-bezier(.3, .7, .2, 1) .15s both; }
+
+.ic--v-santorini .ic-greet { color: #2b6a80; letter-spacing: .2em; }
+.ic--v-santorini .ic-card .ic-name { color: var(--sv-cobalt); font-size: clamp(2.1rem, 8.6vw, 3rem); line-height: 1.12; margin: 8px 0 12px; }
+.ic--v-santorini .ic-text { font-size: 1.08rem; }
+.ic--v-santorini .ic-rule { width: min(250px, 78%); color: var(--sv-bouga); }
+.ic--v-santorini .ic-rule::before, .ic--v-santorini .ic-rule::after { border-top-color: rgba(31, 78, 156, .35); }
+.ic--v-santorini .ic-label { color: #2b6a80; letter-spacing: .2em; }
+.ic--v-santorini .ic-couple { color: var(--sv-cobalt); font-size: clamp(1.8rem, 7vw, 2.4rem); }
+.ic--v-santorini .ic-couple i { color: var(--sv-bouga); font-family: var(--f-body); font-style: italic; }
+.ic--v-santorini .ic-date { margin-top: 20px; padding: 14px 0 12px; border-block: 1px solid rgba(31, 78, 156, .25); }
+.ic--v-santorini .ic-wd { color: #2b6a80; }
+.ic--v-santorini .ic-dmy { font: 400 2.5rem/1 var(--f-head); color: var(--sv-cobalt); }
+.ic--v-santorini .ic-dmy i { background: rgba(194, 24, 91, .45); transform: rotate(18deg); }
+.ic--v-santorini .ic-place { border-top: 0; margin-top: 14px; padding-top: 6px; }
+.ic--v-santorini .ic-place::before { content: ""; justify-self: center; width: 18px; height: 24px; margin-bottom: 4px; background: var(--sv-sea);
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 32'><path d='M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19.5 12 31 12 31s10.5-11.5 10.5-19.6C22.5 5.6 18 1 12 1zm0 14.2a3.9 3.9 0 1 1 0-7.8 3.9 3.9 0 0 1 0 7.8z'/></svg>") center / contain no-repeat;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 32'><path d='M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19.5 12 31 12 31s10.5-11.5 10.5-19.6C22.5 5.6 18 1 12 1zm0 14.2a3.9 3.9 0 1 1 0-7.8 3.9 3.9 0 0 1 0 7.8z'/></svg>") center / contain no-repeat; }
+.ic--v-santorini .ic-place-title { color: #2b6a80; }
+.ic--v-santorini .ic-rsvp { border-top: 1px dashed rgba(31, 78, 156, .3); }
+.ic--v-santorini .ic-btn-yes { background: var(--sv-cobalt); border-color: var(--sv-cobalt); box-shadow: 0 10px 18px -12px rgba(31, 78, 156, .9); }
+.ic--v-santorini .ic-btn-yes:hover:not(:disabled) { background: var(--sv-deep); }
+.ic--v-santorini .ic-btn-no { border-color: rgba(31, 78, 156, .4); color: var(--sv-cobalt); }
+.ic--v-santorini .ic-enter { border-color: rgba(31, 78, 156, .4); color: var(--sv-cobalt); }
+.ic--v-santorini .ic-msg textarea { background: #fff; border-radius: 10px; padding: 10px 12px; }
+.ic--v-santorini .ic-stepper input { border-radius: 10px; }
+
+/* Chân thiệp: chìa khóa Hy Lạp + biển */
+.ic--v-santorini .ic-card > .sv-foot { position: absolute; left: 0; right: 0; bottom: 0; height: 78px; z-index: 0; border-radius: 0 0 10px 10px; overflow: hidden; pointer-events: none; }
+.ic--v-santorini .sv-key { position: absolute; left: 30px; right: 30px; top: 0; height: 14px; background: var(--sv-cobalt); opacity: .8;
+  -webkit-mask: var(--sv-key) 0 50% / 16.8px 14px round no-repeat; mask: var(--sv-key) 0 50% / 16.8px 14px round no-repeat; }
+.ic--v-santorini .sv-fsea { position: absolute; left: 0; right: 0; top: 26px; bottom: 0; overflow: hidden; background: linear-gradient(180deg, #3a9cb0, #1e6c8c);
+  -webkit-mask: var(--sv-edge) 0 0 / 120px 14px repeat-x, linear-gradient(#000, #000) 0 13px / 100% 100% no-repeat;
+  mask: var(--sv-edge) 0 0 / 120px 14px repeat-x, linear-gradient(#000, #000) 0 13px / 100% 100% no-repeat; }
+.ic--v-santorini .sv-fsea .sv-w1 { top: 20px; }
+.ic--v-santorini .sv-fsea .sv-w2 { top: 34px; }
+
+@keyframes v-santorini-drift { to { transform: translateX(60px); } }
+@keyframes v-santorini-glint { from { opacity: .25; } to { opacity: 1; } }
+@keyframes v-santorini-sway { from { rotate: -1.5deg; } to { rotate: 2deg; } }
+@keyframes v-santorini-zoom { 0% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(6%) scale(2.3); } }
+@keyframes v-santorini-card { from { opacity: 0; transform: scale(1.06); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
+@keyframes v-santorini-shut-l { from { transform: rotateY(0deg); } }
+@keyframes v-santorini-shut-r { from { transform: rotateY(0deg); } }
+
+@media (max-width: 420px) {
+  .ic--v-santorini .ic-card { padding: 18px 22px 100px; }
+  .ic--v-santorini .sv-hero { margin: 0 -8px 16px; }
+  .ic--v-santorini .sv-harch { width: 48%; }
+  .ic--v-santorini .sv-hshut { width: 24%; }
+  .ic--v-santorini .sv-hl { right: calc(74% + 8px); } .ic--v-santorini .sv-hr { left: calc(74% + 8px); }
+  .ic--v-santorini .ic-dmy { font-size: 2.1rem; }
+}
+/* M1-CARDS-02: xoay ngang -> cửa sổ rộng hơn, hộp nhãn cao hơn để tên đủ 2 dòng (có "…" khi quá dài). */
+@media (max-height: 500px) {
+  .ic--v-santorini .ic-env-btn { width: min(380px, 84vw, calc((100vh - 112px) / 1.53)); }
+  .ic--v-santorini .ic-env-to { top: 68%; bottom: 4%; gap: 2px; }
+}
+@media (max-width: 340px) {
+  .ic--v-santorini .ic-card { padding: 16px 14px 96px; }
+  .ic--v-santorini .sv-tile { width: 54px; height: 54px; margin: -27px 0 0 -27px; font-size: .95rem; }
+  .ic--v-santorini .ic-env-to b { font-size: 1.15rem; }
+  .ic--v-santorini .ic-env-to small { letter-spacing: .08em; }
+}

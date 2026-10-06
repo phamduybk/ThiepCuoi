@@ -227,3 +227,9 @@ form[data-settings-form].is-dirty > .form-actions .btn-accent { animation: save-
 /* Phiên bản cuối trang (06/10) */
 .app-ver { text-align: center; font: .78rem/1.6 system-ui, sans-serif; color: var(--muted, #8a8078); padding: 18px 16px calc(18px + env(safe-area-inset-bottom, 0px)); }
 .app-ver a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
+/* Huy hiệu VIP bản cài máy (06/10): máy kết nối tên miền đã mua */
+.vip-badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: 999px; font: 700 .75rem/1.4 system-ui, sans-serif; letter-spacing: .06em;
+  color: #5a3d00; background: linear-gradient(135deg, #f7dd8a, #e3b64a); box-shadow: 0 1px 4px rgba(150, 110, 20, .35); white-space: nowrap; }
+.adm-top .vip-badge { margin-left: 8px; }
+.domain-shop .vip-on { flex-basis: 100%; margin: 0 0 4px; font-size: .9rem; display: flex; align-items: center; gap: 8px; }
