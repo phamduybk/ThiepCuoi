@@ -2,8 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 // Bản dịch EN: 'chuỗi gốc tiếng Việt' => 'English' (xem helpers/i18n_helper.php).
 return array(
-	'Mã ghép nối gồm 6 chữ số.' => 'The pairing code has 6 digits.',
-	'Chưa ghép được.' => 'Couldn’t pair.',
+	'Mã kết nối gồm 6 chữ số.' => 'The connection code has 6 digits.',
+	'Chưa kết nối được.' => 'Couldn’t connect.',
 	'Ngôn ngữ mặc định luôn được bật' => 'The default language is always on',
 	'Ngôn ngữ mặc định luôn được bật — đổi "Ngôn ngữ mặc định" trước nếu muốn bỏ.' => 'The default language is always on — change "Default language" first if you want to drop it.',
 	// ── Đồ thị Tổng quan + Mừng cưới (admin-charts.js, gift-admin.js) ──
