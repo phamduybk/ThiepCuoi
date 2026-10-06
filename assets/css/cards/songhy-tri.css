@@ -4,7 +4,7 @@
    là 3 tấm (nhà trai | lời mời + cô dâu chú rể + ngày Dương/Âm | nhà gái), hai tấm bên mở ra từ nếp gấp; điện thoại là
    khối hai nhà trên dải đỏ + giấy kem. */
 .ic--songhy-tri {
-  --ic-out-delay: 1.3s;
+  --ic-out-delay: 1.24s;
   --sh-red: #a51f17; --sh-red-deep: #7e150f; --sh-cream: #fff8ec;
   --sh-xi-m: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='none' stroke='black' stroke-width='6' stroke-linecap='square'><path d='M8 12H45M55 12H92M26.5 3V24M73.5 3V24M15 24H38M62 24H85M15 32H38V45H15ZM62 32H85V45H62Z'/><path d='M19 52l3 6M34 52l-3 6M66 52l3 6M81 52l-3 6M5 64H95M15 73H38V95H15ZM62 73H85V95H62Z'/></g></svg>");
   --sh-hoivan: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28'><path d='M0 14h7V7h14v14H14V14M14 0v3.5M14 24.5V28' fill='none' stroke='black' stroke-width='1.6'/></svg>");
@@ -65,7 +65,7 @@
   box-shadow: inset 0 0 0 6px var(--sh-cream), inset 0 0 0 8px var(--sh-red), inset 0 0 0 11px var(--sh-cream), inset 0 0 0 12px #c4933a, 0 50px 90px -40px rgba(0, 0, 0, .55);
 }
 .ic--songhy-tri.is-open .ic-card { animation: sh-card-in .8s var(--ic-ease) both; }
-@keyframes sh-card-in { from { opacity: 0; transform: rotateX(-60deg) translateY(-30px); transform-origin: 50% 0; } to { opacity: 1; transform: none; } }
+@keyframes sh-card-in { from { opacity: 0; transform: rotateX(-60deg) translateY(-30px); transform-origin: 50% 0; } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 .ic--songhy-tri .ic-p1, .ic--songhy-tri .ic-p2, .ic--songhy-tri .ic-fam { display: contents; }
 .ic--songhy-tri .ic-card > .ic-p > *, .ic--songhy-tri .ic-p2 > *, .ic--songhy-tri .ic-p3 { grid-column: 1 / -1; position: relative; z-index: 1; }
 .ic--songhy-tri .ic-p1 > *, .ic--songhy-tri .ic-p2 > *:not(.ic-fam), .ic--songhy-tri .ic-p3 { padding-left: 30px; padding-right: 30px; }

@@ -41,7 +41,7 @@
   --f-body: "Plus Jakarta Sans", system-ui, sans-serif; --f-ui: "Plus Jakarta Sans", system-ui, sans-serif;
   --ic-paper: #fbfcfc; --ic-on-accent: #fff; --ic-line: rgba(62, 111, 134, .3); --ic-card-bg: rgba(255, 255, 255, .6);
   --ic-to-small: #3e5563; --ic-to-name: #1f2b33;
-  --ic-out-delay: 1.66s;
+  --ic-out-delay: 1.74s;
   --ph-prism: linear-gradient(118deg, #fff 0%, #f6c4ba 16%, #f7e2b2 30%, #b2e6d6 44%, #a0ceec 58%, #cec4ee 72%, #fff 88%);
   --ph-spectrum: linear-gradient(90deg, transparent, #f3b9a8 16%, #f2dca6 32%, #a9dcc9 48%, #93c3e3 64%, #b7a8e6 80%, transparent);
   word-spacing: normal;
@@ -220,4 +220,9 @@
 @media (max-width: 340px) {
   .ic--v-phale .ic-env-btn { width: 86vw; }
   .ic--v-phale .ph-card-mono { font-size: 2.4rem; }
+}
+
+/* 06/10 (design review): xoay ngang — "LỄ THÀNH HÔN" giãn .26em xuống 2 dòng, đè đinh kính. */
+@media (max-height: 500px) {
+  .ic--v-phale .ph-card-top { font-size: .625rem; letter-spacing: .06em; white-space: nowrap; }
 }

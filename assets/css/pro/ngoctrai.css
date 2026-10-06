@@ -417,3 +417,10 @@
 }
 /* Chủ nhà đang sửa: không chờ hiệu ứng mở đầu. */
 [data-theme="ngoctrai"] .is-draft :is(.intro-main, .save-card > *, .names .name, .names .amp) { animation-duration: .01s !important; animation-delay: 0s !important; }
+/* 06/10 (design review): điện thoại — khoảng trắng 120+110px giữa mỗi mục làm trang dài 15.500px (dài nhất bộ 20); giữ chất
+   "tối giản xa xỉ" nhưng bớt 1/3 chiều cao đệm. */
+@media (max-width: 600px) {
+  html[data-theme="ngoctrai"] body.wd :is(section.couple, .event, .location, .quote, .gallery-sec) { padding-top: 84px; padding-bottom: 78px; }
+  html[data-theme="ngoctrai"] body.wd .wd-foot { padding-top: 92px; }
+  html[data-theme="ngoctrai"] body.wd :is(.rsvp, .wishes) { padding-top: 84px; }
+}

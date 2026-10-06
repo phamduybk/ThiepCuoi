@@ -112,7 +112,7 @@
 /* ── Thiệp mở: lá thư mép xé, căn trái ── */
 .ic--wax .ic-card { width: min(500px, 100%); padding: 72px 46px 44px; text-align: left; background: none; box-shadow: none; border-radius: 0; }
 .ic--wax.is-open .ic-card { animation: wx-letter-in .8s var(--ic-ease) both; }
-@keyframes wx-letter-in { from { opacity: 0; transform: translateY(-70px) rotateX(-8deg) scale(.94); } to { opacity: 1; transform: none; } }
+@keyframes wx-letter-in { from { opacity: 0; transform: translateY(-70px) rotateX(-8deg) scale(.94); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 .ic--wax .ic-card > .wx-paper, .ic--wax .ic-card > .wx-shadow { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .ic--wax .wx-shadow { inset: 8px 4px 2px; box-shadow: 0 50px 80px -40px rgba(0, 0, 0, .55), 0 10px 22px -12px rgba(0, 0, 0, .25); }
 .ic--wax .wx-paper {

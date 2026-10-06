@@ -50,7 +50,7 @@
 .ic--classic.is-opening .ic-env-btn::before { transform: translateY(-46%); }
 .ic--classic.is-opening .ic-env-btn::after { opacity: 0; }
 .ic--classic.is-opening .ic-seal { opacity: 0; transform: scale(.7); }
-.ic--classic { --ic-out-delay: .5s; }
+.ic--classic { --ic-out-delay: .39s; }
 
 /* ── Thiệp ── */
 .ic--classic .ic-card { background: var(--ic-card-deco), var(--ic-grain), var(--ic-card-bg); }

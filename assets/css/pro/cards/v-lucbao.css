@@ -133,7 +133,7 @@
 .ic--v-lucbao.is-opening .lk-seam { opacity: 0; }
 .ic--v-lucbao.is-opening .ic-env-to { opacity: 1; }
 .ic--v-lucbao.is-opening .lk-card { transform: translateY(-28%) translateZ(30px) scale(1.04); }
-.ic--v-lucbao.is-opening .ic-env { animation: v-lucbao-out .55s cubic-bezier(.6, 0, .35, 1) 1.38s both; transform-origin: 50% 30%; }
+.ic--v-lucbao.is-opening .ic-env { animation: v-lucbao-out .55s cubic-bezier(.6, 0, .35, 1) 1.43s both; transform-origin: 50% 30%; }
 .ic--v-lucbao.is-open .ic-card { animation: v-lucbao-card 1s var(--ic-ease) both; }
 
 /* ── Thiệp ngà ── */
@@ -190,8 +190,8 @@
 .ic--v-lucbao .ic-count-label { font-weight: 400; }
 .ic--v-lucbao .ic-stepper button, .ic--v-lucbao .ic-stepper input { border-color: rgba(184, 146, 74, .7); }
 
-@keyframes v-lucbao-out { 0% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(4%) scale(1.5); } }
-@keyframes v-lucbao-card { from { opacity: 0; transform: translateY(40px) scale(.96); } to { opacity: 1; transform: none; } }
+@keyframes v-lucbao-out { 0% { opacity: 1; transform: none; } 50% { opacity: 1; } 100% { opacity: 0; transform: translateY(4%) scale(1.5); } }
+@keyframes v-lucbao-card { from { opacity: 0; transform: translateY(40px) scale(.96); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 @keyframes v-lucbao-fan { from { opacity: 0; transform: translateX(-50%) scale(.6); } to { opacity: 1; transform: translateX(-50%); } }
 
 @media (max-width: 420px) {
@@ -213,3 +213,6 @@
   .ic--v-lucbao .ic-env-to small { font-size: .875rem; letter-spacing: .1em; }
   .ic--v-lucbao .ic-env-to b { font-size: 1rem; line-height: 1.15; }
 }
+/* 06/10 (design review): tên script to xuống 2 dòng làm "&" treo cuối dòng 1 -> xếp dọc tên / & / tên như thiệp in. */
+.ic--v-lucbao .ic-couple { flex-direction: column; align-items: center; gap: 0; }
+.ic--v-lucbao .ic-couple i { margin: -.1em 0 -.05em; }

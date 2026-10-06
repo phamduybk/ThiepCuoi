@@ -96,8 +96,8 @@
 /* R2-CARDS-01: xoay ngang (bìa ~180px) -> chữ trên bìa nhỏ theo, không đè nhãn "Thân gửi". */
 @media (max-height: 500px) {
   .ic--foil-flip .ff > .ff-front { padding-top: 22%; }
-  .ic--foil-flip .ff-eyebrow { font-size: .625rem; letter-spacing: .22em; }
-  .ic--foil-flip .ff-mono { font-size: 2.6rem; margin-top: 4px; }
+  .ic--foil-flip .ff-eyebrow { font-size: .5625rem; letter-spacing: .1em; white-space: nowrap; }   /* 06/10: .22em tràn mép bìa ~120px */
+  .ic--foil-flip .ff-mono { font-size: 2.2rem; margin-top: 4px; }
   .ic--foil-flip .ff-date { font-size: .8125rem; margin-top: 2px; }
   .ic--foil-flip .ic-env-to { bottom: 10%; }
 }

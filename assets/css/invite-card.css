@@ -29,6 +29,9 @@
   transition: opacity .35s ease;
 }
 .ic.is-closed { display: none; }
+/* 06/10 (design review): --accent-ink (accent đậm đạt AA, chỉ 4 giao diện pastel khai báo ở wedding.css) dùng cho chữ/nút màu
+   accent trên thiệp. Mẫu tự đặt bảng màu riêng (VIP, foil-flip, songhy-tri) bỏ biến này -> quay về --accent của chính mẫu. */
+.ic[class*="ic--v-"], .ic--foil-flip, .ic--songhy-tri .ic-card { --accent-ink: initial; }
 .ic.is-leaving { opacity: 0; }
 html.ic-lock, html.ic-lock body { overflow: hidden; }
 
@@ -110,7 +113,7 @@ html.ic-lock, html.ic-lock body { overflow: hidden; }
 .ic-greet { font: 600 .875rem/1.4 var(--f-ui, system-ui, sans-serif); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .ic-card .ic-name {
   margin: 10px 0 14px; font: var(--name-style, normal) 400 clamp(2.3rem, 9vw, 3.3rem)/1.15 var(--f-name, Georgia, serif);
-  color: var(--accent); overflow-wrap: anywhere; outline: 0; text-wrap: balance;
+  color: var(--accent-ink, var(--accent)); overflow-wrap: anywhere; outline: 0; text-wrap: balance;
 }
 .ic-text { font-size: 1.03rem; line-height: 1.65; font-style: italic; color: color-mix(in srgb, var(--ink) 88%, transparent); max-width: 34ch; margin: 0 auto !important; text-wrap: pretty; }
 .ic-rule { display: flex; align-items: center; gap: 12px; margin: 22px auto 18px; width: min(220px, 70%); color: var(--accent); font-size: .8rem; }
@@ -124,18 +127,18 @@ html.ic-lock, html.ic-lock body { overflow: hidden; }
 
 .ic-date { margin: 18px 0 4px; }
 /* Giờ / địa điểm / nhãn số người viết thường, không giãn chữ (R2-24: người lớn tuổi đọc chữ IN HOA giãn cách rất khó). */
-.ic-wd { font: 600 1rem/1.4 var(--f-ui, system-ui, sans-serif); letter-spacing: .01em; color: var(--accent); }
+.ic-wd { font: 600 1rem/1.4 var(--f-ui, system-ui, sans-serif); letter-spacing: .01em; color: var(--accent-ink, var(--accent)); }
 .ic-dmy { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 6px 0 !important; font: 500 2.2rem/1 var(--f-head, Georgia, serif); color: var(--ink); }
 .ic-dmy i { width: 1px; height: 1.4rem; background: var(--ic-line); }
 .ic-lunar { font-size: .9375rem; font-style: italic; color: var(--muted); }
 
 .ic-place { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--ic-line); display: grid; gap: 3px; }
-.ic-place-title { font: 600 1rem/1.4 var(--f-ui, system-ui, sans-serif); letter-spacing: .01em; color: var(--accent); }
+.ic-place-title { font: 600 1rem/1.4 var(--f-ui, system-ui, sans-serif); letter-spacing: .01em; color: var(--accent-ink, var(--accent)); }
 .ic-place-name { font: 500 1.2rem/1.3 var(--f-head, Georgia, serif); color: var(--ink); }
 .ic-place-addr { font-size: .9375rem; color: var(--muted); }
 
 .ic-link {
-  justify-self: center; background: none; border: 0; cursor: pointer; color: var(--accent);
+  justify-self: center; background: none; border: 0; cursor: pointer; color: var(--accent-ink, var(--accent));
   font: 600 .9375rem/1.4 var(--f-ui, system-ui, sans-serif); letter-spacing: .06em; text-decoration: underline; text-underline-offset: 3px;
   min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 0 8px;
 }
@@ -151,8 +154,8 @@ html.ic-lock, html.ic-lock body { overflow: hidden; }
 }
 .ic-btn:active { transform: scale(.98); }
 .ic-btn:disabled { opacity: .55; cursor: not-allowed; }
-.ic-btn-yes { background: var(--accent); color: var(--ic-on-accent); }
-.ic-btn-yes:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 86%, #000); }
+.ic-btn-yes { background: var(--accent-ink, var(--accent)); color: var(--ic-on-accent); }
+.ic-btn-yes:hover:not(:disabled) { background: color-mix(in srgb, var(--accent-ink, var(--accent)) 86%, #000); }
 .ic-btn-no { background: transparent; color: var(--ink); border-color: color-mix(in srgb, var(--ink) 30%, transparent); }
 .ic-btn-no:hover:not(:disabled) { border-color: var(--ink); }
 .ic-btn:focus-visible, .ic-enter:focus-visible, .ic-link:focus-visible, .ic-stepper button:focus-visible {
@@ -185,7 +188,7 @@ html.ic-lock, html.ic-lock body { overflow: hidden; }
 .ic-msg textarea { margin: 0; background: color-mix(in srgb, var(--ic-paper) 96%, var(--ink)); color: var(--ink); border: 1px solid var(--ic-line); font: 1rem/1.5 var(--f-body, Georgia, serif); }
 .ic-err { color: #b3261e; font-size: .9375rem; font-weight: 600; text-align: center; }
 .ic-done { display: grid; gap: 4px; justify-items: center; }
-.ic-done-title { font: var(--name-style, normal) 400 1.7rem/1.2 var(--f-name, Georgia, serif); color: var(--accent); }
+.ic-done-title { font: var(--name-style, normal) 400 1.7rem/1.2 var(--f-name, Georgia, serif); color: var(--accent-ink, var(--accent)); }
 .ic-done-sub { color: var(--muted); font-size: .95rem; }
 .ic-done.ic-pop { animation: ic-rise .5s var(--ic-ease) both; }
 
@@ -199,7 +202,7 @@ html.ic-lock, html.ic-lock body { overflow: hidden; }
 /* Nút nhỏ mở lại thiệp sau khi đã vào trang cưới (nút nhạc ở góc phải). */
 .ic-reopen {
   position: fixed; left: 16px; bottom: 16px; z-index: 45; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px;
-  border-radius: 999px; border: 1px solid var(--ic-line, var(--accent)); background: var(--paper, #fff); color: var(--accent); cursor: pointer;
+  border-radius: 999px; border: 1px solid var(--ic-line, var(--accent)); background: var(--paper, #fff); color: var(--accent-ink, var(--accent)); cursor: pointer;
   font: 600 .9375rem/1 var(--f-ui, system-ui, sans-serif); box-shadow: 0 6px 18px rgba(0, 0, 0, .14);
 }
 .ic-reopen[hidden] { display: none; }
@@ -219,7 +222,7 @@ body.is-draft .ic-reopen { bottom: 164px; }
 }
 
 @keyframes ic-rise { from { opacity: 0; transform: translateY(26px) scale(.985); } to { opacity: 1; transform: none; } }
-@keyframes ic-card-in { from { opacity: 0; transform: translateY(60px) scale(.96); } to { opacity: 1; transform: none; } }
+@keyframes ic-card-in { from { opacity: 0; transform: translateY(60px) scale(.96); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 @keyframes ic-env-out { to { opacity: 0; transform: translateY(40px) scale(.95); } }
 @keyframes ic-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 @keyframes ic-hint-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.045); } }

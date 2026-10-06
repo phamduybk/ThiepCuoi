@@ -3,7 +3,7 @@
    nền trời, cổng vòm, hai bụi hoa, bảng tên) — các lớp lần lượt DỰNG ĐỨNG như thiệp pop-up (rotateX 88° -> 0 quanh
    chân), cả sa bàn xoay theo chuột / cảm biến nghiêng. Màu lấy từ --accent / --accent-2 của giao diện. */
 .ic--popup {
-  --ic-out-delay: .5s;
+  --ic-out-delay: .56s;
   --pp-wash: color-mix(in srgb, var(--accent-2, var(--accent)) 34%, var(--ic-paper));
   --pp-sky: color-mix(in srgb, var(--accent-2, var(--accent)) 18%, var(--ic-paper));
   --pp-mid: color-mix(in srgb, var(--accent) 62%, var(--ic-paper));
@@ -49,6 +49,17 @@
 .ic--popup.is-opening .pp-lid-b { visibility: visible; transition: visibility 0s linear .37s; }
 .ic--popup.is-opening .ic-env { animation-name: pp-env-out; }
 @keyframes pp-env-out { to { opacity: 0; transform: translateY(-30px) scale(.97); } }
+/* 06/10 (design review): khi nắp lật lên, lòng thiệp không còn trống — cổng vòm (trời + đồi như ô cửa ở bìa) DỰNG ĐỨNG
+   từ mặt giấy (rotateX 80° -> 0 quanh chân) báo trước sa bàn pop-up của thiệp mở. Chỉ transform/opacity. */
+.pp-inside::after {
+  content: ""; position: absolute; left: 17%; right: 17%; top: 10%; height: 54%; border-radius: 999px 999px 3px 3px;
+  background: radial-gradient(120% 60% at 30% 100%, var(--pp-mid) 0 30%, transparent 31%), radial-gradient(120% 60% at 75% 100%, var(--pp-deep) 0 26%, transparent 27%),
+    linear-gradient(180deg, var(--pp-sky), var(--pp-wash));
+  box-shadow: 0 0 0 6px var(--ic-card-bg), 0 0 0 7px var(--ic-line), 0 18px 22px -14px rgba(0, 0, 0, .35);
+  transform-origin: 50% 100%; transform: perspective(600px) rotateX(82deg); opacity: 0;
+  transition: transform .55s cubic-bezier(.3, 1.35, .5, 1) .28s, opacity .18s linear .28s;
+}
+.ic--popup.is-opening .pp-inside::after { transform: perspective(600px) rotateX(0); opacity: 1; }
 
 /* ── Thiệp mở: sa bàn pop-up ── */
 .ic--popup .ic-card { padding-top: 44px; background: var(--ic-grain), var(--ic-card-bg); }
@@ -112,7 +123,7 @@
 .ic--popup.is-open .pp-hearts { animation: pp-pop .6s var(--ic-ease) .6s both; }
 @keyframes pp-pop { from { transform: translateZ(var(--z)) scaleX(var(--sx, 1)) rotateX(88deg); } to { transform: translateZ(var(--z)) scaleX(var(--sx, 1)) rotateX(0deg); } }
 .ic--popup.is-open .ic-card { animation: pp-card-in .7s var(--ic-ease) both; }
-@keyframes pp-card-in { from { opacity: 0; transform: translateY(40px) rotateX(-14deg); } to { opacity: 1; transform: none; } }
+@keyframes pp-card-in { from { opacity: 0; transform: translateY(40px) rotateX(-14deg); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 .ic--popup .ic-mono { display: none; }
 @media (max-width: 420px) {
   .pp-scene { margin: 0 -24px 6px; height: 262px; }

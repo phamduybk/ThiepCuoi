@@ -5,7 +5,7 @@
 .gift-cards.is-single { grid-template-columns: minmax(0, 320px); }
 .gift-card { background: #fff; color: #2b2222; border-radius: 18px; padding: 20px 20px 18px; display: grid; justify-items: center; gap: 6px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, .08); border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent); }
-.gift-side { margin: 0 0 6px; font: 600 .9rem var(--f-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.gift-side { margin: 0 0 6px; font: 600 .9rem var(--f-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink, var(--accent)); }
 .gift-qr { width: min(230px, 64vw); aspect-ratio: 1; display: grid; place-items: center; background: #fff; border-radius: 12px; padding: 0;
   border: 1px solid #eee; }
 .gift-qr svg, .gift-qr img { width: 100%; height: 100%; display: block; object-fit: contain; }

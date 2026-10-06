@@ -2,7 +2,7 @@
    ngang + huy hiệu chữ lồng giữ hai cánh. Chạm -> đai trượt xuống, huy hiệu bay lên, hai cánh xoay mở ra phía người xem
    (rotateY quanh bản lề), thiệp trong tiến lên. Thiệp mở: đỉnh vòm, vòng lá trên vòm; màn rộng có 2 cánh cửa đứng nghiêng
    hai bên (nghiêng theo chuột/cảm biến). Màu: giấy theo giao diện (--ic-env-front, --ic-liner). */
-.ic--gatefold { --ic-out-delay: 1.02s; --gf-ink: color-mix(in srgb, var(--accent) 72%, var(--ink)); }
+.ic--gatefold { --ic-out-delay: .99s; --gf-ink: color-mix(in srgb, var(--accent) 72%, var(--ink)); }
 
 /* ── Bìa ── */
 /* R2-CARDS-01: điện thoại xoay ngang -> bìa vừa chiều cao màn (tên khách + nút "Chạm để mở" không rơi khỏi màn) */
@@ -85,7 +85,7 @@
   background: var(--ic-grain), var(--ic-card-bg);
 }
 .ic--gatefold.is-open .ic-card { animation: gf-card-in .9s var(--ic-ease) both; }
-@keyframes gf-card-in { from { opacity: 0; transform: translateZ(-160px) translateY(30px); } to { opacity: 1; transform: none; } }
+@keyframes gf-card-in { from { opacity: 0; transform: translateZ(-160px) translateY(30px); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 .ic--gatefold .ic-card::before, .ic--gatefold .ic-card::after {
   content: ""; position: absolute; pointer-events: none; border: 1px solid var(--ic-line);
 }

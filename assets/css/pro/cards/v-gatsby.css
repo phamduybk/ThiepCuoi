@@ -230,7 +230,7 @@ html .ic.ic--v-gatsby .ic-card .ic-form .ic-msg textarea, html .ic.ic--v-gatsby 
 .ic--v-gatsby.is-open .ic-p1 { animation: vg-fade-up .8s ease .6s both; }
 .ic--v-gatsby.is-open .ic-p2 { animation: vg-fade-up .8s ease .75s both; }
 .ic--v-gatsby.is-open .ic-p3, .ic--v-gatsby.is-open .vg-foot { animation: vg-fade-up .8s ease .9s both; }
-@keyframes vg-card-in { from { opacity: 0; transform: perspective(1200px) translateY(70px) rotateX(-16deg) scale(.94); } to { opacity: 1; transform: none; } }
+@keyframes vg-card-in { from { opacity: 0; transform: perspective(1200px) translateY(70px) rotateX(-16deg) scale(.94); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 @keyframes vg-sun { from { opacity: 0; transform: scale(.3) rotate(-25deg); } to { opacity: 1; transform: none; } }
 @keyframes vg-fade-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
 

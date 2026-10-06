@@ -223,7 +223,7 @@ html .ic--v-ngoctrai.ic {
 .ic--v-ngoctrai .vnt-sign { font: italic 300 1.15rem/1.3 var(--f-head); color: #585c64; }
 
 @keyframes vnt-glint { 0%, 70%, 100% { background-position: calc(50% + var(--tx) * 50%) 0; } 85% { background-position: -40% 0; } }
-@keyframes vnt-card-in { from { opacity: 0; transform: translateY(46px) scale(.9); } 55% { opacity: 1; } to { opacity: 1; transform: none; } }
+@keyframes vnt-card-in { from { opacity: 0; transform: translateY(46px) scale(.9); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 @keyframes vnt-swag-in { from { opacity: 0; transform: scaleY(.3); } 40% { opacity: 1; } to { opacity: 1; transform: none; } }
 
 @media (max-width: 420px) {

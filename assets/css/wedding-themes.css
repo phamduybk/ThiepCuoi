@@ -1228,7 +1228,7 @@
 /* Địa điểm: thẻ vòm màu đất xen kẽ (gạch · cát · hồng đất), cửa sổ bản đồ hình vòm. */
 [data-theme="datnung"] .location .events { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); max-width: 1000px; gap: 28px; align-items: stretch; }
 [data-theme="datnung"] .location :is(.ev, .ev:nth-child(even), .ev.ev--nomap) { display: flex; flex-direction: column; max-width: none; margin: 0; padding: 14px 14px 6px;
-  background: var(--clay); color: #fff7ee; border-radius: 999px 999px 26px 26px / 190px 190px 26px 26px; }
+  background: #ad5537; color: #fff7ee; border-radius: 999px 999px 26px 26px / 190px 190px 26px 26px; }   /* 06/10: đất nung đậm hơn --clay để chữ kem đạt AA (4,8:1) */
 [data-theme="datnung"] .location .ev:nth-child(3n + 2) { background: var(--mustard); color: var(--ink); }
 [data-theme="datnung"] .location .ev:nth-child(3n + 3) { background: var(--blush); color: var(--ink); }
 [data-theme="datnung"] .location :is(.ev, .ev:nth-child(even)) .ev-map { order: 0; height: 220px; border-radius: 999px 999px 16px 16px / 170px 170px 16px 16px; }
@@ -1238,7 +1238,7 @@
   background: currentColor; -webkit-mask: var(--sun) center / contain no-repeat; mask: var(--sun) center / contain no-repeat; }
 [data-theme="datnung"] .ev-card h3 { font: italic 400 2.1rem/1.15 var(--f-head); color: inherit; margin-bottom: 6px; }
 [data-theme="datnung"] .ev-place { font: 700 .76rem var(--f-ui); letter-spacing: .16em; text-transform: uppercase; margin-bottom: 8px; }
-[data-theme="datnung"] .location .ev-card :is(.ev-addr, .ev-time) { color: inherit; opacity: .88; }
+[data-theme="datnung"] .location .ev-card :is(.ev-addr, .ev-time) { color: inherit; }
 [data-theme="datnung"] .location .ev-card .btn { margin-top: auto; background: #fff7ee; color: var(--accent); }
 [data-theme="datnung"] .ev-map iframe { filter: sepia(.25) saturate(.85); }
 /* Trích dẫn */
@@ -1376,3 +1376,17 @@ html:not([lang="vi"])[data-theme="tapchi"] .wd-g::before { content: "Fig. " coun
   html[data-theme] body.wd .event-card { min-width: 0; max-width: 100%; box-sizing: border-box; }
   html[data-theme] body.wd .cal-g { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 }
+
+/* 06/10 (design review): Đêm sao — chữ vàng trên nền TRẮNG (thẻ Mừng cưới, nút "Xem bản đồ") chỉ 1,96:1 -> vàng đồng đậm (5,3:1). */
+[data-theme="demsao"] :is(.gift-side, .ev-map-load b) { color: #86672a; }
+[data-theme="demsao"] :is(.ev-map-load:hover, .ev-map-load:focus-visible) b { color: #0d1530; }
+/* 06/10 (design review): Song hỷ / Đêm sao / Đất nung ≤400px — thẻ Lễ cưới là flex căn giữa nên hàng đếm ngược co về bề rộng nội dung (184px ở 360px)
+   -> 4 bao lì xì 41px, nhãn "NGÀY/PHÚT" 14px tràn mép. Cho hàng giãn hết thẻ. */
+@media (max-width: 400px) {
+  html:is([data-theme="songhy"], [data-theme="demsao"], [data-theme="datnung"]) body.wd .countdown { align-self: stretch; width: 100%; max-width: 340px; margin-inline: auto; }
+}
+/* 06/10 (design review): Đất nung — chữ màu gạch #a94f32 trên nền cát --soft chỉ 3,97–4,19:1 (nút viền "Xem tất cả ảnh",
+   thứ trong lịch, tên người chúc) -> gạch đậm #9a4529 (≥4,95:1). Khối "Bạn có ảnh đẹp…" nền --clay: đậm như thẻ địa điểm. */
+[data-theme="datnung"] .wd .btn-ghost, [data-theme="datnung"] .cal-g b, [data-theme="datnung"] .wd .wish cite { color: #9a4529; }
+[data-theme="datnung"] .wd .btn-ghost { border-color: #9a4529; }
+[data-theme="datnung"] .cta { background: #ad5537; }

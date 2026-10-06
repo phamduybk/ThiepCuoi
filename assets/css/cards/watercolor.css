@@ -3,7 +3,7 @@
    (translateZ), xoay và bay lên góc; thiệp tiến lên. Thiệp mở: polaroid nghiêng phá khung ở đầu thiệp (nghiêng theo
    chuột/cảm biến), vệt màu nước ở các góc, tên viết tay. Vệt màu = mask SVG nhiễu (vẽ một lần, không lọc liên tục). */
 .ic--watercolor {
-  --ic-out-delay: .78s;
+  --ic-out-delay: .74s;
   --wc-a: color-mix(in srgb, var(--accent) 55%, transparent);
   --wc-b: color-mix(in srgb, var(--accent-2, var(--accent)) 60%, transparent);
   --wc-leafc: color-mix(in srgb, var(--accent) 70%, #2f3b2a);
@@ -58,7 +58,7 @@
 /* ── Thiệp mở ── */
 .ic--watercolor .ic-card { width: min(470px, 100%); margin-top: 96px; padding: 0 38px 40px; border-radius: 3px; overflow: visible; }
 .ic--watercolor.is-open .ic-card { animation: wc-card-in .85s var(--ic-ease) both; }
-@keyframes wc-card-in { from { opacity: 0; transform: translateY(50px) rotate(2deg); } to { opacity: 1; transform: none; } }
+@keyframes wc-card-in { from { opacity: 0; transform: translateY(50px) rotate(2deg); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 .ic--watercolor .wc-deco { overflow: hidden; border-radius: 3px; }
 .wc-deco > span { position: absolute; display: block; }
 .wc-deco .wc-bloom-a { width: 300px; height: 280px; left: -110px; top: -70px; }

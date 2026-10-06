@@ -3,7 +3,7 @@
    (rotateY -176°) lộ trang trong. Thiệp mở: màn rộng là trang đôi (trái: lễ cưới / phải: lời mời + trả lời) có rãnh gáy,
    một trang giấy lật qua khi mở, dải ruy băng đánh dấu thò dưới gáy; điện thoại là thiệp gập ngang mở từ trên xuống. */
 .ic--book {
-  --ic-out-delay: .96s; --bk-cloth: color-mix(in srgb, var(--ic-wax) 80%, #14110f);
+  --ic-out-delay: .89s; --bk-cloth: color-mix(in srgb, var(--ic-wax) 80%, #14110f);
   --bk-edge: color-mix(in srgb, var(--ic-paper) 86%, #8a7f70);
 }
 [data-theme="songhy"] .ic--book { --bk-cloth: #8e1c16; }
@@ -99,7 +99,7 @@
       4px 4px 0 color-mix(in srgb, var(--bk-edge) 90%, #000), 0 50px 90px -40px rgba(0, 0, 0, .5);
   }
   .ic--book.is-open .ic-card { animation: bk-spread .8s var(--ic-ease) both; }
-  @keyframes bk-spread { from { opacity: 0; transform: translateY(40px) rotateX(18deg) scale(.96); } to { opacity: 1; transform: none; } }
+  @keyframes bk-spread { from { opacity: 0; transform: translateY(40px) rotateX(18deg) scale(.96); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
   .ic--book .ic-p1 { grid-area: p1; padding: 64px 56px 0; }
   .ic--book .ic-p2 { grid-area: p2; padding: 64px 56px; display: flex; flex-direction: column; justify-content: center; background: none; box-shadow: none; }
   .ic--book .ic-p3 { grid-area: p3; padding: 0 56px 56px; }
@@ -115,4 +115,10 @@
   .ic--book.is-open .bk-turn { animation: bk-turn 1.05s var(--ic-fold) .2s both; }
   @keyframes bk-turn { 0% { opacity: 1; transform: translateZ(1px) rotateY(0); } 88% { opacity: 1; transform: translateZ(1px) rotateY(-178deg); } 100% { opacity: 0; transform: translateZ(1px) rotateY(-180deg); } }
   .bk-ribbon { right: 22%; }
+}
+
+/* 06/10 (design review): xoay ngang (bìa ~130px) — chữ lồng 3.6rem bị nhãn "Thân gửi" che nửa -> thu chữ lồng + tiêu đề. */
+@media (max-height: 500px) {
+  .bk-front .bk-title { font-size: .5625rem; letter-spacing: .16em; }
+  .bk-front .bk-mono { font-size: 2.1rem; margin-top: 6px; }
 }

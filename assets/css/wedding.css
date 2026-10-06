@@ -4,35 +4,43 @@
    chữ viết tay, theo demo7). 6 giao diện còn lại (hoangkim, songhy, tapchi, vuonhoa, demsao, datnung)
    nằm ở wedding-themes.css, nạp sau file này. Mọi màu/phông lấy từ biến bên dưới. */
 :root, [data-theme="serenity"] {
-  --accent: #6fae95; --accent-2: #91c0c7; --soft: #e8f7f1; --ink: #423629; --muted: #857a70;
+  --accent: #6fae95; --accent-2: #91c0c7; --soft: #e8f7f1; --ink: #423629; --muted: #756b62;
   --nav-bg: #423629; --nav-ink: #fff; --page: #f6fbf8;
   --f-head: "Lora", Georgia, serif; --f-name: "Playfair Display", Georgia, serif; --f-body: "Lora", Georgia, serif;
   --f-ui: "Montserrat", system-ui, sans-serif;
   --name-style: italic; --name-size: clamp(2.6rem, 7vw, 5rem);
 }
 [data-theme="lavender"] {
-  --accent: #c77aab; --accent-2: #b6bad6; --soft: #fbf0f7; --ink: #5d6180; --muted: #8b8fa6;
+  --accent: #c77aab; --accent-2: #b6bad6; --soft: #fbf0f7; --ink: #5d6180; --muted: #666b88;
   --nav-bg: #9ea3c9; --nav-ink: #fff; --page: #fdf8fb;
 }
 [data-theme="summer"] {
-  --accent: #ec7a63; --accent-2: #f5b86b; --soft: #fff8df; --ink: #7b3e24; --muted: #9a7563;
+  --accent: #ec7a63; --accent-2: #f5b86b; --soft: #fff8df; --ink: #7b3e24; --muted: #8b6958;
   --nav-bg: #ec8b67; --nav-ink: #fff; --page: #fffdf3;
 }
 [data-theme="thiep"] {
-  --accent: #e7746f; --accent-2: #f3b6ae; --soft: #fdf1ef; --ink: #3b3333; --muted: #8a7f7f;
+  --accent: #e7746f; --accent-2: #f3b6ae; --soft: #fdf1ef; --ink: #3b3333; --muted: #766b6b;
   --nav-bg: transparent; --nav-ink: #fff; --page: #fff;
   --f-head: "Dancing Script", cursive; --f-name: "Dancing Script", cursive; --f-body: "Lora", Georgia, serif;
   --name-style: normal; --name-size: clamp(3rem, 9vw, 6rem);
 }
 
+/* 06/10 (design review): --accent-ink = accent đậm đủ AA (≥4.5:1 với chữ trắng và trên nền --soft) cho nút, băng tên,
+   số đếm ngược, tiêu đề nhỏ màu accent. --accent pastel giữ cho trang trí (tim, vạch, viền). Chỉ 4 giao diện pastel
+   khai báo; giao diện khác không có biến này -> var(--accent-ink, var(--accent)) = accent như cũ. KHÔNG đặt ở :root. */
+[data-theme="serenity"] { --accent-ink: #3f7a64; }
+[data-theme="lavender"] { --accent-ink: #a44a82; }
+[data-theme="summer"]   { --accent-ink: #b4503a; }
+[data-theme="thiep"]    { --accent-ink: #b8423d; }
+
 body.wd { background: var(--page); color: var(--ink); font-family: var(--f-body); overflow-x: hidden; transition: background .4s, color .4s; }
 .wd a { color: var(--accent); }
 .wd .btn { font-family: var(--f-ui); letter-spacing: .02em; }
-.wd .btn-accent { background: var(--accent); color: #fff; }
+.wd .btn-accent { background: var(--accent-ink, var(--accent)); color: #fff; }
 .wd .btn-ghost { color: var(--ink); }
-.wd .btn-accent:hover { background: color-mix(in srgb, var(--accent) 85%, #000); }
+.wd .btn-accent:hover { background: color-mix(in srgb, var(--accent-ink, var(--accent)) 85%, #000); }
 .wd h2 { font-family: var(--f-head); font-weight: 600; font-size: clamp(2rem, 5vw, 3rem); color: var(--ink); }
-[data-theme="thiep"] .wd h2, [data-theme="thiep"] h2 { color: var(--accent); font-weight: 700; }
+[data-theme="thiep"] .wd h2, [data-theme="thiep"] h2 { color: var(--accent-ink, var(--accent)); font-weight: 700; }
 .is-hidden { display: none !important; }
 .dt-nw { white-space: nowrap; }
 
@@ -70,6 +78,9 @@ body.wd { background: var(--page); color: var(--ink); font-family: var(--f-body)
   background: linear-gradient(135deg, #ffe3ea, #f5a9bb); opacity: .85; }
 .fx[data-fx="petals"] i:nth-child(4n) { background: linear-gradient(135deg, #fff, #f7c5d0); }
 @media (prefers-reduced-motion: reduce) { .fx { display: none; } }
+/* 06/10: thiệp mời toàn màn đang che trang (html.ic-lock) -> dừng hiệu ứng rơi phía sau: không ai thấy, mà nền mờ
+   backdrop-filter của thiệp phải vẽ lại mỗi khung khi có vật chuyển động bên dưới (nặng trên điện thoại). */
+html.ic-lock .fx { display: none; }
 
 /* ── Thanh menu ──────────────────────────────────────────── */
 /* Nhảy tới mục từ menu: tiêu đề không nằm sát/khuất dưới thanh menu cố định (R2-27). */
@@ -99,7 +110,7 @@ html { scroll-padding-top: 72px; }
 
 /* ── Nhạc ────────────────────────────────────────────────── */
 .music { position: fixed; right: 16px; bottom: 16px; z-index: 45; }
-.music-btn { width: 48px; height: 48px; border-radius: 50%; border: 0; background: var(--accent); color: #fff; font-size: 20px; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.2); }
+.music-btn { width: 48px; height: 48px; border-radius: 50%; border: 0; background: var(--accent-ink, var(--accent)); color: #fff; font-size: 20px; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.2); }
 .music.playing .music-btn { animation: spin 4s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 /* R5-17: giảm chuyển động -> nút nhạc không quay; lưới an toàn: không hiệu ứng nào trên trang lặp vô hạn (mọi giao diện). */
@@ -188,7 +199,7 @@ section.couple, .event, .location, .gallery-sec { position: relative; padding: 9
 .oval { width: min(300px, 70%); aspect-ratio: 3 / 4; border-radius: 50%; margin: 0 auto 18px; border: 6px solid var(--soft); box-shadow: 0 0 0 1px var(--accent-2); }
 .role { font-family: var(--f-ui); letter-spacing: .2em; text-transform: uppercase; font-size: .75rem; color: var(--muted); margin: 0; }
 .banner { display: inline-block; margin: 6px 0 10px; padding: 10px 24px; color: #fff; font: 700 1.3rem var(--f-head);
-  background: var(--accent); border-radius: 40% 60% 55% 45% / 60% 40% 60% 40%; }
+  background: var(--accent-ink, var(--accent)); border-radius: 40% 60% 55% 45% / 60% 40% 60% 40%; }
 [data-theme="thiep"] .banner { background: none; color: var(--ink); font-size: 2rem; padding: 0; }
 .info { color: var(--muted); max-width: 320px; margin: 0 auto; }
 body:not(.is-draft) .info:empty { display: none; }
@@ -202,7 +213,7 @@ body:not(.is-draft) .info:empty { display: none; }
 .lead { font-style: italic; color: var(--muted); }
 .wd .countdown { display: flex; justify-content: center; gap: 12px; margin: 22px 0; }
 .wd .countdown div { min-width: 70px; padding: 10px 6px; border-radius: 10px; background: var(--soft); backdrop-filter: none; box-shadow: none; }
-.wd .countdown b { display: block; font: 700 2rem/1.1 var(--f-name); color: var(--accent); }
+.wd .countdown b { display: block; font: 700 2rem/1.1 var(--f-name); color: var(--accent-ink, var(--accent)); }
 .wd .countdown span { font: .7rem var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
 .center-row { justify-content: center; }
 @media (max-width: 760px) { .event-row { grid-template-columns: 1fr; } .event-photo { width: 80%; margin: 0 auto; } .wd .countdown div { min-width: 58px; } }
@@ -217,7 +228,7 @@ body:not(.is-draft) .info:empty { display: none; }
 .ev-map-ph { height: 100%; display: grid; place-items: center; color: var(--muted); font-style: italic; }
 .ev-card { margin-left: -60px; text-align: center; }
 .ev:nth-child(even) .ev-card { margin: 0 -60px 0 0; }
-.ev-card h3 { font: 700 1.8rem var(--f-head); color: var(--accent); margin-bottom: 6px; }
+.ev-card h3 { font: 700 1.8rem var(--f-head); color: var(--accent-ink, var(--accent)); margin-bottom: 6px; }
 .ev-place { font: 600 1rem var(--f-ui); margin-bottom: 4px; }
 .ev-addr, .ev-time { color: var(--muted); margin-bottom: 6px; }
 .ev-card .btn { margin-top: 10px; }
@@ -246,13 +257,13 @@ body:not(.is-draft) .info:empty { display: none; }
 @media (max-width: 560px) { .wd-gallery { grid-template-columns: repeat(2, 1fr); gap: 4px; } }
 .more-albums { max-width: 1100px; margin: 36px auto 0; }
 .wd .album-card { box-shadow: 0 2px 10px rgba(0,0,0,.08); }
-.wd .album-meta h3 { font-family: var(--f-head); }
+.wd .album-meta h3 { font-family: var(--f-head); color: var(--accent-ink, inherit); }
 
 /* ── Xác nhận tham dự ────────────────────────────────────── */
 .rsvp { max-width: 720px; }
 .rsvp-card { display: grid; gap: 14px; }
 .rsvp-invitee { text-align: center; font: italic 1.2rem var(--f-body); margin: 0; }
-.rsvp-invitee b { display: block; font: var(--name-style) 700 2rem var(--f-name); color: var(--accent); }
+.rsvp-invitee b { display: block; font: var(--name-style) 700 2rem var(--f-name); color: var(--accent-ink, var(--accent)); }
 .rsvp-choice { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .rsvp-choice label { display: block; cursor: pointer; }
 .rsvp-choice input { position: absolute; opacity: 0; }
@@ -264,7 +275,7 @@ body:not(.is-draft) .info:empty { display: none; }
 /* Lỗi của 1 ô (R3-04: SĐT chưa đúng) — đỏ đậm đủ tương phản trên nền trắng của thẻ ở mọi giao diện. */
 .wd .field-err { display: block; margin-top: 4px; color: #b3261e; font: 600 .95rem/1.4 var(--f-ui); }
 .wd [aria-invalid="true"] { border-color: #b3261e !important; box-shadow: 0 0 0 2px rgba(179,38,30,.18); }
-.rsvp-done b { font: 700 1.6rem var(--f-head); color: var(--accent); display: block; margin-bottom: 6px; }
+.rsvp-done b { font: 700 1.6rem var(--f-head); color: var(--accent-ink, var(--accent)); display: block; margin-bottom: 6px; }
 
 /* ── Lời chúc, chân trang ────────────────────────────────── */
 .wd .wishes { max-width: 820px; }
@@ -277,7 +288,7 @@ body:not(.is-draft) .info:empty { display: none; }
 .wd-foot p { font: italic 1.15rem var(--f-body); }
 body.is-draft .wd-foot { padding-bottom: 230px; }
 .invitee { font: italic 1.1rem var(--f-body); margin: 0 0 10px; }
-.invitee b { display: block; font: var(--name-style) 700 1.8rem var(--f-name); color: var(--accent); }
+.invitee b { display: block; font: var(--name-style) 700 1.8rem var(--f-name); color: var(--accent-ink, var(--accent)); }
 [data-theme="thiep"] .invitee, [data-theme="thiep"] .invitee b { color: #fff; }
 /* Họa tiết thò ra ngoài mép không được làm rộng trang (điện thoại tự thu nhỏ cả trang). */
 .intro, section.couple, .event, .location, .gallery-sec { overflow-x: clip; }
@@ -328,6 +339,11 @@ body:not(.is-draft) .slot-empty { display: none !important; }
   background: radial-gradient(120% 90% at 50% 20%, var(--soft), var(--page) 70%); color: var(--ink); text-align: center;
   transition: opacity .6s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
 .wd-cover.is-leaving { opacity: 0; transform: translateY(-3%) scale(1.02); pointer-events: none; }
+/* 06/10 (design review): chữ trên màn che rút đi TRƯỚC (.25s) rồi nền mới tan (trễ .12s) — trước đây tên cặp đôi của màn che
+   và của trang chồng lên nhau ~300 ms (hai lớp chữ lẫn nhau). */
+.wd-cover.is-leaving { transition: opacity .55s ease .12s, transform .7s cubic-bezier(.2,.7,.2,1); }
+.wd-cover.is-leaving .wd-cover-in { animation: wdc-out .26s ease-in both; }
+@keyframes wdc-out { to { opacity: 0; transform: translateY(-14px) scale(.98); } }
 html.has-cover, html.has-cover body { overflow: hidden; }
 .wd-cover-in { max-width: 520px; display: grid; justify-items: center; gap: 10px; animation: wdc-in .9s cubic-bezier(.2,.7,.2,1) both; }
 .wd-cover-mono { width: 84px; height: 84px; border-radius: 50%; border: 1px solid var(--accent); color: var(--accent);
@@ -338,7 +354,7 @@ html.has-cover, html.has-cover body { overflow: hidden; }
 .wd-cover-names span, .wd-cover-names i { display: block; }
 .wd-cover-names i { color: var(--accent); font-size: .6em; line-height: 1.3; }
 .wd-cover-date { font: 500 1rem var(--f-ui); letter-spacing: .35em; color: var(--muted); margin: 0 0 18px; }
-.wd-cover-btn { font: 600 1rem var(--f-ui); letter-spacing: .06em; color: #fff; background: var(--accent); border: 0; border-radius: 999px;
+.wd-cover-btn { font: 600 1rem var(--f-ui); letter-spacing: .06em; color: #fff; background: var(--accent-ink, var(--accent)); border: 0; border-radius: 999px;
   min-height: 52px; padding: 0 34px; cursor: pointer; box-shadow: 0 10px 28px color-mix(in srgb, var(--accent) 35%, transparent);
   animation: wdc-pulse 2.4s ease-in-out 1.2s infinite; }
 .wd-cover-btn:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); outline-offset: 3px; }
@@ -346,7 +362,7 @@ html.has-cover, html.has-cover body { overflow: hidden; }
 @keyframes wdc-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
 [data-theme="demsao"] .wd-cover-btn { color: #111a3a; }
 [data-theme="tapchi"] .wd-cover-btn { border-radius: 0; }
-@media (prefers-reduced-motion: reduce) { .wd-cover, .wd-cover-in, .wd-cover-btn { animation: none; transition: none; } }
+@media (prefers-reduced-motion: reduce) { .wd-cover, .wd-cover-in, .wd-cover-btn, .wd-cover.is-leaving, .wd-cover.is-leaving .wd-cover-in { animation: none; transition: none; } }
 .wd-cover[hidden] { display: none; }
 /* M1-GUEST-01 — Điện thoại xoay ngang (cao 340–390px): nội dung cao hơn màn -> màn che CUỘN được (lưới xếp từ trên, không
    căn giữa để phần đầu không bị đẩy khuất) + thu gọn ở màn thấp; chạm đâu trên màn che cũng mở (wedding.js).
@@ -397,11 +413,11 @@ html.has-cover .wd-cover { overflow-y: auto; overscroll-behavior: contain; curso
 .ev-map-load { width: 100%; height: 100%; border: 0; margin: 0; padding: 20px; cursor: pointer; display: grid; place-content: center; justify-items: center; gap: 6px;
   color: var(--ink); font: 600 1rem var(--f-ui);
   background: repeating-linear-gradient(45deg, color-mix(in srgb, var(--accent) 7%, transparent) 0 2px, transparent 2px 14px), var(--soft); }
-.ev-map-load b { display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; background: #fff; color: var(--accent);
+.ev-map-load b { display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; background: #fff; color: var(--accent-ink, var(--accent));
   box-shadow: 0 4px 14px rgba(0,0,0,.1); font-weight: 600; }
 .ev-map-load small { font: 400 .9375rem/1.4 var(--f-body); color: var(--muted); max-width: 32ch; text-align: center; }
 .ev-map-pin { font-size: 2rem; line-height: 1; }
-.ev-map-load:hover b, .ev-map-load:focus-visible b { background: var(--accent); color: #fff; }
+.ev-map-load:hover b, .ev-map-load:focus-visible b { background: var(--accent-ink, var(--accent)); color: #fff; }
 .ev-map-load:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); outline-offset: -3px; }
 .ev-card .btn { margin: 10px 4px 0; }
 
@@ -421,7 +437,7 @@ html.has-cover .wd-cover { overflow-y: auto; overscroll-behavior: contain; curso
 .lang-sw a { display: grid; place-items: center; min-width: 44px; height: 44px; padding: 0 8px; color: var(--ink, #333); text-decoration: none; }
 /* M1-GUEST-02 — :not(#_) = độ ưu tiên cấp id: thắng luật màu link của giao diện ([data-theme=x] .wd a:not(.btn)…, nạp sau)
    -> nhãn đang chọn luôn chữ trắng trên nền accent (demsao: chữ xanh đậm trên vàng). */
-.lang-sw a[aria-current]:not(#_) { background: var(--accent); color: var(--lang-on, #fff); }
+.lang-sw a[aria-current]:not(#_) { background: var(--accent-ink, var(--accent)); color: var(--lang-on, #fff); }
 /* M2-GUEST-01: màu nhấn SÁNG (bạc hà, oải hương, hoàng hôn, thiệp cưới, điện ảnh) -> chữ trắng chỉ 2,2–3,1:1; dùng mực tối (≥ 5:1 trên cả 5 màu). */
 [data-theme="serenity"], [data-theme="lavender"], [data-theme="summer"], [data-theme="thiep"], [data-theme="dienanh"] { --lang-on: #1d1b19; }
 .lang-sw a:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
@@ -446,7 +462,7 @@ details.lang-sw { overflow: visible; }
 .lang-sw summary { display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 12px 0 10px; cursor: pointer; list-style: none; color: var(--ink, #333); }
 .lang-sw summary::-webkit-details-marker { display: none; }
 .lang-sw summary span { font-size: .875rem; }
-.lang-sw[open] summary { background: var(--accent); color: var(--lang-on, #fff); }
+.lang-sw[open] summary { background: var(--accent-ink, var(--accent)); color: var(--lang-on, #fff); }
 .lang-sw nav { position: absolute; right: 0; bottom: calc(100% + 8px); min-width: 160px; padding: 6px; display: grid; background: var(--paper, #fff); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); border-radius: 14px; box-shadow: 0 8px 28px rgba(0,0,0,.18); }
 .lang-sw nav a { justify-items: start; height: 44px; padding: 0 12px; border-radius: 9px; font-weight: 500; letter-spacing: 0; white-space: nowrap; }
 .lang-sw nav a[aria-current]:not(#_) { border-radius: 9px; }
@@ -592,10 +608,12 @@ html[data-theme] body.wd.is-draft .ic-reopen { bottom: calc(164px + env(safe-are
 }
 
 /* ── Dòng bản quyền cuối trang (04/10): chữ thường, link chỉ ở ICON (vùng chạm 44px), màu mờ theo giao diện ── */
-.wd-foot .wd-credit, .pub-foot .wd-credit { margin: 22px 0 0; font: .78rem/1.6 var(--f-ui, system-ui, sans-serif) !important; letter-spacing: .02em; color: var(--muted, #8a8078); opacity: .85; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 4px; font-style: normal !important; }
+.wd-foot .wd-credit, .pub-foot .wd-credit { margin: 22px 0 0; font: .78rem/1.6 var(--f-ui, system-ui, sans-serif) !important; letter-spacing: .02em; color: inherit; opacity: .92; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 4px; font-style: normal !important; }
 .wd-credit b { font-weight: 600; color: inherit; }
 .wd-credit a { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -12px -8px -12px -6px; color: inherit; opacity: .8; border-radius: 50%; }
 .wd-credit a:hover, .wd-credit a:focus-visible { opacity: 1; color: var(--accent); }
+/* 06/10: biểu tượng (link) theo màu chữ chân trang ở MỌI giao diện — `[data-theme] .wd a` (accent) làm icon chìm trên nền tối (Santorini, Hồng nhung). */
+.wd-credit a:not(#_):not(:hover):not(:focus-visible) { color: inherit; }
 .wd-credit-sep { margin: 0 4px; }
 body.wd[data-theme="dienanh"] .wd-foot .wd-credit::before { content: none; }
-.wd-credit .wd-ver { font-variant-numeric: tabular-nums; opacity: .8; }   /* phiên bản (06/10) — khách/hỗ trợ biết trang đang chạy bản nào */
+.wd-credit .wd-ver { font-variant-numeric: tabular-nums; }   /* phiên bản (06/10) — khách/hỗ trợ biết trang đang chạy bản nào */

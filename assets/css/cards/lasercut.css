@@ -4,7 +4,7 @@
    lớp vải ren, thiệp trong tiến lên. Thiệp mở: nền màu + khung ren + vương miện ren + tờ giấy nổi, các lớp trượt
    ngược chiều nhau theo độ nghiêng. */
 .ic--lasercut {
-  --ic-out-delay: .7s;
+  --ic-out-delay: .69s;
   --lc-lace: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><path fill-rule='evenodd' d='M0 0H32V32H0Z M16 10.5a5.5 5.5 0 1 1 0 11a5.5 5.5 0 1 1 0-11Z M0 5.5a5.5 5.5 0 0 0 5.5-5.5H0Z M26.5 0a5.5 5.5 0 0 0 5.5 5.5V0Z M0 26.5V32h5.5a5.5 5.5 0 0 0-5.5-5.5Z M32 26.5a5.5 5.5 0 0 0-5.5 5.5H32Z M16 0l2.6 3.2L16 6.4l-2.6-3.2Z M16 25.6l2.6 3.2L16 32l-2.6-3.2Z M0 13.4l3.2 2.6L0 18.6Z M32 13.4v5.2L28.8 16Z M8 6.6a1.4 1.4 0 1 1 0 2.8a1.4 1.4 0 1 1 0-2.8Z M24 6.6a1.4 1.4 0 1 1 0 2.8a1.4 1.4 0 1 1 0-2.8Z M8 22.6a1.4 1.4 0 1 1 0 2.8a1.4 1.4 0 1 1 0-2.8Z M24 22.6a1.4 1.4 0 1 1 0 2.8a1.4 1.4 0 1 1 0-2.8Z'/></svg>");
   --lc-crown: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'><path fill-rule='evenodd' d='M0 100A100 100 0 0 1 200 100Z M100 44a9 9 0 1 1 0 18a9 9 0 1 1 0-18Z M84 76a6 6 0 1 1 0 .1Z M116 76a6 6 0 1 1 0 .1Z M30 92a6 6 0 1 1 0 .1Z M170 92a6 6 0 1 1 0 .1Z M42 62a7 7 0 1 1 0 .1Z M158 62a7 7 0 1 1 0 .1Z M64 38a8 8 0 1 1 0 .1Z M136 38a8 8 0 1 1 0 .1Z M100 10l7 9-7 9-7-9Z M20 98l4-14 6 14Z M180 98l-4-14-6 14Z'/></svg>");
   --lc-pearl: color-mix(in srgb, var(--ic-paper) 92%, var(--accent));
@@ -71,7 +71,7 @@
 /* ── Thiệp mở: nền màu + khung ren + tờ giấy nổi ── */
 .ic--lasercut .ic-card { width: min(490px, 100%); padding: 96px 64px 64px; background: none; box-shadow: none; border-radius: 8px; }
 .ic--lasercut.is-open .ic-card { animation: lc-card-in .85s var(--ic-ease) both; }
-@keyframes lc-card-in { from { opacity: 0; transform: translateZ(-120px); } to { opacity: 1; transform: none; } }
+@keyframes lc-card-in { from { opacity: 0; transform: translateZ(-120px); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 .ic--lasercut .lc-deco > span { position: absolute; display: block; }
 .lc-deco .lc-bg {
   inset: 0; border-radius: 8px; background: var(--ic-grain), var(--lc-shimmer);

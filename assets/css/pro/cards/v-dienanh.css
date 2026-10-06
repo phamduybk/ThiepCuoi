@@ -224,7 +224,7 @@ html .ic--v-dienanh.ic {
 @keyframes vda-blink { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
 @keyframes vda-chase { 0% { opacity: .15; } 100% { opacity: 1; } }
 @keyframes vda-tear { 0% { transform: none; } 25% { transform: rotate(6deg); } 100% { transform: translate(26px, 150px) rotate(38deg); opacity: 0; } }
-@keyframes vda-card-in { from { opacity: 0; transform: translateY(40px) scale(.94); } to { opacity: 1; transform: none; } }
+@keyframes vda-card-in { from { opacity: 0; transform: translateY(40px) scale(.94); } 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 @keyframes vda-reel { from { transform: rotate(-200deg); opacity: 0; } 40% { opacity: 1; } to { transform: none; opacity: 1; } }
 @keyframes vda-flicker { 0%, 100% { opacity: 1; } 30% { opacity: .82; } 55% { opacity: .95; } 80% { opacity: .78; } }
 

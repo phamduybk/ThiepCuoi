@@ -170,7 +170,7 @@
 .ic--v-santorini.is-opening .sv-l { transform: rotateY(-150deg); }
 .ic--v-santorini.is-opening .sv-r { transform: rotateY(150deg); }
 .ic--v-santorini.is-opening .sv-note { transform: translateY(-4%) scale(1.06); }
-.ic--v-santorini.is-opening .ic-env { animation: v-santorini-zoom .58s cubic-bezier(.6, 0, .35, 1) 1.06s both; transform-origin: 50% 42%; }
+.ic--v-santorini.is-opening .ic-env { animation: v-santorini-zoom .58s cubic-bezier(.6, 0, .35, 1) 1.15s both; transform-origin: 50% 42%; }
 .ic--v-santorini.is-open .ic-card { animation: v-santorini-card .9s var(--ic-ease) both; }
 
 /* ── Thiệp ── */
@@ -246,8 +246,8 @@
 @keyframes v-santorini-drift { to { transform: translateX(60px); } }
 @keyframes v-santorini-glint { from { opacity: .25; } to { opacity: 1; } }
 @keyframes v-santorini-sway { from { rotate: -1.5deg; } to { rotate: 2deg; } }
-@keyframes v-santorini-zoom { 0% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(6%) scale(2.3); } }
-@keyframes v-santorini-card { from { opacity: 0; transform: scale(1.06); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
+@keyframes v-santorini-zoom { 0% { opacity: 1; transform: none; } 50% { opacity: 1; } 100% { opacity: 0; transform: translateY(6%) scale(2.3); } }
+@keyframes v-santorini-card { from { opacity: 0; transform: scale(1.06); filter: blur(4px); } 35% { opacity: 1; } to { opacity: 1; transform: none; filter: none; } }
 @keyframes v-santorini-shut-l { from { transform: rotateY(0deg); } }
 @keyframes v-santorini-shut-r { from { transform: rotateY(0deg); } }
 
