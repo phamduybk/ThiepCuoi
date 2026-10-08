@@ -2,6 +2,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 // Bản dịch EN: 'chuỗi gốc tiếng Việt' => 'English' (xem helpers/i18n_helper.php).
 return array(
+	'Thành công! Đã đổi link thành {host}, dùng {n} ngày — hết hạn tự trở về {old}.' => 'Done! Your link is now {host} for {n} days — after that it goes back to {old}.',
+	'Đã gửi yêu cầu, hệ thống sẽ đổi link sớm.' => 'Request sent — your link will be changed shortly.',
+	'Đổi ngay khi gửi, dùng 30 ngày rồi tự trở về link mặc định — không cần cài đặt lại.' => 'Changed as soon as you send it, for 30 days, then it goes back to your default link — no reinstall needed.',
 	'Giao diện này chưa dùng được trên máy này — hãy chọn một giao diện khác.' => 'This theme isn’t available on this computer — please choose another.',
 	'Giao diện "{name}" chưa dùng được trên máy này.' => 'The "{name}" theme isn’t available on this computer.',
 	'Mẫu thiệp này chưa dùng được trên máy này.' => 'This invitation design isn’t available on this computer.',

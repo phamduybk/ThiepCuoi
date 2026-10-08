@@ -1,0 +1,68 @@
+/* Trang quản trị "Tạo thiệp in" (views/admin/print.php). Điện thoại: xem trước ở trên, tùy chọn bên dưới, nút cố định đáy.
+   Máy tính (≥ 980px): xem trước bên trái (dính khi cuộn), tùy chọn bên phải. */
+.pc-head p { margin: 0; max-width: 62ch; }
+.pc-wrap { display: grid; gap: 16px; align-items: start; }
+.pc-preview-col { min-width: 0; }
+.pc-preview { position: relative; height: min(72vh, 640px); min-height: 360px; border-radius: var(--radius); overflow: hidden; background: #e6e2dd; border: 1px solid var(--line); }
+.pc-preview iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; opacity: 0; pointer-events: none; transition: opacity .18s ease-out; }
+.pc-preview iframe.on { opacity: 1; pointer-events: auto; z-index: 1; }
+.pc-loading { position: absolute; top: 10px; right: 10px; z-index: 2; padding: 4px 10px; border-radius: 999px; background: rgba(59,48,48,.82); color: #fff; font-size: 13px; opacity: 0; transition: opacity .15s; pointer-events: none; }
+.pc-preview.is-loading .pc-loading { opacity: 1; }
+.pc-status { min-height: 1.4em; margin: 8px 2px 0; }
+.pc-status.is-warn { color: var(--warn); }
+.pc-tip { margin: 4px 2px 0; }
+.pc-controls { min-width: 0; }
+.pc-controls .panel h2 { margin: 0 0 6px; }
+.pc-controls fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.pc-controls legend { font-weight: 500; font-size: .95rem; padding: 0; margin-bottom: 4px; }
+
+/* Danh sách mẫu */
+.pc-tpls { display: grid; grid-template-columns: repeat(auto-fill, minmax(138px, 1fr)); gap: 8px; max-height: 360px; overflow: auto; padding: 2px; margin-top: 10px; }
+.pc-tpl { position: relative; display: flex; flex-direction: column; gap: 2px; min-height: 44px; padding: 10px 10px 10px 40px; border: 1px solid var(--line);
+  border-radius: 10px; background: var(--paper); cursor: pointer; font-weight: 400; line-height: 1.25; }
+.pc-tpl:hover { border-color: var(--accent); }
+.pc-tpl:has(input:checked) { border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink); background: var(--soft); }
+.pc-tpl:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pc-sw { position: absolute; left: 10px; top: 11px; width: 22px; height: 22px; border-radius: 50%; background: var(--sw); box-shadow: inset 0 0 0 2px rgba(255,255,255,.55), 0 0 0 1px rgba(0,0,0,.12); }
+.pc-tpl-n { font-weight: 600; font-size: .95rem; }
+.pc-tpl-d { font-size: .78rem; color: var(--muted); }
+.pc-tag { align-self: flex-start; margin-top: 4px; padding: 1px 8px; border-radius: 999px; font-size: .72rem; font-weight: 600; background: #efe7dc; color: #5b4a3a; }
+.pc-tag-match { background: #e3f1e7; color: #2f5d3c; }
+.pc-tpl.is-match { grid-column: 1 / -1; }
+
+.pc-layouts { display: grid; gap: 2px; }
+.pc-layouts label.radio { padding: 8px 6px; border-radius: 8px; }
+.pc-layouts label.radio:has(input:checked) { background: var(--soft); }
+.pc-orient { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.pc-orient legend { width: 100%; }
+.pc-orient label.check, .pc-controls label.check, .pc-controls label.radio { min-height: 44px; }
+.pc-accent input[type=color] { min-height: 40px; }
+.pc-url { word-break: break-all; }
+.pc-content summary, .pc-help summary { cursor: pointer; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; min-height: 44px; list-style: none; }
+.pc-content summary::-webkit-details-marker, .pc-help summary::-webkit-details-marker { display: none; }
+.pc-content summary::before, .pc-help summary::before { content: "▸"; color: var(--muted); }
+.pc-content[open] summary::before, .pc-help[open] summary::before { content: "▾"; }
+.pc-content summary h2, .pc-help summary h2 { display: inline; margin: 0; }
+.pc-content h3 { margin: 14px 0 0; font-size: 1rem; }
+.pc-ev-edit { border-top: 1px solid var(--line) !important; padding-top: 8px !important; }
+.pc-ev-edit .row2, .pc-ev-edit > label { margin-top: 6px; }
+.pc-help ol { margin: 10px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+
+/* Nút cố định đáy */
+.pc-actions { position: sticky; bottom: 0; z-index: 5; grid-column: 1 / -1; display: flex; gap: 10px; justify-content: flex-end; align-items: center; flex-wrap: wrap;
+  margin: 0 -4px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: color-mix(in srgb, var(--paper) 94%, transparent);
+  border-top: 1px solid var(--line); backdrop-filter: blur(6px); }
+.pc-actions .btn { min-height: 46px; }
+.pc-dirty { color: var(--warn); margin-right: auto; }
+
+@media (max-width: 600px) {
+  .pc-actions .btn { flex: 1 1 140px; }
+  .pc-preview { height: 62vh; }
+  .pc-tpls { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: 300px; }
+}
+@media (min-width: 980px) {
+  .pc-wrap { grid-template-columns: minmax(0, 1fr) minmax(360px, 420px); }
+  .pc-preview-col { position: sticky; top: 12px; }
+  .pc-preview { height: calc(100vh - 170px); max-height: none; }
+  .pc-controls { max-height: none; }
+}
