@@ -610,6 +610,7 @@ html[data-theme] body.wd.is-draft .ic-reopen { bottom: calc(164px + env(safe-are
 /* ── Dòng bản quyền cuối trang (04/10): chữ thường, link chỉ ở ICON (vùng chạm 44px), màu mờ theo giao diện ── */
 .wd-foot .wd-credit, .pub-foot .wd-credit { margin: 22px 0 0; font: .78rem/1.6 var(--f-ui, system-ui, sans-serif) !important; letter-spacing: .02em; color: inherit; opacity: .92; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 4px; font-style: normal !important; }
 .wd-credit b { font-weight: 600; color: inherit; }
+.wd-foot .wd-trial-left { margin: 6px 0 0; font: 600 .8125rem/1.5 var(--f-ui, system-ui, sans-serif) !important; color: inherit; opacity: .92; font-style: normal !important; letter-spacing: .02em; }
 .wd-credit a { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -12px -8px -12px -6px; color: inherit; opacity: .8; border-radius: 50%; }
 .wd-credit a:hover, .wd-credit a:focus-visible { opacity: 1; color: var(--accent); }
 /* 06/10: biểu tượng (link) theo màu chữ chân trang ở MỌI giao diện — `[data-theme] .wd a` (accent) làm icon chìm trên nền tối (Santorini, Hồng nhung). */

@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // Bản dịch FR: 'chuỗi gốc tiếng Việt' => 'Français' (xem helpers/i18n_helper.php). Trang khách mời + chuỗi trong models/libraries.
 // Sinh/duy trì bởi DEV PUBLIC; '<chuỗi>|1' = dạng số ít (__n), '<chữ mẫu>|<khóa>' = bản riêng của 1 ô nội dung.
 return array(
+	'Trang dùng thử · thời gian còn lại {n} ngày' => 'Site d’essai · il reste {n} jours',
 	'Bản quyền thuộc' => 'Droits réservés',
 	'tác giả' => 'auteur',
 	'Duy Phạm' => 'Duy Pham',
