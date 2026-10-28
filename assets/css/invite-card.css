@@ -367,3 +367,10 @@ html:is([lang="th"], [lang="lo"], [lang="zh"]) .ic :is(.ic-names, .ic-names *, .
   .ic .ic-env-to b { font-size: clamp(.95rem, 4.4vh, 1.25rem) !important; line-height: 1.15; }
   .ic .ic-env-to small { font-size: .8125rem; }
 }
+
+/* 28/10/2026: tên người được mời TRONG thiệp từng to 37–60px (to hơn cả tên cô dâu chú rể ~27px) -> cỡ vừa phải, chung cho MỌI mẫu
+   (20 thường + 10 VIP; !important thắng cỡ riêng từng mẫu). Chỉ màn hình — bản in giữ 24pt ở @media print phía trên. */
+@media screen {
+  .ic .ic-card .ic-name { font-size: clamp(1.5rem, 6.4vw, 1.9rem) !important; line-height: 1.2 !important; }
+  .ic.ic--long .ic-card .ic-name { font-size: clamp(1.35rem, 5.6vw, 1.65rem) !important; }
+}
