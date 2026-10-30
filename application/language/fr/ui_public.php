@@ -344,4 +344,29 @@ return array(
 	'Lời chúc của bạn' => 'Votre message',   // QA7-03 nhãn ô nhập
 	'Album chỉ để xem' => 'Album à consulter seulement',   // QA7-02
 	'Cô dâu chú rể chỉ mở album để xem trên trang, chưa cho tải ảnh về. Bạn vẫn xem thoải mái nhé!' => 'Les mariés ont ouvert l’album en consultation seulement, sans téléchargement. Bonne visite !',   // QA7-02
+	// 30/10/2026: chủ nhà chỉnh cỡ + màu chữ trên thiệp mời online
+	'Bấm vào chữ trên thiệp để đổi cỡ chữ, màu chữ (lời chào, “Lễ thành hôn”, lời mời sửa được chữ).' => 'Touchez un texte de la carte pour changer sa taille et sa couleur (la formule d’accueil, le titre et le texte d’invitation sont aussi modifiables).',
+	'Cỡ và màu chữ' => 'Taille et couleur du texte',
+	'Tên khách (bìa)' => 'Nom de l’invité (enveloppe)',
+	'Lời chào' => 'Formule d’accueil',
+	'Tên khách' => 'Nom de l’invité',
+	'Lời mời' => 'Invitation',
+	'Tiêu đề sự kiện' => 'Titre de l’événement',
+	'Tên cô dâu chú rể' => 'Noms des mariés',
+	'Thứ, giờ' => 'Jour et heure',
+	'Âm lịch' => 'Calendrier lunaire',
+	'Tên tiệc' => 'Nom de la réception',
+	'Nơi tổ chức' => 'Lieu',
+	'Địa chỉ' => 'Adresse',
+	'Đã lưu' => 'Enregistré',
+	'Không lưu được, thử lại sau.' => 'Échec de l’enregistrement, réessayez.',
+	'Đưa cỡ chữ và màu chữ của cả thiệp về mặc định?' => 'Rétablir la taille et la couleur par défaut sur toute la carte ?',
+	'Bấm vào chữ để sửa — chữ này cũng hiện trên trang cưới.' => 'Touchez le texte pour le modifier — il apparaît aussi sur la page du mariage.',
+	'Bấm vào chữ để sửa lời mời riêng của khách này (xóa hết = về lời mời mẫu).' => 'Touchez pour modifier l’invitation propre à cet invité (videz-la pour reprendre le modèle).',
+	'Nội dung lấy từ trang cưới / danh sách khách — ở đây chỉ đổi cỡ và màu.' => 'Ce texte vient de la page du mariage / de la liste d’invités — ici, seules la taille et la couleur changent.',
+	'Chữ nhỏ hơn' => 'Texte plus petit',
+	'Chữ to hơn' => 'Texte plus grand',
+	'Chọn màu khác' => 'Choisir une autre couleur',
+	'Mặc định' => 'Par défaut',
+	'Mặc định cả thiệp' => 'Réinitialiser la carte',
 );

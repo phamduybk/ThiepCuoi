@@ -341,4 +341,29 @@ return array(
 	'Lời chúc của bạn' => '您的祝福',   // QA7-03 nhãn ô nhập
 	'Album chỉ để xem' => '相册仅供观看',   // QA7-02
 	'Cô dâu chú rể chỉ mở album để xem trên trang, chưa cho tải ảnh về. Bạn vẫn xem thoải mái nhé!' => '新人只开放在页面上观看相册，暂不提供下载。您可以尽情观看！',   // QA7-02
+	// 30/10/2026: chủ nhà chỉnh cỡ + màu chữ trên thiệp mời online
+	'Bấm vào chữ trên thiệp để đổi cỡ chữ, màu chữ (lời chào, “Lễ thành hôn”, lời mời sửa được chữ).' => '点击请柬上的文字即可调整字号和颜色（问候语、典礼标题和邀请语还可直接修改文字）。',
+	'Cỡ và màu chữ' => '字号和颜色',
+	'Tên khách (bìa)' => '宾客姓名（封面）',
+	'Lời chào' => '问候语',
+	'Tên khách' => '宾客姓名',
+	'Lời mời' => '邀请语',
+	'Tiêu đề sự kiện' => '典礼标题',
+	'Tên cô dâu chú rể' => '新人姓名',
+	'Thứ, giờ' => '星期和时间',
+	'Âm lịch' => '农历',
+	'Tên tiệc' => '宴会名称',
+	'Nơi tổ chức' => '举办地点',
+	'Địa chỉ' => '地址',
+	'Đã lưu' => '已保存',
+	'Không lưu được, thử lại sau.' => '保存失败，请稍后再试。',
+	'Đưa cỡ chữ và màu chữ của cả thiệp về mặc định?' => '将整张请柬的字号和颜色恢复默认？',
+	'Bấm vào chữ để sửa — chữ này cũng hiện trên trang cưới.' => '点击文字即可修改——此文字也显示在婚礼页面上。',
+	'Bấm vào chữ để sửa lời mời riêng của khách này (xóa hết = về lời mời mẫu).' => '点击可修改此宾客的专属邀请语（清空则恢复模板）。',
+	'Nội dung lấy từ trang cưới / danh sách khách — ở đây chỉ đổi cỡ và màu.' => '此内容来自婚礼页面/宾客名单——此处只能调整字号和颜色。',
+	'Chữ nhỏ hơn' => '缩小文字',
+	'Chữ to hơn' => '放大文字',
+	'Chọn màu khác' => '选择其他颜色',
+	'Mặc định' => '默认',
+	'Mặc định cả thiệp' => '整张恢复默认',
 );

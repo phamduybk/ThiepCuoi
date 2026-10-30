@@ -374,3 +374,35 @@ html:is([lang="th"], [lang="lo"], [lang="zh"]) .ic :is(.ic-names, .ic-names *, .
   .ic .ic-card .ic-name { font-size: clamp(1.5rem, 6.4vw, 1.9rem) !important; line-height: 1.2 !important; }
   .ic.ic--long .ic-card .ic-name { font-size: clamp(1.35rem, 5.6vw, 1.65rem) !important; }
 }
+
+/* 30/10/2026: cỡ + màu chữ từng vùng do chủ nhà chỉnh (style zoom/color trên vùng). Có màu riêng -> chữ con (span, i, b, .dt-nw) theo màu đó. */
+.ic [data-ic-c] * { color: inherit !important; }
+/* Thanh chỉnh của chủ nhà (chỉ khi xem trước — invite-card-edit.js). */
+.ic .ic-sel { outline: 2px dashed var(--accent-ink, var(--accent)); outline-offset: 3px; border-radius: 3px; }
+.ic [data-ic-k][contenteditable] { outline-style: solid; cursor: text; background: color-mix(in srgb, var(--accent) 7%, transparent); }
+.ic-tool { position: fixed; z-index: 2147483000; left: 50%; bottom: max(10px, env(safe-area-inset-bottom)); transform: translateX(-50%);
+  width: min(560px, calc(100vw - 16px)); display: grid; gap: 6px; padding: 8px 10px 9px; border-radius: 16px;
+  background: #fffaf3; color: #3b3030; border: 1px solid #e6d9c6; box-shadow: 0 10px 30px rgba(40, 25, 20, .25);
+  font: 13px/1.3 system-ui, -apple-system, "Segoe UI", sans-serif; letter-spacing: 0; text-transform: none; }
+.ic-tool[hidden] { display: none; }
+.ic-tool-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.ic-tool-head b { font-weight: 700; font-size: 14px; }
+.ic-tool-head span { color: #6b5f58; font-size: 12px; flex: 1; min-width: 12em; }
+.ic-tool .ic-tool-x { margin-left: auto; min-width: 36px; min-height: 36px; border: 0; background: none; font-size: 16px; color: #6b5f58; cursor: pointer; }
+.ic-tool-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.ic-tool-row > button { min-width: 44px; min-height: 40px; padding: 0 10px; border: 1px solid #e6d9c6; border-radius: 10px; background: #fff;
+  color: #3b3030; font: 600 13px system-ui, sans-serif; cursor: pointer; }
+.ic-tool-row > button:disabled { opacity: .4; cursor: default; }
+.ic-tool-row output { min-width: 3.4em; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ic-tool-sw { display: flex; gap: 5px; flex-wrap: wrap; }
+.ic-tool-sw button { width: 28px; height: 28px; padding: 0; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px #cdbda6; background: var(--sw); cursor: pointer; }
+.ic-tool-sw button[aria-pressed="true"] { box-shadow: 0 0 0 2px #3b3030; }
+.ic-tool-pick { position: relative; width: 28px; height: 28px; border-radius: 50%; overflow: hidden; cursor: pointer;
+  background: conic-gradient(#e53935, #fdd835, #43a047, #1e88e5, #8e24aa, #e53935); box-shadow: 0 0 0 1px #cdbda6; }
+.ic-tool-pick input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; border: 0; padding: 0; cursor: pointer; }
+.ic-tool .ic-tool-txt { font-weight: 500; }
+.ic-tool-st { font-size: 12px; color: #2f6b4f; margin-left: auto; }
+.ic-tool-st.is-bad { color: #a8231b; }
+@media (pointer: coarse) { .ic-tool-sw button, .ic-tool-pick { width: 34px; height: 34px; } .ic-tool-row > button { min-height: 44px; } }
+/* Chủ nhà xem trước: nhãn trên bìa nhận chạm để chọn chỉnh cỡ/màu (khách giữ pointer-events: none — chạm bìa = mở thiệp). */
+.ic[data-preview="1"] .ic-env-to, .ic[data-preview="1"] .ic-env-to [data-ic-k] { pointer-events: auto; cursor: pointer; }

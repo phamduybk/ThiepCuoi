@@ -240,4 +240,6 @@ return array(
 	'Thiệp mời'                   => 'Invitation card',
 	'Trang đang bật mật khẩu xem trang: link gửi khách là link mã (vd {link}) để khách vào thẳng không cần mật khẩu; link theo tên sẽ hỏi mật khẩu.' => 'The page password is on: links sent to guests are code links (e.g. {link}) so they get straight in without a password; name links will ask for the password.',
 	'Danh sách xưng hô đang trống — giữ ít nhất 1 dòng, hoặc bấm "Khôi phục mặc định".' => 'The salutation list is empty — keep at least one row, or press "Restore defaults".',   // QA8-05
+	'Không tìm thấy khách mời.' => 'Guest not found.',
+	'Yêu cầu không hợp lệ.' => 'Invalid request.',
 );
