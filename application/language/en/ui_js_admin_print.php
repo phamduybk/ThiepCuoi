@@ -8,4 +8,5 @@ return array(
 	'Đã lưu tùy chỉnh thiệp in.' => 'Printed card settings saved.',
 	'Không lưu được, thử lại sau.' => 'Could not save, please try again.',
 	'Mất kết nối — chưa lưu được.' => 'Connection lost — not saved.',
+	'Đưa cỡ chữ và màu chữ của mọi vùng trên thiệp về mặc định của mẫu?' => 'Reset the size and colour of every text on the card to the template default?',
 );

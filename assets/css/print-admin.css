@@ -66,3 +66,5 @@
   .pc-preview { height: calc(100vh - 170px); max-height: none; }
   .pc-controls { max-height: none; }
 }
+.pc-st-reset { margin-right: auto; }   /* 30/10: đưa cỡ + màu chữ mọi vùng về mặc định — bên trái thanh Lưu / In */
+@media (max-width: 560px) { .pc-st-reset { margin-right: 0; flex-basis: 100%; } }

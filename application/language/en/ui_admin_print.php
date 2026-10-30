@@ -119,4 +119,14 @@ return array(
 	'Không lưu được, thử lại sau.' => 'Could not save, please try again.',
 	'Lời mời' => 'Invitation',   // QA7-05
 	'Song hỷ' => 'Double Happiness',   // QA7-05
+	// 30/10/2026: cỡ + màu chữ từng vùng
+	'Cỡ và màu chữ' => 'Text size and colour',
+	'Cỡ chữ' => 'Size',
+	'Chữ nhỏ hơn' => 'Smaller text',
+	'Chữ to hơn' => 'Larger text',
+	'Màu' => 'Colour',
+	'Chọn màu khác' => 'Pick another colour',
+	'Mặc định' => 'Default',
+	'Bấm vào một vùng chữ sẽ hiện thanh chỉnh: A− / A+ đổi cỡ chữ, chấm màu đổi màu chữ, “Mặc định” trả vùng đó về như mẫu.' => 'Click any text on the card to show the toolbar: A− / A+ change the size, the dots change the colour, “Default” resets that text to the template.',
+	'Cỡ & màu chữ về mặc định' => 'Reset all text sizes & colours',
 );

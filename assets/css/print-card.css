@@ -258,3 +258,34 @@ div.pc-t { display: block; }
   .pc-page { box-shadow: none; }
   .pc-spread .pc-face + .pc-face::before { display: none; }
 }
+
+/* ── Cỡ + màu chữ riêng từng vùng (30/10/2026) ── lớp bọc không tạo hộp: chỉ truyền font-size (em) cho vùng chữ bên trong. */
+.pc-sz { display: contents; }
+.pc-in > .pc-sz:first-child > * { margin-top: auto; }
+.pc-in > .pc-sz:last-child > * { margin-bottom: auto; }
+/* Thanh chỉnh nổi khi đang sửa 1 vùng chữ (chỉ trong khung xem trước ?edit=1, không bao giờ in). */
+.pc-tool { position: fixed; z-index: 50; left: 50%; top: 8px; transform: translateX(-50%); display: flex; align-items: center; flex-wrap: wrap; justify-content: center;
+  gap: 6px; max-width: calc(100vw - 16px); padding: 6px 8px; border-radius: 14px; background: #fffaf3; color: #3b3030;
+  border: 1px solid #e6d9c6; box-shadow: 0 8px 26px rgba(40, 25, 20, .22); font: 13px/1.2 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.pc-tool[hidden] { display: none; }
+.pc-tool button { min-width: 36px; min-height: 36px; padding: 0 9px; border: 1px solid #e6d9c6; border-radius: 9px; background: #fff; color: #3b3030;
+  font: 600 13px system-ui, sans-serif; cursor: pointer; }
+.pc-tool button:hover { border-color: #b9a58a; }
+.pc-tool button:disabled { opacity: .4; cursor: default; }
+.pc-tool output { min-width: 3.4em; text-align: center; font-variant-numeric: tabular-nums; font-weight: 600; }
+.pc-tool-l { color: #6b5f58; font-size: 12px; }
+.pc-tool-sep { width: 1px; align-self: stretch; background: #e6d9c6; margin: 0 2px; }
+.pc-tool-sw { display: flex; gap: 4px; }
+.pc-tool-sw button { min-width: 26px; width: 26px; min-height: 26px; height: 26px; padding: 0; border-radius: 50%; border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #cdbda6; background: var(--sw); }
+.pc-tool-sw button[aria-pressed="true"] { box-shadow: 0 0 0 2px #3b3030; }
+.pc-tool-pick { position: relative; width: 26px; height: 26px; border-radius: 50%; overflow: hidden; cursor: pointer;
+  background: conic-gradient(#e53935, #fdd835, #43a047, #1e88e5, #8e24aa, #e53935); box-shadow: 0 0 0 1px #cdbda6; }
+.pc-tool-pick input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; border: 0; padding: 0; }
+.pc-tool .pc-tool-reset { font-weight: 500; }
+.pc-editing .pc-t.pc-styling { outline: 1.5px solid var(--pc-acc); }
+@media print { .pc-tool { display: none !important; } }
+@media (pointer: coarse) {   /* vùng bấm ≥ 44px trên màn cảm ứng */
+  .pc-tool button { min-width: 44px; min-height: 44px; }
+  .pc-tool-sw button, .pc-tool-pick { width: 34px; min-width: 34px; height: 34px; min-height: 34px; }
+}
