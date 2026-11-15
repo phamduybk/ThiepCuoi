@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // Tiếng Thái không chia số nhiều: không có khóa '|1'. '<chữ mẫu>|<khóa>' = bản riêng của 1 ô nội dung. Năm trong ngày tháng = Phật lịch ({y_be}).
 return array(
 	'Trang dùng thử · thời gian còn lại {n} ngày' => 'เว็บทดลองใช้ · เหลืออีก {n} วัน',
+	'Tạo thiệp cưới online miễn phí tại thiep.site' => 'สร้างการ์ดแต่งงานออนไลน์ฟรีที่ thiep.site',
 	'Bản quyền thuộc' => 'ลิขสิทธิ์',
 	'tác giả' => 'ผู้พัฒนา',
 	'Duy Phạm' => 'Duy Pham',

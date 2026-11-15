@@ -1,0 +1,418 @@
+/*
+ * Trình chiếu ảnh cưới (views/public/slideshow.php + assets/js/slideshow.js, Docs/trinh-chieu.md).
+ * Phần chung ở đầu; mỗi giao diện = khối `.ss--<khóa>` (khóa trong config/slideshow.php). Biến:
+ *   --bg --fg --ac (nền / chữ / nhấn), --on-ac (chữ trên nút màu nhấn), --title --body (phông),
+ *   --orn (hình hoa văn SVG dùng làm mask, tô bằng --ac), --veil (lớp phủ màn chữ đặt trên ảnh),
+ *   --ss-dur (thời gian 1 ảnh + chuyển), --ss-trans (thời gian chuyển) — do slideshow.js đặt.
+ * Cỡ chữ theo min(vw, vh): đọc được trên điện thoại dọc 390px, không quá to trên tivi 1920×1080.
+ * Ảnh: màn dọc giữ TRỌN ảnh (không cắt mặt); chỉ phủ kín khi màn NGANG + ảnh ngang ở giao diện tràn màn.
+ * Hai ảnh dọc liền nhau trên màn ngang (hoặc hai ảnh ngang trên màn dọc) được ghép đôi: .ss-pair > .ss-duo > .ss-fig ×2.
+ */
+html, body.ss-body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+.ss { --bg: #000; --fg: #fff; --ac: #d8c3a5; --on-ac: #1a140e; --title: 'Cormorant Garamond', Georgia, serif; --body: 'Lora', Georgia, serif;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 16'%3E%3Cpath d='M4 8h56M100 8h56' stroke='black' stroke-width='1'/%3E%3Cpath d='M80 1.5l6.5 6.5-6.5 6.5-6.5-6.5z'/%3E%3Ccircle cx='66' cy='8' r='1.8'/%3E%3Ccircle cx='94' cy='8' r='1.8'/%3E%3C/svg%3E"); --veil: rgba(0,0,0,.6);
+  --fs-title: clamp(2.3rem, min(11vw, 9vh), 6.6rem); --fs-quote: clamp(1.45rem, min(6.4vw, 6.2vh), 4.1rem); --fs-sub: clamp(.82rem, min(3.4vw, 2.5vh), 1.35rem);
+  position: fixed; inset: 0; overflow: hidden; background: var(--bg); color: var(--fg); font-family: var(--body);
+  -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+.ss-stage { position: absolute; inset: 0; --ss-dur: 6.4s; --ss-trans: 1.4s; }
+.ss-slide { position: absolute; inset: 0; opacity: 0; will-change: opacity, transform;
+  transition: opacity var(--ss-trans) ease, transform var(--ss-trans) cubic-bezier(.2,.7,.2,1), clip-path var(--ss-trans) cubic-bezier(.7,0,.2,1); }
+.ss-slide.is-in { opacity: 1; }
+.ss-slide.is-out { opacity: 0; }
+
+/* ── Ảnh: nền mờ của chính ảnh + ảnh trọn khung ở giữa ── */
+.ss-blur { position: absolute; inset: -6%; background: center / cover no-repeat; filter: blur(30px) brightness(.5) saturate(1.15); transform: scale(1.05); }
+.ss-fig { position: absolute; inset: 4vmin; margin: 0; display: flex; align-items: center; justify-content: center; }
+.ss-fig img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; object-position: 50% 35%; user-select: none; -webkit-user-drag: none; }
+.ss-fig figcaption { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); max-width: 80%; padding: .35em .9em; border-radius: 99px;
+  background: rgba(0,0,0,.42); color: #fff; font-size: clamp(.85rem, 2.2vmin, 1.2rem); text-align: center; }
+@media (orientation: portrait) { .ss-fig { inset: 6vmin 4vmin; } }
+/* Ghép đôi */
+.ss-duo { position: absolute; inset: 5vmin; display: flex; gap: 2.2vmin; }
+.ss-pair--col .ss-duo { flex-direction: column; inset: 9vh 5vmin; }
+.ss .ss-duo > .ss-fig { position: relative; inset: auto; flex: 1 1 0; min-width: 0; min-height: 0; }
+.ss-pair--row .ss-duo > .ss-fig:first-child { justify-content: flex-end; }
+.ss-pair--row .ss-duo > .ss-fig:last-child { justify-content: flex-start; }
+.ss-pair--col .ss-duo > .ss-fig:first-child { align-items: flex-end; }
+.ss-pair--col .ss-duo > .ss-fig:last-child { align-items: flex-start; }
+.ss-pair.is-in .ss-duo > .ss-fig:last-child { animation: ss-late var(--ss-trans) ease both; }
+@keyframes ss-late { 0%, 35% { opacity: 0; transform: translateY(1.5vmin); } 100% { opacity: 1; transform: none; } }
+.ss-pair.is-in .ss-duo { animation: ss-soft var(--ss-dur) ease-out both; }
+@keyframes ss-soft { from { transform: scale(1); } to { transform: scale(1.035); } }
+@keyframes ss-kb-a { from { transform: scale(1); } to { transform: scale(1.1) translate(-1.5%, -1%); } }
+@keyframes ss-kb-b { from { transform: scale(1.1) translate(1.5%, 1%); } to { transform: scale(1); } }
+@keyframes ss-kb-c { from { transform: scale(1.02) translateX(-2%); } to { transform: scale(1.1) translateX(2%); } }
+@keyframes ss-kb-d { from { transform: scale(1.1) translateY(2%); } to { transform: scale(1.02) translateY(-2%); } }
+
+/* ── Màn chữ ── */
+.ss-card { display: grid; place-items: center; text-align: center; padding: 8vmin 7vw; box-sizing: border-box; }
+.ss-card-in { position: relative; z-index: 2; display: grid; justify-items: center; gap: min(2.6vh, 3.4vw); max-width: min(1100px, 100%); }
+.ss-card-ph { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
+.ss-card.has-ph::before { content: ''; position: absolute; inset: 0; z-index: 1; background: var(--veil); }
+.ss-card.has-ph.is-in .ss-card-ph { animation: ss-kb-b var(--ss-dur) linear both; }
+/* Câu giữa phim: ảnh nền nhòe (tĩnh) để chữ không đè lên mặt người */
+.ss-card--quote .ss-card-ph { filter: blur(10px); inset: -4%; width: 108%; height: 108%; }
+.ss-card.has-ph .ss-card-in { text-shadow: 0 1px 18px rgba(0,0,0,.45); }
+.ss-title { margin: 0; font: 400 var(--fs-title)/1.15 var(--title); color: var(--fg); overflow-wrap: anywhere; text-wrap: balance; }
+.ss-title--end { font-size: calc(var(--fs-title) * .72); }
+.ss-names .ss-n { display: block; }
+.ss-names .ss-amp { display: block; margin: .02em 0 .06em; font-size: .62em; line-height: 1; color: var(--ac); font-style: italic; }
+.ss-sub { margin: 0; font-size: var(--fs-sub); letter-spacing: .14em; color: var(--ac); text-wrap: balance; }
+.ss-quote { margin: 0; max-width: 22ch; font: italic 400 var(--fs-quote)/1.4 var(--title); text-wrap: balance; }
+.ss-orn { display: block; font-style: normal; color: var(--ac); line-height: 1; }
+.ss-orn::before { content: ''; display: block; width: clamp(96px, 22vmin, 190px); height: clamp(10px, 2.2vmin, 20px); margin: 0 auto;
+  background: var(--ac); -webkit-mask: var(--orn) center / contain no-repeat; mask: var(--orn) center / contain no-repeat; }
+.ss-card .ss-card-in > * { opacity: 0; transform: translateY(2.2vmin); transition: opacity 1.4s ease, transform 1.6s cubic-bezier(.2,.7,.2,1); }
+.ss-card.is-in .ss-card-in > * { opacity: 1; transform: none; }
+.ss-card.is-in .ss-card-in > :nth-child(1) { transition-delay: .2s; }
+.ss-card.is-in .ss-card-in > :nth-child(2) { transition-delay: .45s; }
+.ss-card.is-in .ss-card-in > :nth-child(3) { transition-delay: .9s; }
+.ss-card.is-in .ss-card-in > :nth-child(4) { transition-delay: 1.2s; }
+.ss-card.is-out .ss-card-in > * { transition-delay: 0s; }
+
+/* Lớp trang trí (tim / cánh hoa / sao / ánh kim / khung) chạy trên toàn màn */
+.ss-deco { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+.ss-deco::before, .ss-deco::after { content: ''; position: absolute; inset: 0; }
+
+/* ── Màn bắt đầu: poster = ảnh bìa + tên + nút phát ── */
+.ss-start { position: absolute; inset: 0; z-index: 20; display: grid; align-content: end; justify-items: center; text-align: center;
+  padding: 24px 20px calc(5vh + env(safe-area-inset-bottom)); box-sizing: border-box; background: var(--bg); overflow: hidden; }
+.ss-start[hidden] { display: none; }
+.ss-start-ph { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; animation: ss-poster 24s ease-out both; }
+@keyframes ss-poster { from { transform: scale(1.08); } to { transform: scale(1); } }
+.ss-start::before { content: ''; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 25%, transparent) 0%, color-mix(in srgb, var(--bg) 10%, transparent) 30%,
+    color-mix(in srgb, var(--bg) 78%, transparent) 62%, var(--bg) 94%); }
+.ss-start-in { position: relative; z-index: 2; display: grid; justify-items: center; gap: min(1.8vh, 14px); max-width: min(900px, 100%); }
+.ss-start-title { margin: 0; font: 400 calc(var(--fs-title) * .92)/1.12 var(--title); text-wrap: balance; overflow-wrap: anywhere; }
+.ss-start-date { margin: 0 0 min(1.4vh, 10px); font-size: var(--fs-sub); letter-spacing: .14em; color: var(--ac); text-wrap: balance; }
+.ss-start-btn { appearance: none; border: 0; cursor: pointer; display: inline-flex; align-items: center; gap: .75em; min-height: 56px; padding: 6px 1.6em 6px 6px; border-radius: 99px;
+  background: var(--ac); color: var(--on-ac); font: 600 clamp(1rem, 2.4vmin, 1.2rem)/1.2 var(--body); letter-spacing: .02em; text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,.28); transition: transform .25s ease, box-shadow .25s ease; }
+.ss-start-play { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--on-ac); color: var(--ac); flex: none; }
+.ss-start-play .ss-ico { width: 20px; height: 20px; margin-left: 2px; stroke: none; }
+.ss-start-btn:hover, .ss-start-btn:focus-visible { transform: translateY(-2px) scale(1.03); box-shadow: 0 14px 36px rgba(0,0,0,.34); }
+.ss-start-btn:focus-visible { outline: 2px solid var(--fg); outline-offset: 4px; }
+.ss-start-play { animation: ss-pulse 2.4s ease-in-out infinite; }
+@keyframes ss-pulse { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--on-ac) 45%, transparent); } 60% { box-shadow: 0 0 0 9px transparent; } }
+.ss-start-sub { margin: 0; opacity: .82; font-size: .92rem; }
+.ss-start-back { color: inherit; opacity: .78; font-size: .92rem; min-height: 44px; display: inline-flex; align-items: center; }
+.ss-start .ss-orn { margin-bottom: min(1vh, 8px); }
+.ss-empty { align-content: center; gap: 16px; }
+.ss-empty p { margin: 0; max-width: 34ch; position: relative; z-index: 2; }
+.ss-empty::before { display: none; }
+.ss-empty .ss-start-btn { padding: 0 1.6em; }
+@media (orientation: landscape) and (min-width: 700px) {
+  /* Màn ngang: tên trên 1 dòng ở dải dưới cùng, chừa vùng giữa ảnh (thường là mặt cô dâu chú rể) */
+  .ss-start { padding-bottom: calc(5vh + env(safe-area-inset-bottom)); }
+  .ss-start::before { background: linear-gradient(180deg, transparent 0%, transparent 45%,
+    color-mix(in srgb, var(--bg) 70%, transparent) 66%, var(--bg) 92%); }
+  .ss-start-title { font-size: calc(var(--fs-title) * .7); }
+  .ss-start-title.ss-names .ss-n, .ss-start-title.ss-names .ss-amp { display: inline; }
+  .ss-start-title.ss-names .ss-amp { margin: 0 .12em; }
+  .ss-start .ss-orn { display: none; }
+  .ss-start-in { gap: 10px; }
+  .ss-start-date { margin-bottom: 6px; }
+}
+
+/* ── Thanh điều khiển — tự ẩn khi đang phát và không chạm/di chuột 3 giây ── */
+.ss-bar { position: absolute; left: 0; right: 0; bottom: 0; z-index: 10; padding: 40px max(14px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
+  background: linear-gradient(transparent, rgba(0,0,0,.66)); color: #fff; transition: opacity .45s ease; opacity: 0; pointer-events: none;
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif; }
+.ss.is-started .ss-bar { opacity: 1; pointer-events: auto; }
+.ss.is-idle .ss-bar { opacity: 0; pointer-events: none; }
+.ss.is-idle { cursor: none; }
+.ss-progress { height: 2px; background: rgba(255,255,255,.22); border-radius: 2px; overflow: hidden; margin: 0 6px 6px; }
+.ss-progress i { display: block; height: 100%; width: 0; background: color-mix(in srgb, var(--ac) 60%, #fff); transition: width .8s ease; }
+.ss-ctrl { display: flex; align-items: center; gap: 2px; }
+.ss-btn { appearance: none; border: 0; background: none; color: #fff; cursor: pointer; min-width: 44px; min-height: 44px; border-radius: 50%; padding: 0;
+  display: inline-grid; place-items: center; text-decoration: none; transition: background .2s ease; }
+.ss-btn:hover, .ss-btn:focus-visible { background: rgba(255,255,255,.16); }
+.ss-btn:focus-visible { outline: 2px solid #fff; outline-offset: 1px; }
+.ss-btn--main { width: 52px; height: 52px; border: 1.5px solid rgba(255,255,255,.55); }
+.ss-btn[hidden] { display: none; }
+.ss-ico { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.ss-ico--play, .ss-ico--off, .ss.is-paused .ss-ico--pause, .ss.is-muted .ss-ico--on { display: none; }
+.ss.is-paused .ss-ico--play, .ss.is-muted .ss-ico--off { display: block; }
+.ss-ico--play { margin-left: 2px; }
+.ss-track { margin-left: auto; padding: 0 6px; font-size: .8rem; line-height: 1.3; opacity: .82; max-width: 46vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ss-credits { position: absolute; left: 16px; right: 16px; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 9; margin: 0; text-align: center;
+  font: .74rem/1.4 'Be Vietnam Pro', system-ui, sans-serif; opacity: .7; color: var(--fg); transition: bottom .45s ease; }
+.ss:not(.is-idle) .ss-credits { bottom: calc(100px + env(safe-area-inset-bottom)); }
+.ss-credits[hidden] { display: none; }
+.ss-admin-note { position: absolute; top: calc(10px + env(safe-area-inset-top)); left: 50%; transform: translateX(-50%); z-index: 30; margin: 0; padding: 8px 14px; border-radius: 10px;
+  background: #fff4d6; color: #5a4300; font: .85rem/1.4 'Be Vietnam Pro', system-ui, sans-serif; max-width: calc(100% - 32px); box-sizing: border-box; text-align: center; }
+.ss-admin-note a { color: inherit; font-weight: 700; }
+.ss.is-started .ss-admin-note { display: none; }
+
+/* ── Nhúng trong trang cưới (iframe ?nhung=1) ── */
+.ss--embed { --fs-title: clamp(1.7rem, min(9vw, 9vh), 4.2rem); }
+/* Khung nhúng thấp: tên 1 dòng, gọn ở dải dưới để lộ mặt cô dâu chú rể */
+.ss--embed .ss-start { padding-bottom: 5%; }
+.ss.ss--embed .ss-start::before { background: linear-gradient(180deg, transparent 0%, transparent 46%, color-mix(in srgb, var(--bg) 72%, transparent) 68%, var(--bg) 96%); }
+.ss--embed .ss-start-title { font-size: calc(var(--fs-title) * .78); }
+.ss--embed .ss-start-title.ss-names .ss-n, .ss--embed .ss-start-title.ss-names .ss-amp { display: inline; }
+.ss--embed .ss-start-title.ss-names .ss-amp { margin: 0 .12em; }
+.ss--embed .ss-start .ss-orn, .ss--embed .ss-start-date { display: none; }
+.ss--embed .ss-start-in { gap: 10px; }
+.ss--embed .ss-start-sub { font-size: .8rem; }
+.ss--embed .ss-btn--main { width: 46px; height: 46px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ss-slide, .ss-slide *, .ss-start-ph, .ss-start-play { animation: none !important; }
+  .ss-deco::before, .ss-deco::after, .ss::after { animation: none !important; }
+}
+
+/* ═════════════ 1. Tinh khôi — trắng ngà, hòa mờ, ảnh có viền trắng như ảnh in, khung chỉ vàng ═════════════ */
+.ss--tinh-khoi { --bg: #f7f2ea; --fg: #4f3f31; --ac: #a8834b; --on-ac: #fffaf2; --title: 'Cormorant Garamond', serif; --body: 'Lora', serif;
+  background: radial-gradient(ellipse at 50% 40%, #fdfaf4 0%, #f7f2ea 55%, #efe6d8 100%); }
+.ss--tinh-khoi .ss-blur { display: none; }
+.ss--tinh-khoi .ss-fig { inset: 8vmin 8vmin 9vmin; }
+.ss--tinh-khoi .ss-fig img { border: min(1.3vmin, 12px) solid #fff; box-shadow: 0 .4vmin 1vmin rgba(79,63,49,.12), 0 2.4vmin 6vmin rgba(79,63,49,.2); box-sizing: border-box; }
+.ss--tinh-khoi .ss-slide { transform: scale(1.025); }
+.ss--tinh-khoi .ss-slide.is-in { transform: none; }
+.ss--tinh-khoi .ss-photo.is-in > .ss-fig { animation: ss-soft var(--ss-dur) ease-out both; }
+.ss--tinh-khoi .ss-fig figcaption { background: none; color: var(--fg); bottom: -6vmin; font-style: italic; }
+.ss--tinh-khoi .ss-deco::after { inset: max(14px, 2.6vmin); border: 1px solid color-mix(in srgb, var(--ac) 50%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--ac) 25%, transparent); outline-offset: -6px; }
+.ss--tinh-khoi .ss-title { font-weight: 500; }
+.ss--tinh-khoi .ss-names .ss-amp { font-weight: 400; }
+.ss--tinh-khoi .ss-sub, .ss--tinh-khoi .ss-start-date { font-family: 'Cormorant Garamond', serif; font-weight: 600; text-transform: uppercase; letter-spacing: .26em; font-size: calc(var(--fs-sub) * .92); }
+.ss--tinh-khoi .ss-quote { font-weight: 500; }
+@media (orientation: portrait) { .ss--tinh-khoi .ss-start::before { background: linear-gradient(180deg, transparent 0%, transparent 32%, color-mix(in srgb, var(--bg) 82%, transparent) 60%, var(--bg) 88%); } }
+
+/* ═════════════ 2. Lãng mạn — hồng trầm, phóng chậm, tim bay ═════════════ */
+.ss--lang-man { --bg: #2a1419; --fg: #fdeaee; --ac: #f0a3b4; --on-ac: #2a1419; --title: 'Great Vibes', cursive; --body: 'Lora', serif;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 18'%3E%3Cpath d='M8 9h58M94 9h58' stroke='black' stroke-width='1'/%3E%3Cpath d='M80 16.5s-8.5-5-8.5-10.4a4.3 4.3 0 0 1 8.5-1.4 4.3 4.3 0 0 1 8.5 1.4c0 5.4-8.5 10.4-8.5 10.4z'/%3E%3C/svg%3E"); --veil: radial-gradient(ellipse at center, rgba(52,20,28,.66), rgba(30,10,15,.86)); --fs-title: clamp(2.9rem, min(14vw, 11vh), 8rem); }
+.ss--lang-man .ss-fig { inset: 0; overflow: hidden; }
+@media (orientation: portrait) { .ss--lang-man .ss-fig { inset: 7vh 4vmin; overflow: visible; } }
+@media (orientation: landscape) { .ss--lang-man .is-landscape > .ss-fig img { width: 100%; height: 100%; object-fit: cover; } }
+.ss--lang-man .ss-photo.is-in > .ss-fig img { animation: ss-kb-a var(--ss-dur) linear both; }
+.ss--lang-man .ss-photo[data-v="1"].is-in > .ss-fig img { animation-name: ss-kb-b; }
+.ss--lang-man .ss-photo[data-v="2"].is-in > .ss-fig img { animation-name: ss-kb-c; }
+.ss--lang-man .ss-photo[data-v="3"].is-in > .ss-fig img { animation-name: ss-kb-d; }
+.ss--lang-man .ss-photo::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 58%, rgba(42,20,25,.6)), linear-gradient(180deg, rgba(240,163,180,.08), transparent 40%); }
+.ss--lang-man .ss-blur { filter: blur(30px) brightness(.45) saturate(1.2) hue-rotate(-8deg); }
+.ss--lang-man .ss-card { background: radial-gradient(ellipse at center, #4a2229, var(--bg)); }
+.ss--lang-man .ss-names .ss-amp { font-size: .5em; margin: 0; }
+.ss--lang-man .ss-sub, .ss--lang-man .ss-start-date { text-transform: uppercase; letter-spacing: .3em; font-size: calc(var(--fs-sub) * .85); }
+.ss--lang-man .ss-quote { font: italic 400 var(--fs-quote)/1.45 'Lora', serif; font-size: calc(var(--fs-quote) * .86); }
+.ss--lang-man .ss-deco::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cg fill='%23f0a3b4' fill-opacity='.3' font-size='22'%3E%3Ctext x='30' y='60'%3E%E2%99%A5%3C/text%3E%3Ctext x='200' y='130' font-size='14'%3E%E2%99%A5%3C/text%3E%3Ctext x='110' y='250' font-size='30'%3E%E2%99%A5%3C/text%3E%3Ctext x='270' y='290' font-size='12'%3E%E2%99%A5%3C/text%3E%3C/g%3E%3C/svg%3E");
+  animation: ss-rise 30s linear infinite; }
+.ss--lang-man .ss-deco::after { background-image: inherit; background-size: 210px 210px; opacity: .5; animation: ss-rise 21s linear infinite; }
+@keyframes ss-rise { from { background-position: 0 0; } to { background-position: 40px -320px; } }
+@keyframes ss-fall { from { background-position: 0 0; } to { background-position: -60px 360px; } }
+
+/* ═════════════ 3. Hoài niệm — phim nâu, hạt nhiễu, viền tối, qua màn đen ═════════════ */
+.ss--hoai-niem { --bg: #17120d; --fg: #f1e4c9; --ac: #cfa96b; --on-ac: #17120d; --title: 'Playfair Display', serif; --body: 'EB Garamond', serif;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 20'%3E%3Cpath d='M6 10h52M102 10h52M58 6h6M96 6h6M58 14h6M96 14h6' stroke='black' stroke-width='1'/%3E%3Cpath d='M80 1l9 9-9 9-9-9z' fill='none' stroke='black' stroke-width='1.2'/%3E%3Cpath d='M80 5.5l4.5 4.5-4.5 4.5-4.5-4.5z'/%3E%3C/svg%3E"); --veil: radial-gradient(ellipse at center, rgba(23,18,13,.66), rgba(10,8,5,.9)); }
+.ss--hoai-niem .ss-blur { filter: blur(30px) brightness(.32) sepia(.9); }
+.ss--hoai-niem .ss-fig img, .ss--hoai-niem .ss-card-ph, .ss--hoai-niem .ss-start-ph { filter: sepia(.62) contrast(1.08) brightness(.96) saturate(.9); }
+.ss--hoai-niem .ss-fig img { box-shadow: 0 0 0 1px rgba(241,228,201,.12), 0 2vmin 6vmin rgba(0,0,0,.6); }
+.ss--hoai-niem .ss-photo.is-in > .ss-fig { animation: ss-kb-c var(--ss-dur) linear both; }
+.ss--hoai-niem .ss-slide { transition-duration: calc(var(--ss-trans) * .55); }
+.ss--hoai-niem .ss-slide.is-in { transition-delay: calc(var(--ss-trans) * .45); }
+.ss--hoai-niem .ss-deco::before { background: radial-gradient(ellipse at center, transparent 48%, rgba(0,0,0,.72) 100%); animation: ss-flicker 3.2s steps(1) infinite; }
+@keyframes ss-flicker { 0%, 100% { opacity: 1; } 31% { opacity: .9; } 33% { opacity: 1; } 71% { opacity: .94; } 72% { opacity: 1; } }
+.ss--hoai-niem .ss-deco::after { inset: -10%; opacity: .15; mix-blend-mode: overlay; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: ss-grain .5s steps(4) infinite; }
+@keyframes ss-grain { 0% { transform: translate(0, 0); } 25% { transform: translate(-3%, 2%); } 50% { transform: translate(2%, -3%); } 75% { transform: translate(-2%, -1%); } }
+.ss--hoai-niem .ss-title { font-style: italic; }
+.ss--hoai-niem .ss-names .ss-amp { font-family: 'EB Garamond', serif; }
+.ss--hoai-niem .ss-card-in { padding: 4vmin 6vmin; border-top: 1px solid color-mix(in srgb, var(--ac) 45%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--ac) 45%, transparent); }
+.ss--hoai-niem .ss-sub, .ss--hoai-niem .ss-start-date { font-style: italic; letter-spacing: .08em; font-size: calc(var(--fs-sub) * 1.1); }
+.ss--hoai-niem .ss-quote { font-family: 'EB Garamond', serif; }
+
+/* ═════════════ 4. Tối giản — đen, tràn màn, lướt ngang, số khung hình ═════════════ */
+.ss--toi-gian { --bg: #0d0d0d; --fg: #fff; --ac: #b5b5b5; --on-ac: #0d0d0d; --title: 'Josefin Sans', sans-serif; --body: 'Josefin Sans', sans-serif;
+  --fs-title: clamp(1.6rem, min(8vw, 6.4vh), 4.4rem); }
+.ss--toi-gian .ss-slide { opacity: 1; clip-path: inset(0 0 0 100%); transition-property: clip-path; }
+.ss--toi-gian .ss-slide.is-in { clip-path: inset(0 0 0 0); }
+.ss--toi-gian .ss-slide.is-out { clip-path: inset(0 0 0 0); }
+.ss--toi-gian .ss-blur { filter: blur(40px) brightness(.28) grayscale(.5); }
+@media (orientation: landscape) { .ss--toi-gian .is-landscape > .ss-fig { inset: 0; } }
+@media (orientation: landscape) { .ss--toi-gian .is-landscape > .ss-fig img { width: 100%; height: 100%; object-fit: cover; } }
+.ss--toi-gian .ss-photo.is-in > .ss-fig img, .ss--toi-gian .ss-pair.is-in .ss-duo { animation: ss-soft var(--ss-dur) ease-out both; }
+.ss--toi-gian .ss-duo { gap: 1.2vmin; }
+.ss--toi-gian .ss-photo::after { content: attr(data-n); position: absolute; left: max(16px, 4vmin); top: calc(max(14px, 3.4vmin) + env(safe-area-inset-top)); z-index: 3;
+  font: 400 .72rem/1 'Josefin Sans', sans-serif; letter-spacing: .32em; color: rgba(255,255,255,.82); text-shadow: 0 1px 6px rgba(0,0,0,.5); }
+.ss--toi-gian .ss-title { text-transform: uppercase; letter-spacing: .3em; font-weight: 300; margin-right: -.3em; }
+.ss--toi-gian .ss-names .ss-amp { font-style: normal; font-size: .5em; margin: .5em 0 .55em; letter-spacing: 0; }
+.ss--toi-gian .ss-sub, .ss--toi-gian .ss-start-date { color: var(--ac); letter-spacing: .4em; text-transform: uppercase; font-size: calc(var(--fs-sub) * .82); margin-right: -.4em; }
+.ss--toi-gian .ss-quote { font-style: normal; font-weight: 300; letter-spacing: .14em; text-transform: uppercase; font-size: calc(var(--fs-quote) * .78); line-height: 1.55; max-width: 20ch; }
+.ss--toi-gian .ss-orn::before { width: 1px; height: clamp(28px, 7vmin, 64px); -webkit-mask: none; mask: none; background: var(--fg); opacity: .7; }
+.ss--toi-gian .ss-start-title { font-weight: 300; text-transform: uppercase; letter-spacing: .3em; margin-right: -.3em; }
+.ss--toi-gian .ss-start-btn { border-radius: 0; background: #fff; text-transform: uppercase; letter-spacing: .2em; font-size: .85rem; font-weight: 600; padding-right: 1.8em; }
+.ss--toi-gian .ss-start-play { border-radius: 0; }
+.ss--toi-gian .ss-fig figcaption { left: 4vmin; bottom: 4vmin; transform: none; background: none; text-transform: uppercase; letter-spacing: .2em; font-size: .8rem; }
+
+/* ═════════════ 5. Hoàng kim — vàng trên đen, khung mạ vàng, ánh kim ═════════════ */
+.ss--hoang-kim { --bg: #0f0c07; --fg: #f5e7bf; --ac: #d9b44a; --on-ac: #1a1408; --title: 'Prata', serif; --body: 'Cormorant Garamond', serif;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 20'%3E%3Cpath d='M6 10h52M102 10h52M58 6h6M96 6h6M58 14h6M96 14h6' stroke='black' stroke-width='1'/%3E%3Cpath d='M80 1l9 9-9 9-9-9z' fill='none' stroke='black' stroke-width='1.2'/%3E%3Cpath d='M80 5.5l4.5 4.5-4.5 4.5-4.5-4.5z'/%3E%3C/svg%3E"); --veil: radial-gradient(ellipse at center, rgba(15,12,7,.62), rgba(8,6,3,.9));
+  --gold: linear-gradient(135deg, #8a6a1c 0%, #f6e3a1 22%, #c39a35 45%, #f3dd96 70%, #8a6a1c 100%); }
+.ss--hoang-kim .ss-blur { filter: blur(34px) brightness(.26) sepia(.45); }
+.ss--hoang-kim .ss-fig { inset: 9vmin; }
+.ss--hoang-kim .ss-fig img { padding: min(.7vmin, 6px); background: var(--gold); box-sizing: border-box;
+  outline: 1px solid color-mix(in srgb, var(--ac) 55%, transparent); outline-offset: min(1.3vmin, 12px); box-shadow: 0 0 6vmin rgba(217,180,74,.22), 0 2vmin 5vmin rgba(0,0,0,.55); }
+.ss--hoang-kim .ss-slide { transform: scale(1.1); }
+.ss--hoang-kim .ss-slide.is-in { transform: scale(1); }
+.ss--hoang-kim .ss-slide.is-out { transform: scale(.96); }
+.ss--hoang-kim .ss-title, .ss--hoang-kim .ss-start-title { background: linear-gradient(180deg, #fff6d2, #e2bd52 55%, #9a7a1c); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: none; }
+.ss--hoang-kim .ss-title .ss-amp, .ss--hoang-kim .ss-start-title .ss-amp { font-family: 'Cormorant Garamond', serif; }
+.ss--hoang-kim .ss-sub, .ss--hoang-kim .ss-start-date { text-transform: uppercase; letter-spacing: .3em; font-weight: 600; font-size: calc(var(--fs-sub) * .82); }
+.ss--hoang-kim .ss-quote { font-weight: 500; }
+.ss--hoang-kim .ss-card-in { padding: 6vmin 7vmin; border: 1px solid color-mix(in srgb, var(--ac) 60%, transparent); outline: 1px solid color-mix(in srgb, var(--ac) 30%, transparent); outline-offset: min(1.3vmin, 12px);
+  background: radial-gradient(ellipse at center, rgba(15,12,7,.35), transparent 75%); }
+.ss--hoang-kim .ss-start-btn { background: var(--gold); }
+.ss--hoang-kim .ss-start-play { background: #1a1408; color: #e9c968; }
+.ss--hoang-kim .ss-deco::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cg fill='%23f6d77a'%3E%3Ccircle cx='30' cy='40' r='1.6'/%3E%3Ccircle cx='190' cy='90' r='1.1'/%3E%3Ccircle cx='120' cy='200' r='2'/%3E%3Ccircle cx='230' cy='230' r='1.2'/%3E%3Ccircle cx='70' cy='150' r='.9'/%3E%3C/g%3E%3C/svg%3E");
+  animation: ss-fall 40s linear infinite, ss-twinkle 3s ease-in-out infinite alternate; }
+@keyframes ss-twinkle { from { opacity: .3; } to { opacity: 1; } }
+
+/* ═════════════ 6. Polaroid — ảnh lấy liền rơi xuống bàn gỗ, xếp chồng ═════════════ */
+.ss--polaroid { --bg: #a87c4f; --fg: #3b2a1a; --ac: #8a5a2b; --on-ac: #fffdf6; --title: 'Dancing Script', cursive; --body: 'Lora', serif;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 18'%3E%3Cpath d='M8 9h58M94 9h58' stroke='black' stroke-width='1'/%3E%3Cpath d='M80 16.5s-8.5-5-8.5-10.4a4.3 4.3 0 0 1 8.5-1.4 4.3 4.3 0 0 1 8.5 1.4c0 5.4-8.5 10.4-8.5 10.4z'/%3E%3C/svg%3E"); --fs-title: clamp(2.5rem, min(12vw, 9.5vh), 7rem);
+  background: radial-gradient(ellipse at 50% 38%, rgba(255,236,200,.38), transparent 65%), radial-gradient(ellipse at center, transparent 55%, rgba(40,22,8,.45)),
+    repeating-linear-gradient(91deg, rgba(90,55,25,.0) 0 7px, rgba(90,55,25,.12) 7px 8px, rgba(90,55,25,0) 8px 19px, rgba(255,230,190,.06) 19px 21px),
+    linear-gradient(180deg, #b58958, #a3774a); }
+.ss--polaroid .ss-blur { display: none; }
+.ss--polaroid .ss-photo { transform: none; }
+.ss--polaroid .ss-fig { inset: auto; left: 50%; top: 50%; display: block; padding: 2.2vmin 2.2vmin 0; background: #fffdf8;
+  box-shadow: 0 .3vmin .6vmin rgba(0,0,0,.25), 0 1.6vmin 4vmin rgba(40,20,5,.4);
+  transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + var(--dy, 0px))) rotate(var(--rot, 0deg)) scale(1.35) translateY(-18vh);
+  transition: transform var(--ss-trans) cubic-bezier(.2,.9,.3,1.15); }
+.ss--polaroid .ss-photo.is-in > .ss-fig { transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + var(--dy, 0px))) rotate(var(--rot, 0deg)); }
+.ss--polaroid .ss-fig img { max-width: 76vw; max-height: 64vh; max-height: 64dvh; }
+.ss--polaroid .ss-fig figcaption { position: static; transform: none; max-width: none; background: none; color: #3b2a1a; border-radius: 0; padding: 0;
+  font: 400 clamp(1.1rem, 3.4vmin, 2rem)/1 'Dancing Script', cursive; height: 9vmin; display: grid; place-items: center; }
+.ss--polaroid .ss-fig:not(:has(figcaption))::after { content: ''; display: block; height: 9vmin; }
+.ss--polaroid .ss-slide.is-under { filter: brightness(.9); }
+.ss--polaroid .ss-pair .ss-duo { inset: 0; align-items: center; justify-content: center; gap: 3vmin;
+  transform: scale(1.3) translateY(-16vh); transition: transform var(--ss-trans) cubic-bezier(.2,.9,.3,1.15); animation: none; }
+.ss--polaroid .ss-pair.is-in .ss-duo { transform: none; }
+.ss--polaroid .ss-pair.is-in .ss-duo > .ss-fig:last-child { animation: none; }
+.ss--polaroid .ss-duo > .ss-fig { position: relative; left: auto; top: auto; flex: 0 1 auto; transform: rotate(var(--r2, 0deg)); transition: none; }
+.ss--polaroid .ss-photo.is-in .ss-duo > .ss-fig { transform: rotate(var(--r2, 0deg)); }
+.ss--polaroid .ss-pair--row .ss-fig img { max-width: 38vw; max-height: 62vh; max-height: 62dvh; }
+.ss--polaroid .ss-pair--col .ss-fig img { max-width: 74vw; max-height: 31vh; max-height: 31dvh; }
+.ss--polaroid .ss-card-in { padding: 6vmin 7vmin; background: #fffdf5; color: var(--fg); box-shadow: 0 .3vmin .6vmin rgba(0,0,0,.2), 0 1.6vmin 4vmin rgba(40,20,5,.4); transform: rotate(-2deg);
+  background-image: repeating-linear-gradient(transparent 0 calc(2.6em - 1px), rgba(120,150,200,.22) calc(2.6em - 1px) 2.6em); max-width: min(760px, 86vw); box-sizing: border-box; }
+.ss--polaroid .ss-card.is-in .ss-card-in { transform: rotate(-2deg); }
+.ss--polaroid .ss-card-in::before { content: ''; position: absolute; left: 50%; top: -2vmin; width: 18vmin; height: 4.4vmin; transform: translateX(-50%) rotate(3deg);
+  background: rgba(255,248,215,.72); box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+.ss--polaroid .ss-card .ss-card-in > * { transform: none; }
+.ss--polaroid .ss-sub { color: var(--ac); font-style: italic; }
+.ss--polaroid .ss-quote { font: 400 var(--fs-quote)/1.35 'Dancing Script', cursive; font-size: calc(var(--fs-quote) * 1.12); }
+.ss--polaroid .ss-start-title, .ss--polaroid .ss-start-date { color: #fffaf0; text-shadow: 0 2px 14px rgba(40,20,5,.5); }
+.ss--polaroid .ss-start-date { color: #fff1d9; }
+.ss--polaroid .ss-start-btn { background: #fffdf6; color: #5b3a1c; }
+.ss--polaroid .ss-start-play { background: #8a5a2b; color: #fffdf6; }
+.ss--polaroid .ss-start .ss-orn::before { background: #fff1d9; }
+
+/* ═════════════ 7. Điện ảnh — màn ảnh rộng, lia máy, tiêu đề như phim ═════════════ */
+.ss--dien-anh { --bg: #000; --fg: #f4f0e8; --ac: #e3b866; --on-ac: #000; --title: 'Fraunces', serif; --body: 'Fraunces', serif;
+  --veil: linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,.68) 50%, rgba(0,0,0,.5)); --bar: 11vh;
+  --fs-title: clamp(1.7rem, min(8.6vw, 7vh), 4.8rem); }
+@media (orientation: portrait) { .ss--dien-anh { --bar: 13vh; } }
+.ss--dien-anh .ss-deco::before { inset: 0 0 auto; height: var(--bar); background: #000; }
+.ss--dien-anh .ss-deco::after { inset: auto 0 0; height: var(--bar); background: #000; }
+.ss--dien-anh .ss-fig { inset: var(--bar) 0; overflow: hidden; }
+@media (orientation: portrait) { .ss--dien-anh .ss-fig { inset: var(--bar) 3vw; } }
+.ss--dien-anh .ss-duo { inset: var(--bar) 3vw; }
+@media (orientation: landscape) { .ss--dien-anh .is-landscape > .ss-fig img { width: 100%; height: 100%; object-fit: cover; } }
+.ss--dien-anh .ss-blur { filter: blur(40px) brightness(.3); }
+.ss--dien-anh .ss-photo.is-in > .ss-fig img { animation: ss-kb-c var(--ss-dur) linear both; }
+.ss--dien-anh .ss-photo[data-v="1"].is-in > .ss-fig img, .ss--dien-anh .ss-photo[data-v="3"].is-in > .ss-fig img { animation-name: ss-pan-r; }
+@keyframes ss-pan-r { from { transform: scale(1.1) translateX(2%); } to { transform: scale(1.02) translateX(-2%); } }
+.ss--dien-anh .ss-card-ph { top: var(--bar); bottom: var(--bar); height: auto; }
+.ss--dien-anh .ss-card.has-ph::before { inset: var(--bar) 0; }
+.ss--dien-anh .ss-title, .ss--dien-anh .ss-start-title { font-weight: 300; letter-spacing: .16em; text-transform: uppercase; margin-right: -.16em; }
+.ss--dien-anh .ss-names .ss-amp { font-style: italic; text-transform: none; letter-spacing: 0; font-size: .7em; margin: .1em 0; }
+.ss--dien-anh .ss-title--end { font-size: calc(var(--fs-title) * .62); letter-spacing: .22em; }
+.ss--dien-anh .ss-sub, .ss--dien-anh .ss-start-date { letter-spacing: .42em; text-transform: uppercase; font-size: calc(var(--fs-sub) * .74); margin-right: -.42em; }
+.ss--dien-anh .ss-quote { font-weight: 300; font-size: calc(var(--fs-quote) * .9); }
+.ss--dien-anh .ss-fig figcaption { bottom: 2vh; background: none; font-style: italic; text-shadow: 0 1px 4px #000; }
+.ss--dien-anh .ss-orn::before { width: 1px; height: clamp(26px, 6vmin, 60px); -webkit-mask: none; mask: none; }
+.ss--dien-anh .ss-card .ss-card-in > * { transition-duration: 2.2s, 2.4s; transform: none; }
+.ss--dien-anh .ss-start-btn { border-radius: 2px; text-transform: uppercase; letter-spacing: .16em; font-size: .82rem; font-weight: 500; }
+
+/* ═════════════ 8. Hoa xuân — phấn hồng xanh lá, khung vòm, cánh hoa, hiện dần ═════════════ */
+.ss--hoa-xuan { --bg: #fdf0f3; --fg: #5e3f47; --ac: #c86f88; --on-ac: #fff; --title: 'Dancing Script', cursive; --body: 'Lora', serif;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 22'%3E%3Cpath d='M10 11h56M94 11h56' stroke='black' stroke-width='1'/%3E%3Cellipse cx='56' cy='7.5' rx='6' ry='2.3' transform='rotate(-25 56 7.5)'/%3E%3Cellipse cx='104' cy='7.5' rx='6' ry='2.3' transform='rotate(25 104 7.5)'/%3E%3Cg transform='translate(80 11)'%3E%3Ccircle cy='-5' r='3.2'/%3E%3Ccircle cx='4.8' cy='-1.5' r='3.2'/%3E%3Ccircle cx='3' cy='4' r='3.2'/%3E%3Ccircle cx='-3' cy='4' r='3.2'/%3E%3Ccircle cx='-4.8' cy='-1.5' r='3.2'/%3E%3C/g%3E%3C/svg%3E"); --fs-title: clamp(2.6rem, min(13vw, 10vh), 7.4rem);
+  background: radial-gradient(ellipse at 15% 0%, rgba(255,214,226,.8), transparent 50%), radial-gradient(ellipse at 90% 100%, rgba(206,230,206,.75), transparent 55%),
+    linear-gradient(160deg, #fdf0f3 0%, #faeef1 50%, #f0f6ee 100%); }
+.ss--hoa-xuan .ss-blur { display: none; }
+.ss--hoa-xuan .ss-fig { inset: 7vmin 7vmin 8vmin; }
+.ss--hoa-xuan .ss-fig img { border-radius: 50vmin 50vmin 2vmin 2vmin; border: min(1.2vmin, 10px) solid #fff; box-shadow: 0 1.5vmin 4vmin rgba(94,63,71,.2); box-sizing: border-box; }
+.ss--hoa-xuan .ss-pair--col .ss-fig img { border-radius: 2vmin; }
+.ss--hoa-xuan .ss-slide { transform: scale(.97) translateY(1.5vh); }
+.ss--hoa-xuan .ss-slide.is-in { transform: none; }
+.ss--hoa-xuan .ss-slide.is-out { transform: scale(1.02); }
+.ss--hoa-xuan .ss-photo.is-in > .ss-fig { animation: ss-soft var(--ss-dur) ease-out both; }
+.ss--hoa-xuan .ss-fig figcaption { background: rgba(255,255,255,.8); color: var(--fg); bottom: -5vmin; }
+.ss--hoa-xuan .ss-names .ss-amp { font-family: 'Lora', serif; font-size: .38em; margin: .2em 0 .25em; }
+.ss--hoa-xuan .ss-sub, .ss--hoa-xuan .ss-start-date { font-style: italic; letter-spacing: .06em; font-size: calc(var(--fs-sub) * 1.08); }
+.ss--hoa-xuan .ss-quote { font: italic 400 var(--fs-quote)/1.45 'Lora', serif; font-size: calc(var(--fs-quote) * .84); }
+@media (orientation: portrait) { .ss--hoa-xuan .ss-start::before { background: linear-gradient(180deg, transparent 0%, transparent 30%, color-mix(in srgb, var(--bg) 84%, transparent) 60%, var(--bg) 88%); } }
+.ss--hoa-xuan .ss-deco::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cg fill='%23f2a7bb' fill-opacity='.7'%3E%3Cellipse cx='40' cy='50' rx='7' ry='4' transform='rotate(30 40 50)'/%3E%3Cellipse cx='220' cy='110' rx='5' ry='3' transform='rotate(-20 220 110)'/%3E%3Cellipse cx='130' cy='230' rx='8' ry='4.5' transform='rotate(60 130 230)'/%3E%3Cellipse cx='270' cy='270' rx='4' ry='2.5'/%3E%3C/g%3E%3C/svg%3E");
+  animation: ss-fall 24s linear infinite; }
+.ss--hoa-xuan .ss-deco::after { background-image: inherit; background-size: 190px 190px; opacity: .55; animation: ss-fall 16s linear infinite reverse; }
+
+/* ═════════════ 9. Đêm sao — trời đêm, sao lấp lánh, sao băng, ảnh tỏa sáng ═════════════ */
+.ss--dem-sao { --bg: #0b1230; --fg: #eef1ff; --ac: #b3c3ff; --on-ac: #0b1230; --title: 'Pinyon Script', cursive; --body: 'Josefin Sans', sans-serif;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 22'%3E%3Cpath d='M10 11h54M96 11h54' stroke='black' stroke-width='1'/%3E%3Cpath d='M80 1l2.6 7.4L90 11l-7.4 2.6L80 21l-2.6-7.4L70 11l7.4-2.6z'/%3E%3Ccircle cx='68' cy='11' r='1.3'/%3E%3Ccircle cx='92' cy='11' r='1.3'/%3E%3C/svg%3E"); --veil: radial-gradient(ellipse at 50% 60%, rgba(11,18,48,.64), rgba(8,12,34,.88)); --fs-title: clamp(2.7rem, min(13vw, 10.5vh), 7.6rem);
+  background: radial-gradient(ellipse at 50% 115%, #34478a 0%, #172354 38%, #0b1230 72%), #0b1230; }
+.ss--dem-sao .ss-blur { display: none; }
+.ss--dem-sao .ss-fig { inset: 9vmin; }
+.ss--dem-sao .ss-fig img { border-radius: 1.2vmin; box-shadow: 0 0 7vmin rgba(159,180,255,.38), 0 0 0 1px rgba(232,236,255,.35); }
+.ss--dem-sao .ss-card-ph { filter: saturate(.7); }
+.ss--dem-sao .ss-slide { transform: translateY(4vh); }
+.ss--dem-sao .ss-slide.is-in { transform: none; }
+.ss--dem-sao .ss-slide.is-out { transform: translateY(-3vh); }
+.ss--dem-sao .ss-photo.is-in > .ss-fig { animation: ss-float 6s ease-in-out infinite alternate; }
+@keyframes ss-float { from { transform: translateY(-.8vmin); } to { transform: translateY(.8vmin); } }
+.ss--dem-sao .ss-title, .ss--dem-sao .ss-start-title { text-shadow: 0 0 3vmin rgba(159,180,255,.55); }
+.ss--dem-sao .ss-names .ss-amp { font-family: 'Cormorant Garamond', serif; font-size: .4em; margin: .15em 0 .2em; }
+.ss--dem-sao .ss-title--end { font: italic 400 calc(var(--fs-quote) * 1.05)/1.35 'Cormorant Garamond', serif; letter-spacing: .01em; }
+.ss--dem-sao .ss-quote { font: italic 400 var(--fs-quote)/1.4 'Cormorant Garamond', serif; }
+.ss--dem-sao .ss-sub, .ss--dem-sao .ss-start-date { letter-spacing: .3em; text-transform: uppercase; font-size: calc(var(--fs-sub) * .8); }
+.ss--dem-sao .ss-deco { z-index: 0; }
+.ss--dem-sao .ss-stage { z-index: 1; }
+.ss--dem-sao .ss-deco::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg fill='%23fff'%3E%3Ccircle cx='20' cy='30' r='1'/%3E%3Ccircle cx='150' cy='60' r='.7'/%3E%3Ccircle cx='90' cy='170' r='1.3'/%3E%3Ccircle cx='210' cy='200' r='.8'/%3E%3Ccircle cx='60' cy='100' r='.6'/%3E%3Ccircle cx='190' cy='130' r='1.1'/%3E%3C/g%3E%3C/svg%3E");
+  animation: ss-twinkle 2.6s ease-in-out infinite alternate; }
+.ss--dem-sao .ss-deco::after { background-image: inherit; background-size: 170px 170px; background-position: 40px 70px; animation: ss-twinkle 3.4s ease-in-out infinite alternate-reverse; }
+.ss--dem-sao::after { content: ''; position: absolute; top: 14%; left: 62%; z-index: 0; width: 22vmin; height: 1.5px; border-radius: 2px; pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,0), #fff); transform: rotate(-24deg); opacity: 0; animation: ss-shoot 13s ease-in 4s infinite; }
+@keyframes ss-shoot { 0% { opacity: 0; transform: rotate(-24deg) translateX(0); } 2% { opacity: 1; } 7% { opacity: 0; transform: rotate(-24deg) translateX(-34vmin); } 100% { opacity: 0; transform: rotate(-24deg) translateX(-34vmin); } }
+
+/* ═════════════ 10. Song hỷ — đỏ thắm & vàng, chữ Hỷ, hồi văn, lật trang ═════════════ */
+.ss--song-hy { --bg: #8e1616; --fg: #fbe8b8; --ac: #ecc65e; --on-ac: #7a1010; --title: 'Noto Serif Display', serif; --body: 'Lora', serif;
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 20'%3E%3Cpath d='M6 10h52M102 10h52M58 6h6M96 6h6M58 14h6M96 14h6' stroke='black' stroke-width='1'/%3E%3Cpath d='M80 1l9 9-9 9-9-9z' fill='none' stroke='black' stroke-width='1.2'/%3E%3Cpath d='M80 5.5l4.5 4.5-4.5 4.5-4.5-4.5z'/%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23e8c25a' stroke-opacity='.10' stroke-width='2'%3E%3Cpath d='M0 30h30V0M90 0v30h30M120 90H90v30M30 120V90H0'/%3E%3Cpath d='M45 45h30v30H45z M52 52h16v16H52z'/%3E%3Cpath d='M30 30l15 15M90 30L75 45M90 90L75 75M30 90l15-15'/%3E%3C/g%3E%3C/svg%3E") center / 120px 120px, radial-gradient(ellipse at center, #b52424 0%, #8e1616 55%, #5e0c0c 100%); }
+.ss--song-hy .ss-stage { perspective: 1800px; }
+.ss--song-hy .ss-slide { transform: rotateY(-80deg); transform-origin: left center; backface-visibility: hidden; }
+.ss--song-hy .ss-slide.is-in { transform: rotateY(0); }
+.ss--song-hy .ss-slide.is-out { transform: rotateY(70deg); transform-origin: right center; }
+.ss--song-hy .ss-blur { display: none; }
+.ss--song-hy .ss-fig { inset: 10vmin; }
+.ss--song-hy .ss-fig img { padding: .8vmin; background: #8e1616; border: .9vmin double var(--ac); box-shadow: 0 1.5vmin 5vmin rgba(0,0,0,.42); box-sizing: border-box; }
+.ss--song-hy .ss-fig figcaption { background: rgba(94,12,12,.85); color: var(--fg); }
+.ss--song-hy .ss-deco { z-index: 0; }
+.ss--song-hy .ss-stage { z-index: 1; }
+.ss--song-hy .ss-deco::before { content: '囍'; display: grid; place-items: center; font: 700 78vmin/1 'Noto Serif Display', serif; color: rgba(236,198,94,.06); }
+.ss--song-hy .ss-deco::after { inset: max(12px, 2.4vmin); border: 2px solid rgba(236,198,94,.6); outline: 1px solid rgba(236,198,94,.32); outline-offset: -7px;
+  background: linear-gradient(var(--ac), var(--ac)) 0 0 / 22px 2px no-repeat, linear-gradient(var(--ac), var(--ac)) 0 0 / 2px 22px no-repeat,
+    linear-gradient(var(--ac), var(--ac)) 100% 0 / 22px 2px no-repeat, linear-gradient(var(--ac), var(--ac)) 100% 0 / 2px 22px no-repeat,
+    linear-gradient(var(--ac), var(--ac)) 0 100% / 22px 2px no-repeat, linear-gradient(var(--ac), var(--ac)) 0 100% / 2px 22px no-repeat,
+    linear-gradient(var(--ac), var(--ac)) 100% 100% / 22px 2px no-repeat, linear-gradient(var(--ac), var(--ac)) 100% 100% / 2px 22px no-repeat; background-origin: content-box; padding: 8px; }
+.ss--song-hy .ss-title, .ss--song-hy .ss-start-title { color: var(--ac); text-shadow: 0 2px 0 rgba(94,12,12,.6); }
+.ss--song-hy .ss-names .ss-amp { font-family: 'Lora', serif; }
+.ss--song-hy .ss-sub, .ss--song-hy .ss-start-date { color: var(--fg); letter-spacing: .24em; text-transform: uppercase; font-size: calc(var(--fs-sub) * .82); }
+.ss--song-hy .ss-card .ss-orn--top::before, .ss--song-hy .ss-start .ss-orn--top::before { content: '囍'; width: auto; height: auto; background: none; -webkit-mask: none; mask: none;
+  font: 700 clamp(2.2rem, min(11vw, 8vh), 4.6rem)/1 'Noto Serif Display', serif; color: var(--ac); }
+@media (orientation: portrait) { .ss--song-hy .ss-start::before { background: linear-gradient(180deg, transparent 0%, rgba(142,22,22,.15) 30%, rgba(142,22,22,.85) 62%, #8e1616 92%); } }

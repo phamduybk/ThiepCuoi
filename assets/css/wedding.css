@@ -721,3 +721,20 @@ body.wd[data-theme="dienanh"] .wd-foot .wd-credit::before { content: none; }
 .wd .guest-photos p.center .btn-ghost:not(#_) { color: inherit; border-color: currentColor; background: transparent; }
 [data-theme="tapchi"] .wd .guest-photos > * { grid-column: 1 / -1; grid-row: auto; }
 [data-theme="tapchi"] .wd .guest-photos .guest-gallery { margin: 18px 0 6px; max-width: 640px; justify-content: flex-start; }
+
+/* Video cưới — khung trình chiếu ảnh nhúng (views/public/wedding.php #video-cuoi, Docs/trinh-chieu.md).
+   Khung ăn theo giao diện trang cưới: viền + đường chỉ ngoài màu nhấn (--accent), bóng nhuộm màu chữ (--ink). */
+.video-sec { padding-top: 56px; padding-bottom: 24px; }
+.video-frame { position: relative; width: 100%; max-width: 980px; margin: 14px auto 0; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden;
+  background: color-mix(in srgb, var(--ink, #222) 92%, #000);
+  outline: 1px solid color-mix(in srgb, var(--accent, #b4838b) 32%, transparent); outline-offset: 8px;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent, #b4838b) 45%, transparent), 0 24px 56px -20px color-mix(in srgb, var(--ink, #000) 60%, transparent); }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+@media (max-width: 560px) { .video-frame { aspect-ratio: 4 / 5; border-radius: 10px; outline-offset: 6px; max-height: 78vh; max-height: 78svh; } }
+.video-sec .video-more { margin-top: 22px; }
+.video-sec .video-more .btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; }
+[data-theme="tapchi"] .video-frame, [data-theme="toi-gian"] .video-frame { border-radius: 0; }
+/* SEO 15/11/2026: link chữ về thiep.site ở chân trang cưới — nhỏ, mờ, không đổi bố cục */
+.wd-make { margin: 4px 0 0; font: .72rem/1.5 var(--f-ui, system-ui, sans-serif) !important; font-style: normal !important; opacity: .6; text-align: center; }
+.wd-make a { color: inherit; text-decoration: none; display: inline-block; padding: 12px 4px; margin: -12px 0; }
+.wd-make a:hover, .wd-make a:focus-visible { text-decoration: underline; color: var(--accent); }

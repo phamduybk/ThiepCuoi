@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // Sinh/duy trì bởi DEV PUBLIC; '<chuỗi>|1' = dạng số ít (__n), '<chữ mẫu>|<khóa>' = bản riêng của 1 ô nội dung.
 return array(
 	'Trang dùng thử · thời gian còn lại {n} ngày' => 'Trial site · {n} days left',
+	'Tạo thiệp cưới online miễn phí tại thiep.site' => 'Create your free online wedding invitation at thiep.site',
 	'Bản quyền thuộc' => 'Copyright',
 	'tác giả' => 'author',
 	'Duy Phạm' => 'Duy Pham',

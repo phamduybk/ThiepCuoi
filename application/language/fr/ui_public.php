@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // Sinh/duy trì bởi DEV PUBLIC; '<chuỗi>|1' = dạng số ít (__n), '<chữ mẫu>|<khóa>' = bản riêng của 1 ô nội dung.
 return array(
 	'Trang dùng thử · thời gian còn lại {n} ngày' => 'Site d’essai · il reste {n} jours',
+	'Tạo thiệp cưới online miễn phí tại thiep.site' => 'Créez gratuitement votre faire-part de mariage en ligne sur thiep.site',
 	'Bản quyền thuộc' => 'Droits réservés',
 	'tác giả' => 'auteur',
 	'Duy Phạm' => 'Duy Pham',

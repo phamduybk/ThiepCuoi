@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // Tiếng Trung không chia số nhiều nên không có khóa '<chuỗi>|1'; '<chữ mẫu>|<khóa>' = bản riêng của 1 ô nội dung.
 return array(
 	'Trang dùng thử · thời gian còn lại {n} ngày' => '试用网站 · 剩余 {n} 天',
+	'Tạo thiệp cưới online miễn phí tại thiep.site' => '在 thiep.site 免费制作在线婚礼请柬',
 	'Bản quyền thuộc' => '版权所有',
 	'tác giả' => '作者',
 	'Duy Phạm' => 'Duy Pham',

@@ -282,3 +282,63 @@ form[data-settings-form].is-dirty > .form-actions .btn-accent { animation: save-
 @media (pointer: coarse) { .upd-pill { min-height: 44px; } }
 .upd-card .btn-row { display: flex; flex-wrap: wrap; gap: 8px; }
 .upd-card [hidden] { display: none; }
+
+/* ── Trình chiếu ảnh cưới (views/admin/slideshow.php, 15/11/2026) ── */
+.ss-theme-pick { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(140px, 100%), 1fr)); gap: 10px; }
+@media (min-width: 700px) { .ss-theme-pick { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; } }
+@media (max-width: 699px) { .ss-theme-opt { padding: 7px; } .ss-theme-thumb b { font-size: .95rem; } .ss-theme-name small { font-size: .78rem; } }
+.ss-theme-opt { position: relative; display: grid; gap: 8px; padding: 10px; border: 2px solid var(--line); border-radius: 12px; cursor: pointer; font-weight: 400; }
+.ss-theme-opt:has(input:checked) { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, #fff); }
+.ss-theme-opt:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ss-theme-opt input { position: absolute; opacity: 0; }
+.ss-theme-name { display: grid; gap: 2px; font-size: .9rem; line-height: 1.35; }
+.ss-theme-thumb { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; isolation: isolate;
+  background: var(--sw-bg); color: var(--sw-fg); --sw-ph: linear-gradient(135deg, color-mix(in srgb, var(--sw-ac) 70%, #fff), color-mix(in srgb, var(--sw-ac) 35%, #000)); }
+.ss-theme-thumb b { position: absolute; left: 6%; right: 6%; bottom: 9%; z-index: 3; text-align: center; font: 400 1.1rem/1.1 var(--sw-font), serif; letter-spacing: .02em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ss-thumb-photo { position: absolute; z-index: 1; left: 50%; top: 9%; width: 38%; height: 52%; transform: translateX(-50%);
+  background: var(--sw-ph) center 35% / cover no-repeat; box-shadow: 0 2px 10px rgba(0,0,0,.25); }
+/* Giao diện tràn màn: ảnh phủ kín, chữ nằm trên lớp phủ */
+.ss-thumb--lang-man .ss-thumb-photo, .ss-thumb--hoai-niem .ss-thumb-photo, .ss-thumb--toi-gian .ss-thumb-photo, .ss-thumb--dien-anh .ss-thumb-photo {
+  left: 0; top: 0; width: 100%; height: 100%; transform: none; box-shadow: none; }
+.ss-thumb--lang-man::after, .ss-thumb--hoai-niem::after, .ss-thumb--toi-gian::after, .ss-thumb--dien-anh::after { content: ''; position: absolute; inset: 0; z-index: 2;
+  background: linear-gradient(180deg, transparent 35%, color-mix(in srgb, var(--sw-bg) 85%, transparent) 100%); }
+.ss-theme-thumb b { text-shadow: 0 1px 8px color-mix(in srgb, var(--sw-bg) 70%, transparent); }
+.ss-thumb--tinh-khoi { background: radial-gradient(ellipse at 50% 40%, #fdfaf4, var(--sw-bg) 60%, #efe6d8); }
+.ss-thumb--tinh-khoi .ss-thumb-photo { border: 3px solid #fff; box-shadow: 0 4px 12px rgba(79,63,49,.22); }
+.ss-thumb--tinh-khoi::after { content: ''; position: absolute; inset: 5px; border: 1px solid color-mix(in srgb, var(--sw-ac) 45%, transparent); z-index: 2; }
+.ss-thumb--lang-man b { font-size: 1.45rem; color: #fdeaee; }
+.ss-thumb--lang-man .ss-thumb-photo { filter: saturate(1.05) brightness(.9); }
+.ss-thumb--lang-man::before { content: '♥  ♥   ♥'; position: absolute; z-index: 3; top: 8%; left: 10%; font-size: .55rem; letter-spacing: 1.6em; color: var(--sw-ac); opacity: .8; }
+.ss-thumb--hoai-niem .ss-thumb-photo { filter: sepia(.7) contrast(1.05); }
+.ss-thumb--hoai-niem::after { background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,.75)), linear-gradient(180deg, transparent 50%, rgba(23,18,13,.7)); }
+.ss-thumb--hoai-niem b { font-style: italic; }
+.ss-thumb--toi-gian b { text-transform: uppercase; letter-spacing: .3em; font-size: .72rem; font-weight: 300; color: #fff; }
+.ss-thumb--toi-gian::before { content: '01 / 16'; position: absolute; z-index: 3; top: 8%; left: 6%; font: .5rem/1 'Josefin Sans', sans-serif; letter-spacing: .3em; color: #fff; }
+.ss-thumb--hoang-kim .ss-thumb-photo {
+  background: var(--sw-ph) center 35% / cover no-repeat; border: 2px solid var(--sw-ac); outline: 1px solid color-mix(in srgb, var(--sw-ac) 50%, transparent); outline-offset: 3px; box-shadow: 0 0 14px rgba(217,180,74,.3); }
+.ss-thumb--hoang-kim b { background: linear-gradient(180deg, #fff6d2, #e2bd52 55%, #9a7a1c); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: none; }
+.ss-thumb--polaroid { background: radial-gradient(ellipse at 50% 38%, rgba(255,236,200,.4), transparent 65%), linear-gradient(180deg, #b58958, #a3774a); }
+.ss-thumb--polaroid .ss-thumb-photo { width: 34%; height: 50%; top: 9%; border: 4px solid #fffdf8; border-bottom-width: 13px; transform: translateX(-50%) rotate(-5deg); box-shadow: 0 4px 10px rgba(40,20,5,.4); }
+.ss-thumb--polaroid b { color: #fffaf0; font-size: 1.3rem; text-shadow: 0 1px 6px rgba(40,20,5,.5); }
+.ss-thumb--dien-anh::before { content: ''; position: absolute; inset: 0; z-index: 3; box-shadow: inset 0 13px 0 #000, inset 0 -13px 0 #000; }
+.ss-thumb--dien-anh b { text-transform: uppercase; letter-spacing: .22em; font-size: .72rem; font-weight: 300; bottom: 24%; color: #f4f0e8; }
+.ss-thumb--hoa-xuan { background: radial-gradient(ellipse at 15% 0%, rgba(255,214,226,.9), transparent 55%), radial-gradient(ellipse at 90% 100%, rgba(206,230,206,.9), transparent 55%), var(--sw-bg); }
+.ss-thumb--hoa-xuan .ss-thumb-photo { border-radius: 999px 999px 4px 4px; border: 3px solid #fff; }
+.ss-thumb--hoa-xuan b { font-size: 1.3rem; }
+.ss-thumb--dem-sao { background: radial-gradient(1px 1px at 20% 30%, #fff, transparent), radial-gradient(1px 1px at 80% 20%, #fff, transparent),
+  radial-gradient(1.4px 1.4px at 88% 62%, #fff, transparent), radial-gradient(1px 1px at 10% 70%, #fff, transparent), radial-gradient(ellipse at 50% 115%, #34478a, #172354 40%, var(--sw-bg) 75%); }
+.ss-thumb--dem-sao .ss-thumb-photo { border-radius: 4px; box-shadow: 0 0 16px color-mix(in srgb, var(--sw-ac) 70%, transparent), 0 0 0 1px rgba(232,236,255,.4); }
+.ss-thumb--dem-sao b { font-size: 1.35rem; text-shadow: 0 0 10px color-mix(in srgb, var(--sw-ac) 70%, transparent); }
+.ss-thumb--song-hy { background: radial-gradient(ellipse at center, #b52424, var(--sw-bg) 60%, #5e0c0c); }
+.ss-thumb--song-hy::after { content: ''; position: absolute; inset: 5px; z-index: 2; border: 1px solid color-mix(in srgb, var(--sw-ac) 60%, transparent); }
+.ss-thumb--song-hy::before { content: '囍'; position: absolute; z-index: 0; inset: 0; display: grid; place-items: center; font: 700 4.6rem/1 serif; color: rgba(236,198,94,.09); }
+.ss-thumb--song-hy .ss-thumb-photo { border: 3px double var(--sw-ac); }
+.ss-thumb--song-hy b { color: var(--sw-ac); }
+.ss-texts legend { font-weight: 600; }
+.ss-texts textarea, .ss-texts input { width: 100%; }
+.ss-playlist { display: grid; gap: 10px; padding-left: 1.4em; margin: 0; }
+.ss-playlist .music-item { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.ss-playlist audio { max-width: 100%; height: 36px; }
+.ss-playlist .btn-row { display: flex; gap: 6px; margin-left: auto; }
+@media (pointer: coarse) { .ss-playlist .btn-sm { min-width: 44px; min-height: 44px; } }

@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // Tiếng Lào không chia số nhiều nên không có khóa '|1'; '<chữ mẫu>|<khóa>' = bản riêng của 1 ô nội dung.
 return array(
 	'Trang dùng thử · thời gian còn lại {n} ngày' => 'ເວັບທົດລອງ · ເຫຼືອອີກ {n} ມື້',
+	'Tạo thiệp cưới online miễn phí tại thiep.site' => 'ສ້າງບັດເຊີນແຕ່ງງານອອນລາຍຟຣີທີ່ thiep.site',
 	'Bản quyền thuộc' => 'ລິຂະສິດ',
 	'tác giả' => 'ຜູ້ຂຽນ',
 	'Duy Phạm' => 'Duy Pham',
