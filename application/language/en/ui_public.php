@@ -337,4 +337,17 @@ return array(
 	'Chọn màu khác' => 'Pick another colour',
 	'Mặc định' => 'Default',
 	'Mặc định cả thiệp' => 'Reset whole card',
+	// Mời vào Đám cưới online trên thiệp (15/11/2026)
+	'Dự đám cưới online ngay' => 'Join the online wedding now',
+	'Đây là không gian 3D của rạp cưới, nơi mọi người có thể tương tác, nhắn tin, chơi game với nhau' => 'A 3D wedding hall where everyone can hang out, chat and play games together',
+	'Vào rạp cưới 3D' => 'Enter the 3D hall',
+	'Để sau' => 'Maybe later',
+	'Không hiện lại thông báo này' => 'Don\'t show this again',
+	'Ảnh rạp cưới 3D' => 'Photos of the 3D wedding hall',
+	'Nhà hàng tiệc cưới' => 'Grand ballroom',
+	'Rooftop đêm thành phố' => 'City rooftop at night',
+	'Tiệc sân vườn' => 'Garden party',
+	'Song hỷ Á Đông' => 'Double happiness',
+	'Tiệc bãi biển' => 'Beach party',
+	'Toàn cảnh rạp cưới' => 'The whole hall',
 );

@@ -128,9 +128,10 @@
 [data-theme="hongnhung"] .wd-nav { background: rgba(74, 14, 23, .0); font: 400 .95rem var(--f-ui); letter-spacing: .14em; text-transform: uppercase; padding-top: 10px; padding-bottom: 10px; }
 [data-theme="hongnhung"] .wd-nav.scrolled, [data-theme="hongnhung"] .wd-nav.open { background: var(--nap), linear-gradient(90deg, #4a0e17, #5c1220, #4a0e17); background-size: 200px, auto; box-shadow: 0 1px 0 rgba(185, 143, 78, .55), 0 8px 24px rgba(40, 0, 8, .35); }
 [data-theme="hongnhung"] .wd-nav a:hover { color: var(--gold-lt); }
-[data-theme="hongnhung"] .wd-mono { width: 50px; height: 60px; border: 1px solid rgba(220, 189, 132, .8); border-radius: 50%; font: 400 1.3rem/1 var(--f-name); gap: 0; color: var(--nav-ink) !important;
+[data-theme="hongnhung"] .wd-mono { width: 50px; height: 60px; border: 1px solid rgba(220, 189, 132, .8); border-radius: 50%; font: 400 1.1rem/1 var(--f-name); gap: 0; color: var(--nav-ink) !important;
   box-shadow: 0 0 0 3px rgba(74, 14, 23, .5), 0 0 0 4px rgba(220, 189, 132, .35); padding-top: 4px; }
-[data-theme="hongnhung"] .wd-mono i { font-size: 14px; font-style: normal; color: var(--gold-lt); }
+[data-theme="hongnhung"] .wd-mono i { font-size: .75em; font-style: normal; color: var(--gold-lt); }
+/* 06/11: nét đuôi Imperial Script thò ~.2–.45em sang phải -> wedding.js fitMono đo mực thật, bù lề + thu cỡ; cỡ ở đây đã hạ cho vừa oval. */
 [data-theme="hongnhung"] .wd-burger { border-radius: 999px; border-color: rgba(220, 189, 132, .7); color: var(--nav-ink); }
 [data-theme="hongnhung"] .music-btn { background: var(--ivory); color: var(--wine); box-shadow: 0 0 0 2px var(--gold), 0 0 0 5px rgba(74, 14, 23, .55), 0 8px 20px rgba(40, 0, 8, .4); }
 [data-theme="hongnhung"] .music-hint { background: var(--ivory); color: var(--wine); font-family: var(--f-ui); }
@@ -336,8 +337,8 @@
 [data-theme="hongnhung"] .pd-foot { position: absolute; inset: auto 0 0; height: 180px; z-index: -1; --hn-stroke: rgba(220, 189, 132, .7); --hn-petal: rgba(196, 58, 82, .45); }
 [data-theme="hongnhung"] .hn-fspray { position: absolute; bottom: -40px; width: 220px; height: 165px; opacity: .75; }
 [data-theme="hongnhung"] .hn-fs-l { left: -50px; } [data-theme="hongnhung"] .hn-fs-r { right: -50px; transform: scaleX(-1); }
-[data-theme="hongnhung"] .wd-mono.big { width: 116px; height: 140px; font-size: 3rem; color: var(--ink) !important; border-color: var(--gold-lt); margin-bottom: 30px; box-shadow: 0 0 0 6px rgba(74, 14, 23, .5), 0 0 0 7px rgba(220, 189, 132, .45); }
-[data-theme="hongnhung"] .wd-mono.big i { font-size: 1.1rem; }
+[data-theme="hongnhung"] .wd-mono.big { width: 116px; height: 140px; font-size: 2.5rem; color: var(--ink) !important; border-color: var(--gold-lt); margin-bottom: 30px; box-shadow: 0 0 0 6px rgba(74, 14, 23, .5), 0 0 0 7px rgba(220, 189, 132, .45); }
+[data-theme="hongnhung"] .wd-mono.big i { font-size: .45em; }
 [data-theme="hongnhung"] .wd-foot > p[data-edit] { font: italic 400 1.35rem/1.55 var(--f-body); color: var(--ink); }
 [data-theme="hongnhung"] .wd-foot .muted { color: var(--muted); font: 700 .95rem var(--f-ui); letter-spacing: .14em; text-transform: uppercase; }
 [data-theme="hongnhung"] .wd-foot .music-credit { color: var(--muted); font: italic 400 .95rem/1.5 var(--f-body) !important; }
@@ -345,8 +346,9 @@
 /* ════════ Màn "Mở thiệp" ════════ */
 [data-theme="hongnhung"] .wd-cover-in { position: relative; z-index: 1; }
 [data-theme="hongnhung"] .wd-cover::after { content: ""; position: absolute; inset: 14px; border: 1px solid rgba(220, 189, 132, .6); box-shadow: inset 0 0 0 5px transparent, inset 0 0 0 6px rgba(220, 189, 132, .3); pointer-events: none; }
-[data-theme="hongnhung"] .wd-cover-mono { width: 96px; height: 116px; border-radius: 50%; border: 1px solid var(--gold-lt); color: var(--ink); font: 400 2.4rem var(--f-name); box-shadow: 0 0 0 5px rgba(74, 14, 23, .5), 0 0 0 6px rgba(220, 189, 132, .45); }
-[data-theme="hongnhung"] .wd-cover-mono i { color: var(--gold-lt); font-size: 1rem; }
+[data-theme="hongnhung"] .wd-cover-mono { width: 96px; height: 116px; border-radius: 50%; border: 1px solid var(--gold-lt); color: var(--ink); font: 400 2rem var(--f-name); box-shadow: 0 0 0 5px rgba(74, 14, 23, .5), 0 0 0 6px rgba(220, 189, 132, .45); }
+[data-theme="hongnhung"] .wd-cover-mono { align-items: center; line-height: 1; }
+[data-theme="hongnhung"] .wd-cover-mono i { color: var(--gold-lt); font-size: .5em; }
 [data-theme="hongnhung"] .wd-cover-eyebrow { font: 700 .9rem var(--f-ui); letter-spacing: .32em; color: var(--gold-lt); }
 [data-theme="hongnhung"] .wd-cover-names { font: 400 clamp(3.2rem, 13vw, 5rem)/1.25 var(--f-name); }
 [data-theme="hongnhung"] .wd-cover-names i { font: 400 .6em/1.2 var(--f-name); color: var(--gold-lt); }
@@ -370,7 +372,7 @@
 /* ════════ Điện thoại ════════ */
 @media (max-width: 760px) {
   [data-theme="hongnhung"] .intro { padding: 96px 18px 58px; }
-  [data-theme="hongnhung"] .wd-mono:not(.big) { width: 44px; height: 52px; font-size: 1.15rem; }
+  [data-theme="hongnhung"] .wd-mono:not(.big) { width: 44px; height: 52px; font-size: 1rem; }
   [data-theme="hongnhung"] .intro::after { inset: 70px 8px 8px; }
   [data-theme="hongnhung"] .hn-c { width: 54px; height: 54px; }
   [data-theme="hongnhung"] .hn-c1, [data-theme="hongnhung"] .hn-c2 { top: 62px; }

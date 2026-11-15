@@ -395,6 +395,19 @@ details > summary { cursor: pointer; }
 .theme-opt { display: grid; justify-items: center; gap: 4px; padding: 10px 12px; border: 2px solid var(--line); border-radius: 12px; cursor: pointer; font-weight: 400; font-size: .9rem; }
 .theme-opt:has(input:checked) { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, #fff); }
 .theme-opt input { position: absolute; opacity: 0; }
+/* Cài đặt → Rạp cưới online: 1 + 8 thẻ chọn (ảnh khung SVG nhỏ + tên), cả thẻ là vùng chạm (≥ 44px). */
+.venue-pick { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; border: 0; padding: 0; margin: 0; min-width: 0; }
+.venue-opt { position: relative; display: grid; gap: 6px; align-content: start; min-height: 44px; padding: 6px; border: 2px solid var(--line); border-radius: 12px; cursor: pointer; font-weight: 400; background: var(--paper); }
+.venue-opt:has(input:checked) { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, #fff); }
+.venue-opt:has(input:focus-visible) { outline: 3px solid color-mix(in srgb, var(--accent) 70%, #000); outline-offset: 2px; }
+.venue-opt input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.venue-art { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; border-radius: 8px; }
+.venue-art--dice { display: grid; place-items: center; background: var(--soft); color: var(--muted); font: 600 2rem/1 var(--serif); }
+.venue-name { display: grid; gap: 2px; font-size: .9rem; line-height: 1.3; padding: 0 2px 2px; }
+.venue-name small { font-size: .8rem; }
+.venue-opt--rand { border-style: dashed; }
+.venue-opt--rand:has(input:checked) { border-style: solid; }
+@media (max-width: 400px) { .venue-pick { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; } }
 .ed-theme-logo { width: 40px; height: 40px; border-radius: 50%; display: block; }
 .tl-serenity { background: linear-gradient(135deg, #e8f7f1, #6fae95); }
 .tl-lavender { background: linear-gradient(135deg, #fbf0f7, #b6bad6 55%, #c77aab); }
