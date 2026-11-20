@@ -353,4 +353,7 @@ return array(
 	'Toàn cảnh rạp cưới' => 'The whole hall',
 	'Lời chào cho mọi khách xưng hô “{s}” (xóa hết = về mặc định). Sửa lời chào, chữ bìa từng vai ở Khách mời → Xưng hô & lời mời mẫu.' => 'Greeting for every guest addressed as “{s}” (clear it to restore the default). Edit cover and greeting per role in Guests → Salutations & templates.',
 	'Chữ bìa theo xưng hô — sửa ở Khách mời → Xưng hô & lời mời mẫu.' => 'Cover wording follows the salutation — edit it in Guests → Salutations & templates.',
+	'Câu hỏi tham dự' => 'Attendance question',
+	'Câu hỏi cho mọi khách xưng hô “{s}” (xóa hết = về mặc định).' => 'Question for every guest addressed as “{s}” (clear it all = back to default).',
+	'Khách này chưa có xưng hô — thêm xưng hô cho khách để sửa câu hỏi theo vai.' => 'This guest has no salutation yet — add one to edit the question per role.',
 );

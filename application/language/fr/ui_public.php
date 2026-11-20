@@ -385,4 +385,7 @@ return array(
 	'Toàn cảnh rạp cưới' => 'Vue d’ensemble de la salle',
 	'Lời chào cho mọi khách xưng hô “{s}” (xóa hết = về mặc định). Sửa lời chào, chữ bìa từng vai ở Khách mời → Xưng hô & lời mời mẫu.' => 'Salutation pour tous les invités appelés « {s} » (videz-la pour revenir au défaut). Modifiez couverture et salutation par rôle dans Invités → Formules d’appel.',
 	'Chữ bìa theo xưng hô — sửa ở Khách mời → Xưng hô & lời mời mẫu.' => 'Le texte de couverture suit la formule d’appel — modifiez-le dans Invités → Formules d’appel.',
+	'Câu hỏi tham dự' => 'Question de présence',
+	'Câu hỏi cho mọi khách xưng hô “{s}” (xóa hết = về mặc định).' => 'Question pour tous les invités appelés « {s} » (tout effacer = valeur par défaut).',
+	'Khách này chưa có xưng hô — thêm xưng hô cho khách để sửa câu hỏi theo vai.' => 'Cet invité n’a pas encore de formule d’appel — ajoutez-en une pour modifier la question par rôle.',
 );

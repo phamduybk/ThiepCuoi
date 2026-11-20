@@ -250,4 +250,6 @@ return array(
 	'Cô dâu chú rể xưng' => 'Couple refers to themselves as',
 	'(cô dâu chú rể xưng: chúng cháu, chúng em…)' => '(how the couple refers to themselves for this role)',
 	'Mỗi vai có chữ trên bìa, cách cô dâu chú rể xưng và lời chào riêng — áp cho cả thiệp lẫn trang cưới (để trống = tự động: ông bà, cô chú "Kính gửi · chúng cháu · Trân trọng kính mời"; anh chị "chúng em", bạn bè "chúng mình" · "Thân mời").' => 'Each role has its own cover wording, how the couple refers to themselves, and greeting — used on both the card and the wedding page (blank = automatic: formal for elders, friendly for siblings and friends).',
+	'Câu hỏi trên thiệp' => 'Question on the card',
+	'Khách này chưa có xưng hô — thêm xưng hô (vd Cô chú, Anh chị, Bạn) cho khách để sửa câu hỏi theo vai.' => 'This guest has no salutation yet — add one (e.g. Aunt & Uncle, Friend) to edit the question per role.',
 );
