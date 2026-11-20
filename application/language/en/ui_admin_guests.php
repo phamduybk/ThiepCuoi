@@ -242,4 +242,12 @@ return array(
 	'Danh sách xưng hô đang trống — giữ ít nhất 1 dòng, hoặc bấm "Khôi phục mặc định".' => 'The salutation list is empty — keep at least one row, or press "Restore defaults".',   // QA8-05
 	'Không tìm thấy khách mời.' => 'Guest not found.',
 	'Yêu cầu không hợp lệ.' => 'Invalid request.',
+	'Chữ trên bìa' => 'Cover wording',
+	'Lời chào trên thiệp' => 'Greeting on the card',
+	'Lời chào' => 'Greeting',
+	'Tự động theo xưng hô' => 'Automatic by salutation',
+	'{f} của "{s}" dài quá {n} ký tự.' => '{f} for "{s}" is longer than {n} characters.',
+	'Cô dâu chú rể xưng' => 'Couple refers to themselves as',
+	'(cô dâu chú rể xưng: chúng cháu, chúng em…)' => '(how the couple refers to themselves for this role)',
+	'Mỗi vai có chữ trên bìa, cách cô dâu chú rể xưng và lời chào riêng — áp cho cả thiệp lẫn trang cưới (để trống = tự động: ông bà, cô chú "Kính gửi · chúng cháu · Trân trọng kính mời"; anh chị "chúng em", bạn bè "chúng mình" · "Thân mời").' => 'Each role has its own cover wording, how the couple refers to themselves, and greeting — used on both the card and the wedding page (blank = automatic: formal for elders, friendly for siblings and friends).',
 );

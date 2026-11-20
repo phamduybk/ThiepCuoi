@@ -193,7 +193,7 @@ form[data-settings-form].is-dirty > .form-actions .btn-accent { animation: save-
 /* M1-OWNER-03 / 08: màn cảm ứng — ô nhập ≥ 16px (iOS không tự phóng to), vùng chạm ≥ 44px (btn-sm, VI/EN, ← quay lại, "Xem bảng số liệu"). */
 @media (pointer: coarse) {
   .adm input:not([type=checkbox]):not([type=radio]):not([type=color]), .adm select, .adm textarea, .adm .toolbar select,
-  .adm .copy-row input, .adm .guest-actions .copy-row input, .adm .sal-row textarea, .adm .sal-sample input, .adm .bulk-row :is(input, select) { font-size: 16px; }
+  .adm .copy-row input, .adm .guest-actions .copy-row input, .adm .sal-row textarea, .adm .sal-words input, .adm .sal-sample input, .adm .bulk-row :is(input, select) { font-size: 16px; }
   .adm .btn-sm, .adm .sal-chip, .adm .seg button, .adm .tabs a { min-height: 44px; }
   .adm input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=file]) { min-height: 44px; }
   .adm label.check, .adm label.radio { min-height: 44px; }

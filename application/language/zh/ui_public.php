@@ -380,4 +380,6 @@ return array(
 	'Song hỷ Á Đông' => '东方双喜',
 	'Tiệc bãi biển' => '海滩婚宴',
 	'Toàn cảnh rạp cưới' => '婚礼现场全景',
+	'Lời chào cho mọi khách xưng hô “{s}” (xóa hết = về mặc định). Sửa lời chào, chữ bìa từng vai ở Khách mời → Xưng hô & lời mời mẫu.' => '称呼为“{s}”的所有宾客的问候语（清空则恢复默认）。可在 宾客 → 称呼与邀请模板 中按身份修改封面和问候语。',
+	'Chữ bìa theo xưng hô — sửa ở Khách mời → Xưng hô & lời mời mẫu.' => '封面文字随称呼变化——请在 宾客 → 称呼与邀请模板 中修改。',
 );

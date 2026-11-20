@@ -351,4 +351,6 @@ return array(
 	'Song hỷ Á Đông' => 'Double happiness',
 	'Tiệc bãi biển' => 'Beach party',
 	'Toàn cảnh rạp cưới' => 'The whole hall',
+	'Lời chào cho mọi khách xưng hô “{s}” (xóa hết = về mặc định). Sửa lời chào, chữ bìa từng vai ở Khách mời → Xưng hô & lời mời mẫu.' => 'Greeting for every guest addressed as “{s}” (clear it to restore the default). Edit cover and greeting per role in Guests → Salutations & templates.',
+	'Chữ bìa theo xưng hô — sửa ở Khách mời → Xưng hô & lời mời mẫu.' => 'Cover wording follows the salutation — edit it in Guests → Salutations & templates.',
 );
