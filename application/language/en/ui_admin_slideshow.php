@@ -59,4 +59,7 @@ return array(
 	'Bài này đã có trong danh sách trình chiếu.' => 'This song is already in the slideshow.',
 	'Ảnh trong album tự chạy thành video có nhạc, 10 giao diện, chữ sửa được, tối đa 10 bài hát.' => 'Album photos play as a video with music — 10 themes, editable text, up to 10 songs.',
 	'Chọn giao diện, chữ, nhạc' => 'Choose theme, text and music',
+	'Đám cưới online' => 'Online wedding',
+	'Mời khách dự Đám cưới online (hộp "Dự đám cưới online ngay" hiện trên thiệp và trang cưới)' => 'Invite guests to the online wedding (the "Join the online wedding" box on the card and wedding page)',
+	'Tắt thì khách không thấy hộp mời này nữa. Đám cưới của hai bạn vẫn có rạp cưới 3D trên damcuoi.thiep.site như cũ.' => 'Turn off to stop showing this box to guests. Your 3D wedding hall on damcuoi.thiep.site stays as it is.',
 );
