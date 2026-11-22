@@ -385,4 +385,5 @@ return array(
 	'Câu hỏi tham dự' => '出席询问',
 	'Câu hỏi cho mọi khách xưng hô “{s}” (xóa hết = về mặc định).' => '所有称呼为“{s}”的宾客使用此问题（全部清空 = 恢复默认）。',
 	'Khách này chưa có xưng hô — thêm xưng hô cho khách để sửa câu hỏi theo vai.' => '该宾客尚未设置称呼——请先添加称呼，才能按角色修改问题。',
+	'Xem album ảnh' => "查看相册",
 );

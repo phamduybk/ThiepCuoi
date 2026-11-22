@@ -388,4 +388,5 @@ return array(
 	'Câu hỏi tham dự' => 'Question de présence',
 	'Câu hỏi cho mọi khách xưng hô “{s}” (xóa hết = về mặc định).' => 'Question pour tous les invités appelés « {s} » (tout effacer = valeur par défaut).',
 	'Khách này chưa có xưng hô — thêm xưng hô cho khách để sửa câu hỏi theo vai.' => 'Cet invité n’a pas encore de formule d’appel — ajoutez-en une pour modifier la question par rôle.',
+	'Xem album ảnh' => "Voir l'album photo",
 );
