@@ -205,6 +205,15 @@ html.ic-lock, html.ic-lock body { overflow: hidden; }
 }
 .ic-enter:hover { border-color: var(--accent); gap: 12px; }
 
+/* Album ảnh ngay trên thiệp (settings.card_album, 22/11/2026): lưới 3 cột ô vuông, bấm = lightbox chung (app.js). */
+.ic-album { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--ic-line); display: grid; gap: 12px; justify-items: center; }
+.ic-album-title { margin: 0; font: var(--name-style, normal) 400 1.5rem/1.2 var(--f-name, Georgia, serif); color: var(--accent-ink, var(--accent)); }
+.ic-album-grid { width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.ic-album-ph { display: block; aspect-ratio: 1; overflow: hidden; border-radius: 4px; background: var(--ic-line); }
+.ic-album-ph[hidden] { display: none; }
+.ic-album-ph img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+.ic-album-ph:hover img { transform: scale(1.04); }
+
 /* Nút nhỏ mở lại thiệp sau khi đã vào trang cưới (nút nhạc ở góc phải). */
 .ic-reopen {
   position: fixed; left: 16px; bottom: 16px; z-index: 45; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px;

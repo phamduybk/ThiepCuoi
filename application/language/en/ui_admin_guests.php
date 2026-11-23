@@ -269,4 +269,7 @@ return array(
 	'Xem album ảnh (khi trang đã có ảnh album)' => "View the photo album (once the page has album photos)",
 	'Lưu tùy chọn' => "Save options",
 	'Đã lưu tùy chọn trên thiệp.' => "Card options saved.",
+	'Hiện album ảnh ngay trên thiệp mời' => 'Show the photo album right on the invitation card',
+	'Hiện nút “Xem trang cưới”' => 'Show the “View the wedding page” button',
+	'Hiện nút “Xem trang cưới” cuối thiệp mời' => 'Show the “View the wedding page” button at the end of the invitation card',
 );

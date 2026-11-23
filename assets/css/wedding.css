@@ -536,6 +536,7 @@ html.has-cover .wd-cover { overflow-y: auto; overscroll-behavior: contain; curso
 /* 04/10 (loop t1 BUG-1): trang nhiều ngôn ngữ -> khách nước ngoài cần đổi ngôn ngữ NGAY trên thiệp đang mở: nút dời lên góc trên phải
    (xa nút +/− và ô nhập ở cuối thiệp), nổi trên thiệp (.ic z 75). */
 html.ic-open .lang-sw { top: max(8px, env(safe-area-inset-top, 0px)); bottom: auto; right: max(10px, env(safe-area-inset-right)); z-index: 90; }
+html.lb-open .lang-sw { display: none; }   /* đang xem ảnh (lightbox, cả album trên thiệp) */
 /* Nút "✉ Thiệp mời" + VI|EN cùng nằm trên thanh menu điện thoại: màn hẹp chỉ giữ biểu tượng ✉ để hai nút không chồng nhau. */
 @media (max-width: 420px) { html:has(.lang-sw) body:not(.is-draft) .ic-reopen { font-size: 0; gap: 0; padding: 0 12px; min-width: 44px; justify-content: center; } html:has(.lang-sw) body:not(.is-draft) .ic-reopen span { font-size: 1.1rem; } }
 /* Ngôn ngữ khác tiếng Việt: nhãn đếm ngược (DAYS HOURS MINS SECS / JOURS HEURES…) dài hơn -> bớt giãn chữ để 4 ô vừa màn 360px. */
